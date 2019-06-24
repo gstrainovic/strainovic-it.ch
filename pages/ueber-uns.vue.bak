@@ -1,0 +1,347 @@
+<template>
+    <div>
+        <div class="position-relative">
+            <!-- shape Hero -->
+            <section class="section-shaped my-0">
+                <div class="shape shape-style-1 shape-default shape-skew">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="container shape-container d-flex">
+                    <div class="col px-0">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h1 class="display-3  text-white">Über uns</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 1st Hero Variation -->
+        </div>
+        <section class="section section-lg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="pr-md-6">
+                           <h2 class="display-5">Kommen Sie auf ein Beratungsgespräch vorbei</h2>
+                           <p class="lead">
+                           Ich freue mich Sie persönlich kennenzulernen.<br>
+                           Gerne komme ich für 1chf/km auch zu Ihnen.<br>
+                           Vereinbaren Sie noch heute einen Termin.<br>
+                           </p>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="row mb-lg">
+                    <div class="col-lg-8">
+                        <h2 class="display-3">Über Strainovic IT</h2>
+                        <p class="lead">Strainovic IT wurde 2016 gegründet, befindet sich in Steinach im Kanton St.Gallen SG an der Ostschweiz am Bodensee, und bietet alle digitale Dienstleistungen
+                        für die Informationstechnolgie, auch bekannt als IT oder ICT an, wie z. B:</p>
+                        <ul>
+                          <br>
+                          <li>Analyse & Beratung</li>
+                          <li>Projektplanung & Projektmanagment</li>
+                          <li>Installation & Konfiguration</li>
+                          <li>Design & Programmierung</li>
+                          <li>Tests</li>
+                          <li>Administration, Support</li>
+                          <li>Wartung, Backups, Updates</li>
+                          <li>Schulungen</li>
+                          <li>Automation</li>
+                        </ul>
+                        <p class="lead ">Wir untestützen sowohl Private auch als KMU,
+                        Firmen, Start-ups, AG, GmbH bei allen digitalen Herausforderungen, wie z.B:
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <ul>
+                      <h3 class="display-4">Web</h3>
+                      <li>CMS Webseiten mit z. B:</li>
+                        <ul>
+                          <li>WordPress</li>
+                          <li>Grav</li>
+                        </ul>
+                      <li>Statische Webseiten mit z. B:</li>
+                        <ul>
+                          <li>Hugo</li>
+                          <li>Jekyll</li>
+                          <li>Gatsby</li>
+                          <li>Nuxt</li>
+                        </ul>
+                      <li>Webshops mit z. B:</li>
+                        <ul>
+                          <li>Woocommerce</li>
+                          <li>Shopware</li>
+                        </ul>
+                      <li>Headless CMS mit z. B: Strapi</li>
+                      <li>Webportale</li>
+                      <li>Webapps z. B:</li>
+                        <ul>
+                          <li>React</li>
+                          <li>Vue</li>
+                        </ul>
+                        <li>Hosting & Domains bei z. B:</li>
+                        <ul>
+                          <li>Hostpoint in der Schweiz</li>
+                          <li>Amazon Web Service (AWS) in Frankfurt</li>
+                          <li>Google Cloud Plattform (GCP)</li>
+                        </ul>
+                      <br>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <ul>
+                      <h3 class="display-4">Mobile & Tablet</h3>
+                      <li>Apps für Android Smartphones</li>
+                      <li>Apps für iOS, iPhone, Apple</li>
+                      <br>
+                      <h3 class="display-4">Desktop & Server</h3>
+                      <li>Betriebssysteme wie z. B:</li>
+                        <ul>
+                          <li>Windows</li>
+                          <li>Linux, Ubuntu</li>
+                        </ul>
+                        <li>Software, Programme</li>
+                        <li>Office, VBA, Word, Excel, Access, Outlook, Email & Powerpoint</li>
+                      <li>Plugins, Module, Bibliotheken & Erweiterungen</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                      <h3 class="display-4">Grafik</h3>
+                      <li>Logo</li>
+                      <li>Flyer</li>
+                      <li>Broschüren & Prospekte</li>
+                      <li>Infografiken</li>
+                      <li>Icons</li>
+                      <li>Fotos (Beschaffung)</li>
+                      <br>
+                      <h3 class="display-4">Videos</h3>
+                      <li>Videoschnitt</li>
+                      <li>Hosting auf eigenen Server</li>
+                      <li>Hosting auf Youtube (kostenlos mit Werbung)</li>
+                      <li>Hosting auf Vimeo (kostenpflichtig ohne Werbung)</li>
+                  </div>
+                  <div class="col">
+                    <ul>
+                      <h3 class="display-4">Google</h3>
+                      <li>Google SEO</li>
+                      <li>Google AdWords</li>
+                      <li>Google Business</li>
+                      <li>Google Maps</li>
+                      <br>
+                      <h3 class="display-4">SMM Social Media Marketing</h3>
+                      <li>Facebook</li>
+                      <li>Instagram</li>
+                      <li>Twitter</li>
+                      <li>Youtube</li>
+                      <li>Chatbot</li>
+                     </ul>
+                  </div>
+                  <div class="col">
+                    <ul>
+                      <h3 class="display-4">Daten</h3>
+                      <li>Research</li>
+                      <li>Verarbeitung</li>
+                      <li>Datenbeschaffung</li>
+                        <ul>
+                          <li>manuelle Recherche</li>
+                          <li>Automatisiert per Crawler/Spider/Bot</li>
+                        </ul>
+                      <li>Automatisierungen</li>
+                      <li>Schnittstellen (API)</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row mb-lg">
+                    <div class="col-lg-8">
+                        <p class="lead ">
+                        Die meisten Projekte werden direkt vom Gründer, Goran Strainovic umgesetzt.
+                        Grössere Projekte werden bei Bedarf mit Partner umgesetzt.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section section-shaped my-0 overflow-hidden" id="software">
+            <div class="shape shape-style-1 bg-gradient-warning shape-skew">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="container pt-lg pb-100">
+                <div class="row mb-lg">
+                    <div class="col-lg-8">
+                      <h2 class="display-3 text-white">Über den Gründer,<br>Goran Strainovic</h2>
+                        <p class="lead text-white ">Was nicht passt, wird passend gemacht.<br>
+                        Ich bin ein Perfektionist mit vielen Fähigkeiten,
+                        der durch Kreativität und Ausdauer Herausforderungen meistert und Ziele erreicht.</p>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                        <div class="px-4">
+                            <img v-lazy="'/goran.jpg'"
+                                 class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
+                                 style="width: 250px;">
+                       </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                        <div class="px-4">
+                            <div class="pt-4 align-items-center">
+                                <!-- <h5 class="title"> -->
+                                    <ul class="align-items-center text-white">
+                                      <li> <small class="h6 text-white">Gründer</small></li>
+                                      <li> <small class="h6 text-white">Developer & Programmierer</small></li>
+                                      <li> <small class="h6 text-white">Designer</small></li>
+                                      <li> <small class="h6 text-white">Projekt Manager</small></li>
+                                    </ul>
+                                <!-- </h5> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 col-lg-3 mb-5 mb-lg-0">
+                        <div class="px-3">
+                            <div class="pt-4 align-items-center">
+                                <!-- <h5 class="title"> -->
+                                    <ul class="">
+                                       <small class="h6 text-white">
+                                        Goran Strainovic<br>
+                                        Bahnstrasse 9b<br>
+                                        CH 9323 Steinach<br>
+                                        Kanton St.Gallen SG<br>
+                                        +41 79 411 71 77<br>
+                                        <a href='mailto:info@strainovic-it.ch'>info@strainovic-it.ch</a></small>
+                                    </ul>
+                                <!-- </h5> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 col-lg-3 mb-5 mb-lg-0">
+                        <div class="px-3">
+                            <div class="pt-4 align-items-center">
+                                     <table class="table text-white" >
+                                            <tr>
+                                              <th>Geburtsdatum</th>
+                                              <td>18.11.81</td>
+                                            </tr>
+                                            <tr>
+                                              <th>Eigenes Auto</th>
+                                              <td>Ja, Kat. B</td>
+                                            </tr>
+                                            <tr>
+                                              <th>Nationalität</th>
+                                              <td>Schweizer</td>
+                                            </tr>
+                                    </table>
+                            </div>
+                        </div>
+                    </div>
+
+              <div class="row mb-5 text-white">
+                <div class="col-lg-12">
+                  <h3 class="display-3 mt-5 text-white">Meine Skills</h3>
+                  <h4 class="display-4 mt-5 text-white">Meine Sprachkenntnisse</h4>
+                  <p class="lead mb-5">Deutsch, Englisch, Serbisch, Rumänisch</p>
+                  <h4 class="display-4 mt-5 text-white">Als Elektroniker</h4>
+                  <p class="lead mb-5">Prüfen, Reparieren, Avor, Technischer Support von Elektronik Baugruppen</p>
+                  <h4 class="display-4 text-white mt-5">Als Gründer & Projektmanager</h4>
+                  <p class="lead">Analysieren, Konzepterstellung, Beraten, Planen, Managen, Schulen</p>
+                  <h4 class="display-4 mt-5 text-white">Als Softwarentwickler & UI / UX Designer</h4>
+                  <p class="lead mb-5">Designen, Programmieren, Installieren, Konfigurieren, Erweitern, Warten, Testen</p>
+                </div>
+              </div>
+
+                <div class="row mt-5 text-white">
+
+                  <div class="col text-white">
+                    <ul>
+                      <h3 class="display-4 text-white">Front-End</h3>
+                      <!-- <h5>Programmieren</h5> -->
+                      <li>Bootstrap4</li>
+                      <li>HTML5 / CSS3 / JS (JavaScript)</li>
+                      <li>Gatsby & React</li>
+                      <li>Nuxt & Vue</li>
+                      <li>Jekyll</li>
+                    </ul>
+                  </div>
+
+                  <div class="col">
+                    <ul>
+                      <h3 class="display-4 text-white">Back-End</h3>
+                      <!-- <h5>Programmieren</h5> -->
+                      <li>Microsoft - .Net - F# - FSharp</li>
+                      <li>Microsoft - .Net - VB - VisualBasic</li>
+                      <li>AutoIt</li>
+                      <li>VBA - Visual Basic for (Office) Application</li>
+                      <li>PHP</li>
+                    </ul>
+                  </div>
+
+                </div>
+
+              <div class="row mb-5 text-white">
+                <!-- <div class="col-lg-12"> -->
+                  <h3 class="display-3 text-white">Meine Ausbildung</h3>
+                  <h4 class="display-4 mt-5 text-white">PC/LAN – Supporter SIZ</h4>
+                  <p class="lead mb-5">Berufsschule Wil<br>2002 – 2003</p>
+                  <h4 class="display-4 text-white mt-5">Informatik – Anwender SIZ</h4>
+                  <p class="lead">Berufsschule Uzwil<br>2000 – 2001</p>
+                  <h4 class="display-4 mt-5 text-white">Praktikum als RTV- Elektriker</h4>
+                  <p class="lead mb-5">RTV Bohren Gossau<br>1998 - 1999</p>
+                  <h4 class="display-4 mt-5 text-white">Primar und Oberstufe</h4>
+                  <p class="lead mb-5">Niederuzwil<br>1989 – 1998</p>
+                <!-- </div> -->
+              </div>
+              <div class="row mb-5 text-white">
+                <!-- <div class="col-lg-12"> -->
+                  <h3 class="display-3 text-white">Von mir umgesetzte Projekte</h3>
+                  <h4 class="display-4 mt-5 text-white">Prozessoptimierung</h4>
+                  <p class="lead mb-5">Zeitersparnis für die Technische Abteilung von Variosystems.
+                  Interaktion mit Excel, Outlook, Aegis ,Clipboard, SAP.
+                  <br><b>Technologien</b> Fsharp, Autoit und VBA.</p>
+              </div>
+           </div>
+         </div>
+       </section>
+    </div>
+</template>
+
+<script>
+import H from '~/components/h'
+
+export default {
+  name: 'home',
+  layout: 'default',
+  components: {
+    H
+  }
+}
+</script>
+
+<style>
+.section-shaped .shape.shape-skew + .shape-container {
+  padding-top: 14rem;
+  padding-bottom: 15rem;
+}
+</style>
