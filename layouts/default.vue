@@ -17,33 +17,47 @@
             class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto"
           >
             <!-- <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto"> -->
-            <BaseDropdown tag="li" class="nav-item">
-      <a v-for="routes in links"
-      v-bind:key="routes.index"
-      :href="routes.page">{{routes.text}}</a>
-
-
-              <a
-                slot="title"
-                href="##"
-                class="nav-link"
-                data-toggle="dropdown"
-                role="button"
+            <template v-for="x in links">
+              <BaseDropdown
+                v-if="x.menu"
+                :key="x.index"
+                tag="li"
+                class="nav-item"
               >
-                <i class="ni ni-spaceship"></i>
-                <span class="nav-link-inner--text">Dienstleistungen</span>
-              </a>
+                <a
+                  slot="title"
+                  :href="x.link"
+                  class="nav-link"
+                  data-toggle="dropdown"
+                  role="button"
+                >
+                  <i :class="x.icon"></i>
+                  <span class="nav-link-inner--text">{{ x.menu }}</span>
+                </a>
 
-              <a href="/#was-wir-tun" class="dropdown-item">Was wir tun</a>
-              <a href="/#software-und-apps" class="dropdown-item"
-                >Software & Apps</a
-              >
-              <a href="/#webdesign-und-programmierung" class="dropdown-item"
-                >Webdesign & Programmierung</a
-              >
-              <a href="/#marketing" class="dropdown-item">Marketing</a>
-            </BaseDropdown>
-            <BaseDropdown tag="li" class="nav-item">
+                <a
+                  v-for="s in x.submenu"
+                  :key="s.index"
+                  :href="s.link"
+                  class="dropdown-item"
+                  >{{ s.name }}
+                </a>
+              </BaseDropdown>
+
+              <div v-else :key="x.index">
+                <a
+                  v-for="s in x.submenu"
+                  :key="s.index"
+                  class="nav-link"
+                  :href="s.link"
+                >
+                  <i :class="x.icon"></i>
+                  <span class="nav-link-inner--text">{{ s.name }} </span>
+                </a>
+              </div>
+            </template>
+
+            <!-- <BaseDropdown tag="li" class="nav-item">
               <a
                 slot="title"
                 href="/ueber/##"
@@ -81,7 +95,7 @@
             <a class="nav-link" href="#kontakt">
               <i class="ni ni-email-83"></i>
               <span class="nav-link-inner--text">Kontakt</span>
-            </a>
+            </a> -->
           </ul>
         </BaseNav>
       </header>
@@ -246,8 +260,6 @@
               +41 79 411 71 77<br />
               <a href="mailto:info@strainovic-it.ch">info@strainovic-it.ch</a>
             </p>
-
-
           </div>
           <!-- </div> -->
           <!-- <div class="row align-items-center justify-content-md-between"> -->
@@ -305,29 +317,78 @@ export default {
     BaseDropdown,
     headroom,
     VueFriendlyIframe
-    },
-    data() {
+  },
+  data() {
     return {
       links: [
-              {
-                text: 'Hello World',
-                page:'/HelloWorld'
-              },
-              {
-                text: 'Home',
-                page:'/Home'
-              },
-              {
-                text: 'About',
-                page:'/About'
-              },
-              {
-                text: 'Contact',
-                page:'/Contact'
-              }]
-  }}}
-
-
+        {
+          menu: 'Dienstleistungen',
+          link: '##',
+          icon: 'ni ni-spaceship',
+          submenu: [
+            {
+              link: '/#was-wir-tun',
+              name: 'Was wir tun'
+            },
+            {
+              link: '/#software-und-apps',
+              name: 'Software und Apps'
+            },
+            {
+              link: '/#webdesign-und-programmierung',
+              name: 'Webdesign und Programmierung'
+            },
+            {
+              link: '/#marketing',
+              name: 'Marketing'
+            }
+          ]
+        },
+        {
+          menu: 'Über uns',
+          link: '/ueber/##',
+          icon: 'ni ni-single-02',
+          submenu: [
+            {
+              link: '/ueber/#strainovic-it',
+              name: 'Über Strainovic IT'
+            },
+            {
+              link: '/ueber/#goran-strainovic',
+              name: 'Über Goran Strainovic'
+            }
+          ]
+        },
+        {
+          menu: 'Portfolio',
+          link: '##',
+          icon: 'ni ni-collection',
+          submenu: [
+            {
+              link: '/portfolio/#web',
+              name: 'Webseiten'
+            },
+            {
+              link: '/portfolio/#diverse-projekte',
+              name: 'Über Goran Strainovic'
+            }
+          ]
+        },
+        {
+          menu: '',
+          link: '##',
+          icon: 'ni ni-email-83',
+          submenu: [
+            {
+              link: '#kontakt',
+              name: 'Kontakt'
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
 </script>
 <style>
 .headroom--not-top {
