@@ -18,6 +18,11 @@
           >
             <!-- <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto"> -->
             <BaseDropdown tag="li" class="nav-item">
+      <a v-for="routes in links"
+      v-bind:key="routes.index"
+      :href="routes.page">{{routes.text}}</a>
+
+
               <a
                 slot="title"
                 href="##"
@@ -28,6 +33,7 @@
                 <i class="ni ni-spaceship"></i>
                 <span class="nav-link-inner--text">Dienstleistungen</span>
               </a>
+
               <a href="/#was-wir-tun" class="dropdown-item">Was wir tun</a>
               <a href="/#software-und-apps" class="dropdown-item"
                 >Software & Apps</a
@@ -240,6 +246,8 @@
               +41 79 411 71 77<br />
               <a href="mailto:info@strainovic-it.ch">info@strainovic-it.ch</a>
             </p>
+
+
           </div>
           <!-- </div> -->
           <!-- <div class="row align-items-center justify-content-md-between"> -->
@@ -297,8 +305,29 @@ export default {
     BaseDropdown,
     headroom,
     VueFriendlyIframe
-  }
-}
+    },
+    data() {
+    return {
+      links: [
+              {
+                text: 'Hello World',
+                page:'/HelloWorld'
+              },
+              {
+                text: 'Home',
+                page:'/Home'
+              },
+              {
+                text: 'About',
+                page:'/About'
+              },
+              {
+                text: 'Contact',
+                page:'/Contact'
+              }]
+  }}}
+
+
 </script>
 <style>
 .headroom--not-top {

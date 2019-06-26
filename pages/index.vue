@@ -10,6 +10,7 @@
           <div class="col px-0">
             <div class="row">
               <div class="col-lg-7">
+
                 <h1 class="display-4 text-white">
                   Webdesign, Programmierung & Marketing
                   <span class="mt-2"
@@ -587,6 +588,7 @@
               Netzwerk an Parntern und Schnittstellen.
             </p>
           </div>
+
         </div>
         <!-- </div> -->
       </div>
@@ -596,15 +598,14 @@
 </template>
 
 <script>
-//import H from '~/components/h'
+import Vue from 'vue'
+
+
+
 
 export default {
-  name: 'Home',
-  layout: 'default',
-  components: {
-    //H
-  }
 }
+
 </script>
 
 <style>
