@@ -17,11 +17,7 @@
             class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto"
           >
             <template v-for="x in links">
-              <BaseDropdown
-                :key="x.index"
-                tag="li"
-                class="nav-item"
-              >
+              <BaseDropdown :key="x.index" tag="li" class="nav-item">
                 <a
                   slot="title"
                   :href="x.link"
@@ -44,17 +40,16 @@
             </template>
 
             <template v-for="x in noMenu">
-                <a
-                  v-for="s in x.submenu"
-                  :key="s.index"
-                  class="nav-link"
-                  :href="s.link"
-                >
-                  <i :class="x.icon"></i>
-                  <span class="nav-link-inner--text">{{ s.name }} </span>
-                </a>
+              <a
+                v-for="s in x.submenu"
+                :key="s.index"
+                class="nav-link"
+                :href="s.link"
+              >
+                <i :class="x.icon"></i>
+                <span class="nav-link-inner--text">{{ s.name }} </span>
+              </a>
             </template>
-
           </ul>
         </BaseNav>
       </header>
@@ -225,44 +220,40 @@
           <div class="col-md-9">
             <ul class="nav nav-footer justify-content-end">
               <template v-for="x in links">
-              <li v-bind:key="x.index" class="nav-item mr-3">
-              <h5 class="nav-link"> {{x.menu}} </h5>
-                <a
-                  v-for="s in x.submenu"
-                  v-bind:key="s.index"
-                  :href="s.link"
-                  class="nav-link"
-                  >{{s.name}}</a>
-              </li>
-
+                <li :key="x.index" class="nav-item mr-3">
+                  <h5 class="nav-link">{{ x.menu }}</h5>
+                  <a
+                    v-for="s in x.submenu"
+                    :key="s.index"
+                    :href="s.link"
+                    class="nav-link"
+                    >{{ s.name }}</a
+                  >
+                </li>
               </template>
 
               <template v-for="xx in rechtliches">
+                <li :key="xx.index" class="nav-item mr-3">
+                  <h5 class="nav-link">{{ xx.menu }}</h5>
+                  <nuxt-link
+                    v-for="s in xx.submenu"
+                    :key="s.index"
+                    :to="s.link"
+                    class="nav-link"
+                    >{{ s.name }}</nuxt-link
+                  >
 
-              <li v-bind:key="xx.index" class="nav-item mr-3">
-              <h5 class="nav-link"> {{xx.menu}} </h5>
-                <nuxt-link
-                  v-for="s in xx.submenu"
-                  v-bind:key="s.index"
-                  :to="s.link"
-                  class="nav-link"
-                  >{{s.name}}</nuxt-link>
-
-              <template v-for="xx in noMenu">
-                <a
-                  v-for="s in xx.submenu"
-                  v-bind:key="s.index"
-                  :href="s.link"
-                  class="nav-link"
-                  >{{s.name}}</a>
-
+                  <template v-for="xxx in noMenu">
+                    <a
+                      v-for="s in xxx.submenu"
+                      :key="s.index"
+                      :href="s.link"
+                      class="nav-link"
+                      >{{ s.name }}</a
+                    >
+                  </template>
+                </li>
               </template>
-              </li>
-
-              </template>
-
-
-
             </ul>
           </div>
         </div>
@@ -341,8 +332,9 @@ export default {
               name: 'Diverse Projekte'
             }
           ]
-        }],
-    noMenu: [
+        }
+      ],
+      noMenu: [
         {
           menu: '',
           link: '##',
@@ -351,9 +343,11 @@ export default {
             {
               link: '/#kontakt',
               name: 'Kontakt'
-            }]
-        }],
-   rechtliches: [
+            }
+          ]
+        }
+      ],
+      rechtliches: [
         {
           menu: 'Sonstige Links',
           link: '##',
@@ -368,10 +362,11 @@ export default {
               name: 'Datenschutz'
             }
           ]
-
-    }]
+        }
+      ]
+    }
   }
-}}
+}
 </script>
 <style>
 .headroom--not-top {
