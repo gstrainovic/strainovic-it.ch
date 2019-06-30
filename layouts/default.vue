@@ -16,10 +16,8 @@
           <ul
             class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto"
           >
-            <!-- <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto"> -->
             <template v-for="x in links">
               <BaseDropdown
-                v-if="x.menu"
                 :key="x.index"
                 tag="li"
                 class="nav-item"
@@ -43,8 +41,9 @@
                   >{{ s.name }}
                 </a>
               </BaseDropdown>
+            </template>
 
-              <div v-else :key="x.index">
+            <template v-for="x in noMenu">
                 <a
                   v-for="s in x.submenu"
                   :key="s.index"
@@ -54,48 +53,8 @@
                   <i :class="x.icon"></i>
                   <span class="nav-link-inner--text">{{ s.name }} </span>
                 </a>
-              </div>
             </template>
 
-            <!-- <BaseDropdown tag="li" class="nav-item">
-              <a
-                slot="title"
-                href="/ueber/##"
-                class="nav-link"
-                data-toggle="dropdown"
-                role="button"
-              >
-                <i class="ni ni-single-02"></i>
-                <span class="nav-link-inner--text">Über uns</span>
-              </a>
-              <a href="/ueber/#strainovic-it" class="dropdown-item"
-                >Über Strainovic IT</a
-              >
-              <a href="/ueber/#goran-strainovic" class="dropdown-item"
-                >Über Goran Strainovic</a
-              >
-            </BaseDropdown>
-            <BaseDropdown tag="li" class="nav-item">
-              <a
-                slot="title"
-                href="##"
-                class="nav-link"
-                data-toggle="dropdown"
-                role="button"
-              >
-                <i class="ni ni-collection"></i>
-                <span class="nav-link-inner--text">Portfolio</span>
-              </a>
-              <a href="/portfolio/#web" class="dropdown-item">Webseiten</a>
-              <a href="/portfolio/#diverse-projekte" class="dropdown-item"
-                >Diverse Projekte</a
-              >
-            </BaseDropdown>
-
-            <a class="nav-link" href="#kontakt">
-              <i class="ni ni-email-83"></i>
-              <span class="nav-link-inner--text">Kontakt</span>
-            </a> -->
           </ul>
         </BaseNav>
       </header>
@@ -265,36 +224,45 @@
           <!-- <div class="row align-items-center justify-content-md-between"> -->
           <div class="col-md-9">
             <ul class="nav nav-footer justify-content-end">
-              <li class="nav-item">
-                <nuxt-link :to="{ name: 'argon-demo-landing' }" class="nav-link"
-                  >Kontaktformular</nuxt-link
-                >
-                <!-- <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Creative Tim</a> -->
-              </li>
-              <li class="nav-item">
+              <template v-for="x in links">
+              <li v-bind:key="x.index" class="nav-item mr-3">
+              <h5 class="nav-link"> {{x.menu}} </h5>
                 <a
-                  href="https://www.creative-tim.com/presentation"
+                  v-for="s in x.submenu"
+                  v-bind:key="s.index"
+                  :href="s.link"
                   class="nav-link"
-                  target="_blank"
-                  >About Us</a
-                >
+                  >{{s.name}}</a>
               </li>
-              <li class="nav-item">
+
+              </template>
+
+              <template v-for="xx in rechtliches">
+
+              <li v-bind:key="xx.index" class="nav-item mr-3">
+              <h5 class="nav-link"> {{xx.menu}} </h5>
+                <nuxt-link
+                  v-for="s in xx.submenu"
+                  v-bind:key="s.index"
+                  :to="s.link"
+                  class="nav-link"
+                  >{{s.name}}</nuxt-link>
+
+              <template v-for="xx in noMenu">
                 <a
-                  href="http://blog.creative-tim.com"
+                  v-for="s in xx.submenu"
+                  v-bind:key="s.index"
+                  :href="s.link"
                   class="nav-link"
-                  target="_blank"
-                  >Blog</a
-                >
+                  >{{s.name}}</a>
+
+              </template>
               </li>
-              <li class="nav-item">
-                <a
-                  href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md"
-                  class="nav-link"
-                  target="_blank"
-                  >MIT License</a
-                >
-              </li>
+
+              </template>
+
+
+
             </ul>
           </div>
         </div>
@@ -370,25 +338,40 @@ export default {
             },
             {
               link: '/portfolio/#diverse-projekte',
-              name: 'Über Goran Strainovic'
+              name: 'Diverse Projekte'
             }
           ]
-        },
+        }],
+    noMenu: [
         {
           menu: '',
           link: '##',
           icon: 'ni ni-email-83',
           submenu: [
             {
-              link: '#kontakt',
+              link: '/#kontakt',
               name: 'Kontakt'
+            }]
+        }],
+   rechtliches: [
+        {
+          menu: 'Sonstige Links',
+          link: '##',
+          icon: '',
+          submenu: [
+            {
+              link: '/impressum',
+              name: 'Impressum'
+            },
+            {
+              link: '/datenschutz',
+              name: 'Datenschutz'
             }
           ]
-        }
-      ]
-    }
+
+    }]
   }
-}
+}}
 </script>
 <style>
 .headroom--not-top {

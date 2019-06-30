@@ -3,7 +3,7 @@
     <div id="uns" class="position-relative">
       <!-- shape Hero -->
       <section class="section-shaped my-0">
-        <div class="shape shape-style-1 shape-default shape-skew">
+        <div class="shape shape-style-1 shape-default">
           <span></span>
           <span></span>
           <span></span>
@@ -28,7 +28,7 @@
     </div>
     <section id="strainovic-it" class="section">
       <div class="container">
-        <div class="row mb-5">
+        <div class="row">
           <div class="col-lg-8">
             <h2 class="display-3">Adresse</h2>
             <p class="lead">
