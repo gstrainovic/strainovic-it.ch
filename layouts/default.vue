@@ -105,30 +105,38 @@
             <card gradient="secondary" shadow body-classes="p-lg-5">
               <!-- <h4 class="mb-1">Want to work with us?</h4> -->
               <!-- <p class="mt-0">Your project is very important to us.</p> -->
-              <base-input class="" alternative placeholder="Vorname">
-                <!-- addon-left-icon="ni ni-user-run"> -->
-              </base-input>
-              <base-input class="" alternative placeholder="Nachname">
-                <!-- addon-left-icon="ni ni-user-run"> -->
-              </base-input>
-              <base-input
-                alternative
-                placeholder="E-Mail Adresse"
-                addon-left-icon="ni ni-email-83"
+              <form
+                name="Kontakt"
+                action="/thank-you"
+                netlify-honeypot="bot-field"
+                method="post"
+                netlify
               >
-              </base-input>
-              <base-input class="mb-4">
-                <textarea
-                  class="form-control form-control-alternative"
-                  name="name"
-                  rows="4"
-                  cols="80"
-                  placeholder="Ihre Nachricht"
-                ></textarea>
-              </base-input>
-              <base-button type="default" round block size="lg">
-                Senden
-              </base-button>
+                <base-input class="" alternative placeholder="Vorname">
+                  <!-- addon-left-icon="ni ni-user-run"> -->
+                </base-input>
+                <base-input class="" alternative placeholder="Nachname">
+                  <!-- addon-left-icon="ni ni-user-run"> -->
+                </base-input>
+                <base-input
+                  alternative
+                  placeholder="E-Mail Adresse"
+                  addon-left-icon="ni ni-email-83"
+                >
+                </base-input>
+                <base-input class="mb-4">
+                  <textarea
+                    class="form-control form-control-alternative"
+                    name="name"
+                    rows="4"
+                    cols="80"
+                    placeholder="Ihre Nachricht"
+                  ></textarea>
+                </base-input>
+                <base-button type="default" round block size="lg">
+                  Senden
+                </base-button>
+              </form>
             </card>
           </div>
         </div>
