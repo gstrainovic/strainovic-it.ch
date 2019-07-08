@@ -112,20 +112,27 @@
                 method="post"
                 netlify
               >
-                <base-input class="" alternative placeholder="Vorname">
+                <base-input class="" required alternative placeholder="Vorname">
                   <!-- addon-left-icon="ni ni-user-run"> -->
                 </base-input>
-                <base-input class="" alternative placeholder="Nachname">
+                <base-input
+                  class=""
+                  required
+                  alternative
+                  placeholder="Nachname"
+                >
                   <!-- addon-left-icon="ni ni-user-run"> -->
                 </base-input>
                 <base-input
                   alternative
+                  required
                   placeholder="E-Mail Adresse"
                   addon-left-icon="ni ni-email-83"
                 >
                 </base-input>
                 <base-input class="mb-4">
                   <textarea
+                    required
                     class="form-control form-control-alternative"
                     name="name"
                     rows="4"
@@ -133,7 +140,14 @@
                     placeholder="Ihre Nachricht"
                   ></textarea>
                 </base-input>
-                <base-button type="default" round block size="lg">
+                <input class="form-button" type="submit" value="Send message" />
+                <base-button
+                  type="submit"
+                  value="Send message"
+                  round
+                  block
+                  size="lg"
+                >
                   Senden
                 </base-button>
               </form>
