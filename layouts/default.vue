@@ -106,7 +106,7 @@
               <!-- <h4 class="mb-1">Want to work with us?</h4> -->
               <!-- <p class="mt-0">Your project is very important to us.</p> -->
               <form
-                name="Kontakt"
+                name="Strainovic-it.ch Kontakt"
                 action="/thank-you"
                 netlify-honeypot="bot-field"
                 method="post"
@@ -115,17 +115,12 @@
                 <base-input class="" required alternative placeholder="Vorname">
                   <!-- addon-left-icon="ni ni-user-run"> -->
                 </base-input>
-                <base-input
-                  class=""
-                  required
-                  alternative
-                  placeholder="Nachname"
-                >
+                <base-input required alternative placeholder="Nachname">
                   <!-- addon-left-icon="ni ni-user-run"> -->
                 </base-input>
                 <base-input
-                  alternative
                   required
+                  alternative
                   placeholder="E-Mail Adresse"
                   addon-left-icon="ni ni-email-83"
                 >
@@ -140,8 +135,9 @@
                     placeholder="Ihre Nachricht"
                   ></textarea>
                 </base-input>
-                <input class="form-button" type="submit" value="Send message" />
+                <!-- <input class="form-button" type="submit" value="Send message" /> -->
                 <base-button
+                  class="form-button"
                   type="submit"
                   value="Send message"
                   round
