@@ -4246,6 +4246,11 @@ flatten@^1.0.2:
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
   integrity sha1-2uRqnXj74lKSJYzB54CkHZXAN4I=
 
+floatl@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/floatl/-/floatl-2.0.1.tgz#edc26666ba69e83119c5c765874ff785d18a1a06"
+  integrity sha512-x+ziFd83z3+W13dldv/1O0o/5ElPCHz7lBB+XzsPSIGq3Uaf5VKMIQeR6AoaAl1GA3ieNAa1GWaWKUAYJZIkig==
+
 flush-write-stream@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/flush-write-stream/-/flush-write-stream-1.1.0.tgz#2e89a8bd5eee42f8ec97e43aae81e3d5099c2ddc"
@@ -6857,6 +6862,11 @@ pkg-dir@^3.0.0:
   integrity sha512-/E57AYkoeQ25qkxMj5PBOVgF8Kiu/h7cYS30Z5+R7WaiCCBfLq58ZI/dSeaEKb9WVJV5n/03QwrN3IeWIFllvw==
   dependencies:
     find-up "^3.0.0"
+
+placekeeper@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/placekeeper/-/placekeeper-1.0.7.tgz#f0cbb2668a55bb04340d68206780418950f34a03"
+  integrity sha1-8MuyZopVuwQ0DWggZ4BBiVDzSgM=
 
 pngjs@^3.0.0, pngjs@^3.3.3:
   version "3.3.3"
@@ -9634,6 +9644,11 @@ vue-flatpickr-component@^8.1.1:
   dependencies:
     flatpickr "^4.5.1"
 
+vue-float-label@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/vue-float-label/-/vue-float-label-1.6.1.tgz#2351e71b25f21b06d43563b046f78d9512a08c66"
+  integrity sha1-I1HnGyXyGwbUNWOwRveNlRKgjGY=
+
 vue-friendly-iframe@^0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/vue-friendly-iframe/-/vue-friendly-iframe-0.12.0.tgz#782e2a5c0c9faad1a6a82683c76ab3e6dfec6332"
@@ -9708,6 +9723,13 @@ vue-server-renderer@^2.6.10:
     serialize-javascript "^1.3.0"
     source-map "0.5.6"
 
+vue-simple-floating-labels@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/vue-simple-floating-labels/-/vue-simple-floating-labels-1.0.4.tgz#4d91b0133ca0ce94e02af87d65b42abf4a52146a"
+  integrity sha1-TZGwEzygzpTgKvh9ZbQqv0pSFGo=
+  dependencies:
+    vue "^2.4.2"
+
 vue-style-loader@^4.1.0:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-4.1.2.tgz#dedf349806f25ceb4e64f3ad7c0a44fba735fcf8"
@@ -9734,7 +9756,7 @@ vue2-transitions@^0.2.3:
   resolved "https://registry.yarnpkg.com/vue2-transitions/-/vue2-transitions-0.2.3.tgz#69c9d75b1db05f231b80980c03459d68490ba27d"
   integrity sha512-Ou5x74AOQbM8JjZV8pIssFFqavvj53QzrEEUr5QnElUYb1ZizPwaUJo0ZqmLPqjwPae7ON4SG8U2cSTI4tHKLg==
 
-vue@^2.6.10:
+vue@^2.4.2, vue@^2.6.10:
   version "2.6.10"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha512-ImThpeNU9HbdZL3utgMCq0oiMzAkt1mcgy3/E6zWC/G6AaQoeuFdsl9nDhTDU3X1R6FK7nsIUuRACVcjI+A2GQ==

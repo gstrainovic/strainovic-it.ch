@@ -71,7 +71,7 @@
               Wir freuen uns auf Ihre Kontaktaufnahme!
             </h2>
             <div class="row">
-              <div class="col-md-3 lead text-white">
+              <div class="col-md-5 lead text-white">
                 <p>
                   <br />
                   Strainovic IT<br />
@@ -85,7 +85,7 @@
                   >
                 </p>
               </div>
-              <div class="col-md-3 mt-5">
+              <div class="col-md-5 mt-5">
                 <VueFriendlyIframe
                   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDUUYNFXEhy1raQAPrhYCdSCttMLgMsxls      &q=Strainovic IT"
                   allowfullscreen
@@ -98,13 +98,12 @@
         </div>
       </div>
     </section>
+
     <section class="section section-lg pt-lg-0 section-contact-us">
       <div class="container">
         <div class="row mt--300">
           <div class="col-lg-8">
             <card gradient="secondary" shadow body-classes="p-lg-5">
-              <!-- <h4 class="mb-1">Want to work with us?</h4> -->
-              <!-- <p class="mt-0">Your project is very important to us.</p> -->
               <form
                 name="Strainovic-it.ch Kontakt"
                 action="/thank-you"
@@ -112,40 +111,67 @@
                 method="post"
                 netlify
               >
-                <base-input class="" required alternative placeholder="Vorname">
-                  <!-- addon-left-icon="ni ni-user-run"> -->
-                </base-input>
-                <base-input required alternative placeholder="Nachname">
-                  <!-- addon-left-icon="ni ni-user-run"> -->
-                </base-input>
-                <base-input
-                  required
-                  alternative
-                  placeholder="E-Mail Adresse"
-                  addon-left-icon="ni ni-email-83"
-                >
-                </base-input>
-                <base-input class="mb-4">
-                  <textarea
-                    required
-                    class="form-control form-control-alternative"
-                    name="name"
-                    rows="4"
-                    cols="80"
-                    placeholder="Ihre Nachricht"
-                  ></textarea>
-                </base-input>
-                <!-- <input class="form-button" type="submit" value="Send message" /> -->
-                <base-button
-                  class="form-button"
-                  type="submit"
-                  value="Send message"
-                  round
-                  block
-                  size="lg"
-                >
-                  Senden
-                </base-button>
+                <div class="container my-5">
+                  <div class="row">
+                    <div class="">
+                      <base-input class="mb-4">
+                        <div class="form-group">
+                          <input
+                            id="name"
+                            type="text"
+                            class="form-control"
+                            required
+                          />
+                          <label class="form-control-placeholder" for="name"
+                            >Name</label
+                          >
+                        </div>
+                      </base-input>
+
+                      <base-input class="mb-4">
+                        <div class="form-group">
+                          <textarea
+                            id="name"
+                            type="text"
+                            class="form-control"
+                            required
+                          />
+                          <label class="form-control-placeholder" for="name"
+                            >Name</label
+                          >
+                        </div>
+                      </base-input>
+
+                      <base-input class="mb-4">
+                        <div class="form-group">
+                          <textarea
+                            id="name"
+                            type="text"
+                            required
+                            class="form-control form-control-alternative"
+                            name="name"
+                            rows="4"
+                            cols="80"
+                          />
+                          <label class="form-control-placeholder" for="name"
+                            >Name</label
+                          >
+                        </div>
+                      </base-input>
+
+                      <base-button
+                        class="form-button"
+                        type="submit"
+                        value="Send message"
+                        round
+                        block
+                        size="lg"
+                      >
+                        Senden
+                      </base-button>
+                    </div>
+                  </div>
+                </div>
               </form>
             </card>
           </div>
@@ -391,6 +417,27 @@ export default {
   padding-top: 0;
   padding-bottom: 0;
 }
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  opacity: 0.5;
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+  font-size: 75%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 1;
+}
+
 @media (min-width: 992px) {
   .navbar-main {
     padding: 0;

@@ -20,14 +20,18 @@
     "cross-env": "^5.2.0",
     "eslint-plugin-html": "^5.0.3",
     "flatpickr": "^4.5.2",
+    "floatl": "^2.0.1",
     "global": "^4.3.2",
     "nouislider": "^12.1.0",
     "nuxt": "^2.8.1",
+    "placekeeper": "^1.0.7",
     "strapi-sdk-javascript": "^0.3.1",
     "vue-flatpickr-component": "^8.1.1",
+    "vue-float-label": "^1.6.1",
     "vue-friendly-iframe": "^0.12.0",
     "vue-headroom": "^0.9.0",
     "vue-lazyload": "^1.2.6",
+    "vue-simple-floating-labels": "^1.0.4",
     "vue2-transitions": "^0.2.3"
   },
   "devDependencies": {
