@@ -179,13 +179,7 @@
                           >
                         </div>
                       </base-input>
-
-                      <!-- <input
-                        class="form-button"
-                        type="submit"
-                        value="Send message"
-                      /> -->
-
+                      <!-- 
                       <base-button
                         class="btn btn-primary"
                         round
@@ -193,12 +187,26 @@
                         size="lg"
                         type="submit"
                       >
-                        Senden
                       </base-button>
+                      <input
+                        class="form-button"
+                        type="submit"
+                        value="Send message"
+                      />
 
-                      <!-- <base-button type="submit" round block size="lg">
+                      Senden
+
+                      <base-button type="submit" round block size="lg">
                         Senden
                       </base-button> -->
+
+                      <button
+                        class="btn btn-primary btn-lg btn-block"
+                        round
+                        type="submit"
+                      >
+                        Senden
+                      </button>
 
                       <!-- <template>
                         <div class="container">
@@ -232,16 +240,16 @@
                                 id="message"
                                 class="form-field"
                                 name="message"
-                              ></textarea>
-                              <input
-                                class="form-button"
-                                type="submit"
-                                value="Send message"
-                              />
-                            </form>
+                              ></textarea> -->
+                      <!-- <input
+                        class="form-button"
+                        type="submit"
+                        value="Send message"
+                      /> -->
+                      <!-- </form>
                           </div>
                         </div>
-                      </template> -->
+                      </template>  -->
                     </div>
                   </div>
                 </div>
