@@ -117,58 +117,131 @@
                       <base-input class="mb-4">
                         <div class="form-group">
                           <input
-                            id="name"
+                            id="Vorname"
                             type="text"
                             class="form-control"
                             required
                           />
-                          <label class="form-control-placeholder" for="name"
-                            >Name</label
+                          <label class="form-control-placeholder" for="Vorname"
+                            >Vorname</label
                           >
                         </div>
                       </base-input>
 
                       <base-input class="mb-4">
                         <div class="form-group">
-                          <textarea
-                            id="name"
+                          <input
+                            id="Nachname"
                             type="text"
                             class="form-control"
                             required
                           />
-                          <label class="form-control-placeholder" for="name"
-                            >Name</label
+                          <label class="form-control-placeholder" for="Nachname"
+                            >Nachname</label
                           >
                         </div>
                       </base-input>
 
                       <base-input class="mb-4">
                         <div class="form-group">
+                          <input
+                            id="E-Mail-Adresse"
+                            type="text"
+                            class="form-control"
+                            required
+                          />
+                          <label
+                            class="form-control-placeholder"
+                            for="E-Mail-Adresse"
+                            >E-Mail-Adresse</label
+                          >
+                        </div>
+                      </base-input>
+                      <input type="hidden" name="form-name" value="contact" />
+                      <p class="hidden">
+                        <label>Subject <input name="bot-field"/></label>
+                      </p>
+                      <base-input class="mb-4">
+                        <div class="form-group">
                           <textarea
-                            id="name"
+                            id="Nachricht"
                             type="text"
                             required
                             class="form-control form-control-alternative"
-                            name="name"
+                            name="Nachricht"
                             rows="4"
                             cols="80"
                           />
-                          <label class="form-control-placeholder" for="name"
-                            >Name</label
+                          <label
+                            class="form-control-placeholder"
+                            for="Nachricht"
+                            >Nachricht</label
                           >
                         </div>
                       </base-input>
 
-                      <base-button
+                      <!-- <input
                         class="form-button"
                         type="submit"
                         value="Send message"
+                      /> -->
+
+                      <base-button
+                        class="btn btn-primary"
                         round
                         block
                         size="lg"
+                        type="submit"
                       >
                         Senden
                       </base-button>
+
+                      <!-- <base-button type="submit" round block size="lg">
+                        Senden
+                      </base-button> -->
+
+                      <!-- <template>
+                        <div class="container">
+                          <h1 class="title">
+                            Contact
+                          </h1>
+                          <div class="content">
+                            <form
+                              name="contact"
+                              action="/thank-you"
+                              netlify-honeypot="bot-field"
+                              method="post"
+                              netlify
+                            >
+                              <label class="form-label" for="name">
+                                Name:
+                              </label>
+                              <input id="name" class="form-field" name="name" />
+                              <label class="form-label" for="email">
+                                Email:
+                              </label>
+                              <input
+                                id="email"
+                                class="form-field"
+                                name="email"
+                              />
+                              <label class="form-label" for="message">
+                                Message:
+                              </label>
+                              <textarea
+                                id="message"
+                                class="form-field"
+                                name="message"
+                              ></textarea>
+                              <input
+                                class="form-button"
+                                type="submit"
+                                value="Send message"
+                              />
+                            </form>
+                          </div>
+                        </div>
+                      </template> -->
                     </div>
                   </div>
                 </div>
@@ -437,6 +510,10 @@ export default {
   transform: translate3d(0, -100%, 0);
   opacity: 1;
 }
+
+/* .hidden {
+  visibility: hidden;
+} */
 
 @media (min-width: 992px) {
   .navbar-main {
