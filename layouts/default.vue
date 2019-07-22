@@ -113,7 +113,8 @@
               >
                 <div class="container my-5">
                   <div class="row">
-                    <div class="">
+                    <div class="col-lg-12">
+                      <p>Alle Felder sind Pflichtfelder</p>
                       <ValidationProvider name="Vorname" rules="required|alpha">
                         <template #default="{ errors }">
                           <div class="form-group">
@@ -130,14 +131,17 @@
                             <label
                               class="form-control-placeholder"
                               for="Vorname"
-                              >Vorname</label
+                              >Vorname *</label
                             >
                             <div class="invalid-feedback">{{ errors[0] }}</div>
                           </div>
                         </template>
                       </ValidationProvider>
 
-                      <ValidationProvider name="Nachname" rules="required|alpha">
+                      <ValidationProvider
+                        name="Nachname"
+                        rules="required|alpha"
+                      >
                         <template #default="{ errors }">
                           <div class="form-group">
                             <input
@@ -153,7 +157,7 @@
                             <label
                               class="form-control-placeholder"
                               for="Nachname"
-                              >Nachname</label
+                              >Nachname *</label
                             >
                             <div class="invalid-feedback">{{ errors[0] }}</div>
                           </div>
@@ -179,17 +183,33 @@
                             <label
                               class="form-control-placeholder"
                               for="E-Mail-Adresse"
-                              >E-Mail-Adresse</label
+                              >E-Mail-Adresse *</label
                             >
                             <div class="invalid-feedback">{{ errors[0] }}</div>
                           </div>
                         </template>
                       </ValidationProvider>
 
-                      <input type="hidden" name="form-name" value="contact" />
-                      <p class="hidden">
-                        <label>Subject <input name="bot-field"/></label>
-                      </p>
+                      <ValidationProvider name="Subject" class="subject">
+                        <template #default="{ errors }">
+                          <div class="form-group">
+                            <input
+                              id="Subject"
+                              v-model="email"
+                              name="Subject"
+                              class="form-control"
+                              type="email"
+                              placeholder=" "
+                            />
+                            <label
+                              class="form-control-placeholder"
+                              for="Subject"
+                              >Subject *</label
+                            >
+                            <div class="invalid-feedback">{{ errors[0] }}</div>
+                          </div>
+                        </template>
+                      </ValidationProvider>
 
                       <ValidationProvider
                         name="Nachricht"
@@ -206,11 +226,13 @@
                               type="text"
                               placeholder=" "
                               required
+                              rows="4"
+                              cols="80"
                             />
                             <label
                               class="form-control-placeholder"
                               for="Nachricht"
-                              >Nachricht</label
+                              >Nachricht *</label
                             >
                             <div class="invalid-feedback">{{ errors[0] }}</div>
                           </div>
@@ -511,9 +533,9 @@ input:not(:placeholder-shown) + .form-control-placeholder {
   /* opacity: 1; */
 }
 
-/* .hidden {
-  visibility: hidden;
-} */
+.subject {
+  display: none;
+}
 
 @media (min-width: 992px) {
   .navbar-main {
