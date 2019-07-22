@@ -115,20 +115,23 @@
                   <div class="row">
                     <div class="">
                       <base-input class="mb-4">
+                        <label class="form-control-placeholder" for="Vorname"
+                          >Vorname</label
+                        >
                         <div class="form-group">
                           <input
                             id="Vorname"
                             type="text"
-                            class="form-control"
+                            class="form-control is-invalid"
                             required
                           />
-                          <label class="form-control-placeholder" for="Vorname"
-                            >Vorname</label
-                          >
+                          <div class="invalid-feedback">
+                            Please provide a valid city.
+                          </div>
                         </div>
                       </base-input>
 
-                      <base-input class="mb-4">
+                      <base-input class="mb-4" :valid="true" :sucess="true">
                         <div class="form-group">
                           <input
                             id="Nachname"
@@ -142,11 +145,40 @@
                         </div>
                       </base-input>
 
+                      <ValidationProvider
+                        name="E-Mail-Adresse"
+                        rules="required|email"
+                      >
+                        <template #default="{ errors }">
+                          <base-input class="mb-4">
+                            <div class="form-group">
+                              <label
+                                class="form-control-placeholder"
+                                for="E-Mail-Adresse"
+                                >E-Mail-Adresse</label
+                              >
+                              <input
+                                id="E-Mail-Adresse"
+                                v-model="email"
+                                type="text"
+                                class="form-control is-invalid"
+                                required
+                              />
+                            </div>
+                            <div class="invalid-feedback">
+                              Please provide a valid city.
+
+                              <!-- <p>{{ errors[0] }}</p> -->
+                            </div>
+                          </base-input>
+                        </template>
+                      </ValidationProvider>
+
                       <base-input class="mb-4">
                         <div class="form-group">
                           <input
                             id="E-Mail-Adresse"
-                            type="text"
+                            type="email"
                             class="form-control"
                             required
                           />
@@ -179,26 +211,6 @@
                           >
                         </div>
                       </base-input>
-                      <!-- 
-                      <base-button
-                        class="btn btn-primary"
-                        round
-                        block
-                        size="lg"
-                        type="submit"
-                      >
-                      </base-button>
-                      <input
-                        class="form-button"
-                        type="submit"
-                        value="Send message"
-                      />
-
-                      Senden
-
-                      <base-button type="submit" round block size="lg">
-                        Senden
-                      </base-button> -->
 
                       <button
                         class="btn btn-primary btn-lg btn-block"
@@ -207,53 +219,62 @@
                       >
                         Senden
                       </button>
-
-                      <!-- <template>
-                        <div class="container">
-                          <h1 class="title">
-                            Contact
-                          </h1>
-                          <div class="content">
-                            <form
-                              name="contact"
-                              action="/thank-you"
-                              netlify-honeypot="bot-field"
-                              method="post"
-                              netlify
-                            >
-                              <label class="form-label" for="name">
-                                Name:
-                              </label>
-                              <input id="name" class="form-field" name="name" />
-                              <label class="form-label" for="email">
-                                Email:
-                              </label>
-                              <input
-                                id="email"
-                                class="form-field"
-                                name="email"
-                              />
-                              <label class="form-label" for="message">
-                                Message:
-                              </label>
-                              <textarea
-                                id="message"
-                                class="form-field"
-                                name="message"
-                              ></textarea> -->
-                      <!-- <input
-                        class="form-button"
-                        type="submit"
-                        value="Send message"
-                      /> -->
-                      <!-- </form>
-                          </div>
-                        </div>
-                      </template>  -->
                     </div>
                   </div>
                 </div>
               </form>
+
+              <!-- <base-input class="mb-4"> -->
+
+              <!-- <div class="form-group">
+                <input
+                  v-validate="'required'"
+                  name="myinput"
+                  type="email"
+                  class="form-control"
+                />
+
+                <span v-show="errors.has('myinput')" class="help is-danger">{{
+                  errors.first('myinput')
+                }}</span>
+
+                <label class="form-control-placeholder" for="E-Mail-Adresse"
+                  >E-Mail-Adresse</label
+                >
+              </div> -->
+              <!-- </base-input> -->
+
+              <!-- <base-input class="mb-4"> -->
+              <ValidationProvider name="email" rules="required|email">
+                <template #default="{ errors }">
+                  <div class="form-group">
+                    <input
+                      id="E-Mail-Adresse"
+                      v-model="email"
+                      v-validate="required"
+                      name="myinput"
+                      class="form-control"
+                      type="email"
+                      placeholder=" "
+                      required
+                    />
+                    <label class="form-control-placeholder" for="E-Mail-Adresse"
+                      >E-Mail-Adresse</label
+                    >
+                    <p>{{ errors[0] }}</p>
+                    <!-- <div class="invalid-feedback">
+                      Please provide a valid city.
+                    </div> -->
+                  </div>
+                </template>
+              </ValidationProvider>
+
+              <ValidationProvider name="email" rules="required|email">
+                <template #default="{ errors }">
+                  <input v-model="email" />
+                  <p>{{ errors[0] }}</p>
+                </template>
+              </ValidationProvider>
             </card>
           </div>
         </div>
@@ -393,6 +414,23 @@ import BaseDropdown from '~/components/argon/BaseDropdown'
 import CloseButton from '~/components/argon/CloseButton'
 import { headroom } from 'vue-headroom'
 import VueFriendlyIframe from 'vue-friendly-iframe'
+import Vue from 'vue'
+import de from 'vee-validate/dist/locale/de'
+// import ValidationProvider from 'vee-validate'
+// Vue.use(ValidationProvider, {
+// validity: true
+// })
+import { ValidationProvider } from 'vee-validate'
+import { Validator } from 'vee-validate'
+Validator.localize(de)
+import VeeValidate from 'vee-validate'
+Vue.use(VeeValidate, {
+  classes: true,
+  classNames: {
+    valid: 'is-valid',
+    invalid: 'is-invalid'
+  }
+})
 
 export default {
   components: {
@@ -400,7 +438,8 @@ export default {
     CloseButton,
     BaseDropdown,
     headroom,
-    VueFriendlyIframe
+    VueFriendlyIframe,
+    ValidationProvider
   },
   data() {
     return {
@@ -509,14 +548,14 @@ export default {
   top: 0;
   padding: 7px 0 0 13px;
   transition: all 200ms;
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 .form-control:focus + .form-control-placeholder,
-.form-control:valid + .form-control-placeholder {
+input:not(:placeholder-shown) + .form-control-placeholder {
   font-size: 75%;
   transform: translate3d(0, -100%, 0);
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 /* .hidden {

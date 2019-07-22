@@ -59,6 +59,17 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
+    [
+      'nuxt-validate',
+      {
+        lang: 'de'
+        // classes: true,
+        // classNames: {
+        //   valid: 'is-valid',
+        //   invalid: 'is-invalid'
+        // }
+      }
+    ],
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://bootstrap-vue.js.org/docs/
