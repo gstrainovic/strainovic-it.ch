@@ -107,7 +107,7 @@
               <form
                 name="Strainovic-it.ch Kontakt"
                 action="/thank-you"
-                netlify-honeypot="bot-field"
+                netlify-honeypot="subject"
                 method="post"
                 netlify
               >
