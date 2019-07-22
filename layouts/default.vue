@@ -114,103 +114,108 @@
                 <div class="container my-5">
                   <div class="row">
                     <div class="">
-                      <base-input class="mb-4">
-                        <label class="form-control-placeholder" for="Vorname"
-                          >Vorname</label
-                        >
-                        <div class="form-group">
-                          <input
-                            id="Vorname"
-                            type="text"
-                            class="form-control is-invalid"
-                            required
-                          />
-                          <div class="invalid-feedback">
-                            Please provide a valid city.
+                      <ValidationProvider name="Vorname" rules="required|alpha">
+                        <template #default="{ errors }">
+                          <div class="form-group">
+                            <input
+                              id="Vorname"
+                              v-model="alpha"
+                              v-validate="'alpha'"
+                              name="Vorname"
+                              class="form-control"
+                              type="alpha"
+                              placeholder=" "
+                              required
+                            />
+                            <label
+                              class="form-control-placeholder"
+                              for="Vorname"
+                              >Vorname</label
+                            >
+                            <div class="invalid-feedback">{{ errors[0] }}</div>
                           </div>
-                        </div>
-                      </base-input>
+                        </template>
+                      </ValidationProvider>
 
-                      <base-input class="mb-4" :valid="true" :sucess="true">
-                        <div class="form-group">
-                          <input
-                            id="Nachname"
-                            type="text"
-                            class="form-control"
-                            required
-                          />
-                          <label class="form-control-placeholder" for="Nachname"
-                            >Nachname</label
-                          >
-                        </div>
-                      </base-input>
+                      <ValidationProvider name="Nachname" rules="required|alpha">
+                        <template #default="{ errors }">
+                          <div class="form-group">
+                            <input
+                              id="Nachname"
+                              v-model="alpha"
+                              v-validate="'alpha'"
+                              name="Nachname"
+                              class="form-control"
+                              type="alpha"
+                              placeholder=" "
+                              required
+                            />
+                            <label
+                              class="form-control-placeholder"
+                              for="Nachname"
+                              >Nachname</label
+                            >
+                            <div class="invalid-feedback">{{ errors[0] }}</div>
+                          </div>
+                        </template>
+                      </ValidationProvider>
 
                       <ValidationProvider
                         name="E-Mail-Adresse"
                         rules="required|email"
                       >
                         <template #default="{ errors }">
-                          <base-input class="mb-4">
-                            <div class="form-group">
-                              <label
-                                class="form-control-placeholder"
-                                for="E-Mail-Adresse"
-                                >E-Mail-Adresse</label
-                              >
-                              <input
-                                id="E-Mail-Adresse"
-                                v-model="email"
-                                type="text"
-                                class="form-control is-invalid"
-                                required
-                              />
-                            </div>
-                            <div class="invalid-feedback">
-                              Please provide a valid city.
-
-                              <!-- <p>{{ errors[0] }}</p> -->
-                            </div>
-                          </base-input>
+                          <div class="form-group">
+                            <input
+                              id="E-Mail-Adresse"
+                              v-model="email"
+                              v-validate="required"
+                              name="E-Mail-Adresse"
+                              class="form-control"
+                              type="email"
+                              placeholder=" "
+                              required
+                            />
+                            <label
+                              class="form-control-placeholder"
+                              for="E-Mail-Adresse"
+                              >E-Mail-Adresse</label
+                            >
+                            <div class="invalid-feedback">{{ errors[0] }}</div>
+                          </div>
                         </template>
                       </ValidationProvider>
 
-                      <base-input class="mb-4">
-                        <div class="form-group">
-                          <input
-                            id="E-Mail-Adresse"
-                            type="email"
-                            class="form-control"
-                            required
-                          />
-                          <label
-                            class="form-control-placeholder"
-                            for="E-Mail-Adresse"
-                            >E-Mail-Adresse</label
-                          >
-                        </div>
-                      </base-input>
                       <input type="hidden" name="form-name" value="contact" />
                       <p class="hidden">
                         <label>Subject <input name="bot-field"/></label>
                       </p>
-                      <base-input class="mb-4">
-                        <div class="form-group">
-                          <textarea
-                            id="Nachricht"
-                            type="text"
-                            required
-                            class="form-control form-control-alternative"
-                            name="Nachricht"
-                            rows="4"
-                            cols="80"
-                          />
-                          <label
-                            class="form-control-placeholder"
-                            for="Nachricht"
-                            >Nachricht</label
-                          >
-                        </div>
-                      </base-input>
+
+                      <ValidationProvider
+                        name="Nachricht"
+                        rules="required|text"
+                      >
+                        <template #default="{ errors }">
+                          <div class="form-group">
+                            <textarea
+                              id="Nachricht"
+                              v-model="text"
+                              v-validate="required"
+                              name="Nachricht"
+                              class="form-control"
+                              type="text"
+                              placeholder=" "
+                              required
+                            />
+                            <label
+                              class="form-control-placeholder"
+                              for="Nachricht"
+                              >Nachricht</label
+                            >
+                            <div class="invalid-feedback">{{ errors[0] }}</div>
+                          </div>
+                        </template>
+                      </ValidationProvider>
 
                       <button
                         class="btn btn-primary btn-lg btn-block"
@@ -223,58 +228,6 @@
                   </div>
                 </div>
               </form>
-
-              <!-- <base-input class="mb-4"> -->
-
-              <!-- <div class="form-group">
-                <input
-                  v-validate="'required'"
-                  name="myinput"
-                  type="email"
-                  class="form-control"
-                />
-
-                <span v-show="errors.has('myinput')" class="help is-danger">{{
-                  errors.first('myinput')
-                }}</span>
-
-                <label class="form-control-placeholder" for="E-Mail-Adresse"
-                  >E-Mail-Adresse</label
-                >
-              </div> -->
-              <!-- </base-input> -->
-
-              <!-- <base-input class="mb-4"> -->
-              <ValidationProvider name="email" rules="required|email">
-                <template #default="{ errors }">
-                  <div class="form-group">
-                    <input
-                      id="E-Mail-Adresse"
-                      v-model="email"
-                      v-validate="required"
-                      name="myinput"
-                      class="form-control"
-                      type="email"
-                      placeholder=" "
-                      required
-                    />
-                    <label class="form-control-placeholder" for="E-Mail-Adresse"
-                      >E-Mail-Adresse</label
-                    >
-                    <p>{{ errors[0] }}</p>
-                    <!-- <div class="invalid-feedback">
-                      Please provide a valid city.
-                    </div> -->
-                  </div>
-                </template>
-              </ValidationProvider>
-
-              <ValidationProvider name="email" rules="required|email">
-                <template #default="{ errors }">
-                  <input v-model="email" />
-                  <p>{{ errors[0] }}</p>
-                </template>
-              </ValidationProvider>
             </card>
           </div>
         </div>
