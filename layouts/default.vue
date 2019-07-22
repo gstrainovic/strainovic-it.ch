@@ -200,6 +200,7 @@
                               class="form-control"
                               type="email"
                               placeholder=" "
+                              value="contact"
                             />
                             <label
                               class="form-control-placeholder"
