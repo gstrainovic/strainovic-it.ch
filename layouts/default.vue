@@ -111,6 +111,11 @@
                 method="post"
                 netlify
               >
+                <input
+                  type="hidden"
+                  name="form-name"
+                  value="Strainovic-it.ch Kontakt"
+                />
                 <div class="container my-5">
                   <div class="row">
                     <div class="col-lg-12">
