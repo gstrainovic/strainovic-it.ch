@@ -16,12 +16,12 @@ module.exports = {
         content:
           'width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=1, shrink-to-fit=no'
       },
-      {
-        hid: 'description',
-        name: 'description',
-        content:
-          'Webdesign, Programmierung & Marketing - Software, Homepage & Webseite erstellen und vermarkten lassen'
-      },
+      // {
+      //   hid: 'description',
+      //   name: 'description',
+      //   content:
+      //     'Webdesign, Programmierung & Marketing - Software, Homepage & Webseite erstellen und vermarkten lassen'
+      // },
       { name: 'author', content: 'Strainovic IT, Goran Strainovic' }
     ],
     link: [
