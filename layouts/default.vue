@@ -221,10 +221,7 @@
                         </template>
                       </ValidationProvider>
 
-                      <ValidationProvider
-                        name="Nachricht"
-                        rules="required|text"
-                      >
+                      <ValidationProvider name="Nachricht" rules="required">
                         <template #default="{ errors }">
                           <div class="form-group">
                             <textarea
@@ -542,7 +539,7 @@ export default {
 }
 
 .form-control:focus + .form-control-placeholder,
-input:not(:placeholder-shown) + .form-control-placeholder {
+*:not(:placeholder-shown) + .form-control-placeholder {
   font-size: 75%;
   transform: translate3d(0, -100%, 0);
   /* opacity: 1; */
