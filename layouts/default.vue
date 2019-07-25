@@ -67,7 +67,7 @@
       <div class="container pt-lg pb-300">
         <div class="row">
           <div class="col-lg-10">
-            <h2 class="display-3 text-white">
+            <h2 class="display-4 text-white">
               Wir freuen uns auf Ihre Kontaktaufnahme!
             </h2>
             <div class="row">
@@ -269,7 +269,7 @@
             <h3 class="text-primary font-weight-light mb-2">
               Vielen Dank für Ihre Unterstützung!
             </h3>
-            <h4 class="mb-0 font-weight-light">
+            <h4 class="pt-0 font-weight-light">
               Folgen Sie uns auf einer dieser Plattformen.
             </h4>
           </div>
@@ -332,7 +332,7 @@
         </div>
         <hr />
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 pt-4">
             <p>
               Strainovic IT<br />
               Bahnstrasse 9b<br />
@@ -345,15 +345,15 @@
           <!-- </div> -->
           <!-- <div class="row align-items-center justify-content-md-between"> -->
           <div class="col-md-9">
-            <ul class="nav nav-footer justify-content-end">
+            <ul class="nav nav-footer">
               <template v-for="x in links">
                 <li :key="x.index" class="nav-item mr-3">
-                  <h5 class="nav-link">{{ x.menu }}</h5>
+                  <h5 class="nav-link pl-0 pt-4">{{ x.menu }}</h5>
                   <a
                     v-for="s in x.submenu"
                     :key="s.index"
                     :href="s.link"
-                    class="nav-link"
+                    class="nav-link pl-0"
                     >{{ s.name }}</a
                   >
                 </li>
@@ -361,12 +361,12 @@
 
               <template v-for="xx in rechtliches">
                 <li :key="xx.index" class="nav-item mr-3">
-                  <h5 class="nav-link">{{ xx.menu }}</h5>
+                  <h5 class="nav-link pl-0 pt-4">{{ xx.menu }}</h5>
                   <nuxt-link
                     v-for="s in xx.submenu"
                     :key="s.index"
                     :to="s.link"
-                    class="nav-link"
+                    class="nav-link pl-0"
                     >{{ s.name }}</nuxt-link
                   >
 
@@ -375,7 +375,7 @@
                       v-for="s in xxx.submenu"
                       :key="s.index"
                       :href="s.link"
-                      class="nav-link"
+                      class="nav-link pl-0"
                       >{{ s.name }}</a
                     >
                   </template>

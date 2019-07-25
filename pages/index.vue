@@ -28,7 +28,7 @@
         <div class="row mb-lg mt-5">
           <div class="col-md-7 order-md-1">
             <div class="pr-md-5">
-              <h2 class="display-5">
+              <h2 class="display-4">
                 Alle IT Dienstleistungen für Private, Startup, KMU, GmbH, AG
                 oder Einzelfirma aus einer Hand.
               </h2>
@@ -60,7 +60,7 @@
             </p>
           </div>
           <div class="col-lg-6">
-            <h2 class="display-3">Projektpanung & Projekt&shy;management</h2>
+            <h2 class="display-3">Projektplanung & Projekt&shy;management</h2>
             <p class="lead ">
               Gerne arbeiten wir mit Ihrem Team zusammen und übernehmen, falls
               gewünscht die ganze Planung und Koordination bis zum erfolgreichen
@@ -133,7 +133,7 @@
       <div class="container pt-lg pb-100">
         <div class="row">
           <div class="col-lg-6">
-            <h2 class="display-1 text-white">Software & Apps</h2>
+            <h2 class="display-3 text-white">Software & Apps</h2>
             <h3 class="display-4 text-white">Programmierung & Optimierung</h3>
             <p class="lead text-white">
               Zusammen untersuchen wir den gesamten Informationsfluss Ihres
@@ -229,15 +229,15 @@
             <!-- <icon name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon> -->
             <h4 class="text-white mt-3">Plugins</h4>
             <p class="text-white mt-3">
-              Wir erweitern Ihre bestende Software durch kombinieren oder
-              neuprogrammieren von Plugins, Module und Erweierungen
+              Wir erweitern Ihre bestehende Software durch kombinieren oder
+              programmieren von Plugins, Module und Erweiterungen
             </p>
           </div>
           <div class="col-lg-6">
             <!-- <icon name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon> -->
             <h4 class="text-white mt-3">Schnittstellen</h4>
             <p class="text-white mt-3">
-              Bestehende Schnittstellen, API's werden genutzt, erweitert oder
+              Bestehende Schnittstellen, API´s werden genutzt, erweitert oder
               neu programmiert.
             </p>
           </div>
@@ -246,9 +246,9 @@
             <h4 class="text-white mt-3">Frontendautomatisierung</h4>
             <p class="text-white mt-3">
               Ist ein Zugriff auf Schnittstellen oder Datenbanken nicht möglich,
-              können wir trotzdem Ihre Produktivität steigern indem wir einfach
-              von der Benutzeroberfläche auf diese Programme mit z.B AutoIt, VBA
-              zugreifen und so optimieren
+              können wir trotzdem Ihre Produktivität steigern, indem wir einfach
+              von der Benutzeroberfläche auf diese Programme mit z. B AutoIt,
+              VBA zugreifen und so optimieren
             </p>
           </div>
           <div class="col-lg-6">
@@ -280,10 +280,10 @@
           </div>
           <div class="col-md-8 order-md-1">
             <div class="pr-md-5">
-              <h2 class="display-1">Webdesign & Programmierung</h2>
-              <h3 class="display-5">
+              <h2 class="display-3">Webdesign & Programmierung</h2>
+              <h3 class="display-4">
                 Webshop, Webportal, Web-App, Homepage, Website & Webseite
-                erstellen lassen .
+                erstellen lassen.
               </h3>
               <p class="lead">
                 Konzentrieren Sie sich auf Ihr Business und überlassen Sie uns
@@ -404,7 +404,7 @@
           <div class="col-md-6 mt-4">
             <div class="d-flex align-items-center">
               <!-- <badge type="success" circle class="mr-3" icon="ni ni-satisfied"></badge> -->
-              <h4 class="mb-0">Impresssum & Datenschutzerklärung</h4>
+              <h4 class="mb-0">Impressum & Datenschutzerklärung</h4>
             </div>
             <p>
               Ihr Impressum & Datenschutzerklärung wird auf dem neuesten Stand
@@ -445,8 +445,8 @@
               Ein kurzes E-Mail oder Anruf genügt und Ihre Inhalte werden
               aktualisiert oder Ihr Problem wird behoben. Sie möchten lieber
               selber Ihr Webcontent anpassen? Dank benutzerfreundliche CMS wie
-              z.B WordPress ist dies nach einer kurzen Schulung kein Problem für
-              Sie.
+              z. B. WordPress ist dies nach einer kurzen Schulung kein Problem
+              für Sie.
             </p>
           </div>
         </div>
@@ -458,7 +458,7 @@
             </div>
             <p>
               Ihre Webseite erstellen wir gerne mit WordPress oder andere CMS
-              wie z.B Grav, so können Sie selber Inhalte pflegen.
+              wie z. B. Grav, so können Sie selber Inhalte pflegen.
             </p>
           </div>
           <div class="col-md-6 mt-4">
@@ -466,10 +466,10 @@
               <h4 class="mb-0">Statische Webseite</h4>
             </div>
             <p>
-              Sie möchten die aktualisierung ihrer Webseite uns überlassen und
+              Sie möchten die Aktualisierung ihrer Webseite uns überlassen und
               wünschen eine besonders schnelle und sichere Webseite? Ihre
-              Webseite erstellen wir dann mit Technologien wie z.B HTML5, CSS3,
-              Bootstrap, Vue & Nuxt, React & Gatsby
+              Webseite erstellen wir dann mit Technologien wie z. B. HTML5,
+              CSS3, Bootstrap, Vue & Nuxt, React & Gatsby
             </p>
           </div>
           <div class="col-md-6 mt-4">
@@ -477,10 +477,10 @@
               <h4 class="mb-0">Headless CMS</h4>
             </div>
             <p>
-              Dank unserem KnowHow müssen Sie nicht zwichen Geschwindigkeit und
-              Benutzerfreundlichkeit entscheiden. Ihre Wesbseite erstellen wir
-              im Frontend mit HTML5, CSS3, Bootstrap und Vue & Nuxt oder React &
-              Gatsby. Und im Backend mit einem Headless CMS wie z.B Strapi.
+              Dank unserem KnowHow müssen Sie nicht zwischen Geschwindigkeit und
+              Benutzerfreundlichkeit entscheiden. Ihre Webseite erstellen wir im
+              Frontend mit HTML5, CSS3, Bootstrap und Vue & Nuxt oder React &
+              Gatsby. Und im Backend mit einem Headless CMS wie z. B. Strapi.
             </p>
           </div>
           <div class="col-md-6 mt-4">
@@ -489,7 +489,7 @@
             </div>
             <p>
               Dank einfach zu benutzende, und gut erweiterbare Shopsoftware wie
-              z.B WooCommerce, Shopware erstellen wir kostengünstig Ihren
+              z. B. WooCommerce, Shopware erstellen wir kostengünstig Ihren
               eigenen Shop.
             </p>
           </div>
@@ -500,9 +500,9 @@
             <p>
               Komplexe Webanwendungen, Webapplikationen, Portale programmieren
               und designen wir im Frontend mit HTML, CSS3, Bootstrap und React
-              oder Vue, und im Backend mit z.B Headless CMS, Node, PHP, Python
-              und als Datenbanken z.B SQL wie MySQL, MariaDB oder NoSQL wie z.B
-              MongoDB.
+              oder Vue, und im Backend mit z. B. Headless CMS, Node, PHP, Python
+              und als Datenbanken z. B. SQL wie MySQL, MariaDB oder NoSQL wie z.
+              B. MongoDB.
             </p>
           </div>
         </div>
@@ -543,7 +543,7 @@
             <h4 class="text-white mt-3">Design von Grafiken & Printmedien</h4>
             <p class="text-white mt-3">
               Wir helfen Ihnen lokal und offline Ihre Bekanntheit zu steigern,
-              inden wir Ihre Visitenkarten, Flyer, Broschüren, Prospekte und
+              indem wir Ihre Visitenkarten, Flyer, Broschüren, Prospekte und
               Infografiken designen und bei unserem Partner drucken lassen.
             </p>
           </div>
@@ -551,12 +551,12 @@
             <!-- <icon name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon> -->
             <h4 class="text-white mt-3">SEM - Search Engine Marketing</h4>
             <p class="text-white mt-3">
-              Wir beraten und unterstützen Sie bei der Onine Marketing über die
+              Wir beraten und unterstützen Sie bei der Online Marketing über die
               Suchmaschine Google. Unser Ziel ist es das Sie dort gut gefunden
               werden, und daher auf der ersten Seite, oben bei den gut
               Platzierten Suchresultaten. Dazu setzen wir auf Content, Google
               SEO, Google Adwords, Google Business, Google Maps und verwenden
-              alle für Sie optimalen Socialen Kanäle wie Facebook, Instagram,
+              alle für Sie optimalen sozialen Kanäle wie Facebook, Instagram,
               Twitter, Youtube.
             </p>
           </div>
@@ -566,7 +566,7 @@
               Erstellung und Beschaffung von Onine Content
             </h4>
             <p class="text-white mt-3">
-              Mit dem optimalem Design z.B Ihrer Webseite und Marketing ist es
+              Mit dem optimalem Design z. B. Ihrer Webseite und Marketing ist es
               noch nicht getan. Ohne überzeugenden Webseiteninhalt, locken Sie
               zwar (erschwert) Besucher an, generieren jedoch daraus keine
               Kunden. Wir helfen Ihnen durch spannende Webinhalte Besucher von
@@ -582,9 +582,9 @@
             <p class="text-white mt-3">
               Gerne unterstützen wir Sie auch bei der Datenbeschaffung für Ihr
               Marketing. Egal ob Adressen, Branchenverzeichnisse,
-              Konkurenzvergleiche, wir helfen Ihnen bei der Beschafung mit
+              Konkurrenzvergleiche, wir helfen Ihnen bei der Beschaffung mit
               manuellem Google Research, Spider/Crawler/Bot oder durch unser
-              Netzwerk an Parntern und Schnittstellen.
+              Netzwerk an Partnern und Schnittstellen.
             </p>
           </div>
         </div>
