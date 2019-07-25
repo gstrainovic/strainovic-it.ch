@@ -79,12 +79,16 @@
                   Bahnstrasse 9b<br />
                   CH 9323 Steinach<br />
                   Kanton St.Gallen SG<br />
-                  +41 79 411 71 77<br />
-                  <a href="mailto:info@strainovic-it.ch"
-                    >info@strainovic-it.ch</a
+                  Schweiz<br />
+                  <a href="tel:+41794117177">
+                    <i class="ni ni-mobile-button"></i> +41 79 411 71 77<br />
+                  </a>
+                  <a href="mailto:info@strainovic-it.ch">
+                    <i class="ni ni-email-83"></i> info@strainovic-it.ch</a
                   >
                 </p>
               </div>
+
               <div class="col-md-5 mt-5">
                 <VueFriendlyIframe
                   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDUUYNFXEhy1raQAPrhYCdSCttMLgMsxls      &q=Strainovic IT"
@@ -338,8 +342,13 @@
               Bahnstrasse 9b<br />
               CH 9323 Steinach<br />
               Kanton St.Gallen SG<br />
-              +41 79 411 71 77<br />
-              <a href="mailto:info@strainovic-it.ch">info@strainovic-it.ch</a>
+              Schweiz<br />
+              <a href="tel:+41794117177">
+                <i class="ni ni-mobile-button"></i> +41 79 411 71 77<br />
+              </a>
+              <a href="mailto:info@strainovic-it.ch">
+                <i class="ni ni-email-83"></i> info@strainovic-it.ch</a
+              >
             </p>
           </div>
           <!-- </div> -->
@@ -450,7 +459,7 @@ export default {
         },
         {
           menu: 'Über uns',
-          link: '/ueber/##',
+          link: '##',
           icon: 'ni ni-single-02',
           submenu: [
             {

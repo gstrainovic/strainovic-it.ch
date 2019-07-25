@@ -33,14 +33,14 @@
             <h2 class="display-3">Über Strainovic IT</h2>
             <h3 class="lead">
               Strainovic IT wurde 2016 gegründet, befindet sich in Steinach im
-              Kanton St.Gallen SG an der Ostschweiz am Bodensee, und bietet alle
-              digitale Dienstleistungen für die Informationstechnolgie, auch
+              Kanton St.Gallen SG an der Ostschweiz am Bodensee und bietet alle
+              digitale Dienstleistungen für die Informationstechnologie, auch
               bekannt als IT oder ICT an, wie z. B:
             </h3>
             <ul>
               <br />
               <li>Analyse & Beratung</li>
-              <li>Projektplanung & Projektmanagment</li>
+              <li>Projektplanung & Projektmanagement</li>
               <li>Installation & Konfiguration</li>
               <li>Design & Programmierung</li>
               <li>Tests</li>
@@ -50,7 +50,7 @@
               <li>Automation</li>
             </ul>
             <h3 class="lead ">
-              Wir untestützen sowohl Private auch als KMU, Firmen, Start-ups,
+              Wir unterstützen sowohl private auch als KMU, Firmen, Start-ups,
               AG, GmbH bei allen digitalen Herausforderungen, wie z.B:
             </h3>
           </div>
@@ -80,7 +80,7 @@
               </ul>
               <li>Headless CMS mit z. B: Strapi</li>
               <li>Webportale</li>
-              <li>Webapps und Webbapplikationen mit z. B:</li>
+              <li>Webapps und Webapplikationen mit z. B:</li>
               <ul>
                 <li>React</li>
                 <li>Vue</li>
@@ -91,7 +91,7 @@
             <ul>
               <h4>Mobile & Tablet</h4>
               <li>Apps für Android Smartphones</li>
-              <li>Apps für iOS,iPad, iPhone, Apple</li>
+              <li>Apps für iOS, iPad, iPhone, Apple</li>
               <br />
               <h4>Desktop & Server</h4>
               <li>Betriebssysteme wie z. B:</li>
@@ -101,7 +101,7 @@
               </ul>
               <li>Software, Programme</li>
               <li>
-                Office, VBA, Word, Excel, Access, Outlook, Email & Powerpoint
+                Office, VBA, Word, Excel, Access, Outlook, E-Mail & Powerpoint
               </li>
               <li>Plugins, Module, Bibliotheken & Erweiterungen</li>
             </ul>
@@ -121,7 +121,7 @@
               <h4>Videos</h4>
               <li>Videoschnitt</li>
               <li>Hosting auf eigenen Server</li>
-              <li>Hosting auf Youtube (kostenlos mit Werbung)</li>
+              <li>Hosting auf YouTube (kostenlos mit Werbung)</li>
               <li>Hosting auf Vimeo (kostenpflichtig ohne Werbung)</li>
             </ul>
           </div>
@@ -133,11 +133,11 @@
               <li>Google Business</li>
               <li>Google Maps</li>
               <br />
-              <h4>SMM Social Media Marketing</h4>
+              <h4>SMM Social-Media-Marketing</h4>
               <li>Facebook</li>
               <li>Instagram</li>
               <li>Twitter</li>
-              <li>Youtube</li>
+              <li>YouTube</li>
               <li>Chatbot</li>
             </ul>
           </div>
@@ -226,7 +226,7 @@
               <p class="lead mb-5">Deutsch, Englisch, Serbisch, Rumänisch</p>
               <h4 class="display-4 mt-5 text-white">Als Elektroniker</h4>
               <p class="lead mb-5">
-                Prüfen, Reparieren, Avor, Technischer Support von Elektronik
+                Prüfen, Reparieren, Avor, technischer Support von Elektronik
                 Baugruppen
               </p>
               <h4 class="display-4 text-white mt-5">
@@ -237,7 +237,7 @@
                 Managen, Schulen
               </p>
               <h4 class="display-4 mt-5 text-white">
-                Als Softwarentwickler & UI / UX Designer
+                Als Softwareentwickler & UI / UX Designer
               </h4>
               <p class="lead mb-5">
                 Designen, Programmieren, Installieren, Konfigurieren, Erweitern,
@@ -246,7 +246,7 @@
             </div>
           </div>
           <!-- </div> -->
-          <div class="row mt-5 text-white">
+          <div class="row container mt-5 text-white">
             <div class="col text-white">
               <ul>
                 <h4 class="text-white">Front-End</h4>
@@ -270,7 +270,7 @@
               </ul>
             </div>
           </div>
-          <div class="row mt-5 text-white">
+          <div class="row container mt-5 text-white">
             <div class="col mt-1">
               <ul>
                 <h4 class="text-white">Plattformen</h4>
@@ -279,7 +279,7 @@
                 <li>Ubuntu Server und andere Linux Distributionen</li>
                 <li>Docker</li>
                 <li>AWS - Amazon Web Service</li>
-                <li>GCP - Google Cloud Platform</li>
+                <li>GCP - Google Cloud Plattform</li>
                 <li>Strapi - Headless CMS</li>
               </ul>
             </div>

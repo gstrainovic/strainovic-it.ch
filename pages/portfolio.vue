@@ -484,7 +484,7 @@
             <h4 class="display-4 mt-5 ">Plugin</h4>
             <h5 class="display-5 mt-4 ">Österreichischer Hardwarehersteller</h5>
             <strong class="display-6 mt-3 ">Ziel</strong>
-            <p>Ticketplugin für Jira - Projektmanagmentsoftware</p>
+            <p>Ticketplugin für Jira - Projektmanagementsoftware</p>
             <strong class="display-6 mt-3 ">Technologien</strong>
             <p>Jira, Java</p>
 
@@ -495,7 +495,7 @@
             <strong class="display-6 mt-3 ">Technologien</strong>
             <p>Photoshop</p>
 
-            <h5 class="display-5 mt-4 ">Für schweizer Taxigeselschaften</h5>
+            <h5 class="display-5 mt-4 ">Für schweizer Taxigesellschaften</h5>
             <strong class="display-6 mt-3 ">Ziel</strong>
             <p>Redesign eines Taximeter App für Android</p>
             <strong class="display-6 mt-3 ">Technologien</strong>
@@ -567,7 +567,7 @@
               <h5 class="display-5 mt-5 text-white">Strainovic IT</h5>
               <strong class="display-6 mt-3 text-white">Ziel</strong>
               <p>
-                Durchforster einer Webseiten und ausfüllen von Formularfeldern.
+                Durchforsten einer Webseiten und ausfüllen von Formularfeldern.
                 Erstellt mit FSharp, Fsharp.Data ,Docker ,Canopy auf Google
                 Cloud Plattform.
               </p>
@@ -610,7 +610,7 @@
               </h5>
               <strong class="display-6 mt-3 text-white">Ziel</strong>
               <p>
-                Unbenötige Formularfelder in Shopware bei der Registrierung
+                Unbenötigte Formularfelder in Shopware bei der Registrierung
                 deaktivieren
               </p>
               <strong class="display-6 mt-3 text-white">Technologien</strong>
