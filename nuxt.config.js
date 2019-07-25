@@ -7,7 +7,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: pkg.name,
+    title: 'Strainovic-IT.ch',
     meta: [
       { charset: 'utf-8' },
       { name: 'X-UA-Compatible', content: 'IE=edge' },
@@ -16,8 +16,13 @@ module.exports = {
         content:
           'width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=1, shrink-to-fit=no'
       },
-      { hid: 'description', name: 'description', content: pkg.description },
-      { name: 'author', content: 'Creative Tim, Cristi Jora' }
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Webdesign, Programmierung & Marketing - Software, Homepage & Webseite erstellen und vermarkten lassen'
+      },
+      { name: 'author', content: 'Strainovic IT, Goran Strainovic' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
