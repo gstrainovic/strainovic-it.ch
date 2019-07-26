@@ -68,6 +68,7 @@ module.exports = {
   modules: [
     [
       'nuxt-validate',
+      '@nuxtjs/component-cache',
       {
         lang: 'de'
         // classes: true,
