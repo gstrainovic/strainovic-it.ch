@@ -101,7 +101,7 @@ module.exports = {
 
   webfontloader: {
     google: {
-      families: ['Open+Sans:300,400,600,700'] //Loads Lato font with weights 400 and 700
+      families: ['Open+Sans:300,400,600,700&display=swap'] //Loads Lato font with weights 400 and 700
     }
   },
 
