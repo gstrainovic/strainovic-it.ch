@@ -166,7 +166,10 @@
           </div>
           <div class="col-md-6 order-lg-2 ml-lg-auto">
             <div class="position-relative pl-md-5 mt-5">
-              <img src="/img/programmierung.svg" class="img-center img-fluid" />
+              <img
+                v-lazy="require('static/img/programmierung.svg')"
+                class="img-center img-fluid"
+              />
             </div>
           </div>
         </div>
@@ -277,7 +280,7 @@
         <div class="row row-grid ">
           <div class="col-md-4 order-md-2 m-auto">
             <img
-              v-lazy="require('/img/webdesign.png')"
+              v-lazy="require('static/img/webdesign.png')"
               class="img-fluid floating"
             />
           </div>
@@ -536,7 +539,10 @@
           </div>
           <div class="col-md-6 order-lg-2 ml-lg-auto">
             <div class="position-relative pl-md-5 mt-5">
-              <img src="/img/marketing.svg" class="img-center img-fluid" />
+              <img
+                v-lazy="require('static/img/marketing.svg')"
+                class="img-center img-fluid"
+              />
             </div>
           </div>
         </div>
