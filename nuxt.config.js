@@ -25,12 +25,12 @@ module.exports = {
       { name: 'author', content: 'Strainovic IT, Goran Strainovic' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'
-      }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      // {
+      //   rel: 'stylesheet',
+      //   href:
+      //     'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'
+      // }
     ]
   },
 
@@ -85,6 +85,7 @@ module.exports = {
       }
     ],
     '@nuxtjs/pwa',
+    'nuxt-webfontloader',
     '@nuxtjs/sitemap'
   ],
   /*
@@ -96,6 +97,12 @@ module.exports = {
 
   sitemap: {
     hostname: 'https://www.strainovic-it.ch'
+  },
+
+  webfontloader: {
+    google: {
+      families: ['Open+Sans:300,400,600,700'] //Loads Lato font with weights 400 and 700
+    }
   },
 
   /*

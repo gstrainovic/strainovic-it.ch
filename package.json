@@ -26,6 +26,7 @@
     "nouislider": "^12.1.0",
     "nuxt": "^2.8.1",
     "nuxt-validate": "^1.0.1",
+    "nuxt-webfontloader": "^1.1.0",
     "placekeeper": "^1.0.7",
     "strapi-sdk-javascript": "^0.3.1",
     "vee-validate": "^2.2.13",
