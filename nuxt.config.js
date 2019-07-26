@@ -1,4 +1,4 @@
-const pkg = require('./package')
+// const pkg = require('./package')
 
 module.exports = {
   mode: 'universal',
@@ -50,7 +50,7 @@ module.exports = {
    */
   css: [
     '~assets/argon/vendor/nucleo/css/nucleo.css',
-    '~assets/argon/vendor/font-awesome/css/font-awesome.css',
+    // '~assets/argon/vendor/font-awesome/css/font-awesome.css',
     '~assets/argon/scss/argon.scss',
     'bootstrap-vue/dist/bootstrap-vue.css'
   ],
