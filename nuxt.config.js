@@ -84,13 +84,18 @@ module.exports = {
         css: false
       }
     ],
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/sitemap'
   ],
   /*
    ** Axios module configuration
    */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+  },
+
+  sitemap: {
+    hostname: 'https://www.strainovic-it.ch'
   },
 
   /*
