@@ -50,7 +50,7 @@ module.exports = {
    */
   css: [
     '~assets/argon/vendor/nucleo/css/nucleo.css',
-    // '~assets/argon/vendor/font-awesome/css/font-awesome.css',
+    '~assets/argon/vendor/font-awesome/css/font-awesome.css',
     '~assets/argon/scss/argon.scss',
     'bootstrap-vue/dist/bootstrap-vue.css'
   ],
@@ -58,8 +58,10 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/argon/argon-kit'],
-
+  plugins: [
+    '~/plugins/argon/argon-kit'
+    // { src: '~/plugins/vue-lazyload', ssr: false }
+  ],
   /*
    ** Nuxt.js modules
    */

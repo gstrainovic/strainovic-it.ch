@@ -276,7 +276,10 @@
       <div class="container">
         <div class="row row-grid ">
           <div class="col-md-4 order-md-2 m-auto">
-            <img src="/img/webdesign.png" class="img-fluid floating" />
+            <img
+              v-lazy="require('/img/webdesign.png')"
+              class="img-fluid floating"
+            />
           </div>
           <div class="col-md-8 order-md-1">
             <div class="pr-md-5">
@@ -592,11 +595,23 @@
       </div>
     </section>
     <!-- <section class="section section-lg pt-lg-0 "> -->
+    <!-- <div class="col-md-4 order-md-2 m-auto">
+      <img
+        v-lazy="require('static/img/webdesign.png')"
+        class="img-fluid floating"
+      />
+    </div> -->
   </div>
 </template>
 
 <script>
-export default {}
+import Vue from 'vue'
+import VueLazyload from 'vue-lazyload'
+
+Vue.use(VueLazyload)
+export default {
+  VueLazyload
+}
 </script>
 
 <style>
