@@ -90,12 +90,12 @@
               </div>
 
               <div class="col-md-5 mt-5">
-                <VueFriendlyIframe
+                <!-- <VueFriendlyIframe
                   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDUUYNFXEhy1raQAPrhYCdSCttMLgMsxls      &q=Strainovic IT"
                   allowfullscreen
                   @load="onLoad"
-                  @document-load="onDocumentLoad"
-                ></VueFriendlyIframe>
+                  @document-load="onDocumentLoad"          
+                ></VueFriendlyIframe> -->
               </div>
             </div>
           </div>
@@ -400,7 +400,7 @@ import BaseNav from '~/components/argon/BaseNav'
 import BaseDropdown from '~/components/argon/BaseDropdown'
 import CloseButton from '~/components/argon/CloseButton'
 import { headroom } from 'vue-headroom'
-import VueFriendlyIframe from 'vue-friendly-iframe'
+// import VueFriendlyIframe from 'vue-friendly-iframe'
 import Vue from 'vue'
 import de from 'vee-validate/dist/locale/de'
 // import ValidationProvider from 'vee-validate'
