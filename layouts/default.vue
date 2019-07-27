@@ -80,6 +80,20 @@
                   CH 9323 Steinach<br />
                   Kanton St.Gallen SG<br />
                   Schweiz<br />
+                </p>
+                <p>
+                  <base-button
+                    tag="a"
+                    size="sm"
+                    type="primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://www.google.com/maps/place/Strainovic+IT/@47.5008767,9.4411352,17z/data=!3m1!4b1!4m5!3m4!1s0x479b1cf2d3e32e4f:0xb09b276dcd03f76c!8m2!3d47.5008767!4d9.4433292?hl=de"
+                    ><i class="ni ni-square-pin"></i> Auf Google Maps
+                    anzeigen</base-button
+                  >
+                </p>
+                <p>
                   <a href="tel:+41794117177">
                     <i class="ni ni-mobile-button"></i> +41 79 411 71 77<br />
                   </a>
@@ -140,7 +154,7 @@
                             <label
                               class="form-control-placeholder"
                               for="Vorname"
-                              >Vorname *</label
+                              ><i class="ni ni-single-02"></i> Vorname *</label
                             >
                             <div class="invalid-feedback">{{ errors[0] }}</div>
                           </div>
@@ -166,7 +180,7 @@
                             <label
                               class="form-control-placeholder"
                               for="Nachname"
-                              >Nachname *</label
+                              ><i class="ni ni-single-02"></i> Nachname *</label
                             >
                             <div class="invalid-feedback">{{ errors[0] }}</div>
                           </div>
@@ -192,7 +206,8 @@
                             <label
                               class="form-control-placeholder"
                               for="E-Mail-Adresse"
-                              >E-Mail-Adresse *</label
+                              ><i class="ni ni-email-83"></i> E-Mail-Adresse
+                              *</label
                             >
                             <div class="invalid-feedback">{{ errors[0] }}</div>
                           </div>
@@ -239,7 +254,8 @@
                             <label
                               class="form-control-placeholder"
                               for="Nachricht"
-                              >Nachricht *</label
+                              ><i class="ni ni-caps-small"></i> Nachricht
+                              *</label
                             >
                             <div class="invalid-feedback">{{ errors[0] }}</div>
                           </div>
@@ -251,6 +267,7 @@
                         round
                         type="submit"
                       >
+                        <i class="ni ni-send"></i>
                         Senden
                       </button>
                     </div>
