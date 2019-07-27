@@ -425,7 +425,7 @@ export default {
     CloseButton,
     BaseDropdown,
     headroom,
-    VueFriendlyIframe,
+    // VueFriendlyIframe,
     ValidationProvider
   },
   data() {
