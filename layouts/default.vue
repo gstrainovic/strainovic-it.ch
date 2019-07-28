@@ -267,6 +267,7 @@
             <a
               target="_blank"
               href="https://twitter.com/Strainovic_IT"
+              rel="noopener noreferrer"
               class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg"
               data-toggle="tooltip"
               title="Folge uns auf Twitter"
@@ -276,6 +277,7 @@
             <a
               target="_blank"
               href="https://www.facebook.com/StrainovicIT/"
+              rel="noopener noreferrer"
               class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg"
               data-toggle="tooltip"
               title="Like uns auf Facebook"
@@ -285,6 +287,7 @@
             <a
               target="_blank"
               href="https://www.instagram.com/strainovic_it/"
+              rel="noopener noreferrer"
               class="btn btn-neutral btn-icon-only btn-instagram btn-lg btn-round"
               data-toggle="tooltip"
               title="Folge uns auf Instagram"
@@ -294,6 +297,7 @@
             <a
               target="_blank"
               href="https://ch.linkedin.com/in/goran-strainovic"
+              rel="noopener noreferrer"
               class="btn btn-neutral btn-icon-only btn-linkedin btn-round btn-lg"
               data-toggle="tooltip"
               title="Folge uns auf LinkedIn"
@@ -303,6 +307,7 @@
             <a
               target="_blank"
               href="https://github.com/gstrainovic"
+              rel="noopener noreferrer"
               class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg"
               data-toggle="tooltip"
               title="Spendiere uns einen Stern auf Github"
@@ -312,6 +317,7 @@
             <a
               target="_blank"
               href="https://www.xing.com/profile/Goran_Strainovic"
+              rel="noopener noreferrer"
               class="btn btn-neutral btn-icon-only btn-xing btn-round btn-lg"
               data-toggle="tooltip"
               title="Folge uns auf Xing"
