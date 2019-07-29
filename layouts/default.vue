@@ -272,7 +272,7 @@
               data-toggle="tooltip"
               title="Folge uns auf Twitter"
             >
-              <i class="fa fa-twitter"></i>
+              <i class="fa fa-twitter align-top"></i>
             </a>
             <a
               target="_blank"
@@ -282,7 +282,7 @@
               data-toggle="tooltip"
               title="Like uns auf Facebook"
             >
-              <i class="fa fa-facebook-square"></i>
+              <i class="fa fa-facebook-square align-top"></i>
             </a>
             <a
               target="_blank"
@@ -292,7 +292,7 @@
               data-toggle="tooltip"
               title="Folge uns auf Instagram"
             >
-              <i class="fa fa-instagram"></i>
+              <i class="fa fa-instagram align-top"></i>
             </a>
             <a
               target="_blank"
@@ -302,7 +302,7 @@
               data-toggle="tooltip"
               title="Folge uns auf LinkedIn"
             >
-              <i class="fa fa-linkedin"></i>
+              <i class="fa fa-linkedin align-top"></i>
             </a>
             <a
               target="_blank"
@@ -312,7 +312,7 @@
               data-toggle="tooltip"
               title="Spendiere uns einen Stern auf Github"
             >
-              <i class="fa fa-github"></i>
+              <i class="fa fa-github align-top"></i>
             </a>
             <a
               target="_blank"
@@ -322,7 +322,7 @@
               data-toggle="tooltip"
               title="Folge uns auf Xing"
             >
-              <i class="fa fa-xing"></i>
+              <i class="fa fa-xing align-top"></i>
             </a>
           </div>
         </div>
@@ -504,7 +504,15 @@ export default {
   }
 }
 </script>
+
 <style>
+a {
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+  margin-bottom: 8px !important;
+  margin-top: 8px !important;
+}
+
 .headroom--not-top {
   padding-top: 0;
   padding-bottom: 0;
