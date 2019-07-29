@@ -168,6 +168,7 @@
             <div class="position-relative pl-md-5 mt-5">
               <img
                 v-lazy="require('static/img/programmierung.svg')"
+                alt="Programmierung"
                 class="img-center img-fluid"
               />
             </div>
@@ -281,6 +282,7 @@
           <div class="col-md-4 order-md-2 m-auto">
             <img
               v-lazy="require('static/img/webdesign.png')"
+              alt="Webdesign"
               class="img-fluid floating"
             />
           </div>
@@ -541,6 +543,7 @@
             <div class="position-relative pl-md-5 mt-5">
               <img
                 v-lazy="require('static/img/marketing.svg')"
+                alt="Marketing"
                 class="img-center img-fluid"
               />
             </div>
