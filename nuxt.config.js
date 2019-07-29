@@ -14,7 +14,7 @@ module.exports = {
       {
         name: 'viewport',
         content:
-          'width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=1, shrink-to-fit=no'
+          'width=device-width, initial-scale=1.0, maximum-scale=6, user-scalable=6, shrink-to-fit=no'
       },
       {
         hid: 'description',
