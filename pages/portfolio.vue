@@ -128,7 +128,7 @@
               </div>
               <div class="col-md-6 mb-5 mb-lg-0 mt-5">
                 <div class="card card-lift--hover shadow border-0">
-                  <a href="http://grav.gost.pw/mijajlovic.ch" target="_blank">
+                  <a href="http://3.121.148.217/mijajlovic.ch" target="_blank">
                     <img
                       v-lazy="
                         '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-mij.jpg'
@@ -163,9 +163,9 @@
                           <th>Link</th>
                           <td>
                             <a
-                              href="http://grav.gost.pw/mijajlovic.ch"
+                              href="http://3.121.148.217/mijajlovic.ch"
                               target="_blank"
-                              >http://grav.gost.pw/mijajlovic.ch</a
+                              >http://3.121.148.217/mijajlovic.ch</a
                             >
                           </td>
                         </tr>
@@ -176,7 +176,7 @@
               </div>
               <div class="col-md-6 mb-5 mb-lg-0 mt-5">
                 <div class="card card-lift--hover shadow border-0">
-                  <a href="http://grav.gost.pw/susanne" target="_blank">
+                  <a href="http://3.121.148.217/susanne" target="_blank">
                     <img
                       v-lazy="
                         '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-sb.jpg'
@@ -211,9 +211,9 @@
                           <th>Link</th>
                           <td>
                             <a
-                              href="http://grav.gost.pw/susanne"
+                              href="http://3.121.148.217/susanne"
                               target="_blank"
-                              >http://grav.gost.pw/susanne</a
+                              >http://3.121.148.217/susanne</a
                             >
                           </td>
                         </tr>
