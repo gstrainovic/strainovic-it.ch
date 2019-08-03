@@ -82,7 +82,7 @@
               </div>
               <div class="col-md-6 mb-5 mb-lg-0 mt-5">
                 <div class="card card-lift--hover shadow border-0">
-                  <a href="https://www.buegeln.services" target="_blank">
+                  <a href="https://buegeln.services" target="_blank">
                     <img
                       v-lazy="
                         '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-bs.jpg'
@@ -116,8 +116,8 @@
                         <tr>
                           <th>Link</th>
                           <td>
-                            <a href="https://www.buegeln.services" target="_blank"
-                              >https://www.buegeln.services</a
+                            <a href="https://buegeln.services" target="_blank"
+                              >https://buegeln.services</a
                             >
                           </td>
                         </tr>
