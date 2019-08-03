@@ -36,7 +36,7 @@
             <div class="row">
               <div class="col-md-6 mb-5 mb-md-0 mt-5">
                 <div class="card card-lift--hover shadow">
-                  <a href="http://ddp-transporte.ch" target="_blank">
+                  <a href="https://www.ddp-transporte.ch" target="_blank">
                     <img
                       v-lazy="
                         '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-ddp.jpg'
@@ -70,8 +70,8 @@
                       <tr>
                         <th>Link</th>
                         <td>
-                          <a href="http://ddp-transporte.ch" target="_blank"
-                            >http://ddp-transporte.ch</a
+                          <a href="https://www.ddp-transporte.ch" target="_blank"
+                            >https://www.ddp-transporte.ch</a
                           >
                         </td>
                       </tr>
@@ -82,7 +82,7 @@
               </div>
               <div class="col-md-6 mb-5 mb-lg-0 mt-5">
                 <div class="card card-lift--hover shadow border-0">
-                  <a href="http://buegeln.services" target="_blank">
+                  <a href="https://www.buegeln.services" target="_blank">
                     <img
                       v-lazy="
                         '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-bs.jpg'
@@ -116,8 +116,8 @@
                         <tr>
                           <th>Link</th>
                           <td>
-                            <a href="http://buegeln.services" target="_blank"
-                              >http://buegeln.services</a
+                            <a href="https://www.buegeln.services" target="_blank"
+                              >https://www.buegeln.services</a
                             >
                           </td>
                         </tr>
@@ -128,10 +128,10 @@
               </div>
               <div class="col-md-6 mb-5 mb-lg-0 mt-5">
                 <div class="card card-lift--hover shadow border-0">
-                  <a href="http://3.121.148.217/mijajlovic.ch" target="_blank">
+                  <a href="https://www.mobile-schere.ch" target="_blank">
                     <img
                       v-lazy="
-                        '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-mij.jpg'
+                        ''
                       "
                       class="card-img"
                     />
@@ -145,27 +145,27 @@
                         </tr>
                         <tr>
                           <th>Branche</th>
-                          <td>Spezialist für Boden</td>
+                          <td>Mobile Friseurin</td>
                         </tr>
                         <tr>
                           <th>Firmenort</th>
                           <td>
-                            CH 9320 Gossau SG<br />
-                            Kanton St.Gallen<br />
+                            CH 9215 Kradolf-Schönenberg<br />
+                            Kanton Thurgau<br />
                             Schweiz
                           </td>
                         </tr>
                         <tr>
                           <th>Technologie</th>
-                          <td>Jekyll</td>
+                          <td>WordPress, Divi</td>
                         </tr>
                         <tr>
                           <th>Link</th>
                           <td>
                             <a
-                              href="http://3.121.148.217/mijajlovic.ch"
+                              href="https://www.mobile-schere.ch"
                               target="_blank"
-                              >http://3.121.148.217/mijajlovic.ch</a
+                              >https://www.mobile-schere.ch</a
                             >
                           </td>
                         </tr>
@@ -176,10 +176,10 @@
               </div>
               <div class="col-md-6 mb-5 mb-lg-0 mt-5">
                 <div class="card card-lift--hover shadow border-0">
-                  <a href="http://3.121.148.217/susanne" target="_blank">
+                  <a href="https://www.exrex.ch" target="_blank">
                     <img
                       v-lazy="
-                        '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-sb.jpg'
+                        ''
                       "
                       class="card-img"
                     />
@@ -193,75 +193,27 @@
                         </tr>
                         <tr>
                           <th>Branche</th>
-                          <td>Pferdegestü. Coaching und Reiten</td>
+                          <td>Verkauf von Kino Rex SG Inventar</td>
                         </tr>
                         <tr>
                           <th>Firmenort</th>
                           <td>
-                            CH 9305 Waldkirch SG<br />
-                            Kanton St.Gallen<br />
+                            CH 9053 Teufen AR<br />
+                            Kanton Appenzell Ausserrhoden<br />
                             Schweiz
                           </td>
                         </tr>
                         <tr>
                           <th>Technologie</th>
-                          <td>Grav CMS</td>
+                          <td>WordPress, Divi</td>
                         </tr>
                         <tr>
                           <th>Link</th>
                           <td>
                             <a
-                              href="http://3.121.148.217/susanne"
+                              href="https://www.exrex.ch"
                               target="_blank"
-                              >http://3.121.148.217/susanne</a
-                            >
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mb-5 mb-lg-0 mt-5">
-                <div class="card card-lift--hover shadow border-0">
-                  <a href="http://old-wp.strainovic-it.ch" target="_blank">
-                    <img
-                      v-lazy="
-                        '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-sit.jpg'
-                      "
-                      class="card-img"
-                    />
-                  </a>
-                  <div class="card-body">
-                    <table class="table">
-                      <tbody>
-                        <tr>
-                          <th>Projekt</th>
-                          <td>Webseite</td>
-                        </tr>
-                        <tr>
-                          <th>Branche</th>
-                          <td>IT Dienstleistungen</td>
-                        </tr>
-                        <tr>
-                          <th>Firmenort</th>
-                          <td>
-                            CH 9323 Steinach SG<br />
-                            Kanton St.Gallen<br />
-                            Schweiz
-                          </td>
-                        </tr>
-                        <tr>
-                          <th>Technologie</th>
-                          <td>WordPress</td>
-                        </tr>
-                        <tr>
-                          <th>Link</th>
-                          <td>
-                            <a
-                              href="http://old-wp.strainovic-it.ch"
-                              target="_blank"
-                              >http://old-wp.strainovic-it.ch</a
+                              >https://www.exrex.ch</a
                             >
                           </td>
                         </tr>
@@ -292,7 +244,7 @@
                         </tr>
                         <tr>
                           <th>Branche</th>
-                          <td>CV / Lebenslauf</td>
+                          <td>Alter CV / Lebenslauf</td>
                         </tr>
                         <tr>
                           <th>Firmenort</th>
@@ -323,7 +275,7 @@
               </div>
               <div class="col-md-6 mb-5 mb-lg-0 mt-5">
                 <div class="card card-lift--hover shadow border-0">
-                  <a href="http://strainovic-it.ch" target="_blank">
+                  <a href="https://www.strainovic-it.ch" target="_blank">
                     <img
                       v-lazy="
                         '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-argon.jpg'
@@ -350,13 +302,13 @@
                         </tr>
                         <tr>
                           <th>Technologie</th>
-                          <td>Vue & Nuxt<br />Argon & Bootstrap</td>
+                          <td>Vue & Nuxt, Argon & Bootstrap</td>
                         </tr>
                         <tr>
                           <th>Link</th>
                           <td>
-                            <a href="http://strainovic-it.ch" target="_blank"
-                              >http://strainovic-it.ch</a
+                            <a href="https://www.strainovic-it.ch" target="_blank"
+                              >https://www.strainovic-it.ch</a
                             >
                           </td>
                         </tr>
@@ -367,7 +319,7 @@
               </div>
               <div class="col-md-6 mb-5 mb-lg-0 mt-5">
                 <div class="card card-lift--hover shadow border-0">
-                  <a href="http://monsenso.com" target="_blank">
+                  <a href="https://www.monsenso.com" target="_blank">
                     <img
                       v-lazy="
                         '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-monsenso.jpg'
@@ -392,13 +344,13 @@
                         </tr>
                         <tr>
                           <th>Technologie</th>
-                          <td>WordPress<br />Divi</td>
+                          <td>WordPress, Divi</td>
                         </tr>
                         <tr>
                           <th>Link</th>
                           <td>
-                            <a href="http://monsenso.com" target="_blank"
-                              >http://monsenso.com</a
+                            <a href="https://www.monsenso.com" target="_blank"
+                              >https://www.monsenso.com</a
                             >
                           </td>
                         </tr>
