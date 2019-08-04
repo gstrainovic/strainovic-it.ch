@@ -70,7 +70,9 @@
                       <tr>
                         <th>Link</th>
                         <td>
-                          <a href="https://www.ddp-transporte.ch" target="_blank"
+                          <a
+                            href="https://www.ddp-transporte.ch"
+                            target="_blank"
                             >https://www.ddp-transporte.ch</a
                           >
                         </td>
@@ -131,7 +133,7 @@
                   <a href="https://www.mobile-schere.ch" target="_blank">
                     <img
                       v-lazy="
-                        ''
+                        '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-ms.jpg'
                       "
                       class="card-img"
                     />
@@ -179,7 +181,7 @@
                   <a href="https://www.exrex.ch" target="_blank">
                     <img
                       v-lazy="
-                        ''
+                        '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-er.jpg'
                       "
                       class="card-img"
                     />
@@ -210,9 +212,7 @@
                         <tr>
                           <th>Link</th>
                           <td>
-                            <a
-                              href="https://www.exrex.ch"
-                              target="_blank"
+                            <a href="https://www.exrex.ch" target="_blank"
                               >https://www.exrex.ch</a
                             >
                           </td>
@@ -307,7 +307,9 @@
                         <tr>
                           <th>Link</th>
                           <td>
-                            <a href="https://www.strainovic-it.ch" target="_blank"
+                            <a
+                              href="https://www.strainovic-it.ch"
+                              target="_blank"
                               >https://www.strainovic-it.ch</a
                             >
                           </td>
