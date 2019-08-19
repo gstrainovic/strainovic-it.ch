@@ -338,12 +338,12 @@
               <template v-for="x in links">
                 <li :key="x.index" class="nav-item mr-3">
                   <h5 class="nav-link pl-0 pt-4">{{ x.menu }}</h5>
-                  <a
+                  <n-link
                     v-for="s in x.submenu"
                     :key="s.index"
-                    :href="s.link"
+                    :to="s.link"
                     class="nav-link pl-0"
-                    >{{ s.name }}</a
+                    >{{ s.name }}</n-link
                   >
                 </li>
               </template>
@@ -460,12 +460,12 @@ export default {
           icon: 'ni ni-collection',
           submenu: [
             {
-              link: '/portfolio/#web',
+              link: '/portfolio/webdesign',
               name: 'Webseiten'
             },
             {
-              link: '/portfolio/#diverse-projekte',
-              name: 'Diverse Projekte'
+              link: '/portfolio/projekte',
+              name: 'Projekte'
             }
           ]
         }

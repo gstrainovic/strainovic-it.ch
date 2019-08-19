@@ -190,6 +190,7 @@
             <div class="px-4">
               <img
                 v-lazy="'/img/goran-strainovic.jpg'"
+                alt="Strainovic Goran"
                 class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
                 style="width: 250px;"
               />
