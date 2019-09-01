@@ -1,18 +1,17 @@
 <template>
   <div>
-    <Header bold="Dienstleistungen" normal="Marketing"> </Header>
-    <Marketing></Marketing>
+    <Header bold="Referenzen und Portfolio" normal="Projekte"></Header>
+    <Projekte></Projekte>
   </div>
 </template>
 
 <script>
 import Header from '~/components/Header'
-import Marketing from '~/components/marketing'
-
+import Projekte from '~/components/Projekte'
 export default {
   components: {
     Header,
-    Marketing
+    Projekte
   }
 }
 </script>

@@ -1,18 +1,18 @@
 <template>
   <div>
-    <Header bold="Dienstleistungen" normal="Marketing"> </Header>
-    <Marketing></Marketing>
+    <Header bold="Über uns" normal="Strainovic IT"></Header>
+    <StrainovicIT></StrainovicIT>
   </div>
 </template>
 
 <script>
 import Header from '~/components/Header'
-import Marketing from '~/components/marketing'
+import StrainovicIT from '~/components/StrainovicIT'
 
 export default {
   components: {
     Header,
-    Marketing
+    StrainovicIT
   }
 }
 </script>

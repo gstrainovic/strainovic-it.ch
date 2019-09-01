@@ -6,7 +6,7 @@
     >
     </Header>
     <section id="was-wir-tun">
-      <div class="container pb-200">
+      <div class="container">
         <div class="row mb-lg mt-5">
           <div class="col-md-7 order-md-1">
             <div class="pr-md-5">

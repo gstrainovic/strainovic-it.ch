@@ -1,47 +1,10 @@
 <template>
   <div>
-    <div id="uns" class="position-relative">
-      <!-- shape Hero -->
-      <section class="section-shaped my-0">
-        <div class="shape shape-style-1 shape-default shape-skew">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="container shape-container d-flex">
-          <div class="col px-0">
-            <div class="row">
-              <div class="col-lg-6">
-                <h1 class="display-3  text-white">Datenschutz</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- 1st Hero Variation -->
-    </div>
-    <section id="strainovic-it" class="section">
+    <Header bold="Datenschutzerklärung"></Header>
+    <section class="section">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <!-- <h2 class="display-3">Adresse</h2>
-          <p class="lead">
-            Strainovic IT<br />
-            Strainovic Goran<br />
-            Bahnhofstrasse 9b<br />
-            9323 Steinach<br />
-            Schweiz<br />
-            <a href="mailto:info@strainovic-it.ch">info@strainovic-it.ch</a
-            ><br />
-            <a href="tel:+41794117177">+41794117177</a><br />
-          </p> -->
-
             <h2>Datenschutzerklärung der STRAINOVIC IT</h2>
             <br />
             Version vom 30.06.2019<br />
@@ -407,13 +370,11 @@
 </template>
 
 <script>
-//import H from '~/components/h'
+import Header from '~/components/Header'
 
 export default {
-  name: 'Home',
-  layout: 'default',
   components: {
-    //H
+    Header
   }
 }
 </script>

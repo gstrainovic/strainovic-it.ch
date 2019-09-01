@@ -2,7 +2,9 @@
   <div id="#">
     <div class="position-relative">
       <section class="section-shaped my-0">
-        <div class="shape shape-style-1 bg-gradient-primary shape-default shape-skew">
+        <div
+          class="shape shape-style-1 bg-gradient-primary shape-default shape-skew"
+        >
           <span></span>
           <span></span>
           <span></span>
@@ -12,7 +14,7 @@
           <div class="col px-0">
             <div class="row">
               <div class="col-lg-7">
-                <bold class="display-4 text-white">
+                <bold class="display-3 text-white">
                   <i v-if="error" class="fa fa-exclamation-triangle"></i>
 
                   {{ bold }}

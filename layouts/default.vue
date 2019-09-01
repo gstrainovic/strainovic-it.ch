@@ -60,7 +60,7 @@
 
     <section class="section section-lg section-contact-us">
       <div class="container">
-        <div class="row mt--200">
+        <div class="row">
           <div class="col-lg-8">
             <card gradient="secondary" shadow body-classes="p-lg-5">
               <form
@@ -323,7 +323,9 @@
             <ul class="nav nav-footer">
               <template v-for="x in links">
                 <li :key="x.index" class="nav-item mr-3">
-                  <h5 class="nav-link pl-0 pt-4">{{ x.menu }}</h5>
+                  <n-link :to="x.link" class="nav-link pl-0 pt-4">{{
+                    x.menu
+                  }}</n-link>
                   <n-link
                     v-for="s in x.submenu"
                     :key="s.index"
@@ -336,8 +338,8 @@
 
               <template v-for="xx in rechtliches">
                 <li :key="xx.index" class="nav-item mr-3">
-                  <h5 class="nav-link pl-0 pt-4">{{ xx.menu }}</h5>
-                  <n-link :to="home.link" class="nav-link pl-0">{{
+                  <!-- <h5 class="nav-link pl-0 pt-4">{{ xx.menu }}</h5> -->
+                  <n-link :to="home.link" class="nav-link pl-0 pt-4">{{
                     home.name
                   }}</n-link>
 
@@ -402,16 +404,16 @@ export default {
       links: [
         {
           menu: 'Dienstleistungen',
-          link: '##',
+          link: '/dienstleistungen',
           icon: 'ni ni-spaceship',
           submenu: [
             {
               link: '/dienstleistungen/software-und-apps',
-              name: 'Software und Apps'
+              name: 'Software & Apps'
             },
             {
               link: '/dienstleistungen/webdesign-und-programmierung',
-              name: 'Webdesign und Programmierung'
+              name: 'Webdesign & Programmierung'
             },
             {
               link: '/dienstleistungen/marketing',
@@ -421,31 +423,31 @@ export default {
         },
         {
           menu: 'Über uns',
-          link: '##',
+          link: '/ueber-uns',
           icon: 'ni ni-single-02',
           submenu: [
             {
-              link: '/ueber/strainovic-it',
+              link: '/ueber-uns/strainovic-it',
               name: 'Über Strainovic IT'
             },
             {
-              link: '/ueber/goran-strainovic',
+              link: '/ueber-uns/goran-strainovic',
               name: 'Über Goran Strainovic'
             }
           ]
         },
         {
-          menu: 'Portfolio',
-          link: '##',
+          menu: 'Referenzen & Portfolio',
+          link: '/referenzen-und-portfolio/',
           icon: 'ni ni-collection',
           submenu: [
             {
-              link: '/portfolio-und-referenzen/webdesign',
-              name: 'Webseiten'
+              link: '/referenzen-und-portfolio/webdesign',
+              name: 'Webdesign'
             },
             {
-              link: '/portfolio-und-referenzen/projekte',
-              name: 'Diverse Projekte'
+              link: '/referenzen-und-portfolio/projekte',
+              name: 'Projekte'
             }
           ]
         }
@@ -464,7 +466,7 @@ export default {
       rechtliches: [
         {
           menu: 'Sonstige Links',
-          link: '##',
+          link: '/',
           icon: '',
           submenu: [
             {

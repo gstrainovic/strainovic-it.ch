@@ -1,39 +1,11 @@
 <template>
   <div>
-    <div class="position-relative">
-      <!-- shape Hero -->
-      <section id="web" class="section-shaped my-0">
-        <div class="shape shape-style-1 shape-default shape-skew">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="container shape-container d-flex">
-          <div class="col px-0">
-            <div class="row">
-              <div class="col-lg-6">
-                <h1 class="display-3 text-white ">
-                  Projekte
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- 1st Hero Variation -->
-    </div>
-
     <section class="section">
       <div class="container">
         <div class="row mb-5 ">
           <div class="col-lg-12">
-            <h4 class="display-4 ">Plugin</h4>
+            <h2 v-if="h2" class="display-2">Projekte</h2>
+            <h4 class="display-4 mt-5">Plugin</h4>
             <h5 class="display-5 mt-4 ">Österreichischer Hardwarehersteller</h5>
             <strong class="display-6 mt-3 ">Ziel</strong>
             <p>Ticketplugin für Jira - Projektmanagementsoftware</p>
@@ -182,95 +154,11 @@
 
 <script>
 export default {
-  name: 'Home',
-  layout: 'default',
-  components: {},
-  data() {
-    return {
-      projekte: [
-        {
-          h3: 'Von Strainovic IT umgesetzte Projekte',
-          shapeColor: 'shape-default',
-          submenu: [
-            {
-              link: '/#was-wir-tun',
-              name: 'Was wir tun'
-            },
-            {
-              link: '/#software-und-apps',
-              name: 'Software und Apps'
-            },
-            {
-              link: '/#webdesign-und-programmierung',
-              name: 'Webdesign und Programmierung'
-            },
-            {
-              link: '/#marketing',
-              name: 'Marketing'
-            }
-          ]
-        },
-        {
-          menu: 'Über uns',
-          link: '##',
-          icon: 'ni ni-single-02',
-          submenu: [
-            {
-              link: '/ueber/#strainovic-it',
-              name: 'Über Strainovic IT'
-            },
-            {
-              link: '/ueber/#goran-strainovic',
-              name: 'Über Goran Strainovic'
-            }
-          ]
-        },
-        {
-          menu: 'Portfolio',
-          link: '##',
-          icon: 'ni ni-collection',
-          submenu: [
-            {
-              link: '/portfolio/#web',
-              name: 'Webseiten'
-            },
-            {
-              link: '/portfolio/#diverse-projekte',
-              name: 'Diverse Projekte'
-            }
-          ]
-        }
-      ],
-      noMenu: [
-        {
-          menu: '',
-          link: '##',
-          icon: 'ni ni-email-83',
-          submenu: [
-            {
-              link: '/#kontakt',
-              name: 'Kontakt'
-            }
-          ]
-        }
-      ],
-      rechtliches: [
-        {
-          menu: 'Sonstige Links',
-          link: '##',
-          icon: '',
-          submenu: [
-            {
-              link: '/impressum',
-              name: 'Impressum'
-            },
-            {
-              link: '/datenschutz',
-              name: 'Datenschutz'
-            }
-          ]
-        }
-      ]
+  props: {
+    h2: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   }
 }
