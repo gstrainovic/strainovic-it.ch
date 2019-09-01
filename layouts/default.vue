@@ -3,10 +3,12 @@
     <headroom>
       <header class="header-global">
         <BaseNav class="navbar-main" type="transparent" effect="dark" expand>
-          <a slot="brand" class="navbar-brand" href="/#">Strainovic IT</a>
+          <n-link slot="brand" class="navbar-brand" to="/"
+            >Strainovic IT</n-link
+          >
           <div slot="content-header" slot-scope="{ closeMenu }" class="row">
             <div class="col-6 collapse-brand">
-              <a href="/#">Strainovic IT</a>
+              <n-link to="/">Strainovic IT</n-link>
             </div>
             <div class="col-6 collapse-close">
               <CloseButton @click="closeMenu"></CloseButton>
@@ -16,40 +18,38 @@
           <ul
             class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto"
           >
+            <n-link class="nav-link" :to="home.link">
+              <i :class="home.icon"></i>
+              <span class="nav-link-inner--text">{{ home.name }} </span>
+            </n-link>
+
             <template v-for="x in links">
               <BaseDropdown :key="x.index" tag="li" class="nav-item">
-                <a
+                <n-link
                   slot="title"
-                  :href="x.link"
+                  :to="x.link"
                   class="nav-link"
                   data-toggle="dropdown"
                   role="button"
                 >
                   <i :class="x.icon"></i>
                   <span class="nav-link-inner--text">{{ x.menu }}</span>
-                </a>
+                </n-link>
 
-                <a
+                <n-link
                   v-for="s in x.submenu"
                   :key="s.index"
-                  :href="s.link"
+                  :to="s.link"
                   class="dropdown-item"
                   >{{ s.name }}
-                </a>
+                </n-link>
               </BaseDropdown>
             </template>
 
-            <template v-for="x in noMenu">
-              <a
-                v-for="s in x.submenu"
-                :key="s.index"
-                class="nav-link"
-                :href="s.link"
-              >
-                <i :class="x.icon"></i>
-                <span class="nav-link-inner--text">{{ s.name }} </span>
-              </a>
-            </template>
+            <n-link class="nav-link" :to="kontakt.link">
+              <i :class="kontakt.icon"></i>
+              <span class="nav-link-inner--text">{{ kontakt.name }} </span>
+            </n-link>
           </ul>
         </BaseNav>
       </header>
@@ -57,41 +57,10 @@
     <main>
       <nuxt />
     </main>
-    <section id="kontakt" class="section section-shaped my-0 overflow-hidden">
-      <div class="shape shape-style-3 bg-gradient-default shape-skew">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="container pt-lg pb-300">
-        <div class="row">
-          <div class="col-lg-10">
-            <h2 class="display-4 text-white">
-              Wir freuen uns auf Ihre Kontaktaufnahme!
-            </h2>
-            <div class="row">
-              <div class="col-md-5 lead text-white">
-                <SitAdresse></SitAdresse>
-              </div>
 
-              <div class="col-md-5 mt-5">
-                <!-- <VueFriendlyIframe
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDUUYNFXEhy1raQAPrhYCdSCttMLgMsxls      &q=Strainovic IT"
-                  allowfullscreen
-                  @load="onLoad"
-                  @document-load="onDocumentLoad"          
-                ></VueFriendlyIframe> -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-lg pt-lg-0 section-contact-us">
+    <section class="section section-lg section-contact-us">
       <div class="container">
-        <div class="row mt--300">
+        <div class="row mt--200">
           <div class="col-lg-8">
             <card gradient="secondary" shadow body-classes="p-lg-5">
               <form
@@ -106,9 +75,26 @@
                   name="form-name"
                   value="Strainovic-it.ch Kontakt"
                 />
-                <div class="container my-5">
-                  <div class="row">
-                    <div class="col-lg-12">
+                <div class="container">
+                  <div class="">
+                    <div class="">
+                      <h2 class="display-4">
+                        Wir freuen uns auf Ihre Kontaktaufnahme!
+                      </h2>
+                      <div class="">
+                        <!-- <div class="col-md-5 lead"> -->
+                        <SitAdresse></SitAdresse>
+                        <!-- </div> -->
+
+                        <div class="col-md-5 mt-5">
+                          <!-- <VueFriendlyIframe
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDUUYNFXEhy1raQAPrhYCdSCttMLgMsxls      &q=Strainovic IT"
+                  allowfullscreen
+                  @load="onLoad"
+                  @document-load="onDocumentLoad"          
+                ></VueFriendlyIframe> -->
+                        </div>
+                      </div>
                       <p>Alle Felder sind Pflichtfelder</p>
                       <ValidationProvider name="Vorname" rules="required|alpha">
                         <template #default="{ errors }">
@@ -351,6 +337,10 @@
               <template v-for="xx in rechtliches">
                 <li :key="xx.index" class="nav-item mr-3">
                   <h5 class="nav-link pl-0 pt-4">{{ xx.menu }}</h5>
+                  <n-link :to="home.link" class="nav-link pl-0">{{
+                    home.name
+                  }}</n-link>
+
                   <nuxt-link
                     v-for="s in xx.submenu"
                     :key="s.index"
@@ -359,15 +349,9 @@
                     >{{ s.name }}</nuxt-link
                   >
 
-                  <template v-for="xxx in noMenu">
-                    <a
-                      v-for="s in xxx.submenu"
-                      :key="s.index"
-                      :href="s.link"
-                      class="nav-link pl-0"
-                      >{{ s.name }}</a
-                    >
-                  </template>
+                  <n-link :to="kontakt.link" class="nav-link pl-0">{{
+                    kontakt.name
+                  }}</n-link>
                 </li>
               </template>
             </ul>
@@ -422,19 +406,15 @@ export default {
           icon: 'ni ni-spaceship',
           submenu: [
             {
-              link: '/#was-wir-tun',
-              name: 'Was wir tun'
-            },
-            {
-              link: '/#software-und-apps',
+              link: '/dienstleistungen/software-und-apps',
               name: 'Software und Apps'
             },
             {
-              link: '/#webdesign-und-programmierung',
+              link: '/dienstleistungen/webdesign-und-programmierung',
               name: 'Webdesign und Programmierung'
             },
             {
-              link: '/#marketing',
+              link: '/dienstleistungen/marketing',
               name: 'Marketing'
             }
           ]
@@ -445,11 +425,11 @@ export default {
           icon: 'ni ni-single-02',
           submenu: [
             {
-              link: '/ueber/#strainovic-it',
+              link: '/ueber/strainovic-it',
               name: 'Über Strainovic IT'
             },
             {
-              link: '/ueber/#goran-strainovic',
+              link: '/ueber/goran-strainovic',
               name: 'Über Goran Strainovic'
             }
           ]
@@ -460,29 +440,27 @@ export default {
           icon: 'ni ni-collection',
           submenu: [
             {
-              link: '/portfolio/webdesign',
+              link: '/portfolio-und-referenzen/webdesign',
               name: 'Webseiten'
             },
             {
-              link: '/portfolio/projekte',
-              name: 'Projekte'
+              link: '/portfolio-und-referenzen/projekte',
+              name: 'Diverse Projekte'
             }
           ]
         }
       ],
-      noMenu: [
-        {
-          menu: '',
-          link: '##',
-          icon: 'ni ni-email-83',
-          submenu: [
-            {
-              link: '/#kontakt',
-              name: 'Kontakt'
-            }
-          ]
-        }
-      ],
+      kontakt: {
+        icon: 'ni ni-email-83',
+        link: '/kontakt',
+        name: 'Kontakt'
+      },
+      home: {
+        icon: 'ni ni-shop',
+        link: '/',
+        name: 'Startseite'
+      },
+
       rechtliches: [
         {
           menu: 'Sonstige Links',

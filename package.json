@@ -29,6 +29,7 @@
     "nuxt-validate": "^1.0.1",
     "nuxt-webfontloader": "^1.1.0",
     "placekeeper": "^1.0.7",
+    "smooth-scroll": "^16.1.0",
     "strapi-sdk-javascript": "^0.3.1",
     "vee-validate": "^2.2.13",
     "vue": "^2.6.10",
