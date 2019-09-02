@@ -527,9 +527,11 @@ a {
   .navbar-main {
     padding: 0;
   }
+}
 
-  .nav-footer .nav-link {
-    font-size: 1.1vh;
-  }
+.nav-footer .nav-link {
+  font-size: 0.789em;
+  font-weight: 500;
+  color: dimgrey;
 }
 </style>
