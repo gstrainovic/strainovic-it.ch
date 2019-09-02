@@ -79,7 +79,7 @@
                   <div class="">
                     <div class="">
                       <h2 class="display-4">
-                        Wir freuen uns auf Ihre Kontaktaufnahme!
+                        Wir freuen uns auf Ihre Nachricht!
                       </h2>
                       <div class="">
                         <!-- <div class="col-md-5 lead"> -->
@@ -314,32 +314,33 @@
         </div>
         <hr />
         <div class="row">
-          <div class="col-md-3 pt-4">
+          <div class="col-sm-3 pt-4 pl-5 pb-5">
             <SitAdresse></SitAdresse>
           </div>
           <!-- </div> -->
           <!-- <div class="row align-items-center justify-content-md-between"> -->
-          <div class="col-md-9">
+          <div class="col-sm-9">
             <ul class="nav nav-footer">
               <template v-for="x in links">
-                <li :key="x.index" class="nav-item mr-3">
-                  <n-link :to="x.link" class="nav-link pl-0 pt-4">{{
-                    x.menu
-                  }}</n-link>
+                <li
+                  :key="x.index"
+                  class="nav-item mr-3 col-xs-12 col-sm-3 mb-4"
+                >
+                  <n-link :to="x.link" class="nav-link ">{{ x.menu }}</n-link>
                   <n-link
                     v-for="s in x.submenu"
                     :key="s.index"
                     :to="s.link"
-                    class="nav-link pl-0"
+                    class="nav-link"
                     >{{ s.name }}</n-link
                   >
                 </li>
               </template>
 
               <template v-for="xx in rechtliches">
-                <li :key="xx.index" class="nav-item mr-3">
+                <li :key="xx.index" class="nav-item mr-3 col-xs-12 col-sm">
                   <!-- <h5 class="nav-link pl-0 pt-4">{{ xx.menu }}</h5> -->
-                  <n-link :to="home.link" class="nav-link pl-0 pt-4">{{
+                  <n-link :to="home.link" class="nav-link">{{
                     home.name
                   }}</n-link>
 
@@ -347,11 +348,11 @@
                     v-for="s in xx.submenu"
                     :key="s.index"
                     :to="s.link"
-                    class="nav-link pl-0"
+                    class="nav-link"
                     >{{ s.name }}</nuxt-link
                   >
 
-                  <n-link :to="kontakt.link" class="nav-link pl-0">{{
+                  <n-link :to="kontakt.link" class="nav-link">{{
                     kontakt.name
                   }}</n-link>
                 </li>
@@ -525,6 +526,10 @@ a {
 @media (min-width: 992px) {
   .navbar-main {
     padding: 0;
+  }
+
+  .nav-footer .nav-link {
+    font-size: 1.1vh;
   }
 }
 </style>

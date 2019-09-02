@@ -169,15 +169,4 @@ export default {
   padding-top: 14rem;
   padding-bottom: 15rem;
 }
-.table {
-  font-size: 2.3vmin;
-}
-@media only screen and (max-width: 765px) {
-  .table {
-    font-size: 3vmin;
-  }
-  a {
-    font-size: 1.6vh;
-  }
-}
 </style>

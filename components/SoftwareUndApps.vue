@@ -141,7 +141,7 @@
             <p class=" mt-3">
               Falls Sie mit bestehenden Software nicht zufrieden sind und diese
               unzureichend Erweiterbar sind, programmieren und designen wir
-              gerne Ihre Software nach Ihren Vorstellungen. /
+              gerne Ihre Software nach Ihren Vorstellungen.
             </p>
           </div>
         </div>
