@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Header from '~/components/Header'
-import Projekte from '~/components/Projekte'
+import Header from '@/components/Header'
+import Projekte from '@/components/Projekte'
 export default {
   components: {
     Header,

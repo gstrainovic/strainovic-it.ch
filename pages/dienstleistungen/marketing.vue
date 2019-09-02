@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Header from '~/components/Header'
-import Marketing from '~/components/marketing'
+import Header from '@/components/Header'
+import Marketing from '@/components/marketing'
 
 export default {
   components: {

@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Header from '~/components/Header'
-import Webdesign from '~/components/Webdesign'
+import Header from '@/components/Header'
+import Webdesign from '@/components/Webdesign'
 export default {
   components: {
     Header,

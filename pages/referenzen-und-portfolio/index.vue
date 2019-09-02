@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Header from '~/components/Header'
-import Webdesign from '~/components/Webdesign'
-import Projekte from '~/components/Projekte'
+import Header from '@/components/Header'
+import Webdesign from '@/components/Webdesign'
+import Projekte from '@/components/Projekte'
 export default {
   components: {
     Header,

@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import Header from '~/components/Header'
-import WebdesignUndProgrammierung from '~/components/WebdesignUndProgrammierung'
+import Header from '@/components/Header'
+import WebdesignUndProgrammierung from '@/components/WebdesignUndProgrammierung'
 
 export default {
   components: {

@@ -8,8 +8,8 @@
 <script>
 import Vue from 'vue'
 import VueLazyload from 'vue-lazyload'
-import Header from '~/components/Header'
-import SoftwareUndApps from '~/components/SoftwareUndApps'
+import Header from '@/components/Header'
+import SoftwareUndApps from '@/components/SoftwareUndApps'
 
 Vue.use(VueLazyload)
 export default {

@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import Header from '~/components/Header'
-import Marketing from '~/components/Marketing'
-import SoftwareUndApps from '~/components/SoftwareUndApps'
-import WebdesignUndProgrammierung from '~/components/WebdesignUndProgrammierung'
+import Header from '@/components/Header'
+import Marketing from '@/components/Marketing'
+import SoftwareUndApps from '@/components/SoftwareUndApps'
+import WebdesignUndProgrammierung from '@/components/WebdesignUndProgrammierung'
 export default {
   components: {
     Header,

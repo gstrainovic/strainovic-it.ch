@@ -106,7 +106,7 @@
 <script>
 import Vue from 'vue'
 import VueLazyload from 'vue-lazyload'
-import Header from '~/components/Header'
+import Header from '@/components/Header'
 
 Vue.use(VueLazyload)
 export default {

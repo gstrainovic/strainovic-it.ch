@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import Header from '~/components/Header'
-import StrainovicIT from '~/components/StrainovicIT'
-import GoranStrainovic from '~/components/GoranStrainovic'
+import Header from '@/components/Header'
+import StrainovicIT from '@/components/StrainovicIT'
+import GoranStrainovic from '@/components/GoranStrainovic'
 export default {
   components: {
     Header,

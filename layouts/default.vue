@@ -366,10 +366,10 @@
 </template>
 
 <script>
-import SitAdresse from '~/components/SitAdresse'
-import BaseNav from '~/components/argon/BaseNav'
-import BaseDropdown from '~/components/argon/BaseDropdown'
-import CloseButton from '~/components/argon/CloseButton'
+import SitAdresse from '@/components/SitAdresse'
+import BaseNav from '@/components/argon/BaseNav'
+import BaseDropdown from '@/components/argon/BaseDropdown'
+import CloseButton from '@/components/argon/CloseButton'
 import { headroom } from 'vue-headroom'
 // import VueFriendlyIframe from 'vue-friendly-iframe'
 import Vue from 'vue'
