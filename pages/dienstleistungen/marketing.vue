@@ -7,7 +7,7 @@
 
 <script>
 import Header from '@/components/Header'
-import Marketing from '@/components/marketing'
+import Marketing from '@/components/Marketing'
 
 export default {
   components: {
