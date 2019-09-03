@@ -1,41 +1,53 @@
 <template>
-    <nav class="navbar"
-         :class="[
-            {'navbar-expand-lg': expand},
-            {[`navbar-${effect}`]: effect},
-            {'navbar-transparent': transparent},
-            {[`bg-${type}`]: type},
-            {'rounded': round}
-         ]">
-        <div class="container">
-            <slot name="container-pre"></slot>
-            <slot name="brand">
-                <a class="navbar-brand" href="#" @click.prevent="onTitleClick">
-                    {{title}}
-                </a>
-            </slot>
-            <navbar-toggle-button :toggled="toggled"
-                                  :target="contentId"
-                                  @click.native.stop="toggled = !toggled">
-            </navbar-toggle-button>
+  <nav
+    class="navbar"
+    :class="[
+      { 'navbar-expand-lg': expand },
+      { [`navbar-${effect}`]: effect },
+      { 'navbar-transparent': transparent },
+      { [`bg-${type}`]: type },
+      { rounded: round }
+    ]"
+  >
+    <div class="container">
+      <slot name="container-pre"></slot>
+      <slot name="brand">
+        <a class="navbar-brand" href="#" @click.prevent="onTitleClick">
+          {{ title }}
+        </a>
+      </slot>
+      <NavbarToggleButton
+        :toggled="toggled"
+        :target="contentId"
+        @click.native.stop="toggled = !toggled"
+      >
+      </NavbarToggleButton>
 
-            <slot name="container-after"></slot>
+      <slot name="container-after"></slot>
 
-            <div class="collapse navbar-collapse" :class="{show: toggled}" :id="contentId" v-click-outside="closeMenu">
-                <div class="navbar-collapse-header">
-                    <slot name="content-header" :close-menu="closeMenu"></slot>
-                </div>
-                <slot :close-menu="closeMenu"></slot>
-            </div>
+      <div
+        :id="contentId"
+        v-click-outside="closeMenu"
+        class="collapse navbar-collapse"
+        :class="{ show: toggled }"
+      >
+        <div class="navbar-collapse-header">
+          <base-alert type="success">
+            <strong>Success!</strong> This is a success alert—check it out!
+          </base-alert>
+          <slot name="content-header" :close-menu="closeMenu"></slot>
         </div>
-    </nav>
+        <slot :close-menu="closeMenu"></slot>
+      </div>
+    </div>
+  </nav>
 </template>
 <script>
-import { FadeTransition } from "vue2-transitions";
-import NavbarToggleButton from "./NavbarToggleButton";
+import { FadeTransition } from 'vue2-transitions'
+import NavbarToggleButton from './NavbarToggleButton'
 
 export default {
-  name: "base-nav",
+  name: 'BaseNav',
   components: {
     FadeTransition,
     NavbarToggleButton
@@ -43,13 +55,13 @@ export default {
   props: {
     type: {
       type: String,
-      default: "primary",
-      description: "Navbar type (e.g default, primary etc)"
+      default: 'primary',
+      description: 'Navbar type (e.g default, primary etc)'
     },
     title: {
       type: String,
-      default: "",
-      description: "Title of navbar"
+      default: '',
+      description: 'Title of navbar'
     },
     contentId: {
       type: [String, Number],
@@ -59,39 +71,43 @@ export default {
     },
     effect: {
       type: String,
-      default: "dark",
-      description: "Effect of the navbar (light|dark)"
+      default: 'dark',
+      description: 'Effect of the navbar (light|dark)'
     },
     round: {
       type: Boolean,
       default: false,
-      description: "Whether nav has rounded corners"
+      description: 'Whether nav has rounded corners'
     },
     transparent: {
       type: Boolean,
       default: false,
-      description: "Whether navbar is transparent"
+      description: 'Whether navbar is transparent'
     },
     expand: {
       type: Boolean,
       default: false,
-      description: "Whether navbar should contain `navbar-expand-lg` class"
+      description: 'Whether navbar should contain `navbar-expand-lg` class'
     }
   },
   data() {
     return {
       toggled: false
-    };
+    }
+  },
+  watch: {
+    // $route() {
+    //   this.toggled = false
+    // }
   },
   methods: {
     onTitleClick(evt) {
-      this.$emit("title-click", evt);
+      this.$emit('title-click', evt)
     },
     closeMenu() {
-      this.toggled = false;
+      this.toggled = false
     }
   }
-};
+}
 </script>
-<style>
-</style>
+<style></style>
