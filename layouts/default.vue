@@ -2,7 +2,12 @@
   <div>
     <headroom>
       <header class="header-global">
-        <BaseNav class="navbar-main" type="transparent" effect="dark" expand>
+        <BaseNav
+          class="navbar-main sticky-bottom"
+          type="transparent"
+          effect="dark"
+          expand
+        >
           <n-link slot="brand" class="navbar-brand" to="/"
             >Strainovic IT</n-link
           >
@@ -46,7 +51,7 @@
               </BaseDropdown>
             </template>
 
-            <n-link class="nav-link hide-this" :to="kontakt.link">
+            <n-link class="nav-link" :to="kontakt.link">
               <i :class="kontakt.icon"></i>
               <span class="nav-link-inner--text">{{ kontakt.name }} </span>
             </n-link>
@@ -524,10 +529,6 @@ a {
 }
 
 @media (min-width: 992px) {
-  .hide-this {
-    display: none;
-  }
-
   .navbar-main {
     padding: 0;
   }

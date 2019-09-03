@@ -32,8 +32,8 @@
         :class="{ show: toggled }"
       >
         <div class="navbar-collapse-header">
-          <base-alert type="success">
-            <strong>Success!</strong> This is a success alert—check it out!
+          <base-alert v-if="geladen" type="success">
+            Seite {{ $nuxt.$route.path }} erfolgreich geladen.
           </base-alert>
           <slot name="content-header" :close-menu="closeMenu"></slot>
         </div>
@@ -92,13 +92,14 @@ export default {
   },
   data() {
     return {
-      toggled: false
+      toggled: false,
+      geladen: false
     }
   },
   watch: {
-    // $route() {
-    //   this.toggled = false
-    // }
+    $route() {
+      this.geladen = true
+    }
   },
   methods: {
     onTitleClick(evt) {
@@ -106,6 +107,7 @@ export default {
     },
     closeMenu() {
       this.toggled = false
+      this.geladen = false
     }
   }
 }

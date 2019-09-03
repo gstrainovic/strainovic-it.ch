@@ -113,6 +113,11 @@ export default {
   components: {
     Header
   },
+  head() {
+    return {
+      title: 'Startseite'
+    }
+  },
   VueLazyload
 }
 </script>
