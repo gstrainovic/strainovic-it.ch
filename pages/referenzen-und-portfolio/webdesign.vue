@@ -1,6 +1,9 @@
 <template>
   <div>
-    <Header bold="Referenzen und Portfolio" normal="Webdesign"></Header>
+    <Header
+      :bold="$t('ReferenzenUndPortfolio')"
+      :normal="$t('Webdesign')"
+    ></Header>
     <Webdesign></Webdesign>
   </div>
 </template>

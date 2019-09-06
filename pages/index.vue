@@ -1,8 +1,10 @@
 <template>
-  <div id="#">
+  <div>
     <Header
-      bold="Webdesign, Programmierung & Marketing"
-      normal="Software, Homepage & Webseite erstellen und vermarkten lassen."
+      :bold="$t('webdesign-programmierung-and-marketing')"
+      :normal="
+        $t('software-homepage-and-webseite-erstellen-und-vermarkten-lassen')
+      "
     >
     </Header>
     <section id="was-wir-tun">
@@ -10,92 +12,70 @@
         <div class="row mb-lg mt-5">
           <div class="col-md-7 order-md-1">
             <div class="pr-md-5">
-              <h2 class="display-4">
-                Alle IT Dienstleistungen für Private, Startup, KMU, GmbH, AG
-                oder Einzelfirma aus einer Hand.
-              </h2>
+              <h2 class="display-4">{{ $t('index.h2') }}</h2>
             </div>
           </div>
         </div>
         <div class="row mt-5 mb-4">
           <div class="col-md-6 order-md-1">
             <div class="pr-md-5">
-              <h6 class="display-2">Was wir tun</h6>
+              <h6 class="display-2">{{ $t('was-wir-tun') }}</h6>
             </div>
           </div>
         </div>
         <div class="row mb-lg">
           <div class="col-lg-6">
             <!-- <H title="Test"></H> -->
-            <h2 class="display-3">Analyse & Beratung</h2>
+            <h2 class="display-3">{{ $t('analyse-and-beratung') }}</h2>
             <p class="lead">
-              Anhand Ihrer Anforderungen erhalten Sie eine individuelle
-              Empfehlung - ein Konzept, über die beste Lösung zu Ihrem Projekt.
+              {{
+                $t(
+                  'anhand-ihrer-anforderungen-erhalten-sie-eine-individuelle-empfehlung-ein-konzept-ueber-die-beste-loesung-zu-ihrem-projekt'
+                )
+              }}
             </p>
           </div>
           <div class="col-lg-6">
-            <h2 class="display-3">Installation & Konfiguration</h2>
+            <h2 class="display-3">
+              {{ $t('installation-and-konfiguration') }}
+            </h2>
+            <p class="lead ">{{ $t('dasrad') }}</p>
+          </div>
+          <div class="col-lg-6">
+            <h2 class="display-3">
+              {{ $t('projektplanung-and-projekt-and-shy-management') }}
+            </h2>
             <p class="lead ">
-              Das Rad wird nicht neu erfunden. Dank Know-how und Zugriff auf
-              bereits vorhanden Vorlagen, Plugins und Software, sparen Sie Geld
-              und Zeit.
+              {{
+                $t(
+                  'gerne-arbeiten-wir-mit-ihrem-team-zusammen-und-uebernehmen-falls-gewuenscht-die-ganze-planung-und-koordination-bis-zum-erfolgreichen-abschluss-ihres-projektes'
+                )
+              }}
             </p>
           </div>
           <div class="col-lg-6">
-            <h2 class="display-3">Projektplanung & Projekt&shy;management</h2>
-            <p class="lead ">
-              Gerne arbeiten wir mit Ihrem Team zusammen und übernehmen, falls
-              gewünscht die ganze Planung und Koordination bis zum erfolgreichen
-              Abschluss Ihres Projektes.
-            </p>
+            <h2 class="display-3">{{ $t('design-and-programmierung') }}</h2>
+            <p class="lead ">{{ $t('keine-komp') }}</p>
           </div>
           <div class="col-lg-6">
-            <h2 class="display-3">Design & Programmierung</h2>
-            <p class="lead ">
-              Keine Kompromisse. Fehlende Elemente wie z. B. Designs, Templates
-              und Erweiterungen werden mit neuesten Standards, Empfehlungen und
-              Technologien neu designt und programmiert.
-            </p>
+            <h2 class="display-3">{{ $t('automation') }}</h2>
+            <p class="lead ">{{ $t('sparen') }}</p>
           </div>
           <div class="col-lg-6">
-            <h2 class="display-3">Automation</h2>
-            <p class="lead ">
-              Sparen Sie Zeit und Geld. Es werden alle Ihre Prozesse optimiert,
-              so das Sie viel weniger Daten eingeben müssten. Weniger eintippen
-              und seltener Kopieren und Einfügen erhöht Ihre Produktivität und
-              vermindert das Risiko von Fehlern.
-            </p>
+            <h2 class="display-3">{{ $t('tests-and-uebergabe') }}</h2>
+            <p class="lead ">{{ $t('nachdem') }}</p>
           </div>
           <div class="col-lg-6">
-            <h2 class="display-3">Tests & Übergabe</h2>
-            <p class="lead ">
-              Nachdem alle Arbeiten abgeschlossen sind, erfolgen Qualitätstests.
-              Dabei wird z. B. bei Webseiten geprüft, ob alles auf allen Geräten
-              und alle Browsern korrekt dargestellt wird.
-            </p>
+            <h2 class="display-3">{{ $t('schulung') }}</h2>
+            <p class="lead ">{{ $t('schulung-lead') }}</p>
           </div>
           <div class="col-lg-6">
-            <h2 class="display-3">Schulung</h2>
-            <p class="lead ">
-              Sie und ggf. Ihre Mitarbeiter erhalten entweder bei Ihnen lokal
-              oder remote über TeamViewer eine Schulung, um z. B. im Webshop
-              selbstständig Produkte zu aktualisieren.
-            </p>
+            <h2 class="display-3">{{ $t('wartung-and-sicherheit') }}</h2>
+            <p class="lead ">{{ $t('keine-sorge') }}</p>
           </div>
           <div class="col-lg-6">
-            <h2 class="display-3">Wartung & Sicherheit</h2>
-            <p class="lead ">
-              Keine Sorge vor Ausfällen oder Hacker. Durch die Übernahme der
-              Updates und Backups bleibt die gesamte Software wie z. B. CMS,
-              Plugins, Server aktuell und ausfallsicher.
-            </p>
-          </div>
-          <div class="col-lg-6">
-            <h2 class="display-3">Fehlerbehebung & Support</h2>
-            <p class="lead ">
-              Auch nach dem Projektende können Sie mit einem zuverlässigen
-              Partner rechnen, welcher Störungen behebt.
-            </p>
+            <h2 class="display-3">{{ $t('fehlerbehebung-and-support') }}</h2>
+            <p class="lead ">{{ $t('auch-nach') }}</p>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header bold="Dienstleistungen" normal="Marketing"> </Header>
+    <Header :bold="$t('Dienstleistungen')" :normal="$t('Marketing')"> </Header>
     <Marketing></Marketing>
   </div>
 </template>

@@ -11,7 +11,7 @@
               Strainovic Goran<br />
               Bahnhofstrasse 9b<br />
               9323 Steinach<br />
-              Schweiz<br />
+              {{ $t('Schweiz') }}<br />
               <a href="tel:+41794117177">
                 <i class="ni ni-mobile-button"></i> +41 79 411 71 77<br />
               </a>
@@ -21,7 +21,7 @@
             </p>
             <p class="lead">UID:<br />CHE-311.771.818</p>
             <p class="lead">
-              Handelsregister-Nummer:<br />
+              {{ $t('Handelsregister-Nummer') }}<br />
               CH-320.1.081.299-3
             </p>
           </div>
