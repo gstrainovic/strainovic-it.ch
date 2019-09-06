@@ -26,7 +26,7 @@
                     round
                     :to="localePath('index')"
                   >
-                    Zurück zur Startseite
+                    {{ $t('header.zurueck-zur-startseite') }}
                     <i class="ni ni-shop"></i>
                   </n-link>
                 </bold>
