@@ -1,6 +1,5 @@
 export default {
   //'#########index########': '/index',
-
   dasrad:
     "We're not reinventing the wheel. Thanks to know-how and access to already existing templates, plugins and software, save money and time.",
   'webdesign-programmierung-and-marketing':
@@ -38,7 +37,7 @@ export default {
   'auch-nach':
     'Even after the end of the project, you can count on a reliable partner who will remedy any faults.',
   //Impressum
-  'Handelsregister-Nummer': 'Trade register number',
+  'Handelsregister-Nummer': 'Trade register number:',
   Schweiz: 'Switzerland',
   //Menu
   Startseite: 'Home page',

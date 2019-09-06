@@ -116,7 +116,7 @@
                 ></VueFriendlyIframe> -->
                         </div>
                       </div>
-                      <p>Alle Felder sind Pflichtfelder</p>
+                      <p>{{ $t('alle-felder-sind-pflichtfelder') }}</p>
                       <ValidationProvider name="Vorname" rules="required|alpha">
                         <template #default="{ errors }">
                           <div class="form-group">
@@ -133,7 +133,8 @@
                             <label
                               class="form-control-placeholder"
                               for="Vorname"
-                              ><i class="ni ni-single-02"></i> Vorname *</label
+                              ><i class="ni ni-single-02"></i
+                              >{{ $t('vorname') }}</label
                             >
                             <div class="invalid-feedback">{{ errors[0] }}</div>
                           </div>
@@ -159,7 +160,8 @@
                             <label
                               class="form-control-placeholder"
                               for="Nachname"
-                              ><i class="ni ni-single-02"></i> Nachname *</label
+                              ><i class="ni ni-single-02"></i
+                              >{{ $t('nachname') }}</label
                             >
                             <div class="invalid-feedback">{{ errors[0] }}</div>
                           </div>
@@ -185,8 +187,8 @@
                             <label
                               class="form-control-placeholder"
                               for="E-Mail-Adresse"
-                              ><i class="ni ni-email-83"></i> E-Mail-Adresse
-                              *</label
+                              ><i class="ni ni-email-83"></i
+                              >{{ $t(' E-Mail-Adresse *') }}</label
                             >
                             <div class="invalid-feedback">{{ errors[0] }}</div>
                           </div>
@@ -233,8 +235,8 @@
                             <label
                               class="form-control-placeholder"
                               for="Nachricht"
-                              ><i class="ni ni-caps-small"></i> Nachricht
-                              *</label
+                              ><i class="ni ni-caps-small"></i
+                              >{{ $t('nachricht') }}</label
                             >
                             <div class="invalid-feedback">{{ errors[0] }}</div>
                           </div>
@@ -247,7 +249,7 @@
                         type="submit"
                       >
                         <i class="ni ni-send"></i>
-                        Senden
+                        {{ $t('senden') }}
                       </button>
                     </div>
                   </div>
@@ -264,10 +266,10 @@
         <div class="row row-grid align-items-center my-md">
           <div class="col-lg-6">
             <h3 class="text-primary font-weight-light mb-2">
-              Vielen Dank für Ihre Unterstützung!
+              {{ $t('vielen-dank-fuer-ihre-unterstuetzung') }}
             </h3>
             <h4 class="pt-0 font-weight-light">
-              Folgen Sie uns auf einer dieser Plattformen.
+              {{ $t('folgen-sie-uns-auf-einer-dieser-plattformen') }}
             </h4>
           </div>
           <div class="col-lg-6 text-lg-center btn-wrapper">
@@ -277,7 +279,7 @@
               rel="noopener noreferrer"
               class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg"
               data-toggle="tooltip"
-              title="Folge uns auf Twitter"
+              :title="$t('folge-uns-auf-twitter')"
             >
               <i class="fa fa-twitter align-top"></i>
             </a>
@@ -287,7 +289,7 @@
               rel="noopener noreferrer"
               class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg"
               data-toggle="tooltip"
-              title="Like uns auf Facebook"
+              :title="$t('like-uns-auf-facebook')"
             >
               <i class="fa fa-facebook-square align-top"></i>
             </a>
@@ -297,7 +299,7 @@
               rel="noopener noreferrer"
               class="btn btn-neutral btn-icon-only btn-instagram btn-lg btn-round"
               data-toggle="tooltip"
-              title="Folge uns auf Instagram"
+              :title="$t('folge-uns-auf-instagram')"
             >
               <i class="fa fa-instagram align-top"></i>
             </a>
@@ -307,7 +309,7 @@
               rel="noopener noreferrer"
               class="btn btn-neutral btn-icon-only btn-linkedin btn-round btn-lg"
               data-toggle="tooltip"
-              title="Folge uns auf LinkedIn"
+              :title="$t('folge-uns-auf-linkedin')"
             >
               <i class="fa fa-linkedin align-top"></i>
             </a>
@@ -317,7 +319,7 @@
               rel="noopener noreferrer"
               class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg"
               data-toggle="tooltip"
-              title="Spendiere uns einen Stern auf Github"
+              :title="$t('spendiere-uns-einen-stern-auf-github')"
             >
               <i class="fa fa-github align-top"></i>
             </a>
@@ -327,7 +329,7 @@
               rel="noopener noreferrer"
               class="btn btn-neutral btn-icon-only btn-xing btn-round btn-lg"
               data-toggle="tooltip"
-              title="Folge uns auf Xing"
+              :title="$t('folge-uns-auf-xing')"
             >
               <i class="fa fa-xing align-top"></i>
             </a>
@@ -338,8 +340,6 @@
           <div class="col-sm-3 pt-4 pl-5 pb-5">
             <SitAdresse></SitAdresse>
           </div>
-          <!-- </div> -->
-          <!-- <div class="row align-items-center justify-content-md-between"> -->
           <div class="col-sm-9">
             <ul class="nav nav-footer">
               <template v-for="x in links">
@@ -360,9 +360,7 @@
                 </li>
               </template>
 
-              <!-- <template> -->
               <li class="nav-item mr-3 col-xs-12 col-sm">
-                <!-- <h5 class="nav-link pl-0 pt-4">{{ xx.menu }}</h5> -->
                 <n-link :to="localePath(home.link)" class="nav-link">{{
                   $t(home.name)
                 }}</n-link>
@@ -387,8 +385,6 @@
                   >{{ locale.name }}</nuxt-link
                 >
               </li>
-
-              <!-- </template> -->
             </ul>
           </div>
         </div>
@@ -403,13 +399,8 @@ import BaseNav from '@/components/argon/BaseNav'
 import BaseDropdown from '@/components/argon/BaseDropdown'
 import CloseButton from '@/components/argon/CloseButton'
 import { headroom } from 'vue-headroom'
-// import VueFriendlyIframe from 'vue-friendly-iframe'
 import Vue from 'vue'
 import de from 'vee-validate/dist/locale/de'
-// import ValidationProvider from 'vee-validate'
-// Vue.use(ValidationProvider, {
-// validity: true
-// })
 import { ValidationProvider } from 'vee-validate'
 import { Validator } from 'vee-validate'
 Validator.localize(de)
@@ -430,7 +421,6 @@ export default {
     CloseButton,
     BaseDropdown,
     headroom,
-    // VueFriendlyIframe,
     ValidationProvider
   },
   data() {
