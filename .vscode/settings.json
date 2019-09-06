@@ -1,5 +1,8 @@
 {
     "cSpell.language": ",de",
-    "vue-i18n-ally.localesPaths": "lang",
+    "vue-i18n-ally.localesPaths": [
+        "lang",
+        "locales"
+    ],
     "vue-i18n-ally.keystyle": "nested"
 }

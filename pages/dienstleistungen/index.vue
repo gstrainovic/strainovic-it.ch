@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header bold="Dienstleistungen"> </Header>
+    <Header bold="{{$t('dienstleistungen')}}"> </Header>
     <SoftwareUndApps h2="false"></SoftwareUndApps>
     <WebdesignUndProgrammierung h2="false"></WebdesignUndProgrammierung>
     <Marketing h2="false"></Marketing>

@@ -1082,7 +1082,7 @@
   dependencies:
     core-js "^2.5.7"
 
-"@kazupon/vue-i18n-loader@^0.4.0":
+"@kazupon/vue-i18n-loader@^0.4.0", "@kazupon/vue-i18n-loader@^0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@kazupon/vue-i18n-loader/-/vue-i18n-loader-0.4.1.tgz#71730a821ff15754eb004629d673b47f8d80fdd1"
   integrity sha512-hVznmhnyoUKozGY7pwq/UtPL76UDzb+aiN2YksZZIzCY/MkEqih0MSyEmTGw7+HVWzJRPAlDyoRNR4tWKmkCRw==

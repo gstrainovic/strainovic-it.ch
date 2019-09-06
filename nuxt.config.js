@@ -75,6 +75,7 @@ module.exports = {
             name: 'Deutsch',
             code: 'de',
             iso: 'de-DE',
+            // file: 'de-DE.js'
             file: 'de-DE.js'
           },
           {
@@ -84,6 +85,7 @@ module.exports = {
             file: 'en-US.js'
           }
         ],
+        vueI18nLoader: true,
         lazy: true,
         langDir: 'locales/',
         defaultLocale: 'de',
@@ -198,6 +200,13 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    // extend(config) {
+    //   config.module.rules.push({
+    //     resourceQuery: /blockType=i18n/,
+    //     type: 'javascript/auto',
+    //     loader: ['@kazupon/vue-i18n-loader', 'yaml-loader']
+    //   })
+    // }
+    // extend(config, ctx) {}
   }
 }
