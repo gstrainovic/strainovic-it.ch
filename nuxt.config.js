@@ -59,7 +59,8 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    '~/plugins/argon/argon-kit'
+    '~/plugins/argon/argon-kit',
+    { src: '~plugins/i18n.js' }
     // { src: '~/plugins/vue-lazyload', ssr: false }
   ],
   /*
@@ -67,10 +68,37 @@ module.exports = {
    */
   modules: [
     [
+      'nuxt-i18n',
+      {
+        locales: [
+          {
+            name: 'Deutsch',
+            code: 'de',
+            iso: 'de-DE',
+            file: 'de-DE.js'
+          },
+          {
+            name: 'English',
+            code: 'en',
+            iso: 'en-US',
+            file: 'en-US.js'
+          }
+        ],
+        lazy: true,
+        langDir: 'lang/',
+        defaultLocale: 'de',
+        detectBrowserLanguage: {
+          useCookie: true
+        }
+        // alwaysRedirect: false
+      }
+    ],
+
+    [
       'nuxt-validate',
       '@nuxtjs/component-cache',
       {
-        lang: 'de'
+        // lang: 'de'
         // classes: true,
         // classNames: {
         //   valid: 'is-valid',

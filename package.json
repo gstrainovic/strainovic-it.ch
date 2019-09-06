@@ -26,6 +26,7 @@
     "global": "^4.3.2",
     "nouislider": "^12.1.0",
     "nuxt": "^2.8.1",
+    "nuxt-i18n": "^6.1.3",
     "nuxt-validate": "^1.0.1",
     "nuxt-webfontloader": "^1.1.0",
     "placekeeper": "^1.0.7",

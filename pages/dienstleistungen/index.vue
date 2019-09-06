@@ -13,6 +13,11 @@ import Marketing from '@/components/Marketing'
 import SoftwareUndApps from '@/components/SoftwareUndApps'
 import WebdesignUndProgrammierung from '@/components/WebdesignUndProgrammierung'
 export default {
+  nuxtI18n: {
+    paths: {
+      en: '/services'
+    }
+  },
   components: {
     Header,
     Marketing,

@@ -46,10 +46,32 @@
               </BaseDropdown>
             </template>
 
-            <n-link class="nav-link" :to="kontakt.link">
+            <n-link class="nav-link" :to="localePath(kontakt.link)">
               <i :class="kontakt.icon"></i>
-              <span class="nav-link-inner--text">{{ kontakt.name }} </span>
+              <span class="nav-link-inner--text">{{ $t(kontakt.name) }}</span>
             </n-link>
+
+            <BaseDropdown tag="li" class="nav-item">
+              <n-link
+                slot="title"
+                :to="switchLocalePath(this.$i18n.locale)"
+                class="nav-link"
+                data-toggle="dropdown"
+                role="button"
+              >
+                <!-- <i :class="x.icon"></i> -->
+                <i class="fa fa-flag"></i>
+                <span class="nav-link-inner--text">{{ currentName }}</span>
+              </n-link>
+
+              <nuxt-link
+                v-for="locale in availableLocales"
+                :key="locale.code"
+                class="dropdown-item"
+                :to="switchLocalePath(locale.code)"
+                >{{ locale.name }}</nuxt-link
+              >
+            </BaseDropdown>
           </ul>
         </BaseNav>
       </header>
@@ -382,6 +404,7 @@ import { ValidationProvider } from 'vee-validate'
 import { Validator } from 'vee-validate'
 Validator.localize(de)
 import VeeValidate from 'vee-validate'
+
 Vue.use(VeeValidate, {
   classes: true,
   classNames: {
@@ -453,10 +476,15 @@ export default {
           ]
         }
       ],
+      // kontakt: {
+      //   icon: 'ni ni-email-83',
+      //   link: '/kontakt',
+      //   name: 'Kontakt'
+      // },
       kontakt: {
         icon: 'ni ni-email-83',
-        link: '/kontakt',
-        name: 'Kontakt'
+        link: 'kontakt',
+        name: 'kontakt'
       },
       home: {
         icon: 'ni ni-shop',
@@ -482,11 +510,23 @@ export default {
         }
       ]
     }
+  },
+  computed: {
+    availableLocales() {
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
+    },
+    currentName() {
+      return this.$i18n.locales.filter(i => i.code == this.$i18n.locale)[0].name
+    }
   }
 }
 </script>
 
 <style>
+.navbar-nav .nav-link .nav-link-inner--text {
+  margin-left: 0;
+}
+
 a {
   padding-top: 14px !important;
   padding-bottom: 14px !important;
