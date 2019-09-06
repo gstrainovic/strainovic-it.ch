@@ -85,10 +85,65 @@ module.exports = {
           }
         ],
         lazy: true,
-        langDir: 'lang/',
+        langDir: 'locales/',
         defaultLocale: 'de',
         detectBrowserLanguage: {
           useCookie: true
+        },
+        parsePages: false,
+        pages: {
+          'dienstleistungen/index': {
+            de: '/dienstleistungen',
+            en: '/services'
+          },
+          'dienstleistungen/marketing': {
+            de: '/dienstleistungen/marketing',
+            en: '/services/marketing'
+          },
+          'dienstleistungen/software-und-apps': {
+            de: '/dienstleistungen/software-und-apps',
+            en: '/services/software-and-apps'
+          },
+          'dienstleistungen/webdesign-und-programmierung': {
+            de: '/dienstleistungen/webdesign-und-programmierung',
+            en: '/services/webdesign-and-coding'
+          },
+          'referenzen-und-portfolio/index': {
+            de: '/referenzen-und-portfolio',
+            en: '/portfolio'
+          },
+          'referenzen-und-portfolio/projekte': {
+            de: '/referenzen-und-portfolio/projekte',
+            en: '/portfolio/projects'
+          },
+          'referenzen-und-portfolio/webdesign': {
+            de: '/referenzen-und-portfolio/webdesign',
+            en: '/portfolio/webdesign'
+          },
+          'ueber-uns/index': {
+            de: '/ueber-uns',
+            en: '/about'
+          },
+          'ueber-uns/strainovic-it': {
+            de: '/ueber-uns/strainovic-it',
+            en: '/about/strainovic-it'
+          },
+          'ueber-uns/goran-strainovic': {
+            de: '/ueber-uns/goran-strainovic',
+            en: '/about/goran-strainovic'
+          },
+          datenschutz: {
+            de: '/datenschutz',
+            en: '/privacy-policy'
+          },
+          impressum: {
+            de: '/impressum',
+            en: '/imprint'
+          },
+          kontakt: {
+            de: '/kontakt',
+            en: '/contact'
+          }
         }
         // alwaysRedirect: false
       }

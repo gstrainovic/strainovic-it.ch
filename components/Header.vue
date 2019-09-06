@@ -24,7 +24,7 @@
                     v-if="error"
                     class="btn btn-success btn-lg btn-block"
                     round
-                    to="/"
+                    :to="localePath('index')"
                   >
                     Zurück zur Startseite
                     <i class="ni ni-shop"></i>

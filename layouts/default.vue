@@ -3,12 +3,12 @@
     <headroom>
       <header class="header-global">
         <BaseNav class="navbar-main" type="transparent" effect="dark" expand>
-          <n-link slot="brand" class="navbar-brand" to="/"
+          <n-link slot="brand" class="navbar-brand" :to="localePath('index')"
             >Strainovic IT</n-link
           >
           <div slot="content-header" slot-scope="{ closeMenu }" class="row">
             <div class="col-6 collapse-brand">
-              <n-link to="/">Strainovic IT</n-link>
+              <n-link :to="localePath('index')">Strainovic IT</n-link>
             </div>
             <div class="col-6 collapse-close">
               <CloseButton @click="closeMenu"></CloseButton>
@@ -18,30 +18,30 @@
           <ul
             class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto"
           >
-            <n-link class="nav-link" :to="home.link">
+            <n-link class="nav-link" :to="localePath(home.link)">
               <i :class="home.icon"></i>
-              <span class="nav-link-inner--text">{{ home.name }} </span>
+              <span class="nav-link-inner--text">{{ $t(home.name) }} </span>
             </n-link>
 
             <template v-for="x in links">
               <BaseDropdown :key="x.index" tag="li" class="nav-item">
                 <n-link
                   slot="title"
-                  :to="x.link"
+                  :to="localePath(x.link)"
                   class="nav-link"
                   data-toggle="dropdown"
                   role="button"
                 >
                   <i :class="x.icon"></i>
-                  <span class="nav-link-inner--text">{{ x.menu }}</span>
+                  <span class="nav-link-inner--text">{{ $t(x.menu) }}</span>
                 </n-link>
 
                 <n-link
                   v-for="s in x.submenu"
                   :key="s.index"
-                  :to="s.link"
+                  :to="localePath(s.link)"
                   class="dropdown-item"
-                  >{{ s.name }}
+                  >{{ $t(s.name) }}
                 </n-link>
               </BaseDropdown>
             </template>
@@ -59,7 +59,6 @@
                 data-toggle="dropdown"
                 role="button"
               >
-                <!-- <i :class="x.icon"></i> -->
                 <i class="fa fa-flag"></i>
                 <span class="nav-link-inner--text">{{ currentName }}</span>
               </n-link>
@@ -348,37 +347,48 @@
                   :key="x.index"
                   class="nav-item mr-3 col-xs-12 col-sm-3 mb-4"
                 >
-                  <n-link :to="x.link" class="nav-link ">{{ x.menu }}</n-link>
+                  <n-link :to="localePath(x.link)" class="nav-link ">{{
+                    $t(x.menu)
+                  }}</n-link>
                   <n-link
                     v-for="s in x.submenu"
                     :key="s.index"
-                    :to="s.link"
+                    :to="localePath(s.link)"
                     class="nav-link"
-                    >{{ s.name }}</n-link
+                    >{{ $t(s.name) }}</n-link
                   >
                 </li>
               </template>
 
-              <template v-for="xx in rechtliches">
-                <li :key="xx.index" class="nav-item mr-3 col-xs-12 col-sm">
-                  <!-- <h5 class="nav-link pl-0 pt-4">{{ xx.menu }}</h5> -->
-                  <n-link :to="home.link" class="nav-link">{{
-                    home.name
-                  }}</n-link>
+              <!-- <template> -->
+              <li class="nav-item mr-3 col-xs-12 col-sm">
+                <!-- <h5 class="nav-link pl-0 pt-4">{{ xx.menu }}</h5> -->
+                <n-link :to="localePath(home.link)" class="nav-link">{{
+                  $t(home.name)
+                }}</n-link>
 
-                  <nuxt-link
-                    v-for="s in xx.submenu"
-                    :key="s.index"
-                    :to="s.link"
-                    class="nav-link"
-                    >{{ s.name }}</nuxt-link
-                  >
+                <nuxt-link
+                  v-for="s in rechtliches"
+                  :key="s.index"
+                  :to="localePath(s.link)"
+                  class="nav-link"
+                  >{{ $t(s.name) }}</nuxt-link
+                >
 
-                  <n-link :to="kontakt.link" class="nav-link">{{
-                    kontakt.name
-                  }}</n-link>
-                </li>
-              </template>
+                <n-link :to="localePath(kontakt.link)" class="nav-link">{{
+                  $t(kontakt.name)
+                }}</n-link>
+
+                <nuxt-link
+                  v-for="locale in availableLocales"
+                  :key="locale.code"
+                  class="nav-link"
+                  :to="switchLocalePath(locale.code)"
+                  >{{ locale.name }}</nuxt-link
+                >
+              </li>
+
+              <!-- </template> -->
             </ul>
           </div>
         </div>
@@ -427,86 +437,74 @@ export default {
     return {
       links: [
         {
+          link: 'dienstleistungen',
           menu: 'Dienstleistungen',
-          link: '/dienstleistungen',
           icon: 'ni ni-spaceship',
           submenu: [
             {
-              link: '/dienstleistungen/software-und-apps',
-              name: 'Software & Apps'
+              name: 'SoftwareUndApps',
+              link: 'dienstleistungen-software-und-apps'
             },
             {
-              link: '/dienstleistungen/webdesign-und-programmierung',
-              name: 'Webdesign & Programmierung'
+              name: 'WebdesignUndProgrammierung',
+              link: 'dienstleistungen-webdesign-und-programmierung'
             },
             {
-              link: '/dienstleistungen/marketing',
-              name: 'Marketing'
+              name: 'Marketing',
+              link: 'dienstleistungen-marketing'
             }
           ]
         },
         {
-          menu: 'Über uns',
-          link: '/ueber-uns',
+          menu: 'UeberUns',
+          link: 'ueber-uns',
           icon: 'ni ni-single-02',
           submenu: [
             {
-              link: '/ueber-uns/strainovic-it',
-              name: 'Über Strainovic IT'
+              name: 'StrainovicIt',
+              link: 'ueber-uns-strainovic-it'
             },
             {
-              link: '/ueber-uns/goran-strainovic',
-              name: 'Über Goran Strainovic'
+              name: 'GoranStrainovic',
+              link: 'ueber-uns-goran-strainovic'
             }
           ]
         },
         {
-          menu: 'Referenzen & Portfolio',
-          link: '/referenzen-und-portfolio/',
+          menu: 'ReferenzenUndPortfolio',
+          link: 'referenzen-und-portfolio',
           icon: 'ni ni-collection',
           submenu: [
             {
-              link: '/referenzen-und-portfolio/webdesign',
-              name: 'Webdesign'
+              name: 'Webdesign',
+              link: 'referenzen-und-portfolio-webdesign'
             },
             {
-              link: '/referenzen-und-portfolio/projekte',
-              name: 'Projekte'
+              name: 'Projekte',
+              link: 'referenzen-und-portfolio-projekte'
             }
           ]
         }
       ],
-      // kontakt: {
-      //   icon: 'ni ni-email-83',
-      //   link: '/kontakt',
-      //   name: 'Kontakt'
-      // },
       kontakt: {
+        name: 'Kontakt',
         icon: 'ni ni-email-83',
-        link: 'kontakt',
-        name: 'kontakt'
+        link: 'kontakt'
       },
       home: {
+        name: 'Startseite',
         icon: 'ni ni-shop',
-        link: '/',
-        name: 'Startseite'
+        link: 'index'
       },
 
       rechtliches: [
         {
-          menu: 'Sonstige Links',
-          link: '/',
-          icon: '',
-          submenu: [
-            {
-              link: '/impressum',
-              name: 'Impressum'
-            },
-            {
-              link: '/datenschutz',
-              name: 'Datenschutz'
-            }
-          ]
+          name: 'Impressum',
+          link: 'impressum'
+        },
+        {
+          name: 'Datenschutz',
+          link: 'datenschutz'
         }
       ]
     }

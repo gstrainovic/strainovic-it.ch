@@ -4,7 +4,7 @@
       <Header bold="Fehler"></Header>
       <div class="title">{{ message }}</div>
       <p v-if="statusCode === 404" class="description">
-        <NuxtLink class="error-link" to="/"
+        <NuxtLink class="error-link" :to="localePath('index')"
           ><%= messages.back_to_home %></NuxtLink
         >
       </p>

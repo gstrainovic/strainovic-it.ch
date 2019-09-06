@@ -2,15 +2,11 @@
   <div class="mb-200">
     <Header
       v-if="error.statusCode === 404"
-      bold="Entschuldigung, diese Seite existiert nicht"
-      normal="Fehlermeldung: 404"
+      :bold="$t('Error.404.Bold')"
+      :normal="$t('Error.404.Normal')"
       error="True"
     ></Header>
-    <Header
-      v-else
-      bold="Entschuldigung, ein Fehler ist aufgetreten"
-      error="True"
-    ></Header>
+    <Header v-else :bold="$t('Error.Else.Bold')" error="True"></Header>
   </div>
 </template>
 

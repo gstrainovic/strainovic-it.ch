@@ -4,7 +4,9 @@
       <div class="container pt-lg pb-100">
         <div class="row">
           <div class="col">
-            <h2 v-if="h2" class="display-3">Über Goran Strainovic</h2>
+            <h2 v-if="h2" class="display-3">
+              {{ $t('ueber') }} Goran Strainovic
+            </h2>
           </div>
         </div>
         <div class="row mt-5">
