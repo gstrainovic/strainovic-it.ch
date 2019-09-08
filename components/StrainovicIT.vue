@@ -4,28 +4,32 @@
       <div class="container">
         <div class="row mb-5">
           <div class="col-lg-8">
-            <h2 v-if="h2" class="display-3">Über Strainovic IT</h2>
+            <h2 v-if="h2" class="display-3">{{ $t('ueber-strainovic-it') }}</h2>
             <h3 class="lead mt-5">
-              Strainovic IT wurde 2016 gegründet, befindet sich in Steinach im
-              Kanton St.Gallen SG an der Ostschweiz am Bodensee und bietet alle
-              digitale Dienstleistungen für die Informationstechnologie, auch
-              bekannt als IT oder ICT an, wie z. B:
+              {{
+                $t(
+                  'strainovic-it-wurde-2016-gegruendet-befindet-sich-in-steinach-imkanton-st-gallen-sg-an-der-ostschweiz-am-bodensee-und-bietet-alledigitale-dienstleistungen-fuer-die-informationstechnologie-auchbekannt-als-it-oder-ict-an-wie-z-b'
+                )
+              }}
             </h3>
             <ul>
               <br />
-              <li>Analyse & Beratung</li>
-              <li>Projektplanung & Projektmanagement</li>
-              <li>Installation & Konfiguration</li>
-              <li>Design & Programmierung</li>
-              <li>Tests</li>
-              <li>Administration, Support</li>
-              <li>Wartung, Backups, Updates</li>
-              <li>Schulungen</li>
-              <li>Automation</li>
+              <li>{{ $t('analyse-and-beratung') }}</li>
+              <li>{{ $t('projektplanung-and-projektmanagement') }}</li>
+              <li>{{ $t('installation-and-konfiguration') }}</li>
+              <li>{{ $t('design-and-programmierung') }}</li>
+              <li>{{ $t('tests') }}</li>
+              <li>{{ $t('administration-support') }}</li>
+              <li>{{ $t('wartung-backups-updates') }}</li>
+              <li>{{ $t('schulungen') }}</li>
+              <li>{{ $t('automation') }}</li>
             </ul>
             <h3 class="lead ">
-              Wir unterstützen sowohl private auch als KMU, Firmen, Start-ups,
-              AG, GmbH bei allen digitalen Herausforderungen, wie z.B:
+              {{
+                $t(
+                  'wir-unterstuetzen-sowohl-private-auch-als-kmu-firmen-start-ups-ag-gmbh-bei-allen-digitalen-herausforderungen-wie-z-b'
+                )
+              }}
             </h3>
           </div>
         </div>
@@ -35,109 +39,117 @@
           <div class="col">
             <ul>
               <h4>Web</h4>
-              <li>CMS Webseiten mit z. B:</li>
+              <li>{{ $t('cms-webseiten-mit-z-b') }}</li>
               <ul>
-                <li>WordPress</li>
-                <li>Grav</li>
+                <li>{{ $t('wordpress') }}</li>
+                <li>{{ $t('grav') }}</li>
               </ul>
-              <li>Statische Webseiten mit z. B:</li>
+              <li>{{ $t('statische-webseiten-mit-z-b') }}</li>
               <ul>
                 <li>Hugo</li>
-                <li>Jekyll</li>
-                <li>Gatsby</li>
-                <li>Nuxt</li>
+                <li>{{ $t('jekyll') }}</li>
+                <li>{{ $t('gatsby') }}</li>
+                <li>{{ $t('nuxt') }}</li>
               </ul>
-              <li>Webshops mit z. B:</li>
+              <li>{{ $t('webshops-mit-z-b') }}</li>
               <ul>
-                <li>Woocommerce</li>
-                <li>Shopware</li>
+                <li>{{ $t('woocommerce') }}</li>
+                <li>{{ $t('shopware') }}</li>
               </ul>
-              <li>Headless CMS mit z. B: Strapi</li>
-              <li>Webportale</li>
-              <li>Webapps und Webapplikationen mit z. B:</li>
+              <li>{{ $t('headless-cms-mit-z-b-strapi') }}</li>
+              <li>{{ $t('webportale') }}</li>
+              <li>{{ $t('webapps-und-webapplikationen-mit-z-b') }}</li>
               <ul>
-                <li>React</li>
-                <li>Vue</li>
+                <li>{{ $t('react') }}</li>
+                <li>{{ $t('vue') }}</li>
               </ul>
             </ul>
           </div>
           <div class="col-lg-6 text-left">
             <ul>
-              <h4>Mobile & Tablet</h4>
-              <li>Apps für Android Smartphones</li>
-              <li>Apps für iOS, iPad, iPhone, Apple</li>
+              <h4>{{ $t('mobile-and-tablet') }}</h4>
+              <li>{{ $t('apps-fuer-android-smartphones') }}</li>
+              <li>{{ $t('apps-fuer-ios-ipad-iphone-apple') }}</li>
               <br />
-              <h4>Desktop & Server</h4>
-              <li>Betriebssysteme wie z. B:</li>
+              <h4>{{ $t('desktop-and-server') }}</h4>
+              <li>{{ $t('betriebssysteme-wie-z-b') }}</li>
               <ul>
-                <li>Windows</li>
-                <li>Linux, Ubuntu</li>
+                <li>{{ $t('windows') }}</li>
+                <li>{{ $t('linux-ubuntu') }}</li>
               </ul>
-              <li>Software, Programme</li>
+              <li>{{ $t('software-programme') }}</li>
               <li>
-                Office, VBA, Word, Excel, Access, Outlook, E-Mail & Powerpoint
+                {{
+                  $t(
+                    'office-vba-word-excel-access-outlook-e-mail-and-powerpoint'
+                  )
+                }}
               </li>
-              <li>Plugins, Module, Bibliotheken & Erweiterungen</li>
+              <li>{{ $t('plugins-module-bibliotheken-and-erweiterungen') }}</li>
             </ul>
           </div>
         </div>
         <div class="row text-left">
           <div class="col-lg-6">
             <ul>
-              <h4>Grafik</h4>
-              <li>Logo</li>
-              <li>Flyer</li>
-              <li>Broschüren & Prospekte</li>
-              <li>Infografiken</li>
-              <li>Icons</li>
-              <li>Fotos (Beschaffung)</li>
+              <h4>{{ $t('grafik') }}</h4>
+              <li>{{ $t('logo') }}</li>
+              <li>{{ $t('flyer') }}</li>
+              <li>{{ $t('broschueren-and-prospekte') }}</li>
+              <li>{{ $t('infografiken') }}</li>
+              <li>{{ $t('icons') }}</li>
+              <li>{{ $t('fotos-beschaffung') }}</li>
               <br />
-              <h4>Videos</h4>
-              <li>Videoschnitt</li>
-              <li>Hosting auf eigenen Server</li>
-              <li>Hosting auf YouTube (kostenlos mit Werbung)</li>
-              <li>Hosting auf Vimeo (kostenpflichtig ohne Werbung)</li>
+              <h4>{{ $t('videos') }}</h4>
+              <li>{{ $t('videoschnitt') }}</li>
+              <li>{{ $t('hosting-auf-eigenen-server') }}</li>
+              <li>{{ $t('hosting-auf-youtube-kostenlos-mit-werbung') }}</li>
+              <li>
+                {{ $t('hosting-auf-vimeo-kostenpflichtig-ohne-werbung') }}
+              </li>
             </ul>
           </div>
           <div class="col">
             <ul>
-              <h4>Google</h4>
-              <li>Google SEO</li>
-              <li>Google AdWords</li>
-              <li>Google Business</li>
-              <li>Google Maps</li>
+              <h4>{{ $t('google') }}</h4>
+              <li>{{ $t('google-seo') }}</li>
+              <li>{{ $t('google-adwords') }}</li>
+              <li>{{ $t('google-business') }}</li>
+              <li>{{ $t('google-maps') }}</li>
               <br />
-              <h4>SMM Social-Media-Marketing</h4>
-              <li>Facebook</li>
-              <li>Instagram</li>
-              <li>Twitter</li>
-              <li>YouTube</li>
-              <li>Chatbot</li>
+              <h4>{{ $t('smm-social-media-marketing') }}</h4>
+              <li>{{ $t('facebook') }}</li>
+              <li>{{ $t('instagram') }}</li>
+              <li>{{ $t('twitter') }}</li>
+              <li>{{ $t('youtube') }}</li>
+              <li>{{ $t('chatbot') }}</li>
             </ul>
           </div>
         </div>
         <div class="row">
           <div class="col">
             <ul>
-              <h4>Daten</h4>
-              <li>Research</li>
-              <li>Verarbeitung</li>
-              <li>Datenbeschaffung</li>
+              <h4>{{ $t('daten') }}</h4>
+              <li>{{ $t('research') }}</li>
+              <li>{{ $t('verarbeitung') }}</li>
+              <li>{{ $t('datenbeschaffung') }}</li>
               <ul>
-                <li>manuelle Recherche</li>
-                <li>Automatisiert per Crawler/Spider/Bot</li>
+                <li>{{ $t('manuelle-recherche') }}</li>
+                <li>{{ $t('automatisiert-per-crawler-spider-bot') }}</li>
               </ul>
-              <li>Automatisierungen</li>
-              <li>Schnittstellen (API)</li>
+              <li>{{ $t('automatisierungen') }}</li>
+              <li>{{ $t('schnittstellen-api') }}</li>
             </ul>
           </div>
         </div>
         <div class="row mb-lg">
           <div class="col-lg-8">
             <h3 class="lead ">
-              Die meisten Projekte werden direkt vom Gründer, Goran Strainovic
-              umgesetzt. Grössere Projekte werden bei Bedarf mit Partner
-              umgesetzt.
+              {{
+                $t(
+                  'die-meisten-projekte-werden-direkt-vom-gruender-goran-strainovicumgesetzt-groessere-projekte-werden-bei-bedarf-mit-partnerumgesetzt'
+                )
+              }}
             </h3>
           </div>
         </div>

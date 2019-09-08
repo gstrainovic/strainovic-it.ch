@@ -1,4 +1,83 @@
 export default {
+  // "###############Components/StrainovicIT": "###################",
+  'ueber-strainovic-it': 'Über Strainovic IT',
+  'strainovic-it-wurde-2016-gegruendet-befindet-sich-in-steinach-imkanton-st-gallen-sg-an-der-ostschweiz-am-bodensee-und-bietet-alledigitale-dienstleistungen-fuer-die-informationstechnologie-auchbekannt-als-it-oder-ict-an-wie-z-b':
+    'Strainovic IT wurde 2016 gegründet, befindet sich in Steinach imKanton St.Gallen SG an der Ostschweiz am Bodensee und bietet alledigitale Dienstleistungen für die Informationstechnologie, auchbekannt als IT oder ICT an, wie z. B:',
+  'analyse-and-beratung': 'Analyse & Beratung',
+  'projektplanung-and-projektmanagement': 'Projektplanung & Projektmanagement',
+  'installation-and-konfiguration': 'Installation & Konfiguration',
+  'design-and-programmierung': 'Design & Programmierung',
+  tests: 'Tests',
+  'administration-support': 'Administration, Support',
+  'wartung-backups-updates': 'Wartung, Backups, Updates',
+  schulungen: 'Schulungen',
+  automation: 'Automation',
+  'wir-unterstuetzen-sowohl-private-auch-als-kmu-firmen-start-ups-ag-gmbh-bei-allen-digitalen-herausforderungen-wie-z-b':
+    'Wir unterstützen sowohl private auch als KMU, Firmen, Start-ups,AG, GmbH bei allen digitalen Herausforderungen, wie z.B:',
+  'cms-webseiten-mit-z-b': 'CMS Webseiten mit z. B:',
+  'statische-webseiten-mit-z-b': 'Statische Webseiten mit z. B:',
+  jekyll: 'Jekyll',
+  gatsby: 'Gatsby',
+  nuxt: 'Nuxt',
+  'webshops-mit-z-b': 'Webshops mit z. B:',
+  woocommerce: 'Woocommerce',
+  wordpress: 'WordPress',
+  grav: 'Grav',
+  shopware: 'Shopware',
+  'headless-cms-mit-z-b-strapi': 'Headless CMS mit z. B: Strapi',
+  webportale: 'Webportale',
+  'webapps-und-webapplikationen-mit-z-b':
+    'Webapps und Webapplikationen mit z. B:',
+  react: 'React',
+  vue: 'Vue',
+  'mobile-and-tablet': 'Mobile & Tablet',
+  'apps-fuer-android-smartphones': 'Apps für Android Smartphones',
+  'apps-fuer-ios-ipad-iphone-apple': 'Apps für iOS, iPad, iPhone, Apple',
+  'desktop-and-server': 'Desktop & Server',
+  'betriebssysteme-wie-z-b': 'Betriebssysteme wie z. B:',
+  windows: 'Windows',
+  'linux-ubuntu': 'Linux, Ubuntu',
+  'software-programme': 'Software, Programme',
+  'office-vba-word-excel-access-outlook-e-mail-and-powerpoint':
+    'Office, VBA, Word, Excel, Access, Outlook, E-Mail & Powerpoint',
+  'plugins-module-bibliotheken-and-erweiterungen':
+    'Plugins, Module, Bibliotheken & Erweiterungen',
+  grafik: 'Grafik',
+  logo: 'Logo',
+  flyer: 'Flyer',
+  'broschueren-and-prospekte': 'Broschüren & Prospekte',
+  infografiken: 'Infografiken',
+  icons: 'Icons',
+  'fotos-beschaffung': 'Fotos (Beschaffung)',
+  videos: 'Videos',
+  videoschnitt: 'Videoschnitt',
+  'hosting-auf-eigenen-server': 'Hosting auf eigenen Server',
+  'hosting-auf-youtube-kostenlos-mit-werbung':
+    'Hosting auf YouTube (kostenlos mit Werbung)',
+  'hosting-auf-vimeo-kostenpflichtig-ohne-werbung':
+    'Hosting auf Vimeo (kostenpflichtig ohne Werbung)',
+  google: 'Google',
+  'google-seo': 'Google SEO',
+  'google-adwords': 'Google AdWords',
+  'google-business': 'Google Business',
+  'google-maps': 'Google Maps',
+  'smm-social-media-marketing': 'SMM Social-Media-Marketing',
+  facebook: 'Facebook',
+  instagram: 'Instagram',
+  twitter: 'Twitter',
+  youtube: 'YouTube',
+  chatbot: 'Chatbot',
+  daten: 'Daten',
+  research: 'Research',
+  verarbeitung: 'Verarbeitung',
+  datenbeschaffung: 'Datenbeschaffung',
+  'manuelle-recherche': 'manuelle Recherche',
+  'automatisiert-per-crawler-spider-bot':
+    'Automatisiert per Crawler/Spider/Bot',
+  automatisierungen: 'Automatisierungen',
+  'schnittstellen-api': 'Schnittstellen (API)',
+  'die-meisten-projekte-werden-direkt-vom-gruender-goran-strainovicumgesetzt-groessere-projekte-werden-bei-bedarf-mit-partnerumgesetzt':
+    'Die meisten Projekte werden direkt vom Gründer, Goran Strainovicumgesetzt. Grössere Projekte werden bei Bedarf mit Partnerumgesetzt.',
   // "#####Components/SitAdresse": "#######",
   schweiz: 'Schweiz',
   'auf-google-maps-anzeigen': ' Auf Google Maps anzeigen',
@@ -53,18 +132,14 @@ export default {
       ' Alle IT Dienstleistungen für Private, Startup, KMU, GmbH, AG oder Einzelfirma aus einer Hand. '
   },
   'was-wir-tun': 'Was wir tun',
-  'analyse-and-beratung': 'Analyse & Beratung',
   'anhand-ihrer-anforderungen-erhalten-sie-eine-individuelle-empfehlung-ein-konzept-ueber-die-beste-loesung-zu-ihrem-projekt':
     'Anhand Ihrer Anforderungen erhalten Sie eine individuelle Empfehlung - ein Konzept, über die beste Lösung zu Ihrem Projekt.',
-  'installation-and-konfiguration': 'Installation & Konfiguration',
   'projektplanung-and-projekt-and-shy-management':
     'Projektplanung & Projektmanagement',
   'gerne-arbeiten-wir-mit-ihrem-team-zusammen-und-uebernehmen-falls-gewuenscht-die-ganze-planung-und-koordination-bis-zum-erfolgreichen-abschluss-ihres-projektes':
     'Gerne arbeiten wir mit Ihrem Team zusammen und übernehmen, falls gewünscht die ganze Planung und Koordination bis zum erfolgreichen Abschluss Ihres Projektes.',
-  'design-and-programmierung': 'Design & Programmierung',
   'keine-komp':
     ' Keine Kompromisse. Fehlende Elemente wie z. B. Designs, Templates und Erweiterungen werden mit neuesten Standards, Empfehlungen und Technologien neu designt und programmiert. ',
-  automation: 'Automation',
   sparen:
     ' Sparen Sie Zeit und Geld. Es werden alle Ihre Prozesse optimiert, so das Sie viel weniger Daten eingeben müssten. Weniger eintippen und seltener Kopieren und Einfügen erhöht Ihre Produktivität und vermindert das Risiko von Fehlern. ',
   'tests-and-uebergabe': 'Tests & Übergabe',
@@ -177,14 +252,12 @@ export default {
     'Erstellung und Beschaffung von Content',
   mitdem:
     'Mit dem optimalem Design z. B. Ihrer Webseite und Marketing ist es               noch nicht getan. Ohne überzeugenden Webseiteninhalt, locken Sie               zwar (erschwert) Besucher an, generieren jedoch daraus keine               Kunden. Wir helfen Ihnen durch spannende Webinhalte Besucher von               Ihrem Produkt oder Dienstleistungen zu überzeugen und so es zu               verkaufen. Dabei setzen wir auf ein breites Multimedia Angebot wie               Texte schreiben, Videos und Fotos zu beschaffen oder durch unseren               Fotografen zu erstellen.',
-  datenbeschaffung: 'Datenbeschaffung',
   gerneunter:
     'Gerne unterstützen wir Sie auch bei der Datenbeschaffung für Ihr               Marketing. Egal ob Adressen, Branchenverzeichnisse,               Konkurrenzvergleiche, wir helfen Ihnen bei der Beschaffung mit               manuellem Google Research, Spider/Crawler/Bot oder durch unser               Netzwerk an Partnern und Schnittstellen.',
   // '#######projekte#######': '#######projekte#######',
   'wordpress-divi': 'WordPress, Divi',
   'neue-kunden-mit-taeglichen-posts-inspirieren':
     'Neue Kunden mit täglichen Posts inspirieren',
-  facebook: 'Facebook',
   'zeitersparnis-durch-automatisierungen':
     'Zeitersparnis durch Automatisierungen',
   'prueffeld-vs': 'Prüffeld, VS',
@@ -216,7 +289,6 @@ export default {
   'plugin-fuer-einen-deutschen-kunden': 'Plugin für einen deutschen Kunden',
   'less-than-p-greater-than-unbenoetigte-formularfelder-in-shopware-bei-der-registrierungdeaktivieren-less-than-p-greater-than':
     'Unbenötigte Formularfelder in Shopware bei der Registrierungdeaktivieren',
-  schulungen: 'Schulungen',
   'schulung-beim-kunden-in-zuerich': 'Schulung beim Kunden in Zürich',
   'basics-der-webseitenerstellung': 'Basics der Webseitenerstellung',
   'schulung-eines-kunden-aus-st-gallen': 'Schulung eines Kunden aus St.Gallen',

@@ -1,4 +1,83 @@
 export default {
+  '###############Compoents/Strainovic IT': '###################',
+  'ueber-strainovic-it': 'About Strainovic IT',
+  'strainovic-it-wurde-2016-gegruendet-befindet-sich-in-steinach-imkanton-st-gallen-sg-an-der-ostschweiz-am-bodensee-und-bietet-alledigitale-dienstleistungen-fuer-die-informationstechnologie-auchbekannt-als-it-oder-ict-an-wie-z-b':
+    'Strainovic IT was founded in 2016, is located in Steinach in the canton of St.Gallen SG on Lake Constance in Eastern Switzerland and offers all digital services for information technology, also known as IT or ICT, such as',
+  'analyse-and-beratung': 'Analysis & Consulting',
+  'projektplanung-and-projektmanagement':
+    'Project Planning & Project Management',
+  'installation-and-konfiguration': 'Installation & Configuration',
+  'design-and-programmierung': 'Design & Programming',
+  tests: 'Tests',
+  'administration-support': 'Administration, Support',
+  'wartung-backups-updates': 'Maintenance, backups, updates',
+  schulungen: 'Training',
+  automation: 'Automation',
+  'wir-unterstuetzen-sowohl-private-auch-als-kmu-firmen-start-ups-ag-gmbh-bei-allen-digitalen-herausforderungen-wie-z-b':
+    'We support private as well as SME, companies, start-ups, AG, GmbH with all digital challenges, like e.g.',
+  'cms-webseiten-mit-z-b': 'CMS websites with e.g.',
+  'statische-webseiten-mit-z-b': 'Static websites with e.g.',
+  jekyll: 'Jekyll',
+  gatsby: 'Gatsby',
+  nuxt: 'Nuxt',
+  'webshops-mit-z-b': 'Webshops with e.g.',
+  woocommerce: 'Woocommerce',
+  wordpress: 'WordPress',
+  grav: 'Grav',
+  shopware: 'Shopware',
+  'headless-cms-mit-z-b-strapi': 'Headless CMS with e.g. Strapi',
+  webportale: 'Web portals',
+  'webapps-und-webapplikationen-mit-z-b':
+    'Webapps and Webapplications with e.g.',
+  react: 'React',
+  vue: 'Vue',
+  'mobile-and-tablet': 'Mobile & Tablet',
+  'apps-fuer-android-smartphones': 'Apps for Android Smartphones',
+  'apps-fuer-ios-ipad-iphone-apple': 'Apps for iOS, iPad, iPhone, Apple',
+  'desktop-and-server': 'Desktop & Server',
+  'betriebssysteme-wie-z-b': 'Operating systems such as',
+  windows: 'Windows',
+  'linux-ubuntu': 'Linux, Ubuntu',
+  'software-programme': 'Software, Programs',
+  'office-vba-word-excel-access-outlook-e-mail-and-powerpoint':
+    'Office, VBA, Word, Excel, Access, Outlook, Email & Powerpoint',
+  'plugins-module-bibliotheken-and-erweiterungen':
+    'Plugins, Modules, Libraries & Extensions',
+  grafik: 'Graphics',
+  logo: 'Logo',
+  flyer: 'Flyer',
+  'broschueren-and-prospekte': 'Brochures & Brochures',
+  infografiken: 'Infographics',
+  icons: 'Icons',
+  'fotos-beschaffung': 'Photos (procurement)',
+  videos: 'Videos',
+  videoschnitt: 'Video editing',
+  'hosting-auf-eigenen-server': 'Hosting on own server',
+  'hosting-auf-youtube-kostenlos-mit-werbung':
+    'Hosting on YouTube (free with advertising)',
+  'hosting-auf-vimeo-kostenpflichtig-ohne-werbung':
+    'Hosting on Vimeo (no advertising fee)',
+  google: 'Google',
+  'google-seo': 'Google SEO',
+  'google-adwords': 'Google AdWords',
+  'google-business': 'Google Business',
+  'google-maps': 'Google Maps',
+  'smm-social-media-marketing': 'SMM Social Media Marketing',
+  facebook: 'Facebook',
+  instagram: 'Instagram',
+  twitter: 'Twitter',
+  youtube: 'YouTube',
+  chatbot: 'Chatbot',
+  daten: 'Data',
+  research: 'Research',
+  verarbeitung: 'Processing',
+  datenbeschaffung: 'Data collection',
+  'manuelle-recherche': 'manual research',
+  'automatisiert-per-crawler-spider-bot': 'Automated by crawler/spider/bot',
+  automatisierungen: 'Automation',
+  'schnittstellen-api': 'Interfaces (API)',
+  'die-meisten-projekte-werden-direkt-vom-gruender-goran-strainovicumgesetzt-groessere-projekte-werden-bei-bedarf-mit-partnerumgesetzt':
+    'Most projects are implemented directly by the founder, Goran Strainovicum. Larger projects are implemented with partners if required.',
   '#####Components/SitAdresse': '#######',
   schweiz: 'Switzerland',
   'auf-google-maps-anzeigen': 'Show on Google Maps',
@@ -52,18 +131,14 @@ export default {
     h2: 'All IT services for private and companies from a single source. '
   },
   'was-wir-tun': 'What we do.',
-  'analyse-and-beratung': 'Analysis & Consulting',
   'anhand-ihrer-anforderungen-erhalten-sie-eine-individuelle-empfehlung-ein-konzept-ueber-die-beste-loesung-zu-ihrem-projekt':
     'Based on your requirements, you will receive an individual recommendation - a concept about the best solution to your project.',
-  'installation-and-konfiguration': 'Installation & Configuration',
   'projektplanung-and-projekt-and-shy-management':
     'Project Planning & Project Management',
   'gerne-arbeiten-wir-mit-ihrem-team-zusammen-und-uebernehmen-falls-gewuenscht-die-ganze-planung-und-koordination-bis-zum-erfolgreichen-abschluss-ihres-projektes':
     'We are happy to work together with your team and, if desired, take over the entire planning and coordination up to the successful completion of your project',
-  'design-and-programmierung': 'Design & Programming',
   'keine-komp':
     'No compromises. Missing elements such as designs, templates and extensions are redesigned and reprogrammed with the latest standards, recommendations and technologies.             ',
-  automation: 'Automation',
   sparen:
     "Save time and money. All your processes will be optimized, so you'll have to enter much less data. Less typing and less copying and pasting increases your productivity and reduces the risk of errors.             ",
   'tests-and-uebergabe': 'Tests & Deliveries.',
@@ -173,14 +248,12 @@ export default {
     'Creation and procurement of content',
   mitdem:
     'With the optimal design e.g. of your website and marketing it is not done yet. Without convincing website content, you attract (make) visitors more difficult, but do not generate customers from it. We help you to convince visitors of your product or services by exciting web content and thus to sell it. In doing so, we rely on a wide range of multimedia services such as writing texts, procuring videos and photos or creating them through our photographer',
-  datenbeschaffung: 'Data procurement',
   gerneunter:
     'We would also be happy to support you in obtaining data for your marketing. Whether addresses, trade directories, competitive comparisons, we help you with the procurement with manual Google Research, Spider/Crawler/Bot or through our network of partners and interfaces',
   // '#######projekte#######': '#########projects#######',
   'wordpress-divi': 'WordPress, Divi',
   'neue-kunden-mit-taeglichen-posts-inspirieren':
     'Inspire new customers with daily posts.',
-  facebook: 'Facebook',
   'zeitersparnis-durch-automatisierungen': 'Time savings through automation',
   'prueffeld-vs': 'Testfield, VS',
   'wegfall-von-manuellen-eintragungen-in-excel':
@@ -211,7 +284,6 @@ export default {
   'plugin-fuer-einen-deutschen-kunden': 'Plugin for a German customer',
   'less-than-p-greater-than-unbenoetigte-formularfelder-in-shopware-bei-der-registrierungdeaktivieren-less-than-p-greater-than':
     'Unnecessary form fields in Shopware during registration deactivate',
-  schulungen: 'Training',
   'schulung-beim-kunden-in-zuerich': 'Customer training in Zurich',
   'basics-der-webseitenerstellung': 'Basics of website creation.',
   'schulung-eines-kunden-aus-st-gallen':
