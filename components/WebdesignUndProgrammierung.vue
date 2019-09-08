@@ -20,223 +20,31 @@
               <p class="lead">
                 Konzentrieren Sie sich auf Ihr Business und überlassen Sie uns
                 das Erstellen der Webseite. So erhalten Sie schnell und einfach
-                eine verführerisch schöne, individuelle Webseite.
+                eine verführerisch schöne, individuelle Webseite.'
               </p>
             </div>
           </div>
         </div>
         <div class="row row-grid pr-md-5">
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <!-- <badge type="success" circle class="mr-3" icon="ni ni-settings-gear-65"></badge> -->
-              <h4 class="mb-0">Beratung</h4>
+          <template v-for="x in oben">
+            <div :key="x.index" class="col-md-6 mt-4">
+              <div class="d-flex align-items-center">
+                <h4 class="mb-3">{{ $t(x.t) }}</h4>
+              </div>
+              <p>{{ $t(x.p) }}</p>
             </div>
-            <p>
-              Anhand Ihrer Ziele und Anforderungen erhalten Sie Empfehlungen
-              über die besten Technologien, Konzepte, Skizzen und einen Zeit-
-              und Ausführungsplan.
-            </p>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <!-- <badge type="success" circle class="mr-3" icon="ni ni-settings-gear-65"></badge> -->
-              <h4 class="mb-0">Domain & Hosting</h4>
-            </div>
-            <p>
-              Bei einer Beratung werden Sie über Domains und Hosting informiert.
-              Sie erhalten Empfehlungen über die besten Webserver für alle
-              Bereiche, egal ob statisch, WordPress oder komplexe Web-Apps /
-              Webplattformen.
-            </p>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <!-- <badge type="success" circle class="mr-3" icon="ni ni-html5"></badge> -->
-              <h4 class="mb-0">Individuelles Design</h4>
-            </div>
-            <p>
-              Sie wählen ein Theme aus hunderten aus, die Vorlage wird Ihren
-              individuellen Wünschen angepasst.
-            </p>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <!-- <badge type="success" circle class="mr-3" icon="ni ni-html5"></badge> -->
-              <h4 class="mb-0">Responsive</h4>
-            </div>
-            <p>
-              Ihre Webseite wird auf allen Geräten funktionieren, egal ob
-              Desktop, Smartphone oder Tablet.
-            </p>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <!-- <badge type="success" circle class="mr-3" icon="ni ni-satisfied"></badge> -->
-              <h4 class="mb-0">HTTPS/SSL Verschlüsselung</h4>
-            </div>
-            <p>
-              Sichern Sie sich Vorteile bei Google und Sicherheit durch unsere
-              kostenlose HTTPS/SSL Codierung.
-            </p>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <!-- <badge type="success" circle class="mr-3" icon="ni ni-satisfied"></badge> -->
-              <h4 class="mb-0">Webshop & Bezahlfunktionen</h4>
-            </div>
-            <p>
-              Ihr Shop/Plattform und die Zahlungsmöglichkeiten werden so
-              konfiguriert, das Sie Ihre Produkte und Dienstleistungen einfach
-              online verkaufen können. Erstellt mit WooCommerce, Shopware oder
-              anderen Technologien.
-            </p>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <!-- <badge type="success" circle class="mr-3" icon="ni ni-satisfied"></badge> -->
-              <h4 class="mb-0">Performance</h4>
-            </div>
-            <p>
-              Webseitenbesucher lieben schnelle Webseiten. Ihre Webseite wird
-              optimiert, sodass es blitzschnell lädt. Google und Ihre Besucher
-              werden es lieben.
-            </p>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <!-- <badge type="success" circle class="mr-3" icon="ni ni-satisfied"></badge> -->
-              <h4 class="mb-0">Content</h4>
-            </div>
-            <p>
-              Erhalten Sie Unterstützung auch beim Inhalt, daher bei der
-              Erstellung von Texten und bei der Auswahl und Anpassung der
-              passenden Bilder, Videos, Icons und Grafiken.
-            </p>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <!-- <badge type="success" circle class="mr-3" icon="ni ni-satisfied"></badge> -->
-              <h4 class="mb-0">SEO & Google</h4>
-            </div>
-            <p>
-              Ihre Webseite wird für SEO optimiert damit Sie bei Google gefunden
-              werden.
-            </p>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <!-- <badge type="success" circle class="mr-3" icon="ni ni-satisfied"></badge> -->
-              <h4 class="mb-0">Google Business & Maps</h4>
-            </div>
-            <p>
-              Durch Google Business & Maps werden Sie noch einfacher, vor allem
-              Lokal gefunden.
-            </p>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <!-- <badge type="success" circle class="mr-3" icon="ni ni-satisfied"></badge> -->
-              <h4 class="mb-0">Impressum & Datenschutzerklärung</h4>
-            </div>
-            <p>
-              Ihr Impressum & Datenschutzerklärung wird auf dem neuesten Stand
-              des Schweizer und europäischen Datenschutzes DSGVO erstellt, so
-              müssen Sie sich rechtlich keine Sorgen machen.
-            </p>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <!-- <badge type="success" circle class="mr-3" icon="ni ni-satisfied"></badge> -->
-              <h4 class="mb-0">E-Mail</h4>
-            </div>
-            <p>
-              Erhalten Sie so viele E-Mail-Adressen wie benötigt. Eingerichtet
-              auf dem Hosting/Server und auf Ihrem PC/Mac und
-              Smartphone/Tablets, von Ihnen und ggf. Ihren Mitarbeitern.
-            </p>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <!-- <badge type="success" circle class="mr-3" icon="ni ni-satisfied"></badge> -->
-              <h4 class="mb-0">Sicherheit</h4>
-            </div>
-            <p>
-              Keine bösen Überraschungen durch Hacker oder Ausfälle. Ihre
-              Webseite wird so eingerichtet, dass automatisch Backups erstellt,
-              und Plugins aktualisiert werden. Sie müssen sich darüber keine
-              Sorgen mehr machen und keine Wartungen selber planen und
-              ausführen.
-            </p>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <!-- <badge type="success" circle class="mr-3" icon="ni ni-satisfied"></badge> -->
-              <h4 class="mb-0">Inhalte pflegen & Support</h4>
-            </div>
-            <p>
-              Ein kurzes E-Mail oder Anruf genügt und Ihre Inhalte werden
-              aktualisiert oder Ihr Problem wird behoben. Sie möchten lieber
-              selber Ihr Webcontent anpassen? Dank benutzerfreundliche CMS wie
-              z. B. WordPress ist dies nach einer kurzen Schulung kein Problem
-              für Sie.
-            </p>
-          </div>
+          </template>
         </div>
         <h3 class="display-3 mt-5">Lösungen</h3>
         <div class="row row-grid pr-md-5">
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <h4 class="mb-0">WordPress</h4>
+          <template v-for="x in loesungen">
+            <div :key="x.index" class="col-md-6 mt-4">
+              <div class="d-flex align-items-center">
+                <h4 class="mb-3">{{ $t(x.t) }}</h4>
+              </div>
+              <p>{{ $t(x.p) }}</p>
             </div>
-            <p>
-              Ihre Webseite erstellen wir gerne mit WordPress oder andere CMS
-              wie z. B. Grav, so können Sie selber Inhalte pflegen.
-            </p>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <h4 class="mb-0">Statische Webseite</h4>
-            </div>
-            <p>
-              Sie möchten die Aktualisierung ihrer Webseite uns überlassen und
-              wünschen eine besonders schnelle und sichere Webseite? Ihre
-              Webseite erstellen wir dann mit Technologien wie z. B. HTML5,
-              CSS3, Bootstrap, Vue & Nuxt, React & Gatsby
-            </p>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <h4 class="mb-0">Headless CMS</h4>
-            </div>
-            <p>
-              Dank unserem KnowHow müssen Sie nicht zwischen Geschwindigkeit und
-              Benutzerfreundlichkeit entscheiden. Ihre Webseite erstellen wir im
-              Frontend mit HTML5, CSS3, Bootstrap und Vue & Nuxt oder React &
-              Gatsby. Und im Backend mit einem Headless CMS wie z. B. Strapi.
-            </p>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <h4 class="mb-0">Einfacher Webshop</h4>
-            </div>
-            <p>
-              Dank einfach zu benutzende, und gut erweiterbare Shopsoftware wie
-              z. B. WooCommerce, Shopware erstellen wir kostengünstig Ihren
-              eigenen Shop.
-            </p>
-          </div>
-          <div class="col-md-6 mt-4">
-            <div class="d-flex align-items-center">
-              <h4 class="mb-0">Webapps & Webportale</h4>
-            </div>
-            <p>
-              Komplexe Webanwendungen, Webapplikationen, Portale programmieren
-              und designen wir im Frontend mit HTML, CSS3, Bootstrap und React
-              oder Vue, und im Backend mit z. B. Headless CMS, Node, PHP, Python
-              und als Datenbanken z. B. SQL wie MySQL, MariaDB oder NoSQL wie z.
-              B. MongoDB.
-            </p>
-          </div>
+          </template>
         </div>
       </div>
     </section>
@@ -249,6 +57,7 @@ import VueLazyload from 'vue-lazyload'
 
 Vue.use(VueLazyload)
 export default {
+  VueLazyload,
   props: {
     h2: {
       type: Boolean,
@@ -256,7 +65,109 @@ export default {
       default: false
     }
   },
-  VueLazyload
+  data() {
+    return {
+      oben: [
+        {
+          t: 'Beratung',
+          p:
+            'Anhand Ihrer Ziele und Anforderungen erhalten Sie Empfehlungen über die besten Technologien, Konzepte, Skizzen und einen Zeit. und Ausführungsplan.'
+        },
+        {
+          t: 'Domain & Hosting',
+          p:
+            'Bei einer Beratung werden Sie über Domains und Hosting informiert. Sie erhalten Empfehlungen über die besten Webserver für alle Bereiche, egal ob statisch, WordPress oder komplexe Web-Apps / Webplattformen.'
+        },
+        {
+          t: 'Individuelles Design',
+          p:
+            'Sie wählen ein Theme aus hunderten aus, die Vorlage wird Ihren individuellen Wünschen angepasst.'
+        },
+        {
+          t: 'Responsive',
+          p:
+            'Ihre Webseite wird auf allen Geräten funktionieren, egal ob Desktop, Smartphone oder Tablet.'
+        },
+        {
+          t: 'HTTPS/SSL Verschlüsselung',
+          p:
+            'Sichern Sie sich Vorteile bei Google und Sicherheit durch unserekostenlose HTTPS/SSL Codierung.'
+        },
+        {
+          t: 'Webshop & Bezahlfunktionen',
+          p:
+            'Ihr Shop/Plattform und die Zahlungsmöglichkeiten werden sokonfiguriert, das Sie Ihre Produkte und Dienstleistungen einfachonline verkaufen können. Erstellt mit WooCommerce, Shopware oderanderen Technologien.'
+        },
+        {
+          t: 'Performance',
+          p:
+            'Webseitenbesucher lieben schnelle Webseiten. Ihre Webseite wirdoptimiert, sodass es blitzschnell lädt. Google und Ihre Besucherwerden es lieben.'
+        },
+        {
+          t: 'Content',
+          p:
+            'Erhalten Sie Unterstützung auch beim Inhalt, daher bei derErstellung von Texten und bei der Auswahl und Anpassung derpassenden Bilder, Videos, Icons und Grafiken.'
+        },
+        {
+          t: 'SEO & Google',
+          p:
+            'Ihre Webseite wird für SEO optimiert damit Sie bei Google gefundenwerden.'
+        },
+        {
+          t: 'Google Business & Maps',
+          p:
+            'Durch Google Business & Maps werden Sie noch einfacher, vor allemLokal gefunden.'
+        },
+        {
+          t: 'Impressum & Datenschutzerklärung',
+          p:
+            'Ihr Impressum & Datenschutzerklärung wird auf dem neuesten Standdes Schweizer und europäischen Datenschutzes DSGVO erstellt, somüssen Sie sich rechtlich keine Sorgen machen.'
+        },
+        {
+          t: 'E-Mail',
+          p:
+            'Erhalten Sie so viele E-Mail-Adressen wie benötigt. Eingerichtetauf dem Hosting/Server und auf Ihrem PC/Mac undSmartphone/Tablets, von Ihnen und ggf. Ihren Mitarbeitern.'
+        },
+        {
+          t: 'Sicherheit',
+          p:
+            'Keine bösen Überraschungen durch Hacker oder Ausfälle. IhreWebseite wird so eingerichtet, dass automatisch Backups erstellt,und Plugins aktualisiert werden. Sie müssen sich darüber keineSorgen mehr machen und keine Wartungen selber planen undausführen.'
+        },
+        {
+          t: 'Inhalte pflegen & Support',
+          p:
+            'Ein kurzes E-Mail oder Anruf genügt und Ihre Inhalte werdenaktualisiert oder Ihr Problem wird behoben. Sie möchten lieberselber Ihr Webcontent anpassen? Dank benutzerfreundliche CMS wiez. B. WordPress ist dies nach einer kurzen Schulung kein Problemfür Sie.'
+        }
+      ],
+      loesungen: [
+        {
+          t: 'WordPress',
+          p:
+            'Ihre Webseite erstellen wir gerne mit WordPress oder andere CMS wie z.B. Grav, so können Sie selber Inhalte pflegen.'
+        },
+        {
+          t: 'Statische Webseite',
+          p:
+            'Sie möchten die Aktualisierung ihrer Webseite uns überlassen undwünschen eine besonders schnelle und sichere Webseite? IhreWebseite erstellen wir dann mit Technologien wie z. B. HTML5,CSS3, Bootstrap, Vue & Nuxt, React & Gatsby '
+        },
+        {
+          t: 'Headless CMS',
+          p:
+            'Dank unserem KnowHow müssen Sie nicht zwischen Geschwindigkeit undBenutzerfreundlichkeit entscheiden. Ihre Webseite erstellen wir imFrontend mit HTML5, CSS3, Bootstrap und Vue & Nuxt oder React &Gatsby. Und im Backend mit einem Headless CMS wie z. B. Strapi. '
+        },
+        {
+          t: 'Einfacher Webshop',
+          p:
+            'Dank einfach zu benutzende, und gut erweiterbare Shopsoftware wiez. B. WooCommerce, Shopware erstellen wir kostengünstig Ihreneigenen Shop. '
+        },
+        {
+          t: 'Webapps & Webportale',
+          p:
+            'Komplexe Webanwendungen, Webapplikationen, Portale programmierenund designen wir im Frontend mit HTML, CSS3, Bootstrap und Reactoder Vue, und im Backend mit z. B. Headless CMS, Node, PHP, Pythonund als Datenbanken z. B. SQL wie MySQL, MariaDB oder NoSQL wie z.B. MongoDB. '
+        }
+      ]
+    }
+  }
 }
 </script>
 
