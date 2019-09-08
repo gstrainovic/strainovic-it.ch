@@ -1,4 +1,36 @@
 export default {
+  // "###########Webdesign": "###########",
+  'de-65931-sindlingen': 'DE 65931 Sindlingen',
+  'frankfurt-am-main': 'Frankfurt am Main',
+  'ch-9323-steinach-sg': 'CH 9323 Steinach SG',
+  'ch-9403-goldach-sg': 'CH 9403 Goldach SG',
+  jekyll: 'Jekyll',
+  'mobile-friseurin': 'Mobile Friseurin',
+  'ch-9215-kradolf-schoenenberg': 'CH 9215 Kradolf-Schönenberg',
+  'kanton-thurgau': 'Kanton Thurgau',
+  'wordpress-divi': 'WordPress, Divi',
+  'verkauf-von-kino-rex-sg-inventar': 'Verkauf von Kino Rex SG Inventar',
+  'kanton-appenzell-ausserrhoden': 'Kanton Appenzell Ausserrhoden',
+  'ch-9053-teufen-ar': 'CH 9053 Teufen AR',
+  'alter-cv-lebenslauf': 'Alter CV / Lebenslauf',
+  'it-dienstleistungen': 'IT Dienstleistungen',
+  'vue-and-nuxt-argon-and-bootstrap': 'Vue & Nuxt, Argon & Bootstrap',
+  medtech: 'Medtech',
+  'dk-2100-kopenhagen': 'DK 2100 Kopenhagen',
+  daenemark: 'Dänemark',
+  'webshop-fuer-lieferservice': 'Webshop für Lieferservice',
+  'persisches-restaurant': 'Persisches Restaurant',
+  deutschland: 'Deutschland',
+  webdesign: 'Webdesign',
+  projekt: 'Projekt',
+  webseite: 'Webseite',
+  branche: 'Branche',
+  firmenort: 'Firmenort',
+  technologie: 'Technologie',
+  transportunternehmen: 'Transportunternehmen',
+  buegelservice: 'Bügelservice',
+  'kanton-st-gallen': 'Kanton St.Gallen',
+  schweiz: 'Schweiz',
   // "###############Components/StrainovicIT": "###################",
   'ueber-strainovic-it': 'Über Strainovic IT',
   'strainovic-it-wurde-2016-gegruendet-befindet-sich-in-steinach-imkanton-st-gallen-sg-an-der-ostschweiz-am-bodensee-und-bietet-alledigitale-dienstleistungen-fuer-die-informationstechnologie-auchbekannt-als-it-oder-ict-an-wie-z-b':
@@ -16,7 +48,6 @@ export default {
     'Wir unterstützen sowohl private auch als KMU, Firmen, Start-ups,AG, GmbH bei allen digitalen Herausforderungen, wie z.B:',
   'cms-webseiten-mit-z-b': 'CMS Webseiten mit z. B:',
   'statische-webseiten-mit-z-b': 'Statische Webseiten mit z. B:',
-  jekyll: 'Jekyll',
   gatsby: 'Gatsby',
   nuxt: 'Nuxt',
   'webshops-mit-z-b': 'Webshops mit z. B:',
@@ -79,7 +110,6 @@ export default {
   'die-meisten-projekte-werden-direkt-vom-gruender-goran-strainovicumgesetzt-groessere-projekte-werden-bei-bedarf-mit-partnerumgesetzt':
     'Die meisten Projekte werden direkt vom Gründer, Goran Strainovicumgesetzt. Grössere Projekte werden bei Bedarf mit Partnerumgesetzt.',
   // "#####Components/SitAdresse": "#######",
-  schweiz: 'Schweiz',
   'auf-google-maps-anzeigen': ' Auf Google Maps anzeigen',
   kanton: 'Kanton',
   // "#####Components/SoftwareUndApps" : "##########",
@@ -255,7 +285,6 @@ export default {
   gerneunter:
     'Gerne unterstützen wir Sie auch bei der Datenbeschaffung für Ihr               Marketing. Egal ob Adressen, Branchenverzeichnisse,               Konkurrenzvergleiche, wir helfen Ihnen bei der Beschaffung mit               manuellem Google Research, Spider/Crawler/Bot oder durch unser               Netzwerk an Partnern und Schnittstellen.',
   // '#######projekte#######': '#######projekte#######',
-  'wordpress-divi': 'WordPress, Divi',
   'neue-kunden-mit-taeglichen-posts-inspirieren':
     'Neue Kunden mit täglichen Posts inspirieren',
   'zeitersparnis-durch-automatisierungen':
@@ -274,7 +303,6 @@ export default {
     'Durchforsten einer Webseiten und ausfüllen von Formularfeldern.Erstellt mit FSharp, Fsharp.Data ,Docker ,Canopy auf Google CloudPlattform.',
   'design-von-printmedien': 'Design von Printmedien',
   'visitenkarte-flyer-banner': 'Visitenkarte, Flyer, Banner',
-  webdesign: 'Webdesign',
   'photoshop-illustrator-inkscape-canva':
     'Photoshop, Illustrator, Inkscape, Canva.',
   'die-von-mir-erstellten-webseiten-finden-sie-im':

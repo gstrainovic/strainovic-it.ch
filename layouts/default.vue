@@ -1,17 +1,5 @@
 <template>
   <div>
-    <head>
-      <script
-        id="locizify"
-        projectid="b45e62fb-8a97-4123-98de-ffddf219f78d"
-        debug="false"
-        apikey="ef7b20c6-a3e8-46b3-9e13-5c5b2c1ecdce"
-        saveMissing="true"
-        referencelng="de"
-        fallbacklng="de"
-        src="https://unpkg.com/locizify@^2.0.0"
-      ></script>
-    </head>
     <headroom>
       <header class="header-global">
         <BaseNav class="navbar-main" type="transparent" effect="dark" expand>

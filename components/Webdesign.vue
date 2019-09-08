@@ -4,426 +4,62 @@
       <div class="container">
         <div class="row mb-lg mt-5">
           <div class="container container-lg">
-            <h2 v-if="h2" class="display-2">Webdesign</h2>
+            <h2 v-if="h2" class="display-2">{{ $t('webdesign') }}</h2>
             <div class="row">
-              <div class="col-md-6 mb-5 mb-md-0 mt-5">
-                <div class="card card-lift--hover shadow">
-                  <a
-                    rel="noopener noreferrer"
-                    href="https://www.ddp-transporte.ch"
-                    target="_blank"
-                  >
-                    <img
-                      v-lazy="
-                        '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-ddp.jpg'
-                      "
-                      alt="responsive webdesign development"
-                      class="card-img-top"
-                    />
-                  </a>
-                  <div class="card-body">
-                    <table class="table">
-                      <!-- <tbody> -->
-                      <tr>
-                        <th>Projekt</th>
-                        <td>Webseite</td>
-                      </tr>
-                      <tr>
-                        <th>Branche</th>
-                        <td>Transportunternehmen</td>
-                      </tr>
-                      <tr>
-                        <th>Firmenort</th>
-                        <td>
-                          CH 9403 Goldach SG<br />
-                          Kanton St.Gallen<br />
-                          Schweiz
-                        </td>
-                      </tr>
-                      <tr>
-                        <th>Technologie</th>
-                        <td>Grav CMS</td>
-                      </tr>
-                      <tr>
-                        <th>Link</th>
-                        <td>
-                          <a
-                            rel="noopener noreferrer"
-                            href="https://www.ddp-transporte.ch"
-                            target="_blank"
-                            >https://www.ddp-transporte.ch</a
-                          >
-                        </td>
-                      </tr>
-                      <!-- </tbody> -->
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mb-5 mb-lg-0 mt-5">
-                <div class="card card-lift--hover shadow border-0">
-                  <a
-                    rel="noopener noreferrer"
-                    href="https://buegeln.services"
-                    target="_blank"
-                  >
-                    <img
-                      v-lazy="
-                        '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-bs.jpg'
-                      "
-                      alt="responsive webdesign development"
-                      class="card-img"
-                    />
-                  </a>
-                  <div class="card-body">
-                    <table class="table">
-                      <tbody>
+              <template v-for="x in sites">
+                <div :key="x.index" class="col-md-6 mb-5 mb-md-0 mt-5">
+                  <div class="card card-lift--hover shadow">
+                    <a rel="noopener noreferrer" :href="x.link" target="_blank">
+                      <img
+                        v-lazy="x.img"
+                        alt="responsive webdesign development"
+                        class="card-img-top"
+                      />
+                    </a>
+                    <div class="card-body">
+                      <table class="table">
                         <tr>
-                          <th>Projekt</th>
-                          <td>Webseite</td>
+                          <th>{{ $t('projekt') }}</th>
+                          <td v-if="x.project">{{ $t(x.project) }}</td>
+                          <td v-else>{{ $t('webseite') }}</td>
                         </tr>
                         <tr>
-                          <th>Branche</th>
-                          <td>Bügelservice</td>
+                          <th>{{ $t('branche') }}</th>
+                          <td>{{ $t(x.branche) }}</td>
                         </tr>
                         <tr>
-                          <th>Firmenort</th>
+                          <th>{{ $t('firmenort') }}</th>
                           <td>
-                            CH 9323 Steinach SG<br />
-                            Kanton St.Gallen<br />
-                            Schweiz
+                            {{ $t(x.adresse) }}<br />{{ $t(x.kanton) }}<br />{{
+                              $t(x.land)
+                            }}
                           </td>
                         </tr>
                         <tr>
-                          <th>Technologie</th>
-                          <td>Jekyll</td>
+                          <th>{{ $t('technologie') }}</th>
+                          <td>{{ $t(x.technologie) }}</td>
                         </tr>
                         <tr>
                           <th>Link</th>
                           <td>
                             <a
                               rel="noopener noreferrer"
-                              href="https://buegeln.services"
+                              :href="x.link"
                               target="_blank"
-                              >https://buegeln.services</a
+                              >{{ x.link }}</a
                             >
                           </td>
                         </tr>
-                      </tbody>
-                    </table>
+                      </table>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6 mb-5 mb-lg-0 mt-5">
-                <div class="card card-lift--hover shadow border-0">
-                  <a
-                    rel="noopener noreferrer"
-                    href="https://www.mobile-schere.ch"
-                    target="_blank"
-                  >
-                    <img
-                      v-lazy="
-                        '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-ms.jpg'
-                      "
-                      alt="responsive webdesign development"
-                      class="card-img"
-                    />
-                  </a>
-                  <div class="card-body">
-                    <table class="table">
-                      <tbody>
-                        <tr>
-                          <th>Projekt</th>
-                          <td>Webseite</td>
-                        </tr>
-                        <tr>
-                          <th>Branche</th>
-                          <td>Mobile Friseurin</td>
-                        </tr>
-                        <tr>
-                          <th>Firmenort</th>
-                          <td>
-                            CH 9215 Kradolf-Schönenberg<br />
-                            Kanton Thurgau<br />
-                            Schweiz
-                          </td>
-                        </tr>
-                        <tr>
-                          <th>Technologie</th>
-                          <td>WordPress, Divi</td>
-                        </tr>
-                        <tr>
-                          <th>Link</th>
-                          <td>
-                            <a
-                              rel="noopener noreferrer"
-                              href="https://www.mobile-schere.ch"
-                              target="_blank"
-                              >https://www.mobile-schere.ch</a
-                            >
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mb-5 mb-lg-0 mt-5">
-                <div class="card card-lift--hover shadow border-0">
-                  <a
-                    rel="noopener noreferrer"
-                    href="https://www.exrex.ch"
-                    target="_blank"
-                  >
-                    <img
-                      v-lazy="
-                        '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-er.jpg'
-                      "
-                      alt="responsive webdesign development"
-                      class="card-img"
-                    />
-                  </a>
-                  <div class="card-body">
-                    <table class="table">
-                      <tbody>
-                        <tr>
-                          <th>Projekt</th>
-                          <td>Webseite</td>
-                        </tr>
-                        <tr>
-                          <th>Branche</th>
-                          <td>Verkauf von Kino Rex SG Inventar</td>
-                        </tr>
-                        <tr>
-                          <th>Firmenort</th>
-                          <td>
-                            CH 9053 Teufen AR<br />
-                            Kanton Appenzell Ausserrhoden<br />
-                            Schweiz
-                          </td>
-                        </tr>
-                        <tr>
-                          <th>Technologie</th>
-                          <td>WordPress, Divi</td>
-                        </tr>
-                        <tr>
-                          <th>Link</th>
-                          <td>
-                            <a
-                              rel="noopener noreferrer"
-                              href="https://www.exrex.ch"
-                              target="_blank"
-                              >https://www.exrex.ch</a
-                            >
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mb-5 mb-lg-0 mt-5">
-                <div class="card card-lift--hover shadow border-0">
-                  <a
-                    rel="noopener noreferrer"
-                    href="http://gstrainovic.github.io/gost.pw"
-                    target="_blank"
-                  >
-                    <img
-                      v-lazy="
-                        '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-cv.jpg'
-                      "
-                      alt="responsive webdesign development"
-                      class="card-img"
-                    />
-                  </a>
-                  <div class="card-body">
-                    <table class="table">
-                      <tbody>
-                        <tr>
-                          <th>Projekt</th>
-                          <td>Webseite</td>
-                        </tr>
-                        <tr>
-                          <th>Branche</th>
-                          <td>Alter CV / Lebenslauf</td>
-                        </tr>
-                        <tr>
-                          <th>Firmenort</th>
-                          <td>
-                            CH 9323 Steinach SG<br />
-                            Kanton St.Gallen<br />
-                            Schweiz
-                          </td>
-                        </tr>
-                        <tr>
-                          <th>Technologie</th>
-                          <td>Jekyll</td>
-                        </tr>
-                        <tr>
-                          <th>Link</th>
-                          <td>
-                            <a
-                              rel="noopener noreferrer"
-                              href="http://gstrainovic.github.io/gost.pw"
-                              target="_blank"
-                              >http://gstrainovic.github.io/gost.pw</a
-                            >
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mb-5 mb-lg-0 mt-5">
-                <div class="card card-lift--hover shadow border-0">
-                  <a
-                    rel="noopener noreferrer"
-                    href="https://www.strainovic-it.ch"
-                    target="_blank"
-                  >
-                    <img
-                      v-lazy="
-                        '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-argon.jpg'
-                      "
-                      alt="responsive webdesign development"
-                      class="card-img"
-                    />
-                  </a>
-                  <div class="card-body">
-                    <table class="table">
-                      <tbody>
-                        <tr>
-                          <th>Projekt</th>
-                          <td>Webseite</td>
-                        </tr>
-                        <tr>
-                          <th>Branche</th>
-                          <td>IT Dienstleistungen</td>
-                        </tr>
-                        <tr>
-                          <th>Firmenort</th>
-                          <td>
-                            CH 9323 Steinach SG<br />Kanton St.Gallen<br />Schweiz
-                          </td>
-                        </tr>
-                        <tr>
-                          <th>Technologie</th>
-                          <td>Vue & Nuxt, Argon & Bootstrap</td>
-                        </tr>
-                        <tr>
-                          <th>Link</th>
-                          <td>
-                            <a
-                              rel="noopener noreferrer"
-                              href="https://www.strainovic-it.ch"
-                              target="_blank"
-                              >https://www.strainovic-it.ch</a
-                            >
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mb-5 mb-lg-0 mt-5">
-                <div class="card card-lift--hover shadow border-0">
-                  <a
-                    rel="noopener noreferrer"
-                    href="https://www.monsenso.com"
-                    target="_blank"
-                  >
-                    <img
-                      v-lazy="
-                        '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-monsenso.jpg'
-                      "
-                      alt="responsive webdesign development"
-                      class="card-img"
-                    />
-                  </a>
-                  <div class="card-body">
-                    <table class="table">
-                      <tbody>
-                        <tr>
-                          <th>Projekt</th>
-                          <td>Webseite</td>
-                        </tr>
-                        <tr>
-                          <th>Branche</th>
-                          <td>Medtech</td>
-                        </tr>
-                        <tr>
-                          <th>Firmenort</th>
-                          <td>DK 2100 Kopenhagen<br />Dänemark<br /></td>
-                        </tr>
-                        <tr>
-                          <th>Technologie</th>
-                          <td>WordPress, Divi</td>
-                        </tr>
-                        <tr>
-                          <th>Link</th>
-                          <td>
-                            <a
-                              rel="noopener noreferrer"
-                              href="https://www.monsenso.com"
-                              target="_blank"
-                              >https://www.monsenso.com</a
-                            >
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 mb-5 mb-lg-0 mt-5">
-                <div class="card card-lift--hover shadow border-0">
-                  <!-- <a rel="noopener noreferrer" href="http://monsenso.com" target="_blank"> -->
-                  <img
-                    v-lazy="
-                      '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-mpf.jpg'
-                    "
-                    alt="responsive webdesign development"
-                    class="card-img"
-                  />
-                  <!-- </a> -->
-                  <div class="card-body">
-                    <table class="table">
-                      <tbody>
-                        <tr>
-                          <th>Projekt</th>
-                          <td>Webshop für Lieferservice</td>
-                        </tr>
-                        <tr>
-                          <th>Branche</th>
-                          <td>Persisches Restaurant</td>
-                        </tr>
-                        <tr>
-                          <th>Firmenort</th>
-                          <td>Deutschland</td>
-                        </tr>
-                        <tr>
-                          <th>Technologie</th>
-                          <td>WordPress</td>
-                        </tr>
-                        <tr>
-                          <th>Link</th>
-                          <td>Offline</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
+              </template>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <div></div>
   </div>
 </template>
 
@@ -434,6 +70,98 @@ export default {
       type: Boolean,
       required: false,
       default: false
+    }
+  },
+  data() {
+    return {
+      sites: [
+        {
+          link: 'https://www.ddp-transporte.ch',
+          img:
+            '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-ddp.jpg',
+          branche: 'transportunternehmen',
+          adresse: 'ch-9403-goldach-sg',
+          kanton: 'kanton-st-gallen',
+          land: 'schweiz',
+          technologie: 'Grav CMS'
+        },
+        {
+          link: 'https://buegeln.services',
+          img: '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-bs.jpg',
+          branche: 'buegelservice',
+          adresse: 'ch-9323-steinach-sg',
+          kanton: 'kanton-st-gallen',
+          land: 'schweiz',
+          technologie: 'jekyll'
+        },
+        {
+          link: 'https://www.mobile-schere.ch',
+          img: '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-ms.jpg',
+          branche: 'mobile-friseurin',
+          adresse: 'ch-9215-kradolf-schoenenberg',
+          kanton: 'kanton-thurgau',
+          land: 'schweiz',
+          technologie: 'wordpress-divi'
+        },
+        {
+          link: 'https://www.exrex.ch',
+          img: '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-er.jpg',
+          branche: 'verkauf-von-kino-rex-sg-inventar',
+          adresse: 'ch-9053-teufen-ar',
+          kanton: 'kanton-appenzell-ausserrhoden',
+          land: 'schweiz',
+          technologie: 'wordpress-divi'
+        },
+        {
+          link: 'https://buegeln.services',
+          img: '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-bs.jpg',
+          branche: 'buegelservice',
+          adresse: 'ch-9323-steinach-sg',
+          kanton: 'kanton-st-gallen',
+          land: 'schweiz',
+          technologie: 'jekyll'
+        },
+        {
+          link: 'http://gstrainovic.github.io/gost.pw',
+          img: '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-cv.jpg',
+          branche: 'alter-cv-lebenslauf',
+          adresse: 'ch-9323-steinach-sg',
+          kanton: 'kanton-st-gallen',
+          land: 'schweiz',
+          technologie: 'jekyll'
+        },
+        {
+          link: 'https://www.strainovic-it.ch',
+          img:
+            '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-argon.jpg',
+          branche: 'it-dienstleistungen',
+          adresse: 'ch-9323-steinach-sg',
+          kanton: 'kanton-st-gallen',
+          land: 'schweiz',
+          technologie: 'vue-and-nuxt-argon-and-bootstrap'
+        },
+        {
+          link: 'https://www.monsenso.com',
+          img:
+            '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-monsenso.jpg',
+          branche: 'medtech',
+          adresse: 'dk-2100-kopenhagen',
+          kanton: '',
+          land: 'daenemark',
+          technologie: 'wordpress-divi'
+        },
+        {
+          link: '',
+          img:
+            '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-mpf.jpg',
+          project: 'webshop-fuer-lieferservice',
+          branche: 'persisches-restaurant',
+          adresse: 'de-65931-sindlingen',
+          kanton: 'frankfurt-am-main',
+          land: 'deutschland',
+          technologie: 'wordpress'
+        }
+      ]
     }
   }
 }
