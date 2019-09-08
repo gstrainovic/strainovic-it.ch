@@ -1,7 +1,7 @@
 export default {
   //'#########index########': '/index',
   dasrad:
-    "We're not reinventing the wheel. Thanks to know-how and access to already existing templates, plugins and software, save money and time.",
+    "We're not reinventing the wheel. Thanks to know-how and access to already existing templates, plugins and software, save money and time",
   'webdesign-programmierung-and-marketing':
     'Web Design, Programming & Marketing',
   'software-homepage-and-webseite-erstellen-und-vermarkten-lassen':
@@ -62,5 +62,98 @@ export default {
     Else: {
       Bold: 'Sorry, an error has occurred'
     }
-  }
+  },
+  '####default####': '####default####',
+  'alle-felder-sind-pflichtfelder': 'All fields are mandatory',
+  vorname: ' First name *',
+  nachname: ' Last name *',
+  ' E-Mail-Adresse *': ' E-mail address *',
+  nachricht: 'Message *',
+  senden: 'Send',
+  'vielen-dank-fuer-ihre-unterstuetzung': 'Thank you for your support',
+  'folgen-sie-uns-auf-einer-dieser-plattformen':
+    'Follow us on any of these platforms',
+  'folge-uns-auf-twitter': 'Follow us on Twitter',
+  'like-uns-auf-facebook': 'Like us on Facebook',
+  'folge-uns-auf-instagram': 'Follow us on Instagram',
+  'folge-uns-auf-linkedin': 'Follow us on LinkedIn',
+  'spendiere-uns-einen-stern-auf-github': 'Give us a star on Github',
+  'folge-uns-auf-xing': 'Follow us on Xing',
+  '####components-goran#####': '####components-goran#####',
+  ueber: 'About',
+  gruender: 'Founder',
+  programmierer: 'Programmer',
+  designer: 'Designer',
+  'projekt-manager': 'Project Manager',
+  'was-nicht-passt-wird-passend-gemacht': "If it doesn't fit, it'll fit",
+  'ich-bin-ein-perfektionist-mit-vielen-faehigkeiten':
+    "I'm a perfectionist with many abilities,",
+  'der-durch-kreativitaet-und-ausdauer-herausforderungen-meistert-und-ziele-erreicht':
+    'who, through creativity and perseverance, masters challenges and achieves goals',
+  'gruender-von-strainovic-it': 'Founder of Strainovic IT',
+  skills: 'Skills',
+  sprachkenntnisse: 'Language skills',
+  'deutsch-englisch-serbisch-rumaenisch': 'German, English, Serbian, Romanian',
+  elektroniker: 'Electronics technician',
+  'pruefen-reparieren-avor-technischer-support-von-elektronik-baugruppen':
+    'Testing, Repairing, Avor, Technical Support of Electronics Assemblies',
+  'als-gruender-and-projektmanager': 'As Founder & Project Manager',
+  'akquise-analysieren-konzepterstellung-beraten-planen-managen-schulen':
+    'Acquisition, analysis, concept development, consulting, planning, management, schools',
+  'softwareentwickler-and-ui-ux-designer':
+    'Software Developer & UI / UX Designer',
+  plattformen: 'Platforms',
+  'ubuntu-server-und-andere-linux-distributionen':
+    'Ubuntu servers and other Linux distributions',
+  'woocommerce-shopsoftware-fuer-wordpress':
+    'WooCommerce - shop software for WordPress',
+  'shopware-deutsche-shopsoftware': 'ShopWare - German shop software',
+  ausbildung: 'Education',
+  'berufsschule-wil': 'Vocational school Wil',
+  'informatik-anwender-siz': 'Computer Science - SIZ User',
+  'berufsschule-uzwil': 'Vocational school Uzwil',
+  'praktikum-als-rtv-elektriker': 'Internship as RTV electrician',
+  'primar-und-oberstufes': 'Primary and Advanced',
+  header: {
+    'zurueck-zur-startseite': 'Back to home page'
+  },
+  '######### Marketing ######': '########## Marketing ######',
+  'online-and-printmedien': 'Online & Print Media',
+  'wir-helfen-ihnen-ihre-produkte-und-dienstleistungen-bekannter-zu-machen-und-zu-vermarkten':
+    'We help you promote and market your products and services',
+  'design-von-grafiken-and-printmedien': 'Design of graphics & print media',
+  'wir-helfen':
+    'We help you to increase your awareness locally and offline by designing your business cards, flyers, brochures, leaflets and infographics and have them printed by our partner on request',
+  wirberaten:
+    'We advise and support you in online marketing using the Google search engine. Our goal is to make sure that you are found well, and therefore on the first page, at the top of the well-placed search results. We rely on content, Google SEO, Google Adwords, Google Business, Google Maps and use all for you optimal social channels such as Facebook, Instagram, Twitter, Youtube',
+  'erstellung-und-beschaffung-von-content':
+    'Creation and procurement of content',
+  mitdem:
+    'With the optimal design e.g. of your website and marketing it is not done yet. Without convincing website content, you attract (make) visitors more difficult, but do not generate customers from it. We help you to convince visitors of your product or services by exciting web content and thus to sell it. In doing so, we rely on a wide range of multimedia services such as writing texts, procuring videos and photos or creating them through our photographer',
+  datenbeschaffung: 'Data procurement',
+  gerneunter:
+    'We would also be happy to support you in obtaining data for your marketing. Whether addresses, trade directories, competitive comparisons, we help you with the procurement with manual Google Research, Spider/Crawler/Bot or through our network of partners and interfaces',
+  '#######projekte#######': '#########projects#######',
+  plugin: 'Plugin',
+  'oesterreichischer-hardwarehersteller': 'Austrian hardware manufacturer',
+  ziel: 'Target',
+  'ticketplugin-fuer-jira-projektmanagementsoftware':
+    'Ticketplugin for Jira - Project Management Software',
+  technologien: 'Technologies',
+  design: 'Design',
+  'deutscher-tee-verkaeufer-in-amazon': 'German Tea Seller in Amazon',
+  'mockups-fuer-tee-verpackungen': 'Mockups for tea wrappers',
+  photoshop: 'Photoshop',
+  'fuer-schweizer-taxigesellschaften': 'For Swiss taxi companies',
+  'redesign-eines-taximeter-app-fuer-android':
+    'Redesign of a taximeter app for Android',
+  'photoshop-psd-android-studio-layout-editor-xml':
+    'Photoshop (PSD), Android Studio Layout Editor (XMl)',
+  Ghostwriting: 'Ghostwriting',
+  'deutsche-e-books': 'German e-books',
+  'ghostwriting-zusammenfassungen-und-formatierungen':
+    'Ghostwriting / Summaries and Formatting',
+  'microsoft-word': 'Microsoft Word',
+  'social-media-marketing-smm': 'Social Media Marketing - SMM',
+  'deutsche-reiseagentur': 'German Travel Agency'
 }
