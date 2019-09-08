@@ -4,19 +4,23 @@
       <div class="container pt-lg">
         <div class="row">
           <div class="col-lg-6">
-            <h2 v-if="h2" class="display-3 ">Software & Apps</h2>
-            <h3 class="display-4 mt-5">Programmierung & Optimierung</h3>
-            <p class=" ">
-              Zusammen untersuchen wir den gesamten Informationsfluss Ihres
-              Unternehmens. Dabei wird u. a folgende Bereiche analysiert und
-              optimiert:
+            <h2 v-if="h2" class="display-3 ">{{ $t('software-and-apps') }}</h2>
+            <h3 class="display-4 mt-5">
+              {{ $t('programmierung-and-optimierung') }}
+            </h3>
+            <p>
+              {{
+                $t(
+                  'zusammen-untersuchen-wir-den-gesamten-informationsfluss-ihresunternehmens-dabei-wird-u-a-folgende-bereiche-analysiert-undoptimiert'
+                )
+              }}
             </p>
-            <ul class=" ">
+            <ul>
               <li>Web/CMS</li>
               <li>ERP/CRM</li>
               <li>Shop</li>
-              <li>Logistik</li>
-              <li>Buchhaltung</li>
+              <li>{{ $t('logistik') }}</li>
+              <li>{{ $t('buchhaltung') }}</li>
               <li>Office</li>
               <ul class="">
                 <li>VBA</li>
@@ -24,16 +28,21 @@
               </ul>
               <li>Intranet</li>
               <li>
-                Betroffene Server, Datenbanken, Programme, Module, Plugins,
-                Scripts und Erweiterungen
+                {{
+                  $t(
+                    'betroffene-server-datenbanken-programme-module-plugins-scripts-und-erweiterungen'
+                  )
+                }}
               </li>
             </ul>
-            <p class=" ">
-              Sie erhalten anschliessend Empfehlungen was und mit welchen
-              Programmen und Technologien designt, konfiguriert und programmiert
-              werden kann, um Verbesserungen zu erreichen.
+            <p>
+              {{
+                $t(
+                  'sie-erhalten-anschliessend-empfehlungen-was-und-mit-welchenprogrammen-und-technologien-designt-konfiguriert-und-programmiertwerden-kann-um-verbesserungen-zu-erreichen'
+                )
+              }}
             </p>
-            <h6 class="display-3 mt-5 ">Ziele</h6>
+            <h6 class="display-3 mt-5 ">{{ $t('ziel') }}</h6>
           </div>
           <div class="col-md-6 order-lg-2 ml-lg-auto">
             <div class="position-relative pl-md-5 mt-5">
@@ -48,100 +57,120 @@
         <div class="row row-grid mt-3">
           <div class="col-lg-6">
             <!-- <icon name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon> -->
-            <h4 class=" mt-3">Benutzerfreundlichkeit</h4>
+            <h4 class=" mt-3">{{ $t('benutzerfreundlichkeit') }}</h4>
             <p class=" mt-3">
-              Ihre Software wird mit einer modernen Benutzeroberfläche, auch als
-              GUI, UI, User Interface bekannt, designt und programmiert. Dadurch
-              erhalten Sie einen hohen Bedienkomfort. Auf allen Geräten wie z.
-              B. PC/Mac, Mobile und Tablet.
+              {{
+                $t(
+                  'ihre-software-wird-mit-einer-modernen-benutzeroberflaeche-auch-alsgui-ui-user-interface-bekannt-designt-und-programmiert-dadurcherhalten-sie-einen-hohen-bedienkomfort-auf-allen-geraeten-wie-z-b-pc-mac-mobile-und-tablet'
+                )
+              }}
             </p>
           </div>
           <div class="col-lg-6">
             <!-- <icon name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon> -->
-            <h4 class=" mt-3">Lizenzkosten & Erweiterungen</h4>
+            <h4 class=" mt-3">{{ $t('lizenzkosten-and-erweiterungen') }}</h4>
             <p class=" mt-3">
-              Durch Open Source sparen Sie Lizenzkosten und erhöhen die
-              Anpassungsfähigkeit Ihrer Software.
+              {{
+                $t(
+                  'durch-open-source-sparen-sie-lizenzkosten-und-erhoehen-dieanpassungsfaehigkeit-ihrer-software'
+                )
+              }}
             </p>
           </div>
           <div class="col-lg-6">
             <!-- <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon> -->
-            <h4 class=" mt-3">Automation</h4>
+            <h4 class=" mt-3">{{ $t('automation') }}</h4>
             <p class=" mt-3">
-              Ihre Programme werden so konfiguriert, dass Sie weniger Daten
-              eingeben müssen. Dadurch sparen Sie Zeit und Geld, erhöhen die
-              Produktivität und reduzieren Fehler beim Eintippen oder beim
-              Kopieren und Einfügen.
+              {{
+                $t(
+                  'ihre-programme-werden-so-konfiguriert-dass-sie-weniger-dateneingeben-muessen-dadurch-sparen-sie-zeit-und-geld-erhoehen-dieproduktivitaet-und-reduzieren-fehler-beim-eintippen-oder-beimkopieren-und-einfuegen'
+                )
+              }}
             </p>
           </div>
           <div class="col-lg-6">
             <!-- <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon> -->
-            <h4 class=" mt-3">Sicherheit</h4>
+            <h4 class=" mt-3">{{ $t('sicherheit') }}</h4>
             <p class=" mt-3">
-              Sichern Sie sich vor Hacker und Ausfällen. Ihr Server und alle
-              Programme werden so eingerichtet, dass automatisch alles
-              aktualisiert wird und Backups erstellt werde.
+              {{
+                $t(
+                  'sichern-sie-sich-vor-hacker-und-ausfaellen-ihr-server-und-alleprogramme-werden-so-eingerichtet-dass-automatisch-allesaktualisiert-wird-und-backups-erstellt-werde'
+                )
+              }}
             </p>
           </div>
           <div class="col-lg-6">
             <!-- <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon> -->
-            <h4 class=" mt-3">Schulung</h4>
+            <h4 class=" mt-3">{{ $t('schulung') }}</h4>
             <p class=" mt-3">
-              Holen Sie das Beste aus Ihrer Software heraus und steigern Sie die
-              Produktivität. Sie lernen, alle Funktionen Ihrer Software optimal
-              einzusetzen. Bei Ihnen vor Ort oder Remote über TeamViewer.
+              {{
+                $t(
+                  'holen-sie-das-beste-aus-ihrer-software-heraus-und-steigern-sie-dieproduktivitaet-sie-lernen-alle-funktionen-ihrer-software-optimaleinzusetzen-bei-ihnen-vor-ort-oder-remote-ueber-teamviewer'
+                )
+              }}
             </p>
           </div>
         </div>
         <!-- </div> -->
         <div class="row">
           <div class="col-lg-6">
-            <h6 class="display-3 mt-5 ">Lösungen</h6>
+            <h6 class="display-3 mt-5 ">{{ $t('loesungen') }}</h6>
           </div>
         </div>
         <div class="row row-grid mt-3">
           <div class="col-lg-6">
             <!-- <icon name="ni ni-settings" size="lg" gradient="white" shadow round color="primary"></icon> -->
-            <h4 class=" mt-3">Plugins</h4>
+            <h4 class=" mt-3">{{ $t('plugins') }}</h4>
             <p class=" mt-3">
-              Wir erweitern Ihre bestehende Software durch kombinieren oder
-              programmieren von Plugins, Module und Erweiterungen
+              {{
+                $t(
+                  'wir-erweitern-ihre-bestehende-software-durch-kombinieren-oderprogrammieren-von-plugins-module-und-erweiterungen'
+                )
+              }}
             </p>
           </div>
           <div class="col-lg-6">
             <!-- <icon name="ni ni-ruler-pencil" size="lg" gradient="white" shadow round color="primary"></icon> -->
-            <h4 class=" mt-3">Schnittstellen</h4>
+            <h4 class=" mt-3">{{ $t('schnittstellen') }}</h4>
             <p class=" mt-3">
-              Bestehende Schnittstellen, API´s werden genutzt, erweitert oder
-              neu programmiert.
+              {{
+                $t(
+                  'bestehende-schnittstellen-api-s-werden-genutzt-erweitert-oderneu-programmiert'
+                )
+              }}
             </p>
           </div>
           <div class="col-lg-6">
             <!-- <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon> -->
-            <h4 class=" mt-3">Frontendautomatisierung</h4>
+            <h4 class=" mt-3">{{ $t('frontendautomatisierung') }}</h4>
             <p class=" mt-3">
-              Ist ein Zugriff auf Schnittstellen oder Datenbanken nicht möglich,
-              können wir trotzdem Ihre Produktivität steigern, indem wir einfach
-              von der Benutzeroberfläche auf diese Programme mit z. B AutoIt,
-              VBA zugreifen und so optimieren
+              {{
+                $t(
+                  'ist-ein-zugriff-auf-schnittstellen-oder-datenbanken-nicht-moeglich-koennen-wir-trotzdem-ihre-produktivitaet-steigern-indem-wir-einfachvon-der-benutzeroberflaeche-auf-diese-programme-mit-z-b-autoit-vba-zugreifen-und-so-optimieren'
+                )
+              }}
             </p>
           </div>
           <div class="col-lg-6">
             <!-- <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon> -->
-            <h4 class=" mt-3">Sicherheit</h4>
+            <h4 class=" mt-3">{{ $t('sicherheit') }}</h4>
             <p class=" mt-3">
-              Sichern Sie sich vor Hacker und Ausfällen. Ihr Server und alle
-              Programme werden so eingerichtet, dass automatisch alles
-              aktualisiert wird und Backups erstellt werde.
+              {{
+                $t(
+                  'sichern-sie-sich-vor-hacker-und-ausfaellen-ihr-server-und-alleprogramme-werden-so-eingerichtet-dass-automatisch-allesaktualisiert-wird-und-backups-erstellt-werde'
+                )
+              }}
             </p>
           </div>
           <div class="col-lg-6">
             <!-- <icon name="ni ni-atom" size="lg" gradient="white" shadow round color="primary"></icon> -->
-            <h4 class=" mt-3">Software nach Mass</h4>
+            <h4 class=" mt-3">{{ $t('software-nach-mass') }}</h4>
             <p class=" mt-3">
-              Falls Sie mit bestehenden Software nicht zufrieden sind und diese
-              unzureichend Erweiterbar sind, programmieren und designen wir
-              gerne Ihre Software nach Ihren Vorstellungen.
+              {{
+                $t(
+                  'falls-sie-mit-bestehenden-software-nicht-zufrieden-sind-und-dieseunzureichend-erweiterbar-sind-programmieren-und-designen-wirgerne-ihre-software-nach-ihren-vorstellungen'
+                )
+              }}
             </p>
           </div>
         </div>

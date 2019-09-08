@@ -1,4 +1,46 @@
 export default {
+  '#####Components/SitAdresse': '#######',
+  schweiz: 'Switzerland',
+  'auf-google-maps-anzeigen': 'Show on Google Maps',
+  kanton: 'Canton',
+  '#####Components/SoftwareUndApps': '##########',
+  'software-and-apps': 'Software & Apps',
+  'programmierung-and-optimierung': 'Programming & Optimization',
+  'zusammen-untersuchen-wir-den-gesamten-informationsfluss-ihresunternehmens-dabei-wird-u-a-folgende-bereiche-analysiert-undoptimiert':
+    'Together, we examine the entire information flow of your business. We analyze and optimize the following areas, among others',
+  logistik: 'Logistics',
+  'betroffene-server-datenbanken-programme-module-plugins-scripts-und-erweiterungen':
+    'Affected Servers, Databases, Programs, Modules, Plugins, Scripts and Extensions',
+  buchhaltung: 'Accounting',
+  'sie-erhalten-anschliessend-empfehlungen-was-und-mit-welchenprogrammen-und-technologien-designt-konfiguriert-und-programmiertwerden-kann-um-verbesserungen-zu-erreichen':
+    'You will then receive recommendations as to what and with what programs and technologies can be designed, configured and programmed to achieve improvements',
+  benutzerfreundlichkeit: 'Usability',
+  'ihre-software-wird-mit-einer-modernen-benutzeroberflaeche-auch-alsgui-ui-user-interface-bekannt-designt-und-programmiert-dadurcherhalten-sie-einen-hohen-bedienkomfort-auf-allen-geraeten-wie-z-b-pc-mac-mobile-und-tablet':
+    'Your software will be designed and programmed with a modern user interface, also known as GUI, UI, User Interface. Thus you receive a high operating comfort. On all devices such as PC/Mac, Mobile and Tablet',
+  'lizenzkosten-and-erweiterungen': 'License Costs & Extensions',
+  'durch-open-source-sparen-sie-lizenzkosten-und-erhoehen-dieanpassungsfaehigkeit-ihrer-software':
+    'Open source saves you license costs and increases the adaptability of your software.',
+  'ihre-programme-werden-so-konfiguriert-dass-sie-weniger-dateneingeben-muessen-dadurch-sparen-sie-zeit-und-geld-erhoehen-dieproduktivitaet-und-reduzieren-fehler-beim-eintippen-oder-beimkopieren-und-einfuegen':
+    'Your programs are configured so that you need to enter less data. This saves you time and money, increases productivity, and reduces typing or copying and pasting errors',
+  sicherheit: 'Security',
+  schulung: 'Training',
+  'holen-sie-das-beste-aus-ihrer-software-heraus-und-steigern-sie-dieproduktivitaet-sie-lernen-alle-funktionen-ihrer-software-optimaleinzusetzen-bei-ihnen-vor-ort-oder-remote-ueber-teamviewer':
+    'Get the most out of your software and increase productivity. You learn how to make the most of all the features of your software. At your site or remotely via TeamViewer',
+  loesungen: 'Solutions',
+  plugins: 'Plugins',
+  'wir-erweitern-ihre-bestehende-software-durch-kombinieren-oderprogrammieren-von-plugins-module-und-erweiterungen':
+    'We extend your existing software by combining or programming plugins, modules and extensions',
+  schnittstellen: 'Interfaces',
+  'bestehende-schnittstellen-api-s-werden-genutzt-erweitert-oderneu-programmiert':
+    'Existing interfaces, API´s are being used, expanded or reprogrammed.',
+  frontendautomatisierung: 'Frontend automation',
+  'ist-ein-zugriff-auf-schnittstellen-oder-datenbanken-nicht-moeglich-koennen-wir-trotzdem-ihre-produktivitaet-steigern-indem-wir-einfachvon-der-benutzeroberflaeche-auf-diese-programme-mit-z-b-autoit-vba-zugreifen-und-so-optimieren':
+    'If access to interfaces or databases is not possible, we can still increase your productivity by simply accessing and optimizing these programs from the user interface with e.g. AutoIt,VBA',
+  'sichern-sie-sich-vor-hacker-und-ausfaellen-ihr-server-und-alleprogramme-werden-so-eingerichtet-dass-automatisch-allesaktualisiert-wird-und-backups-erstellt-werde':
+    'Protect yourself from hackers and outages. Your server and all programs will be set up to automatically update everything and create backups',
+  'software-nach-mass': 'Software made to measure',
+  'falls-sie-mit-bestehenden-software-nicht-zufrieden-sind-und-dieseunzureichend-erweiterbar-sind-programmieren-und-designen-wirgerne-ihre-software-nach-ihren-vorstellungen':
+    'If you are not satisfied with existing software and it is not sufficiently expandable, we will program and design your software according to your ideas.',
   //'#########index########': '/index',
   dasrad:
     "We're not reinventing the wheel. Thanks to know-how and access to already existing templates, plugins and software, save money and time",
@@ -27,7 +69,6 @@ export default {
   'tests-and-uebergabe': 'Tests & Deliveries.',
   nachdem:
     'Once all the work has been completed, quality tests will be carried out. For example, in the case of web pages, it is checked whether everything is displayed correctly on all devices and all browsers.             ',
-  schulung: 'Training',
   'schulung-lead':
     'You and your employees receive training either locally or remotely via TeamViewer, e.g. to update products independently in the web shop.             ',
   'wartung-and-sicherheit': 'Maintenance & Safety',

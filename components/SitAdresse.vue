@@ -5,8 +5,8 @@
       Strainovic Goran<br />
       Bahnstrasse 9b<br />
       CH 9323 Steinach<br />
-      Kanton St.Gallen SG<br />
-      Schweiz<br />
+      {{ $t('kanton') }}St.Gallen SG<br />
+      {{ $t('schweiz') }}<br />
     </p>
 
     <base-button
@@ -16,7 +16,8 @@
       target="_blank"
       rel="noopener noreferrer"
       href="https://www.google.com/maps/place/Strainovic+IT/@47.5008767,9.4411352,17z/data=!3m1!4b1!4m5!3m4!1s0x479b1cf2d3e32e4f:0xb09b276dcd03f76c!8m2!3d47.5008767!4d9.4433292?hl=de"
-      ><i class="ni ni-square-pin"></i> Auf Google Maps anzeigen</base-button
+      ><i class="ni ni-square-pin"></i
+      >{{ $t('auf-google-maps-anzeigen') }}</base-button
     >
 
     <p>
