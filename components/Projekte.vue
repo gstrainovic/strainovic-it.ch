@@ -45,114 +45,115 @@
             </h4>
             <h5 class="display-5 mt-4 ">{{ $t('deutsche-reiseagentur') }}</h5>
             <strong class="display-6 mt-3 ">{{ $t('ziel') }}</strong>
-            <p>Neue Kunden mit täglichen Posts inspirieren</p>
+            <p>{{ $t('neue-kunden-mit-taeglichen-posts-inspirieren') }}</p>
             <strong class="display-6 mt-3 ">{{ $t('technologien') }}</strong>
-            <p>Facebook</p>
+            <p>{{ $t('facebook') }}</p>
             <br />
 
             <h4 class="display-4 mt-5 ">
-              Zeitersparnis durch Automatisierungen
+              {{ $t('zeitersparnis-durch-automatisierungen') }}
             </h4>
-            <h5 class="display-5 mt-4 ">Prüffeld, VS</h5>
+            <h5 class="display-5 mt-4 ">{{ $t('prueffeld-vs') }}</h5>
             <strong class="display-5 mt-3 ">{{ $t('ziel') }}</strong>
             <p>
-              Wegfall von manuellen Eintragungen in Excel.<br />
-              Interaktion mit Excel und Testprogramm.
+              {{ $t('wegfall-von-manuellen-eintragungen-in-excel') }}<br />
+              {{ $t('interaktion-mit-excel-und-testprogramm') }}
             </p>
             <strong class="display-5 mt-3 ">{{ $t('technologien') }}</strong>
-            <p>AutoIT und VBA</p>
+            <p>{{ $t('autoit-und-vba') }}</p>
 
-            <h5 class="display-5 mt-5 ">
-              Technische Abteilung, VS
-            </h5>
+            <h5 class="display-5 mt-5 ">{{ $t('technische-abteilung-vs') }}</h5>
             <strong class="display-6 mt-3 ">{{ $t('ziel') }}</strong>
             <p>
-              Wegfall von manuellen Eintragungen in Excel, Outlook, Aegis,
-              Clipboard, SAP.
+              {{
+                $t(
+                  'wegfall-von-manuellen-eintragungen-in-excel-outlook-aegis-clipboard-sap'
+                )
+              }}
             </p>
             <strong class="display-6 mt-3 ">{{ $t('technologien') }}</strong>
-            <p>FSharp, AutoIT und VBA</p>
+            <p>{{ $t('fsharp-autoit-und-vba') }}</p>
 
             <h5 class="display-5 mt-5 ">Strainovic IT</h5>
             <strong class="display-6 mt-3 ">{{ $t('ziel') }}</strong>
             <p>
-              Durchforsten einer Webseiten und ausfüllen von Formularfeldern.
-              Erstellt mit FSharp, Fsharp.Data ,Docker ,Canopy auf Google Cloud
-              Plattform.
+              {{
+                $t(
+                  'durchforsten-einer-webseiten-und-ausfuellen-von-formularfeldern-erstellt-mit-fsharp-fsharp-data-docker-canopy-auf-google-cloudplattform'
+                )
+              }}
             </p>
             <strong class="display-6 mt-3 ">{{ $t('technologien') }}</strong>
-            <p>FSharp, AutoIT und VBA</p>
+            <p>{{ $t('fsharp-autoit-und-vba') }}</p>
             <br />
 
-            <h4 class="display-4 mt-5 ">
-              Design von Printmedien
-            </h4>
+            <h4 class="display-4 mt-5 ">{{ $t('design-von-printmedien') }}</h4>
             <h5 class="display-5 mt-4 ">Strainovic IT</h5>
             <strong class="display-6 mt-3 ">{{ $t('ziel') }}</strong>
-            <p>Visitenkarte, Flyer, Banner</p>
+            <p>{{ $t('visitenkarte-flyer-banner') }}</p>
             <strong class="display-6 mt-3 ">{{ $t('technologien') }}</strong>
-            <p>Photoshop, Illustrator, Inkscape, Canva.</p>
+            <p>{{ $t('photoshop-illustrator-inkscape-canva') }}</p>
             <br />
 
-            <h4 class="display-4 mt-5 ">Webdesign</h4>
+            <h4 class="display-4 mt-5 ">{{ $t('webdesign') }}</h4>
             <p>
-              Die von mir erstellten Webseiten finden Sie im
-              <a class="" rel="noopener noreferrer" href="/portfolio/#web"
-                ><b>Portfolio</b></a
-              >
-              <br />
-
-              <br />
+              {{ $t('die-von-mir-erstellten-webseiten-finden-sie-im')
+              }}<a class="" rel="noopener noreferrer" href="/portfolio/#web"
+                ><b>{{ $t('portfolio') }}</b></a
+              ><br /><br />
             </p>
 
-            <h4 class="display-4 mt-5 ">Softwareentwicklung</h4>
+            <h4 class="display-4 mt-5 ">{{ $t('softwareentwicklung') }}</h4>
             <h5 class="display-5 mt-4 ">
-              rBranches für einen österreichischen Kunden
+              {{ $t('rbranches-fuer-einen-oesterreichischen-kunden') }}
             </h5>
             <strong class="display-6 mt-3 ">{{ $t('ziel') }}</strong>
             <p>
-              Programmierung eines D-A-CH Branchenverzeichnisses im Team
+              {{
+                $t('programmierung-eines-d-a-ch-branchenverzeichnisses-im-team')
+              }}
             </p>
             <strong class="display-6 mt-3 ">{{ $t('technologien') }}</strong>
-            <p>R mit RStudio</p>
+            <p>{{ $t('r-mit-rstudio') }}</p>
             <h5 class="display-5 mt-5 ">
-              Plugin für einen deutschen Kunden
+              {{ $t('plugin-fuer-einen-deutschen-kunden') }}
             </h5>
             <strong class="display-6 mt-3 ">{{ $t('ziel') }}</strong>
-            <p>
-              Unbenötigte Formularfelder in Shopware bei der Registrierung
-              deaktivieren
-            </p>
+            {{
+              $t(
+                'less-than-p-greater-than-unbenoetigte-formularfelder-in-shopware-bei-der-registrierungdeaktivieren-less-than-p-greater-than'
+              )
+            }}
             <strong class="display-6 mt-3 ">{{ $t('technologien') }}</strong>
             <p>PHP</p>
             <br />
 
-            <h4 class="display-4 mt-5 ">Schulungen</h4>
+            <h4 class="display-4 mt-5 ">{{ $t('schulungen') }}</h4>
             <h5 class="display-5 mt-4 ">
-              Schulung beim Kunden in Zürich
+              {{ $t('schulung-beim-kunden-in-zuerich') }}
             </h5>
             <strong class="display-6 mt-3 ">{{ $t('ziel') }}</strong>
-            <p>Basics der Webseitenerstellung</p>
+            <p>{{ $t('basics-der-webseitenerstellung') }}</p>
             <strong class="display-6 mt-3 ">{{ $t('technologien') }}</strong>
-            <p>WordPress, Divi</p>
+            <p>{{ $t('wordpress-divi') }}</p>
 
             <h5 class="display-5 mt-5 ">
-              Schulung eines Kunden aus St.Gallen
+              {{ $t('schulung-eines-kunden-aus-st-gallen') }}
             </h5>
             <strong class="display-6 mt-3 ">{{ $t('ziel') }}</strong>
-            <p>Basics der Programmierung</p>
+            <p>{{ $t('basics-der-programmierung') }}</p>
             <strong class="display-6 mt-3 ">{{ $t('technologien') }}</strong>
-            <p>F# (FSharp), Visual Studio</p>
+            <p>{{ $t('f-fsharp-visual-studio-python') }}</p>
             <br />
 
             <h4 class="display-4 mt-5 ">
-              Installation und Konfiguration
+              {{ $t('installation-und-konfiguration') }}
             </h4>
             <h5 class="display-5 mt-4 ">Strainovic IT</h5>
-            <strong class="display-6 mt-3 ">Ziele</strong>
-            <p>Besseres Projektmanagement</p>
+            <strong class="display-6 mt-3 ">{{ $t('ziel') }}</strong>
+            <p>{{ $t('besseres-projektmanagement') }}</p>
             <strong class="display-6 mt-3 ">{{ $t('technologien') }}</strong>
-            <p>Redmine, Odoo</p>
+            <p>{{ $t('redmine-odoo') }}</p>
           </div>
         </div>
       </div>

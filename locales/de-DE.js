@@ -82,6 +82,8 @@ export default {
     'Spendiere uns einen Stern auf Github',
   'folge-uns-auf-xing': 'Folge uns auf Xing',
   '####components-goran#####': '####components-goran#####',
+  'designen-programmieren-installieren-konfigurieren-erweitern-warten-testen':
+    'Designen, Programmieren, Installieren, Konfigurieren, Erweitern, Warten, Testen',
   ueber: 'Über',
   gruender: 'Gründer',
   programmierer: 'Programmierer',
@@ -117,7 +119,7 @@ export default {
   'informatik-anwender-siz': 'Informatik – Anwender SIZ',
   'berufsschule-uzwil': 'Berufsschule Uzwil',
   'praktikum-als-rtv-elektriker': 'Praktikum als RTV - Elektriker',
-  'primar-und-oberstufes': 'Primar und Oberstufe',
+  'primar-und-oberstufe': 'Primar und Oberstufe',
   header: {
     'zurueck-zur-startseite': 'Zurück zur Startseite'
   },
@@ -137,7 +139,51 @@ export default {
   datenbeschaffung: 'Datenbeschaffung',
   gerneunter:
     'Gerne unterstützen wir Sie auch bei der Datenbeschaffung für Ihr               Marketing. Egal ob Adressen, Branchenverzeichnisse,               Konkurrenzvergleiche, wir helfen Ihnen bei der Beschaffung mit               manuellem Google Research, Spider/Crawler/Bot oder durch unser               Netzwerk an Partnern und Schnittstellen.',
-  '#######projekte#######': '#######projekte#######',
+  // '#######projekte#######': '#######projekte#######',
+  'wordpress-divi': 'WordPress, Divi',
+  'neue-kunden-mit-taeglichen-posts-inspirieren':
+    'Neue Kunden mit täglichen Posts inspirieren',
+  facebook: 'Facebook',
+  'zeitersparnis-durch-automatisierungen':
+    'Zeitersparnis durch Automatisierungen',
+  'prueffeld-vs': 'Prüffeld, VS',
+  'wegfall-von-manuellen-eintragungen-in-excel':
+    'Wegfall von manuellen Eintragungen in Excel.',
+  'interaktion-mit-excel-und-testprogramm':
+    'Interaktion mit Excel und Testprogramm.',
+  'autoit-und-vba': 'AutoIT und VBA',
+  'technische-abteilung-vs': 'Technische Abteilung, VS',
+  'wegfall-von-manuellen-eintragungen-in-excel-outlook-aegis-clipboard-sap':
+    'Wegfall von manuellen Eintragungen in Excel, Outlook, Aegis,Clipboard, SAP.',
+  'fsharp-autoit-und-vba': 'FSharp, AutoIT und VBA',
+  'durchforsten-einer-webseiten-und-ausfuellen-von-formularfeldern-erstellt-mit-fsharp-fsharp-data-docker-canopy-auf-google-cloudplattform':
+    'Durchforsten einer Webseiten und ausfüllen von Formularfeldern.Erstellt mit FSharp, Fsharp.Data ,Docker ,Canopy auf Google CloudPlattform.',
+  'design-von-printmedien': 'Design von Printmedien',
+  'visitenkarte-flyer-banner': 'Visitenkarte, Flyer, Banner',
+  webdesign: 'Webdesign',
+  'photoshop-illustrator-inkscape-canva':
+    'Photoshop, Illustrator, Inkscape, Canva.',
+  'die-von-mir-erstellten-webseiten-finden-sie-im':
+    'Die von mir erstellten Webseiten finden Sie im',
+  portfolio: 'Portfolio',
+  softwareentwicklung: 'Softwareentwicklung',
+  'rbranches-fuer-einen-oesterreichischen-kunden':
+    'rBranches für einen österreichischen Kunden',
+  'programmierung-eines-d-a-ch-branchenverzeichnisses-im-team':
+    'Programmierung eines D-A-CH Branchenverzeichnisses im Team',
+  'r-mit-rstudio': 'R mit RStudio',
+  'plugin-fuer-einen-deutschen-kunden': 'Plugin für einen deutschen Kunden',
+  'less-than-p-greater-than-unbenoetigte-formularfelder-in-shopware-bei-der-registrierungdeaktivieren-less-than-p-greater-than':
+    'Unbenötigte Formularfelder in Shopware bei der Registrierungdeaktivieren',
+  schulungen: 'Schulungen',
+  'schulung-beim-kunden-in-zuerich': 'Schulung beim Kunden in Zürich',
+  'basics-der-webseitenerstellung': 'Basics der Webseitenerstellung',
+  'schulung-eines-kunden-aus-st-gallen': 'Schulung eines Kunden aus St.Gallen',
+  'basics-der-programmierung': 'Basics der Programmierung',
+  'f-fsharp-visual-studio-python': 'F# (FSharp), Visual Studio, Python',
+  'installation-und-konfiguration': 'Installation und Konfiguration',
+  'besseres-projektmanagement': 'Besseres Projektmanagement',
+  'redmine-odoo': 'Redmine, Odoo',
   plugin: 'Plugin',
   'oesterreichischer-hardwarehersteller': 'Österreichischer Hardwarehersteller',
   ziel: 'Ziel',

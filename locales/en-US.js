@@ -80,6 +80,8 @@ export default {
   'spendiere-uns-einen-stern-auf-github': 'Give us a star on Github',
   'folge-uns-auf-xing': 'Follow us on Xing',
   '####components-goran#####': '####components-goran#####',
+  'designen-programmieren-installieren-konfigurieren-erweitern-warten-testen':
+    'Design, program, install, configure, extend, maintain, test',
   ueber: 'About',
   gruender: 'Founder',
   programmierer: 'Programmer',
@@ -113,7 +115,7 @@ export default {
   'informatik-anwender-siz': 'Computer Science - SIZ User',
   'berufsschule-uzwil': 'Vocational school Uzwil',
   'praktikum-als-rtv-elektriker': 'Internship as RTV electrician',
-  'primar-und-oberstufes': 'Primary and Advanced',
+  'primar-und-oberstufe': 'Primary and Advanced',
   header: {
     'zurueck-zur-startseite': 'Back to home page'
   },
@@ -133,7 +135,51 @@ export default {
   datenbeschaffung: 'Data procurement',
   gerneunter:
     'We would also be happy to support you in obtaining data for your marketing. Whether addresses, trade directories, competitive comparisons, we help you with the procurement with manual Google Research, Spider/Crawler/Bot or through our network of partners and interfaces',
-  '#######projekte#######': '#########projects#######',
+  // '#######projekte#######': '#########projects#######',
+  'wordpress-divi': 'WordPress, Divi',
+  'neue-kunden-mit-taeglichen-posts-inspirieren':
+    'Inspire new customers with daily posts.',
+  facebook: 'Facebook',
+  'zeitersparnis-durch-automatisierungen': 'Time savings through automation',
+  'prueffeld-vs': 'Testfield, VS',
+  'wegfall-von-manuellen-eintragungen-in-excel':
+    'Elimination of manual entries in Excel.',
+  'interaktion-mit-excel-und-testprogramm':
+    'Interaction with Excel and test program.',
+  'autoit-und-vba': 'AutoIT and VBA',
+  'technische-abteilung-vs': 'Technical Department, VS',
+  'wegfall-von-manuellen-eintragungen-in-excel-outlook-aegis-clipboard-sap':
+    'Elimination of manual entries in Excel, Outlook, Aegis, Clipboard, SAP.',
+  'fsharp-autoit-und-vba': 'FSharp, AutoIT and VBA',
+  'durchforsten-einer-webseiten-und-ausfuellen-von-formularfeldern-erstellt-mit-fsharp-fsharp-data-docker-canopy-auf-google-cloudplattform':
+    'Thinning a web page and filling out form fields. Created with FSharp, Fsharp.Data, Docker, Canopy on Google Cloud platform.',
+  'design-von-printmedien': 'Design of print media',
+  'visitenkarte-flyer-banner': 'Business card, flyer, banner.',
+  webdesign: 'Web design',
+  'photoshop-illustrator-inkscape-canva':
+    'Photoshop, Illustrator, Inkscape, Canva.',
+  'die-von-mir-erstellten-webseiten-finden-sie-im':
+    'You can find the web pages I created in the',
+  portfolio: 'Portfolio',
+  softwareentwicklung: 'Software development.',
+  'rbranches-fuer-einen-oesterreichischen-kunden':
+    'rBranches for an Austrian customer',
+  'programmierung-eines-d-a-ch-branchenverzeichnisses-im-team':
+    'Programming a D-A-CH directory in a team.',
+  'r-mit-rstudio': 'R with RStudio.',
+  'plugin-fuer-einen-deutschen-kunden': 'Plugin for a German customer',
+  'less-than-p-greater-than-unbenoetigte-formularfelder-in-shopware-bei-der-registrierungdeaktivieren-less-than-p-greater-than':
+    'Unnecessary form fields in Shopware during registration deactivate',
+  schulungen: 'Training',
+  'schulung-beim-kunden-in-zuerich': 'Customer training in Zurich',
+  'basics-der-webseitenerstellung': 'Basics of website creation.',
+  'schulung-eines-kunden-aus-st-gallen':
+    'Training of a customer from St.Gallen',
+  'basics-der-programmierung': 'Basics of programming.',
+  'f-fsharp-visual-studio-python': 'F# (FSharp), Visual Studio, Python.',
+  'installation-und-konfiguration': 'Installation and Configuration',
+  'besseres-projektmanagement': 'Better Project Management',
+  'redmine-odoo': 'Redmine, Odoo',
   plugin: 'Plugin',
   'oesterreichischer-hardwarehersteller': 'Austrian hardware manufacturer',
   ziel: 'Target',
