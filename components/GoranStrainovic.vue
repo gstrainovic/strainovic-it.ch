@@ -149,7 +149,7 @@
         <div class="row mt-5 mb-5 ">
           <div class="col">
             <h3 class="display-3 ">{{ $t('ausbildung') }}</h3>
-            <h4 class="display-4 mt-5 ">PC/LAN – Supporter SIZ</h4>
+            <h4 class="display-4 mt-5 ">{{ $t('pc-lan-supporter-siz') }}</h4>
             <p class="lead mb-5">
               {{ $t('berufsschule-wil') }}<br />2002 – 2003
             </p>
@@ -160,9 +160,11 @@
             <h4 class="display-4 mt-5 ">
               {{ $t('praktikum-als-rtv-elektriker') }}
             </h4>
-            <p class="lead mb-5">RTV Bohren Gossau<br />1998 - 1999</p>
+            <p class="lead mb-5">
+              {{ $t('rtv-bohren-gossau') }}<br />1998 - 1999
+            </p>
             <h4 class="display-4 mt-5 ">{{ $t('primar-und-oberstufe') }}</h4>
-            <p class="lead mb-5">Niederuzwil<br />1989 – 1998</p>
+            <p class="lead mb-5">{{ $t('niederuzwil') }}<br />1989 – 1998</p>
           </div>
         </div>
       </div>

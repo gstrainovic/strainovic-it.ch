@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header bold="Impressum"></Header>
+    <Header :bold="$t('impressum')"></Header>
     <section class="section">
       <div class="container">
         <div class="row">

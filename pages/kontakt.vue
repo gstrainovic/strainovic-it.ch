@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header bold="Kontakt"></Header>
+    <Header bold="$t('kontakt')"></Header>
     <!-- <section
       id="marketing"
       class="section section section-shaped my-0 overflow-hidden"

@@ -100,7 +100,7 @@
                   <div class="">
                     <div class="">
                       <h2 class="display-4">
-                        Wir freuen uns auf Ihre Nachricht!
+                        {{ $t('wir-freuen-uns-auf-ihre-nachricht') }}
                       </h2>
                       <div class="">
                         <!-- <div class="col-md-5 lead"> -->

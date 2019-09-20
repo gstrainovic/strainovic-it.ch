@@ -342,5 +342,16 @@ export default {
     'Ghostwriting / Summaries and Formatting',
   'microsoft-word': 'Microsoft Word',
   'social-media-marketing-smm': 'Social Media Marketing - SMM',
-  'deutsche-reiseagentur': 'German Travel Agency'
+  'deutsche-reiseagentur': 'German Travel Agency',
+  'pc-lan-supporter-siz': 'PC/LAN Supporter SIZ',
+  'rtv-bohren-gossau': 'RTV Drilling Gossau',
+  niederuzwil: 'Niederuzwil',
+  'webdesign-and-programmierung': 'Web Design & Programming',
+  'webshop-webportal-web-app-homepage-website-and-webseiteerstellen-lassen':
+    'Web shop, web portal, web app, home page, website & web page creation.',
+  'konzentrieren-sie-sich-auf-ihr-business-und-ueberlassen-sie-unsdas-erstellen-der-webseite-so-erhalten-sie-schnell-und-einfacheine-verfuehrerisch-schoene-individuelle-webseite':
+    'Concentrate on your business and let us create the website. So you receive fast and simply a seductively beautiful, individual web page',
+  'wir-freuen-uns-auf-ihre-nachricht': 'We look forward to your message!',
+  impressum: 'Imprint',
+  kontakt: 'Contact'
 }

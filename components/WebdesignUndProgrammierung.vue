@@ -12,15 +12,22 @@
           </div>
           <div class="col-md-8 order-md-1">
             <div class="pr-md-5">
-              <h2 v-if="h2" class="display-3">Webdesign & Programmierung</h2>
+              <h2 v-if="h2" class="display-3">
+                {{ $t('webdesign-and-programmierung') }}
+              </h2>
               <h3 class="display-4 mt-5">
-                Webshop, Webportal, Web-App, Homepage, Website & Webseite
-                erstellen lassen.
+                {{
+                  $t(
+                    'webshop-webportal-web-app-homepage-website-and-webseiteerstellen-lassen'
+                  )
+                }}
               </h3>
               <p class="lead">
-                Konzentrieren Sie sich auf Ihr Business und überlassen Sie uns
-                das Erstellen der Webseite. So erhalten Sie schnell und einfach
-                eine verführerisch schöne, individuelle Webseite.'
+                {{
+                  $t(
+                    'konzentrieren-sie-sich-auf-ihr-business-und-ueberlassen-sie-unsdas-erstellen-der-webseite-so-erhalten-sie-schnell-und-einfacheine-verfuehrerisch-schoene-individuelle-webseite'
+                  )
+                }}
               </p>
             </div>
           </div>
@@ -35,7 +42,7 @@
             </div>
           </template>
         </div>
-        <h3 class="display-3 mt-5">Lösungen</h3>
+        <h3 class="display-3 mt-5">{{ $t('loesungen') }}</h3>
         <div class="row row-grid pr-md-5">
           <template v-for="x in loesungen">
             <div :key="x.index" class="col-md-6 mt-4">
