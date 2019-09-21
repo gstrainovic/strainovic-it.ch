@@ -134,7 +134,7 @@ export default {
   sicherheit: 'Sicherheit',
   schulung: 'Schulung',
   'holen-sie-das-beste-aus-ihrer-software-heraus-und-steigern-sie-dieproduktivitaet-sie-lernen-alle-funktionen-ihrer-software-optimaleinzusetzen-bei-ihnen-vor-ort-oder-remote-ueber-teamviewer':
-    'Holen Sie das Beste aus Ihrer Software heraus und steigern Sie dieProduktivität. Sie lernen, alle Funktionen Ihrer Software optimaleinzusetzen. Bei Ihnen vor Ort oder Remote über TeamViewer.',
+    'Holen Sie das Beste aus Ihrer Software heraus und steigern Sie die Produktivität. Sie lernen, alle Funktionen Ihrer Software optimal einzusetzen. Bei Ihnen vor Ort oder Remote über TeamViewer.',
   loesungen: 'Lösungen',
   plugins: 'Plugins',
   'wir-erweitern-ihre-bestehende-software-durch-kombinieren-oderprogrammieren-von-plugins-module-und-erweiterungen':
@@ -144,12 +144,12 @@ export default {
     'Bestehende Schnittstellen, API´s werden genutzt, erweitert oderneu programmiert.',
   frontendautomatisierung: 'Frontendautomatisierung',
   'ist-ein-zugriff-auf-schnittstellen-oder-datenbanken-nicht-moeglich-koennen-wir-trotzdem-ihre-produktivitaet-steigern-indem-wir-einfachvon-der-benutzeroberflaeche-auf-diese-programme-mit-z-b-autoit-vba-zugreifen-und-so-optimieren':
-    'Ist ein Zugriff auf Schnittstellen oder Datenbanken nicht möglich,können wir trotzdem Ihre Produktivität steigern, indem wir einfachvon der Benutzeroberfläche auf diese Programme mit z. B AutoIt,VBA zugreifen und so optimieren',
+    'Ist ein Zugriff auf Schnittstellen oder Datenbanken nicht möglich, können wir trotzdem Ihre Produktivität steigern, indem wir einfachvon der Benutzeroberfläche auf diese Programme mit z. B AutoIt, VBA zugreifen und so optimieren',
   'sichern-sie-sich-vor-hacker-und-ausfaellen-ihr-server-und-alleprogramme-werden-so-eingerichtet-dass-automatisch-allesaktualisiert-wird-und-backups-erstellt-werde':
     'Sichern Sie sich vor Hacker und Ausfällen. Ihr Server und alleProgramme werden so eingerichtet, dass automatisch allesaktualisiert wird und Backups erstellt werde.',
   'software-nach-mass': 'Software nach Mass',
   'falls-sie-mit-bestehenden-software-nicht-zufrieden-sind-und-dieseunzureichend-erweiterbar-sind-programmieren-und-designen-wirgerne-ihre-software-nach-ihren-vorstellungen':
-    'Falls Sie mit bestehenden Software nicht zufrieden sind und dieseunzureichend Erweiterbar sind, programmieren und designen wirgerne Ihre Software nach Ihren Vorstellungen.',
+    'Falls Sie mit bestehenden Software nicht zufrieden sind und diese unzureichend Erweiterbar sind, programmieren und designen wirgerne Ihre Software nach Ihren Vorstellungen.',
   // '######### index ########': '/index',
   dasrad:
     'Wir erfinden das Rad nicht neu. Dank Know-how und Zugriff auf bereits vorhanden Vorlagen, Plugins und Software, sparen Sie Geld und Zeit.',
@@ -277,13 +277,13 @@ export default {
   'wir-helfen':
     'Wir helfen Ihnen lokal und offline Ihre Bekanntheit zu steigern, indem wir Ihre Visitenkarten, Flyer, Broschüren, Prospekte und Infografiken designen und auf Wunsch bei unserem Partner drucken lassen.',
   wirberaten:
-    'Wir beraten und unterstützen Sie bei der Online Marketing über die               Suchmaschine Google. Unser Ziel ist es das Sie dort gut gefunden               werden, und daher auf der ersten Seite, oben bei den gut               Platzierten Suchresultaten. Dazu setzen wir auf Content, Google               SEO, Google Adwords, Google Business, Google Maps und verwenden               alle für Sie optimalen sozialen Kanäle wie Facebook, Instagram,               Twitter, Youtube.',
+    'Wir beraten und unterstützen Sie bei der Online Marketing über die Suchmaschine Google. Unser Ziel ist es das Sie dort gut gefunden werden, und daher auf der ersten Seite, oben bei den gut Platzierten Suchresultaten. Dazu setzen wir auf Content, Google SEO, Google Adwords, Google Business, Google Maps und verwenden alle für Sie optimalen sozialen Kanäle wie Facebook, Instagram, Twitter, Youtube.',
   'erstellung-und-beschaffung-von-content':
     'Erstellung und Beschaffung von Content',
   mitdem:
-    'Mit dem optimalem Design z. B. Ihrer Webseite und Marketing ist es               noch nicht getan. Ohne überzeugenden Webseiteninhalt, locken Sie               zwar (erschwert) Besucher an, generieren jedoch daraus keine               Kunden. Wir helfen Ihnen durch spannende Webinhalte Besucher von               Ihrem Produkt oder Dienstleistungen zu überzeugen und so es zu               verkaufen. Dabei setzen wir auf ein breites Multimedia Angebot wie               Texte schreiben, Videos und Fotos zu beschaffen oder durch unseren               Fotografen zu erstellen.',
+    'Mit dem optimalem Design z. B. Ihrer Webseite und Marketing ist es noch nicht getan. Ohne überzeugenden Webseiteninhalt, locken Sie zwar (erschwert) Besucher an, generieren jedoch daraus keine Kunden. Wir helfen Ihnen durch spannende Webinhalte Besucher von Ihrem Produkt oder Dienstleistungen zu überzeugen und so es zu verkaufen. Dabei setzen wir auf ein breites Multimedia Angebot wie Texte schreiben, Videos und Fotos zu beschaffen oder durch unseren Fotografen zu erstellen.',
   gerneunter:
-    'Gerne unterstützen wir Sie auch bei der Datenbeschaffung für Ihr               Marketing. Egal ob Adressen, Branchenverzeichnisse,               Konkurrenzvergleiche, wir helfen Ihnen bei der Beschaffung mit               manuellem Google Research, Spider/Crawler/Bot oder durch unser               Netzwerk an Partnern und Schnittstellen.',
+    'Gerne unterstützen wir Sie auch bei der Datenbeschaffung für Ihr Marketing. Egal ob Adressen, Branchenverzeichnisse, Konkurrenzvergleiche, wir helfen Ihnen bei der Beschaffung mit manuellem Google Research, Spider/Crawler/Bot oder durch unser Netzwerk an Partnern und Schnittstellen.',
   // '#######projekte#######': '#######projekte#######',
   'neue-kunden-mit-taeglichen-posts-inspirieren':
     'Neue Kunden mit täglichen Posts inspirieren',
@@ -300,7 +300,7 @@ export default {
     'Wegfall von manuellen Eintragungen in Excel, Outlook, Aegis,Clipboard, SAP.',
   'fsharp-autoit-und-vba': 'FSharp, AutoIT und VBA',
   'durchforsten-einer-webseiten-und-ausfuellen-von-formularfeldern-erstellt-mit-fsharp-fsharp-data-docker-canopy-auf-google-cloudplattform':
-    'Durchforsten einer Webseiten und ausfüllen von Formularfeldern.Erstellt mit FSharp, Fsharp.Data ,Docker ,Canopy auf Google CloudPlattform.',
+    'Durchforsten einer Webseiten und ausfüllen von Formularfeldern. Erstellt mit FSharp, Fsharp.Data ,Docker, Canopy auf Google Cloud Plattform.',
   'design-von-printmedien': 'Design von Printmedien',
   'visitenkarte-flyer-banner': 'Visitenkarte, Flyer, Banner',
   'photoshop-illustrator-inkscape-canva':
@@ -316,7 +316,7 @@ export default {
   'r-mit-rstudio': 'R mit RStudio',
   'plugin-fuer-einen-deutschen-kunden': 'Plugin für einen deutschen Kunden',
   'less-than-p-greater-than-unbenoetigte-formularfelder-in-shopware-bei-der-registrierungdeaktivieren-less-than-p-greater-than':
-    'Unbenötigte Formularfelder in Shopware bei der Registrierungdeaktivieren',
+    'Unbenötigte Formularfelder in Shopware bei der Registrierung deaktivieren',
   'schulung-beim-kunden-in-zuerich': 'Schulung beim Kunden in Zürich',
   'basics-der-webseitenerstellung': 'Basics der Webseitenerstellung',
   'schulung-eines-kunden-aus-st-gallen': 'Schulung eines Kunden aus St.Gallen',
@@ -352,7 +352,7 @@ export default {
   niederuzwil: 'Niederuzwil',
   'webdesign-and-programmierung': 'Webdesign & Programmierung',
   'webshop-webportal-web-app-homepage-website-and-webseiteerstellen-lassen':
-    'Webshop, Webportal, Web-App, Homepage, Website & Webseiteerstellen lassen.',
+    'Webshop, Webportal, Web-App, Homepage, Website & Webseite erstellen lassen.',
   'konzentrieren-sie-sich-auf-ihr-business-und-ueberlassen-sie-unsdas-erstellen-der-webseite-so-erhalten-sie-schnell-und-einfacheine-verfuehrerisch-schoene-individuelle-webseite':
     'Konzentrieren Sie sich auf Ihr Business und überlassen Sie uns das Erstellen der Webseite. So erhalten Sie schnell und einfach eine verführerisch schöne, individuelle Webseite..',
   'wir-freuen-uns-auf-ihre-nachricht': 'Wir freuen uns auf Ihre Nachricht!',
