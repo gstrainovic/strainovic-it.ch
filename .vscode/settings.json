@@ -4,5 +4,6 @@
         "lang",
         "locales"
     ],
-    "vue-i18n-ally.keystyle": "nested"
+    "vue-i18n-ally.keystyle": "nested",
+    "languageTool.language": "en,de"
 }
