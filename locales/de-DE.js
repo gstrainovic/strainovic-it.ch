@@ -138,18 +138,18 @@ export default {
   loesungen: 'Lösungen',
   plugins: 'Plugins',
   'wir-erweitern-ihre-bestehende-software-durch-kombinieren-oderprogrammieren-von-plugins-module-und-erweiterungen':
-    'Wir erweitern Ihre bestehende Software durch kombinieren oderprogrammieren von Plugins, Module und Erweiterungen',
+    'Wir erweitern Ihre bestehende Software durch kombinieren oder programmieren von Plugins, Module und Erweiterungen.',
   schnittstellen: 'Schnittstellen',
   'bestehende-schnittstellen-api-s-werden-genutzt-erweitert-oderneu-programmiert':
-    'Bestehende Schnittstellen, API´s werden genutzt, erweitert oderneu programmiert.',
+    'Bestehende Schnittstellen, API´s werden genutzt, erweitert oder neu programmiert.',
   frontendautomatisierung: 'Frontendautomatisierung',
   'ist-ein-zugriff-auf-schnittstellen-oder-datenbanken-nicht-moeglich-koennen-wir-trotzdem-ihre-produktivitaet-steigern-indem-wir-einfachvon-der-benutzeroberflaeche-auf-diese-programme-mit-z-b-autoit-vba-zugreifen-und-so-optimieren':
-    'Ist ein Zugriff auf Schnittstellen oder Datenbanken nicht möglich, können wir trotzdem Ihre Produktivität steigern, indem wir einfachvon der Benutzeroberfläche auf diese Programme mit z. B AutoIt, VBA zugreifen und so optimieren',
+    'Ist ein Zugriff auf Schnittstellen oder Datenbanken nicht möglich, können wir trotzdem Ihre Produktivität steigern, indem wir einfach von der Benutzeroberfläche auf diese Programme mit z. B AutoIt, VBA zugreifen und so optimieren.',
   'sichern-sie-sich-vor-hacker-und-ausfaellen-ihr-server-und-alleprogramme-werden-so-eingerichtet-dass-automatisch-allesaktualisiert-wird-und-backups-erstellt-werde':
-    'Sichern Sie sich vor Hacker und Ausfällen. Ihr Server und alle Programme werden so eingerichtet, dass automatisch allesaktualisiert wird und Backups erstellt werde.',
+    'Sichern Sie sich vor Hacker und Ausfällen. Ihr Server und alle Programme werden so eingerichtet, dass automatisch alles aktualisiert wird und Backups erstellt werden.',
   'software-nach-mass': 'Software nach Mass',
   'falls-sie-mit-bestehenden-software-nicht-zufrieden-sind-und-dieseunzureichend-erweiterbar-sind-programmieren-und-designen-wirgerne-ihre-software-nach-ihren-vorstellungen':
-    'Falls Sie mit bestehenden Software nicht zufrieden sind und diese unzureichend Erweiterbar sind, programmieren und designen wirgerne Ihre Software nach Ihren Vorstellungen.',
+    'Falls Sie mit bestehenden Software nicht zufrieden sind und diese unzureichend Erweiterbar sind, programmieren und designen wir gerne Ihre Software nach Ihren Vorstellungen.',
   // '######### index ########': '/index',
   dasrad:
     'Wir erfinden das Rad nicht neu. Dank Know-how und Zugriff auf bereits vorhanden Vorlagen, Plugins und Software, sparen Sie Geld und Zeit.',
@@ -219,7 +219,7 @@ export default {
   senden: 'Senden',
   'vielen-dank-fuer-ihre-unterstuetzung': 'Vielen Dank für Ihre Unterstützung!',
   'folgen-sie-uns-auf-einer-dieser-plattformen':
-    'Folgen Sie uns auf einer dieser Plattformen.',
+    'Folgen Sie uns auf einer dieser Plattformen:',
   'folge-uns-auf-twitter': 'Folge uns auf Twitter',
   'like-uns-auf-facebook': 'Like uns auf Facebook',
   'folge-uns-auf-instagram': 'Folge uns auf Instagram',

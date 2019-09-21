@@ -78,7 +78,7 @@ export default {
         {
           t: 'Beratung',
           p:
-            'Anhand Ihrer Ziele und Anforderungen erhalten Sie Empfehlungen über die besten Technologien, Konzepte, Skizzen und einen Zeit. und Ausführungsplan.'
+            'Anhand Ihrer Ziele und Anforderungen erhalten Sie Empfehlungen über die besten Technologien, Konzepte, Skizzen und einen Zeit- und Ausführungsplan.'
         },
         {
           t: 'Domain & Hosting',
@@ -103,27 +103,27 @@ export default {
         {
           t: 'Webshop & Bezahlfunktionen',
           p:
-            'Ihr Shop/Plattform und die Zahlungsmöglichkeiten werden sokonfiguriert, das Sie Ihre Produkte und Dienstleistungen einfachonline verkaufen können. Erstellt mit WooCommerce, Shopware oderanderen Technologien.'
+            'Ihr Shop/Plattform und die Zahlungsmöglichkeiten werden so konfiguriert, das Sie Ihre Produkte und Dienstleistungen einfachonline verkaufen können. Erstellt mit WooCommerce, Shopware oderanderen Technologien.'
         },
         {
           t: 'Performance',
           p:
-            'Webseitenbesucher lieben schnelle Webseiten. Ihre Webseite wirdoptimiert, sodass es blitzschnell lädt. Google und Ihre Besucherwerden es lieben.'
+            'Webseitenbesucher lieben schnelle Webseiten. Ihre Webseite wird optimiert, sodass es blitzschnell lädt. Google und Ihre Besucher werden es lieben.'
         },
         {
           t: 'Content',
           p:
-            'Erhalten Sie Unterstützung auch beim Inhalt, daher bei derErstellung von Texten und bei der Auswahl und Anpassung derpassenden Bilder, Videos, Icons und Grafiken.'
+            'Erhalten Sie Unterstützung auch beim Inhalt, daher bei der Erstellung von Texten und bei der Auswahl und Anpassung derpassenden Bilder, Videos, Icons und Grafiken.'
         },
         {
           t: 'SEO & Google',
           p:
-            'Ihre Webseite wird für SEO optimiert damit Sie bei Google gefundenwerden.'
+            'Ihre Webseite wird für SEO optimiert damit Sie bei Google gefunden werden.'
         },
         {
           t: 'Google Business & Maps',
           p:
-            'Durch Google Business & Maps werden Sie noch einfacher, vor allemLokal gefunden.'
+            'Durch Google Business & Maps werden Sie noch einfacher, vor allem Lokal gefunden.'
         },
         {
           t: 'Impressum & Datenschutzerklärung',
@@ -133,17 +133,17 @@ export default {
         {
           t: 'E-Mail',
           p:
-            'Erhalten Sie so viele E-Mail-Adressen wie benötigt. Eingerichtetauf dem Hosting/Server und auf Ihrem PC/Mac undSmartphone/Tablets, von Ihnen und ggf. Ihren Mitarbeitern.'
+            'Erhalten Sie so viele E-Mail-Adressen wie benötigt. Eingerichtetauf dem Hosting/Server und auf Ihrem PC/Mac und Smartphone/Tablets, von Ihnen und ggf. Ihren Mitarbeitern.'
         },
         {
-          t: 'Sicherheit',
+          t: 'Wartung',
           p:
-            'Keine bösen Überraschungen durch Hacker oder Ausfälle. IhreWebseite wird so eingerichtet, dass automatisch Backups erstellt,und Plugins aktualisiert werden. Sie müssen sich darüber keineSorgen mehr machen und keine Wartungen selber planen undausführen.'
+            'Keine bösen Überraschungen durch Hacker oder Ausfälle. Wir übernehmen die Wartung und kümmern uns daher um die Sicherheit, die Backups und die Updates Ihrer Webseite. Sie müssen sich darüber keine Sorgen mehr machen und keine Wartungen selber planen und ausführen.'
         },
         {
           t: 'Inhalte pflegen & Support',
           p:
-            'Ein kurzes E-Mail oder Anruf genügt und Ihre Inhalte werdenaktualisiert oder Ihr Problem wird behoben. Sie möchten lieberselber Ihr Webcontent anpassen? Dank benutzerfreundliche CMS wiez. B. WordPress ist dies nach einer kurzen Schulung kein Problemfür Sie.'
+            'Ein kurzes E-Mail oder Anruf genügt und Ihre Inhalte werden aktualisiert oder Ihr Problem wird behoben. Sie möchten lieber selber Ihr Webcontent anpassen? Dank benutzerfreundliche CMS wie z. B. WordPress ist dies für Sie nach einer kurzen Schulung kein Problem.'
         }
       ],
       loesungen: [
@@ -155,22 +155,22 @@ export default {
         {
           t: 'Statische Webseite',
           p:
-            'Sie möchten die Aktualisierung ihrer Webseite uns überlassen undwünschen eine besonders schnelle und sichere Webseite? IhreWebseite erstellen wir dann mit Technologien wie z. B. HTML5,CSS3, Bootstrap, Vue & Nuxt, React & Gatsby '
+            'Sie möchten die Aktualisierung ihrer Webseite uns überlassen und wünschen eine besonders schnelle und sichere Webseite? Ihre Webseite erstellen wir dann mit Technologien wie z. B. HTML5, CSS3, Bootstrap, Vue & Nuxt, React & Gatsby '
         },
         {
           t: 'Headless CMS',
           p:
-            'Dank unserem KnowHow müssen Sie nicht zwischen Geschwindigkeit undBenutzerfreundlichkeit entscheiden. Ihre Webseite erstellen wir imFrontend mit HTML5, CSS3, Bootstrap und Vue & Nuxt oder React &Gatsby. Und im Backend mit einem Headless CMS wie z. B. Strapi. '
+            'Dank unserem KnowHow müssen Sie nicht zwischen Geschwindigkeit undBenutzerfreundlichkeit entscheiden. Ihre Webseite erstellen wir imFrontend mit HTML5, CSS3, Bootstrap und Vue & Nuxt oder React & Gatsby. Und im Backend mit einem Headless CMS wie z. B. Strapi. '
         },
         {
           t: 'Einfacher Webshop',
           p:
-            'Dank einfach zu benutzende, und gut erweiterbare Shopsoftware wiez. B. WooCommerce, Shopware erstellen wir kostengünstig Ihreneigenen Shop. '
+            'Dank einfach zu benutzende, und gut erweiterbare Shopsoftware wiez. B. WooCommerce, Shopware erstellen wir kostengünstig Ihren eigenen Shop. '
         },
         {
           t: 'Webapps & Webportale',
           p:
-            'Komplexe Webanwendungen, Webapplikationen, Portale programmierenund designen wir im Frontend mit HTML, CSS3, Bootstrap und Reactoder Vue, und im Backend mit z. B. Headless CMS, Node, PHP, Pythonund als Datenbanken z. B. SQL wie MySQL, MariaDB oder NoSQL wie z.B. MongoDB. '
+            'Komplexe Webanwendungen, Webapplikationen, Portale programmierenund designen wir im Frontend mit HTML, CSS3, Bootstrap und React oder Vue, und im Backend mit z. B. Headless CMS, Node, PHP, Python und als Datenbanken z. B. SQL wie MySQL, MariaDB oder NoSQL wie z.B. MongoDB. '
         }
       ]
     }
