@@ -5,7 +5,7 @@
       Strainovic Goran<br />
       Bahnstrasse 9b<br />
       CH 9323 Steinach<br />
-      {{ $t('kanton') }}St.Gallen SG<br />
+      {{ $t('kanton-st-gallen') }}<br />
       {{ $t('schweiz') }}<br />
     </p>
 

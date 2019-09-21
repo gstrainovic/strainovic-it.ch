@@ -34,7 +34,7 @@ export default {
   // "###############Components/StrainovicIT": "###################",
   'ueber-strainovic-it': 'Über Strainovic IT',
   'strainovic-it-wurde-2016-gegruendet-befindet-sich-in-steinach-imkanton-st-gallen-sg-an-der-ostschweiz-am-bodensee-und-bietet-alledigitale-dienstleistungen-fuer-die-informationstechnologie-auchbekannt-als-it-oder-ict-an-wie-z-b':
-    'Strainovic IT wurde 2016 gegründet, befindet sich in Steinach imKanton St.Gallen SG an der Ostschweiz am Bodensee und bietet alledigitale Dienstleistungen für die Informationstechnologie, auchbekannt als IT oder ICT an, wie z. B:',
+    'Strainovic IT wurde 2016 gegründet, befindet sich in Steinach im Kanton St.Gallen SG an der Ostschweiz am Bodensee und bietet alle digitale Dienstleistungen für die Informationstechnologie, auch bekannt als IT oder ICT an, wie z. B:',
   'analyse-and-beratung': 'Analyse & Beratung',
   'projektplanung-and-projektmanagement': 'Projektplanung & Projektmanagement',
   'installation-and-konfiguration': 'Installation & Konfiguration',
@@ -45,7 +45,7 @@ export default {
   schulungen: 'Schulungen',
   automation: 'Automation',
   'wir-unterstuetzen-sowohl-private-auch-als-kmu-firmen-start-ups-ag-gmbh-bei-allen-digitalen-herausforderungen-wie-z-b':
-    'Wir unterstützen sowohl private auch als KMU, Firmen, Start-ups,AG, GmbH bei allen digitalen Herausforderungen, wie z.B:',
+    'Wir unterstützen sowohl private auch als KMU, Firmen, Start-ups, AG, GmbH bei allen digitalen Herausforderungen, wie z.B:',
   'cms-webseiten-mit-z-b': 'CMS Webseiten mit z. B:',
   'statische-webseiten-mit-z-b': 'Statische Webseiten mit z. B:',
   gatsby: 'Gatsby',
@@ -108,7 +108,7 @@ export default {
   automatisierungen: 'Automatisierungen',
   'schnittstellen-api': 'Schnittstellen (API)',
   'die-meisten-projekte-werden-direkt-vom-gruender-goran-strainovicumgesetzt-groessere-projekte-werden-bei-bedarf-mit-partnerumgesetzt':
-    'Die meisten Projekte werden direkt vom Gründer, Goran Strainovicumgesetzt. Grössere Projekte werden bei Bedarf mit Partnerumgesetzt.',
+    'Die meisten Projekte werden direkt vom Gründer, Goran Strainovic umgesetzt. Grössere Projekte werden bei Bedarf mit Partner umgesetzt.',
   // "#####Components/SitAdresse": "#######",
   'auf-google-maps-anzeigen': ' Auf Google Maps anzeigen',
   kanton: 'Kanton',
@@ -116,21 +116,21 @@ export default {
   'software-and-apps': 'Software & Apps',
   'programmierung-and-optimierung': 'Programmierung & Optimierung',
   'zusammen-untersuchen-wir-den-gesamten-informationsfluss-ihresunternehmens-dabei-wird-u-a-folgende-bereiche-analysiert-undoptimiert':
-    'Zusammen untersuchen wir den gesamten Informationsfluss IhresUnternehmens. Dabei wird u. a folgende Bereiche analysiert undoptimiert:',
+    'Zusammen untersuchen wir den gesamten Informationsfluss Ihres Unternehmens. Dabei wird u. a folgende Bereiche analysiert und optimiert:',
   logistik: 'Logistik',
   'betroffene-server-datenbanken-programme-module-plugins-scripts-und-erweiterungen':
     'Betroffene Server, Datenbanken, Programme, Module, Plugins,Scripts und Erweiterungen',
   buchhaltung: 'Buchhaltung',
   'sie-erhalten-anschliessend-empfehlungen-was-und-mit-welchenprogrammen-und-technologien-designt-konfiguriert-und-programmiertwerden-kann-um-verbesserungen-zu-erreichen':
-    'Sie erhalten anschliessend Empfehlungen was und mit welchenProgrammen und Technologien designt, konfiguriert und programmiertwerden kann, um Verbesserungen zu erreichen.',
+    'Sie erhalten anschliessend Empfehlungen was und mit welchen Programmen und Technologien designt, konfiguriert und programmiert werden kann, um Verbesserungen zu erreichen.',
   benutzerfreundlichkeit: 'Benutzerfreundlichkeit',
   'ihre-software-wird-mit-einer-modernen-benutzeroberflaeche-auch-alsgui-ui-user-interface-bekannt-designt-und-programmiert-dadurcherhalten-sie-einen-hohen-bedienkomfort-auf-allen-geraeten-wie-z-b-pc-mac-mobile-und-tablet':
-    'Ihre Software wird mit einer modernen Benutzeroberfläche, auch alsGUI, UI, User Interface bekannt, designt und programmiert. Dadurcherhalten Sie einen hohen Bedienkomfort. Auf allen Geräten wie z.B. PC/Mac, Mobile und Tablet.',
+    'Ihre Software wird mit einer modernen Benutzeroberfläche, auch als GUI, UI, User Interface bekannt, designt und programmiert. Dadurch erhalten Sie einen hohen Bedienkomfort. Auf allen Geräten wie z.B. PC/Mac, Mobile und Tablet.',
   'lizenzkosten-and-erweiterungen': 'Lizenzkosten & Erweiterungen',
   'durch-open-source-sparen-sie-lizenzkosten-und-erhoehen-dieanpassungsfaehigkeit-ihrer-software':
     'Durch Open Source sparen Sie Lizenzkosten und erhöhen dieAnpassungsfähigkeit Ihrer Software.',
   'ihre-programme-werden-so-konfiguriert-dass-sie-weniger-dateneingeben-muessen-dadurch-sparen-sie-zeit-und-geld-erhoehen-dieproduktivitaet-und-reduzieren-fehler-beim-eintippen-oder-beimkopieren-und-einfuegen':
-    'Ihre Programme werden so konfiguriert, dass Sie weniger Dateneingeben müssen. Dadurch sparen Sie Zeit und Geld, erhöhen dieProduktivität und reduzieren Fehler beim Eintippen oder beimKopieren und Einfügen.',
+    'Ihre Programme werden so konfiguriert, dass Sie weniger Dateneingeben müssen. Dadurch sparen Sie Zeit und Geld, erhöhen die Produktivität und reduzieren Fehler beim Eintippen oder beim Kopieren und Einfügen.',
   sicherheit: 'Sicherheit',
   schulung: 'Schulung',
   'holen-sie-das-beste-aus-ihrer-software-heraus-und-steigern-sie-dieproduktivitaet-sie-lernen-alle-funktionen-ihrer-software-optimaleinzusetzen-bei-ihnen-vor-ort-oder-remote-ueber-teamviewer':
