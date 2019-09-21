@@ -119,7 +119,7 @@ export default {
     'Zusammen untersuchen wir den gesamten Informationsfluss Ihres Unternehmens. Dabei wird u. a folgende Bereiche analysiert und optimiert:',
   logistik: 'Logistik',
   'betroffene-server-datenbanken-programme-module-plugins-scripts-und-erweiterungen':
-    'Betroffene Server, Datenbanken, Programme, Module, Plugins,Scripts und Erweiterungen',
+    'Betroffene Server, Datenbanken, Programme, Module, Plugins, Scripts und Erweiterungen',
   buchhaltung: 'Buchhaltung',
   'sie-erhalten-anschliessend-empfehlungen-was-und-mit-welchenprogrammen-und-technologien-designt-konfiguriert-und-programmiertwerden-kann-um-verbesserungen-zu-erreichen':
     'Sie erhalten anschliessend Empfehlungen was und mit welchen Programmen und Technologien designt, konfiguriert und programmiert werden kann, um Verbesserungen zu erreichen.',
@@ -128,7 +128,7 @@ export default {
     'Ihre Software wird mit einer modernen Benutzeroberfläche, auch als GUI, UI, User Interface bekannt, designt und programmiert. Dadurch erhalten Sie einen hohen Bedienkomfort. Auf allen Geräten wie z.B. PC/Mac, Mobile und Tablet.',
   'lizenzkosten-and-erweiterungen': 'Lizenzkosten & Erweiterungen',
   'durch-open-source-sparen-sie-lizenzkosten-und-erhoehen-dieanpassungsfaehigkeit-ihrer-software':
-    'Durch Open Source sparen Sie Lizenzkosten und erhöhen dieAnpassungsfähigkeit Ihrer Software.',
+    'Durch Open Source sparen Sie Lizenzkosten und erhöhen die Anpassungsfähigkeit Ihrer Software.',
   'ihre-programme-werden-so-konfiguriert-dass-sie-weniger-dateneingeben-muessen-dadurch-sparen-sie-zeit-und-geld-erhoehen-dieproduktivitaet-und-reduzieren-fehler-beim-eintippen-oder-beimkopieren-und-einfuegen':
     'Ihre Programme werden so konfiguriert, dass Sie weniger Dateneingeben müssen. Dadurch sparen Sie Zeit und Geld, erhöhen die Produktivität und reduzieren Fehler beim Eintippen oder beim Kopieren und Einfügen.',
   sicherheit: 'Sicherheit',
@@ -146,7 +146,7 @@ export default {
   'ist-ein-zugriff-auf-schnittstellen-oder-datenbanken-nicht-moeglich-koennen-wir-trotzdem-ihre-produktivitaet-steigern-indem-wir-einfachvon-der-benutzeroberflaeche-auf-diese-programme-mit-z-b-autoit-vba-zugreifen-und-so-optimieren':
     'Ist ein Zugriff auf Schnittstellen oder Datenbanken nicht möglich, können wir trotzdem Ihre Produktivität steigern, indem wir einfachvon der Benutzeroberfläche auf diese Programme mit z. B AutoIt, VBA zugreifen und so optimieren',
   'sichern-sie-sich-vor-hacker-und-ausfaellen-ihr-server-und-alleprogramme-werden-so-eingerichtet-dass-automatisch-allesaktualisiert-wird-und-backups-erstellt-werde':
-    'Sichern Sie sich vor Hacker und Ausfällen. Ihr Server und alleProgramme werden so eingerichtet, dass automatisch allesaktualisiert wird und Backups erstellt werde.',
+    'Sichern Sie sich vor Hacker und Ausfällen. Ihr Server und alle Programme werden so eingerichtet, dass automatisch allesaktualisiert wird und Backups erstellt werde.',
   'software-nach-mass': 'Software nach Mass',
   'falls-sie-mit-bestehenden-software-nicht-zufrieden-sind-und-dieseunzureichend-erweiterbar-sind-programmieren-und-designen-wirgerne-ihre-software-nach-ihren-vorstellungen':
     'Falls Sie mit bestehenden Software nicht zufrieden sind und diese unzureichend Erweiterbar sind, programmieren und designen wirgerne Ihre Software nach Ihren Vorstellungen.',
