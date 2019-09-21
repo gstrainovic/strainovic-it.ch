@@ -122,7 +122,7 @@ export default {
           technologie: 'jekyll'
         },
         {
-          link: 'http://gstrainovic.github.io/gost.pw',
+          link: 'https://gstrainovic.github.io/gost.pw',
           img: '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-cv.jpg',
           branche: 'alter-cv-lebenslauf',
           adresse: 'ch-9323-steinach-sg',

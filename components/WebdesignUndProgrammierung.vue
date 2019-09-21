@@ -103,7 +103,7 @@ export default {
         {
           t: 'Webshop & Bezahlfunktionen',
           p:
-            'Ihr Shop/Plattform und die Zahlungsmöglichkeiten werden so konfiguriert, das Sie Ihre Produkte und Dienstleistungen einfachonline verkaufen können. Erstellt mit WooCommerce, Shopware oderanderen Technologien.'
+            'Ihr Shop/Plattform und die Zahlungsmöglichkeiten werden so konfiguriert, das Sie Ihre Produkte und Dienstleistungen einfachonline verkaufen können. Erstellt mit WooCommerce, Shopware oder anderen Technologien.'
         },
         {
           t: 'Performance',
@@ -128,12 +128,12 @@ export default {
         {
           t: 'Impressum & Datenschutzerklärung',
           p:
-            'Ihr Impressum & Datenschutzerklärung wird auf dem neuesten Standdes Schweizer und europäischen Datenschutzes DSGVO erstellt, somüssen Sie sich rechtlich keine Sorgen machen.'
+            'Ihr Impressum & Datenschutzerklärung wird auf dem neuesten Standdes Schweizer und europäischen Datenschutzes DSGVO erstellt, so müssen Sie sich rechtlich keine Sorgen machen.'
         },
         {
           t: 'E-Mail',
           p:
-            'Erhalten Sie so viele E-Mail-Adressen wie benötigt. Eingerichtetauf dem Hosting/Server und auf Ihrem PC/Mac und Smartphone/Tablets, von Ihnen und ggf. Ihren Mitarbeitern.'
+            'Erhalten Sie so viele E-Mail-Adressen wie benötigt. Eingerichtet auf dem Hosting/Server und auf Ihrem PC/Mac und Smartphone/Tablets, von Ihnen und ggf. Ihren Mitarbeitern.'
         },
         {
           t: 'Wartung',
@@ -160,12 +160,12 @@ export default {
         {
           t: 'Headless CMS',
           p:
-            'Dank unserem KnowHow müssen Sie nicht zwischen Geschwindigkeit undBenutzerfreundlichkeit entscheiden. Ihre Webseite erstellen wir imFrontend mit HTML5, CSS3, Bootstrap und Vue & Nuxt oder React & Gatsby. Und im Backend mit einem Headless CMS wie z. B. Strapi. '
+            'Dank unserem KnowHow müssen Sie nicht zwischen Geschwindigkeit und Benutzerfreundlichkeit entscheiden. Ihre Webseite erstellen wir imFrontend mit HTML5, CSS3, Bootstrap und Vue & Nuxt oder React & Gatsby. Und im Backend mit einem Headless CMS wie z. B. Strapi. '
         },
         {
           t: 'Einfacher Webshop',
           p:
-            'Dank einfach zu benutzende, und gut erweiterbare Shopsoftware wiez. B. WooCommerce, Shopware erstellen wir kostengünstig Ihren eigenen Shop. '
+            'Dank einfach zu benutzende, und gut erweiterbare Shopsoftware wie z. B. WooCommerce, Shopware erstellen wir kostengünstig Ihren eigenen Shop. '
         },
         {
           t: 'Webapps & Webportale',

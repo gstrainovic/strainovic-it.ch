@@ -99,7 +99,7 @@
             <p>
               {{ $t('die-von-mir-erstellten-webseiten-finden-sie-im')
               }}<a class="" rel="noopener noreferrer" href="/portfolio/#web"
-                ><b>{{ $t('portfolio') }}</b></a
+                ><b> {{ $t('portfolio') }}</b></a
               ><br /><br />
             </p>
 

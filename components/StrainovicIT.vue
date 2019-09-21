@@ -142,7 +142,7 @@
             </ul>
           </div>
         </div>
-        <div class="row mb-lg">
+        <!-- <div class="row mb-lg">
           <div class="col-lg-8">
             <h3 class="lead ">
               {{
@@ -152,7 +152,7 @@
               }}
             </h3>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
   </div>
