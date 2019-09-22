@@ -1,4 +1,95 @@
 export default {
+  // '######## Components / WebdesignUndProg
+  beratung: 'Beratung',
+  'anhand-ihrer-ziele-und-anforderungen-erhalten-sie-empfehlungen-ueber-die-besten-technologien-konzepte-skizzen-und-einen-zeit-und-ausfuehrungsplan':
+    'Anhand Ihrer Ziele und Anforderungen erhalten Sie Empfehlungen über die besten Technologien, Konzepte, Skizzen und einen Zeit- und Ausführungsplan.',
+  'Domain & Hosting': 'Domain & Hosting',
+  'Bei einer Beratung werden Sie über Domains und Hosting informiert. Sie erhalten Empfehlungen über die besten Webserver für alle Bereiche, egal ob statisch, WordPress oder komplexe Web-Apps / Webplattformen.':
+    'Bei einer Beratung werden Sie über Domains und Hosting informiert. Sie erhalten Empfehlungen über die besten Webserver für alle Bereiche, egal ob statisch, WordPress oder komplexe Web-Apps / Webplattformen.',
+
+  'Individuelles Design': 'Individuelles Design',
+
+  'Sie wählen ein Theme aus hunderten aus, die Vorlage wird Ihren individuellen Wünschen angepasst.':
+    'Sie wählen ein Theme aus hunderten aus, die Vorlage wird Ihren individuellen Wünschen angepasst.',
+
+  Responsive: 'Responsive',
+
+  'Ihre Webseite wird auf allen Geräten funktionieren, egal ob Desktop, Smartphone oder Tablet.':
+    'Ihre Webseite wird auf allen Geräten funktionieren, egal ob Desktop, Smartphone oder Tablet.',
+
+  'HTTPS/SSL Verschlüsselung': 'HTTPS/SSL Verschlüsselung',
+
+  'Sichern Sie sich Vorteile bei Google und Sicherheit durch unserekostenlose HTTPS/SSL Codierung.':
+    'Sichern Sie sich Vorteile bei Google und Sicherheit durch unserekostenlose HTTPS/SSL Codierung.',
+
+  'Webshop & Bezahlfunktionen': 'Webshop & Bezahlfunktionen',
+
+  'Ihr Shop/Plattform und die Zahlungsmöglichkeiten werden so konfiguriert, das Sie Ihre Produkte und Dienstleistungen einfachonline verkaufen können. Erstellt mit WooCommerce, Shopware oder anderen Technologien.':
+    'Ihr Shop/Plattform und die Zahlungsmöglichkeiten werden so konfiguriert, das Sie Ihre Produkte und Dienstleistungen einfachonline verkaufen können. Erstellt mit WooCommerce, Shopware oder anderen Technologien.',
+
+  Performance: 'Performance',
+
+  'Webseitenbesucher lieben schnelle Webseiten. Ihre Webseite wird optimiert, sodass es blitzschnell lädt. Google und Ihre Besucher werden es lieben.':
+    'Webseitenbesucher lieben schnelle Webseiten. Ihre Webseite wird optimiert, sodass es blitzschnell lädt. Google und Ihre Besucher werden es lieben.',
+
+  Content: 'Content',
+
+  'Erhalten Sie Unterstützung auch beim Inhalt, daher bei der Erstellung von Texten und bei der Auswahl und Anpassung derpassenden Bilder, Videos, Icons und Grafiken.':
+    'Erhalten Sie Unterstützung auch beim Inhalt, daher bei der Erstellung von Texten und bei der Auswahl und Anpassung derpassenden Bilder, Videos, Icons und Grafiken.',
+
+  'SEO & Google': 'SEO & Google',
+
+  'Ihre Webseite wird für SEO optimiert damit Sie bei Google gefunden werden.':
+    'Ihre Webseite wird für SEO optimiert damit Sie bei Google gefunden werden.',
+
+  'Google Business & Maps': 'Google Business & Maps',
+
+  'Durch Google Business & Maps werden Sie noch einfacher, vor allem Lokal gefunden.':
+    'Durch Google Business & Maps werden Sie noch einfacher, vor allem Lokal gefunden.',
+
+  'Impressum & Datenschutzerklärung': 'Impressum & Datenschutzerklärung',
+
+  'Ihr Impressum & Datenschutzerklärung wird auf dem neuesten Standdes Schweizer und europäischen Datenschutzes DSGVO erstellt, so müssen Sie sich rechtlich keine Sorgen machen.':
+    'Ihr Impressum & Datenschutzerklärung wird auf dem neuesten Standdes Schweizer und europäischen Datenschutzes DSGVO erstellt, so müssen Sie sich rechtlich keine Sorgen machen.',
+
+  'E-Mail': 'E-Mail',
+
+  'Erhalten Sie so viele E-Mail-Adressen wie benötigt. Eingerichtet auf dem Hosting/Server und auf Ihrem PC/Mac und Smartphone/Tablets, von Ihnen und ggf. Ihren Mitarbeitern.':
+    'Erhalten Sie so viele E-Mail-Adressen wie benötigt. Eingerichtet auf dem Hosting/Server und auf Ihrem PC/Mac und Smartphone/Tablets, von Ihnen und ggf. Ihren Mitarbeitern.',
+
+  Wartung: 'Wartung',
+
+  'Keine bösen Überraschungen durch Hacker oder Ausfälle. Wir übernehmen die Wartung und kümmern uns daher um die Sicherheit, die Backups und die Updates Ihrer Webseite. Sie müssen sich darüber keine Sorgen mehr machen und keine Wartungen selber planen und ausführen.':
+    'Keine bösen Überraschungen durch Hacker oder Ausfälle. Wir übernehmen die Wartung und kümmern uns daher um die Sicherheit, die Backups und die Updates Ihrer Webseite. Sie müssen sich darüber keine Sorgen mehr machen und keine Wartungen selber planen und ausführen.',
+
+  'Inhalte pflegen & Support': 'Inhalte pflegen & Support',
+
+  'Ein kurzes E-Mail oder Anruf genügt und Ihre Inhalte werden aktualisiert oder Ihr Problem wird behoben. Sie möchten lieber selber Ihr Webcontent anpassen? Dank benutzerfreundliche CMS wie z. B. WordPress ist dies für Sie nach einer kurzen Schulung kein Problem.':
+    'Ein kurzes E-Mail oder Anruf genügt und Ihre Inhalte werden aktualisiert oder Ihr Problem wird behoben. Sie möchten lieber selber Ihr Webcontent anpassen? Dank benutzerfreundliche CMS wie z. B. WordPress ist dies für Sie nach einer kurzen Schulung kein Problem.',
+  // loesungen: [
+
+  WordPress: 'WordPress',
+
+  'Ihre Webseite erstellen wir gerne mit WordPress oder andere CMS wie z.B. Grav, so können Sie selber Inhalte pflegen.':
+    'Ihre Webseite erstellen wir gerne mit WordPress oder andere CMS wie z.B. Grav, so können Sie selber Inhalte pflegen.',
+  'Statische Webseite': 'Statische Webseite',
+
+  'Sie möchten die Aktualisierung ihrer Webseite uns überlassen und wünschen eine besonders schnelle und sichere Webseite? Ihre Webseite erstellen wir dann mit Technologien wie z. B. HTML5, CSS3, Bootstrap, Vue & Nuxt, React & Gatsby ':
+    'Sie möchten die Aktualisierung ihrer Webseite uns überlassen und wünschen eine besonders schnelle und sichere Webseite? Ihre Webseite erstellen wir dann mit Technologien wie z. B. HTML5, CSS3, Bootstrap, Vue & Nuxt, React & Gatsby ',
+
+  'Headless CMS': 'Headless CMS',
+
+  'Dank unserem KnowHow müssen Sie nicht zwischen Geschwindigkeit und Benutzerfreundlichkeit entscheiden. Ihre Webseite erstellen wir imFrontend mit HTML5, CSS3, Bootstrap und Vue & Nuxt oder React & Gatsby. Und im Backend mit einem Headless CMS wie z. B. Strapi. ':
+    'Dank unserem KnowHow müssen Sie nicht zwischen Geschwindigkeit und Benutzerfreundlichkeit entscheiden. Ihre Webseite erstellen wir imFrontend mit HTML5, CSS3, Bootstrap und Vue & Nuxt oder React & Gatsby. Und im Backend mit einem Headless CMS wie z. B. Strapi. ',
+
+  'Einfacher Webshop': 'Einfacher Webshop',
+
+  'Dank einfach zu benutzende, und gut erweiterbare Shopsoftware wie z. B. WooCommerce, Shopware erstellen wir kostengünstig Ihren eigenen Shop. ':
+    'Dank einfach zu benutzende, und gut erweiterbare Shopsoftware wie z. B. WooCommerce, Shopware erstellen wir kostengünstig Ihren eigenen Shop. ',
+  'Webapps & Webportale': 'Webapps & Webportale',
+
+  'Komplexe Webanwendungen, Webapplikationen, Portale programmierenund designen wir im Frontend mit HTML, CSS3, Bootstrap und React oder Vue, und im Backend mit z. B. Headless CMS, Node, PHP, Python und als Datenbanken z. B. SQL wie MySQL, MariaDB oder NoSQL wie z.B. MongoDB. ':
+    'Komplexe Webanwendungen, Webapplikationen, Portale programmierenund designen wir im Frontend mit HTML, CSS3, Bootstrap und React oder Vue, und im Backend mit z. B. Headless CMS, Node, PHP, Python und als Datenbanken z. B. SQL wie MySQL, MariaDB oder NoSQL wie z.B. MongoDB. ',
   // "###########Webdesign": "###########",
   'de-65931-sindlingen': 'DE 65931 Sindlingen',
   'frankfurt-am-main': 'Frankfurt am Main',

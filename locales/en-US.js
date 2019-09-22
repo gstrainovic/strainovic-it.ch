@@ -1,4 +1,9 @@
 export default {
+  // '######## Components / WebdesignUndProg
+  beratung: '?Beratung',
+  'anhand-ihrer-ziele-und-anforderungen-erhalten-sie-empfehlungen-ueber-die-besten-technologien-konzepte-skizzen-und-einen-zeit-und-ausfuehrungsplan':
+    '?Anhand Ihrer Ziele und Anforderungen erhalten Sie Empfehlungen über die besten Technologien, Konzepte, Skizzen und einen Zeit- und Ausführungsplan.',
+
   // "###########Webdesign": "###########",
   'de-65931-sindlingen': 'DE 65931 Sindlingen',
   'frankfurt-am-main': 'Frankfurt on the Main',

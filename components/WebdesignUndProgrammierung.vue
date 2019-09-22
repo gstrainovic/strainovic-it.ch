@@ -76,9 +76,9 @@ export default {
     return {
       oben: [
         {
-          t: 'Beratung',
+          t: 'beratung',
           p:
-            'Anhand Ihrer Ziele und Anforderungen erhalten Sie Empfehlungen über die besten Technologien, Konzepte, Skizzen und einen Zeit- und Ausführungsplan.'
+            'anhand-ihrer-ziele-und-anforderungen-erhalten-sie-empfehlungen-ueber-die-besten-technologien-konzepte-skizzen-und-einen-zeit-und-ausfuehrungsplan'
         },
         {
           t: 'Domain & Hosting',
