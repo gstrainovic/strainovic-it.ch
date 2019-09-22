@@ -1,8 +1,61 @@
 export default {
-  // '######## Components / WebdesignUndProg
-  beratung: '?Beratung',
+  beratung: 'Consulting',
   'anhand-ihrer-ziele-und-anforderungen-erhalten-sie-empfehlungen-ueber-die-besten-technologien-konzepte-skizzen-und-einen-zeit-und-ausfuehrungsplan':
-    '?Anhand Ihrer Ziele und Anforderungen erhalten Sie Empfehlungen über die besten Technologien, Konzepte, Skizzen und einen Zeit- und Ausführungsplan.',
+    'Based on your goals and requirements, you will receive recommendations on the best technologies, concepts, sketches, and a time and execution schedule',
+  'domain-and-hosting': 'Domain & Hosting',
+  'bei-einer-beratung-werden-sie-ueber-domains-und-hosting-informiert-sie-erhalten-empfehlungen-ueber-die-besten-webserver-fuer-alle-bereiche-egal-ob-statisch-wordpress-oder-komplexe-web-apps-webplattformen':
+    'During a consultation you will be informed about domains and hosting. You will receive recommendations about the best web servers for all areas, whether static, WordPress or complex web apps / web platforms.',
+  'individuelles-design': 'Individual Design',
+  'sie-waehlen-ein-theme-aus-hunderten-aus-die-vorlage-wird-ihren-individuellen-wuenschen-angepasst':
+    'You choose a theme from hundreds, the template will be adapted to your individual wishes',
+  responsive: 'Responsive',
+  'ihre-webseite-wird-auf-allen-geraeten-funktionieren-egal-ob-desktop-smartphone-oder-tablet':
+    'Your website will work on all devices, whether desktop, smartphone or tablet',
+  'https-ssl-verschluesselung': 'HTTPS/SSL encryption',
+  'sichern-sie-sich-vorteile-bei-google-und-sicherheit-durch-unserekostenlose-https-ssl-codierung':
+    'Secure Google benefits and security with our free HTTPS/SSL encoding',
+  'webshop-and-bezahlfunktionen': 'Webshop & Payment',
+  'ihr-shop-plattform-und-die-zahlungsmoeglichkeiten-werden-so-konfiguriert-das-sie-ihre-produkte-und-dienstleistungen-einfachonline-verkaufen-koennen-erstellt-mit-woocommerce-shopware-oder-anderen-technologien':
+    'Your shop/platform and payment options are configured so that you can easily sell your products and services online. Created with WooCommerce, Shopware or other technologies',
+  performance: 'Performance',
+  'webseitenbesucher-lieben-schnelle-webseiten-ihre-webseite-wird-optimiert-sodass-es-blitzschnell-laedt-google-und-ihre-besucher-werden-es-lieben':
+    'Website visitors love fast websites. Your website will be optimized so that it loads in a flash. Google and your visitors will love it.',
+  content: 'Content',
+  'erhalten-sie-unterstuetzung-auch-beim-inhalt-daher-bei-der-erstellung-von-texten-und-bei-der-auswahl-und-anpassung-derpassenden-bilder-videos-icons-und-grafiken':
+    'Get help with content too, so create text and select and customize the right images, videos, icons and graphics',
+  'seo-and-google': 'SEO & Google',
+  'ihre-webseite-wird-fuer-seo-optimiert-damit-sie-bei-google-gefunden-werden':
+    'Your website will be optimized for SEO so you can be found on Google',
+  'google-business-and-maps': 'Google Business & Maps',
+  'durch-google-business-and-maps-werden-sie-noch-einfacher-vor-allem-lokal-gefunden':
+    'Google Business & Maps makes it even easier to find you, especially locally',
+  'impressum-and-datenschutzerklaerung': 'Imprint & Privacy Policy',
+  'ihr-impressum-and-datenschutzerklaerung-wird-auf-dem-neuesten-standdes-schweizer-und-europaeischen-datenschutzes-dsgvo-erstellt-so-muessen-sie-sich-rechtlich-keine-sorgen-machen':
+    'Your Imprint & Privacy Statement will be kept up to date with the latest Swiss and European DSGVO, so you dont have to worry about legal issues',
+  'e-mail': 'E-Mail',
+  'erhalten-sie-so-viele-e-mail-adressen-wie-benoetigt-eingerichtet-auf-dem-hosting-server-und-auf-ihrem-pc-mac-und-smartphone-tablets-von-ihnen-und-ggf-ihren-mitarbeitern':
+    'Get as many email addresses as you need. Set up on the Hosting/Server and on your PC/Mac and Smartphone/Tablets, by you and if necessary your employees.',
+  wartung: 'Maintenance',
+  'keine-boesen-ueberraschungen-durch-hacker-oder-ausfaelle-wir-uebernehmen-die-wartung-und-kuemmern-uns-daher-um-die-sicherheit-die-backups-und-die-updates-ihrer-webseite-sie-muessen-sich-darueber-keine-sorgen-mehr-machen-und-keine-wartungen-selber-planen-und-ausfuehren':
+    'No nasty surprises from hackers or outages. We take care of the maintenance, security, backups and updates of your website. You dont have to worry about that anymore and you dont have to plan and perform maintenance yourself.',
+  'inhalte-pflegen-and-support': 'Maintain content & support',
+  'ein-kurzes-e-mail-oder-anruf-genuegt-und-ihre-inhalte-werden-aktualisiert-oder-ihr-problem-wird-behoben-sie-moechten-lieber-selber-ihr-webcontent-anpassen-dank-benutzerfreundliche-cms-wie-z-b-wordpress-ist-dies-fuer-sie-nach-einer-kurzen-schulung-kein-problem':
+    'A quick email or phone call is all it takes to update your content or fix your problem. Would you rather customize your web content yourself? Thanks to user-friendly CMS such as WordPress, this is no problem for you after a short training.',
+  wordPress: 'WordPress',
+  'ihre-webseite-erstellen-wir-gerne-mit-wordpress-oder-andere-cms-wie-z-b-grav-so-koennen-sie-selber-inhalte-pflegen':
+    'We create your website with WordPress or other CMS such as Grav, so you can maintain content yourself',
+  'statische-webseite': 'Static website',
+  'sie-moechten-die-aktualisierung-ihrer-webseite-uns-ueberlassen-und-wuenschen-eine-besonders-schnelle-und-sichere-webseite-ihre-webseite-erstellen-wir-dann-mit-technologien-wie-z-b-html-5-css-3-bootstrap-vue-and-nuxt-react-and-gatsby':
+    'You would like to leave the updating of your website to us and want a particularly fast and secure website? We will create your website with technologies like HTML5, CSS3, Bootstrap, Vue & Nuxt, React & Gatsby ',
+  'headless-cms': 'Headless CMS',
+  'dank-unserem-knowhow-muessen-sie-nicht-zwischen-geschwindigkeit-und-benutzerfreundlichkeit-entscheiden-ihre-webseite-erstellen-wir-imfrontend-mit-html-5-css-3-bootstrap-und-vue-and-nuxt-oder-react-and-gatsby-und-im-backend-mit-einem-headless-cms-wie-z-b-strapi':
+    'Thanks to our know-how, you dont have to choose between speed and ease of use. We create your website inFrontend with HTML5, CSS3, Bootstrap and Vue & Nuxt or React & Gatsby. And in the backend with a headless CMS like Strapi. ',
+  'einfacher-webshop': 'Simple Webshop',
+  'dank-einfach-zu-benutzende-und-gut-erweiterbare-shopsoftware-wie-z-b-woocommerce-shopware-erstellen-wir-kostenguenstig-ihren-eigenen-shop':
+    'Thanks to easy to use and extensible shop software such as WooCommerce, Shopware we can create your own shop at a reasonable price. ',
+  'webapps-and-webportale': 'Webapps & Webportals',
+  'komplexe-webanwendungen-webapplikationen-portale-programmierenund-designen-wir-im-frontend-mit-html-css-3-bootstrap-und-react-oder-vue-und-im-backend-mit-z-b-headless-cms-node-php-python-und-als-datenbanken-z-b-sql-wie-mysql-mariadb-oder-nosql-wie-z-b-mongodb':
+    'We program and design complex web applications, web applications, portals in the frontend with HTML, CSS3, Bootstrap and React or Vue, and in the backend with e.g. Headless CMS, Node, PHP, Python and as databases e.g. SQL like MySQL, MariaDB or NoSQL like e.g. MongoDB. ',
 
   // "###########Webdesign": "###########",
   'de-65931-sindlingen': 'DE 65931 Sindlingen',
@@ -115,7 +168,7 @@ export default {
   'die-meisten-projekte-werden-direkt-vom-gruender-goran-strainovicumgesetzt-groessere-projekte-werden-bei-bedarf-mit-partnerumgesetzt':
     'Most projects are implemented directly by the founder, Goran Strainovicum. Larger projects are implemented with partners if required.',
   // '#####Components/SitAdresse': '#######',
-  'auf-google-maps-anzeigen': 'Show on Google Maps',
+  'auf-google-maps-anzeigen': ' Show on Google Maps',
   kanton: 'Canton',
   // '#####Components/SoftwareUndApps': '##########',
   'software-and-apps': 'Software & Apps',
@@ -173,17 +226,17 @@ export default {
   'gerne-arbeiten-wir-mit-ihrem-team-zusammen-und-uebernehmen-falls-gewuenscht-die-ganze-planung-und-koordination-bis-zum-erfolgreichen-abschluss-ihres-projektes':
     'We are happy to work together with your team and, if desired, take over the entire planning and coordination up to the successful completion of your project',
   'keine-komp':
-    'No compromises. Missing elements such as designs, templates and extensions are redesigned and reprogrammed with the latest standards, recommendations and technologies.             ',
+    'No compromises. Missing elements such as designs, templates and extensions are redesigned and reprogrammed with the latest standards, recommendations and technologies. ',
   sparen:
-    "Save time and money. All your processes will be optimized, so you'll have to enter much less data. Less typing and less copying and pasting increases your productivity and reduces the risk of errors.             ",
+    "Save time and money. All your processes will be optimized, so you'll have to enter much less data. Less typing and less copying and pasting increases your productivity and reduces the risk of errors. ",
   'tests-and-uebergabe': 'Tests & Deliveries.',
   nachdem:
-    'Once all the work has been completed, quality tests will be carried out. For example, in the case of web pages, it is checked whether everything is displayed correctly on all devices and all browsers.             ',
+    'Once all the work has been completed, quality tests will be carried out. For example, in the case of web pages, it is checked whether everything is displayed correctly on all devices and all browsers. ',
   'schulung-lead':
-    'You and your employees receive training either locally or remotely via TeamViewer, e.g. to update products independently in the web shop.             ',
+    'You and your employees receive training either locally or remotely via TeamViewer, e.g. to update products independently in the web shop. ',
   'wartung-and-sicherheit': 'Maintenance & Safety',
   'keine-sorge':
-    " Don't worry about outages or hackers. By taking over the updates and backups, the entire software such as CMS, plug-ins, servers remain up-to-date and fail-safe.             ",
+    " Don't worry about outages or hackers. By taking over the updates and backups, the entire software such as CMS, plug-ins, servers remain up-to-date and fail-safe. ",
   'fehlerbehebung-and-support': 'Troubleshooting & Support',
   'auch-nach':
     'Even after the end of the project, you can count on a reliable partner who will remedy any faults.',

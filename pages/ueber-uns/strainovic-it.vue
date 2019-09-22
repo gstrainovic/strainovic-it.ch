@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header :bold="$t('UeberUns')" :normal="$t('StrainovicIT')"></Header>
+    <Header :bold="$t('UeberUns')" normal="Strainovic IT"></Header>
     <StrainovicIT></StrainovicIT>
   </div>
 </template>
