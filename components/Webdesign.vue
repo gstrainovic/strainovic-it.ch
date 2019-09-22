@@ -86,11 +86,11 @@ export default {
           technologie: 'Grav CMS'
         },
         {
-          link: 'https://buegeln.services',
-          img: '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-bs.jpg',
-          branche: 'buegelservice',
-          adresse: 'ch-9323-steinach-sg',
-          kanton: 'kanton-st-gallen',
+          link: 'https://www.epwidmer.ch/',
+          img: '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-ep.jpg',
+          branche: 'energetische-praxis',
+          adresse: 'ch-9322-egnach-tg',
+          kanton: 'kanton-thurgau',
           land: 'schweiz',
           technologie: 'jekyll'
         },
