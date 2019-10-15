@@ -62,6 +62,8 @@ export default {
   'frankfurt-am-main': 'Frankfurt on the Main',
   'ch-9323-steinach-sg': 'CH 9323 Steinach SG',
   'ch-9403-goldach-sg': 'CH 9403 Goldach SG',
+  'energetische-praxis': 'Energetic Clinic',
+  'ch-9322-egnach-tg': 'CH 9322 Egnach TG',
   jekyll: 'Jekyll',
   'mobile-friseurin': 'Mobile Hairdresser',
   'ch-9215-kradolf-schoenenberg': 'CH 9215 Kradolf-Schönenberg',
