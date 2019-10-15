@@ -92,7 +92,7 @@ export default {
           adresse: 'ch-9322-egnach-tg',
           kanton: 'kanton-thurgau',
           land: 'schweiz',
-          technologie: 'jekyll'
+          technologie: 'wordpress-divi'
         },
         {
           link: 'https://www.mobile-schere.ch',
