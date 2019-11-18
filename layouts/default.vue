@@ -107,14 +107,7 @@
                         <SitAdresse></SitAdresse>
                         <!-- </div> -->
 
-                        <div class="col-md-5 mt-5">
-                          <!-- <VueFriendlyIframe
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDUUYNFXEhy1raQAPrhYCdSCttMLgMsxls      &q=Strainovic IT"
-                  allowfullscreen
-                  @load="onLoad"
-                  @document-load="onDocumentLoad"          
-                ></VueFriendlyIframe> -->
-                        </div>
+                        <div class="col-md-5 mt-5"></div>
                       </div>
                       <p>{{ $t('alle-felder-sind-pflichtfelder') }}</p>
                       <ValidationProvider name="Vorname" rules="required|alpha">
