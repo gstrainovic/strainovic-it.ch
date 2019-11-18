@@ -331,6 +331,7 @@ export default {
     'wir-freuen-uns-auf-ihre-nachricht': 'We look forward to your message!',
     impressum: 'Imprint',
     kontakt: 'Contact',
+    Marketingvideos: 'Marketing videos',
     'seo-and-sea-wissenskonferenz': 'SEO & SEA - Knowledge Conference'
 
 }
