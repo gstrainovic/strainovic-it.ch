@@ -470,6 +470,10 @@ export default {
               link: 'referenzen-und-portfolio-webdesign'
             },
             {
+              name: 'Marketingvideos',
+              link: 'referenzen-und-portfolio-marketingvideos'
+            },
+            {
               name: 'Projekte',
               link: 'referenzen-und-portfolio-projekte'
             }
