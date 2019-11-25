@@ -2,7 +2,7 @@
   <div>
     <Header
       :bold="$t('ReferenzenUndPortfolio')"
-      :normal="$t('Marketingvideos')"
+      normal="Videomarketing"
     ></Header>
     <Marketingvideos></Marketingvideos>
   </div>

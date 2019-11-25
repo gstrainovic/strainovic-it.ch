@@ -479,8 +479,8 @@ export default {
               link: 'referenzen-und-portfolio-webdesign'
             },
             {
-              name: 'Marketingvideos',
-              link: 'referenzen-und-portfolio-marketingvideos'
+              name: 'Videomarketing',
+              link: 'referenzen-und-portfolio-videomarketing'
             },
             {
               name: 'Projekte',
@@ -521,75 +521,11 @@ export default {
     }
   }
 }
+//
 </script>
 
+//
 <style>
-.cookie-bar {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  background: lightblue;
-  color: white;
-  font-size: 14px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 100;
-  transition: 0.8s;
-  animation: slideIn 0.8s;
-  animation-delay: 0.8s;
-  .message {
-    white-space: nowrap;
-    text-shadow: 0 1px 0 darken(red, 10%);
-    @media (max-width: 767px) {
-      display: none;
-    }
-  }
-  .mobile {
-    display: none;
-    @media (max-width: 767px) {
-      display: inline-block;
-    }
-  }
-}
-@keyframes slideIn {
-  0% {
-    transform: translateY(-50px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-.close-cb {
-  border: none;
-  color: white;
-  background: darken(red, 20%);
-  position: absolute;
-  display: inline-block;
-  right: 10px;
-  bottom: 0;
-  cursor: pointer;
-  border-radius: 3px;
-  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
-  line-height: 30px;
-  height: 30px;
-  width: 30px;
-  font-size: 16px;
-  font-weight: bold;
-  &:hover {
-    background: darken(red, 10%);
-  }
-}
-.checkbox-cb {
-  display: none;
-  &:checked + .cookie-bar {
-    transform: translateY(-50px);
-  }
-}
-
 .navbar-nav .nav-link .nav-link-inner--text {
   margin-left: 0;
 }
