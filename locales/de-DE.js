@@ -332,5 +332,6 @@ export default {
     impressum: 'Impressum',
     kontakt: 'Kontakt',
     Marketingvideos: 'Marketingvideos',
-    'seo-and-sea-wissenskonferenz': 'SEO & SEA - Wissenskonferenz'
+    'seo-and-sea-wissenskonferenz': 'SEO & SEA - Wissenskonferenz',
+    'diese-webseite-speichert-ihre-sprachauswahl-in-cookies': 'Diese Webseite speichert Ihre Sprachauswahl in Cookies'
 }

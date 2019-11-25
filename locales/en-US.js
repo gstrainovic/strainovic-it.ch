@@ -332,6 +332,7 @@ export default {
     impressum: 'Imprint',
     kontakt: 'Contact',
     Marketingvideos: 'Marketing videos',
-    'seo-and-sea-wissenskonferenz': 'SEO & SEA - Knowledge Conference'
+    'seo-and-sea-wissenskonferenz': 'SEO & SEA - Knowledge Conference',
+    'diese-webseite-speichert-ihre-sprachauswahl-in-cookies': 'This website stores your language selection in cookies'
 
 }
