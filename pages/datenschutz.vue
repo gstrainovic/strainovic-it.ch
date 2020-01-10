@@ -7,7 +7,7 @@
           <div class="col-lg-12">
             <h2>Datenschutzerklärung der STRAINOVIC IT</h2>
             <br />
-            Version vom 30.06.2019<br />
+            Version vom 10.01.2020<br />
             <br />
             In dieser Datenschutzerklärung erläutern wir, die STRAINOVIC IT
             (nachfolgend STRAINOVIC IT, wir oder uns), wie wir Personendaten
@@ -122,35 +122,6 @@
             Rechtsgrundlage haben und wir eine solche benötigen. Eine erteilte
             Einwilligung kann jederzeit widerrufen werden, was jedoch keine
             Auswirkung auf bereits erfolgte Datenbearbeitungen hat.
-            <h3>
-              Cookies / Tracking und andere Technologien im Zusammenhang mit der
-              Nutzung unserer Website
-            </h3>
-            Wir setzen auf unseren Websites typischerweise "Cookies" und
-            vergleichbare Techniken ein, mit denen Ihr Browser oder Ihr Gerät
-            identifiziert werden kann. Ein Cookie ist eine kleine Datei, die an
-            Ihren Computer gesendet bzw. vom verwendeten Webbrowser automatisch
-            auf Ihrem Computer oder mobilen Gerät gespeichert wird, wenn Sie
-            unsere Website besuchen. Wenn Sie diese Website erneut aufrufen,
-            können wir Sie so wiedererkennen, selbst wenn wir nicht wissen, wer
-            Sie sind. Neben Cookies, die lediglich während einer Sitzung benutzt
-            und nach Ihrem Website-Besuch gelöscht werden ("Session Cookies"),
-            können Cookies auch benutzt werden, um Nutzereinstellungen und
-            andere Informationen über eine bestimmte Zeit (z.B. zwei Jahre) zu
-            speichern ("permanente Cookies"). Sie können Ihren Browser jedoch so
-            einstellen, dass er Cookies zurückweist, nur für eine Sitzung
-            speichert oder sonst vorzeitig löscht. Die meisten Browser sind so
-            voreingestellt, dass Sie Cookies akzeptieren. Wir nutzen permanente
-            Cookies damit wir besser verstehen, wie Sie unsere Angebote und
-            Inhalte nutzen. Gewisse der Cookies werden von uns gesetzt, gewisse
-            auch von Vertragspartnern, mit denen wir zusammenarbeiten. Wenn Sie
-            Cookies sperren, kann es sein, dass gewisse Funktionalitäten (wie
-            z.B. Sprachwahl, Warenkorb, Bestellprozesse) nicht mehr
-            funktionieren. Mit der Nutzung unserer Websites und der Einwilligung
-            in den Erhalt von Newslettern und anderen Marketing-E-Mails stimmen
-            Sie dem Einsatz dieser Techniken zu. Wollen Sie dies nicht, dann
-            müssen Sie Ihren Browser bzw. Ihre E-Mail-Programm entsprechend
-            einstellen.
             <h3>Verwendung von Scriptbibliotheken (Google Webfonts)</h3>
             <h4>Art und Zweck der Verarbeitung:</h4>
             Um unsere Inhalte browserübergreifend korrekt und grafisch

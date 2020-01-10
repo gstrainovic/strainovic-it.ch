@@ -393,9 +393,9 @@
         >
         <label for="checkbox-cb" class="close-cb">x</label> -->
       <!-- </div> -->
-      <BaseAlert dismissible class="fixed-bottom">{{
+      <!-- <BaseAlert dismissible class="fixed-bottom">{{
         $t('diese-webseite-speichert-ihre-sprachauswahl-in-cookies')
-      }}</BaseAlert>
+      }}</BaseAlert> -->
     </footer>
   </div>
 </template>

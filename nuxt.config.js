@@ -87,9 +87,9 @@ module.exports = {
                 lazy: true,
                 langDir: 'locales/',
                 defaultLocale: 'de',
-                detectBrowserLanguage: {
-                    useCookie: true
-                },
+                //                detectBrowserLanguage: {
+                //                    useCookie: false
+                //                },
                 parsePages: false,
                 pages: {
                     'dienstleistungen/index': {
