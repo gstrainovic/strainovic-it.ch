@@ -1,8 +1,8 @@
 {
     "cSpell.language": ",de",
-    "vue-i18n-ally.keystyle": "nested",
     "languageTool.language": "en,de",
     "eslint.enable": true,
     "i18n-ally.localesPaths": "locales",
-    "vue-i18n-ally.localesPaths": "locales"
+    "i18n-ally.keystyle": "flat",
+    "i18n-ally.sourceLanguage": "de-DE"
 }
