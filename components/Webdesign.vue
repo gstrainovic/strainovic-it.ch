@@ -76,29 +76,19 @@ export default {
     return {
       sites: [
         {
-          link: 'https://www.ddp-transporte.ch',
-          img:
-            '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-ddp.jpg',
-          branche: 'transportunternehmen',
-          adresse: 'ch-9403-goldach-sg',
-          kanton: 'kanton-st-gallen',
+          link: 'https://newjersey.ch',
+          img: '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-nj.jpg',
+          branche: 'hundesalon',
+          adresse: 'ch-8953-dietikon-zh',
+          kanton: 'kanton-zuerich',
           land: 'schweiz',
-          technologie: 'Grav CMS'
+          technologie: 'wordpress-divi'
         },
         {
           link: 'https://www.epwidmer.ch/',
           img: '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-ep.jpg',
           branche: 'energetische-praxis',
           adresse: 'ch-9322-egnach-tg',
-          kanton: 'kanton-thurgau',
-          land: 'schweiz',
-          technologie: 'wordpress-divi'
-        },
-        {
-          link: 'https://www.mobile-schere.ch',
-          img: '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-ms.jpg',
-          branche: 'mobile-friseurin',
-          adresse: 'ch-9215-kradolf-schoenenberg',
           kanton: 'kanton-thurgau',
           land: 'schweiz',
           technologie: 'wordpress-divi'
@@ -113,6 +103,25 @@ export default {
           technologie: 'wordpress-divi'
         },
         {
+          link: 'https://www.mobile-schere.ch',
+          img: '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-ms.jpg',
+          branche: 'mobile-friseurin',
+          adresse: 'ch-9215-kradolf-schoenenberg',
+          kanton: 'kanton-thurgau',
+          land: 'schweiz',
+          technologie: 'wordpress-divi'
+        },
+        {
+          link: 'https://www.ddp-transporte.ch',
+          img:
+            '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-ddp.jpg',
+          branche: 'transportunternehmen',
+          adresse: 'ch-9403-goldach-sg',
+          kanton: 'kanton-st-gallen',
+          land: 'schweiz',
+          technologie: 'Grav CMS'
+        },
+        {
           link: 'https://buegeln.services',
           img: '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-bs.jpg',
           branche: 'buegelservice',
@@ -120,6 +129,27 @@ export default {
           kanton: 'kanton-st-gallen',
           land: 'schweiz',
           technologie: 'jekyll'
+        },
+        {
+          link: '',
+          img:
+            '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-mpf.jpg',
+          project: 'webshop-fuer-lieferservice',
+          branche: 'persisches-restaurant',
+          adresse: 'de-65931-sindlingen',
+          kanton: 'frankfurt-am-main',
+          land: 'deutschland',
+          technologie: 'wordpress'
+        },
+        {
+          link: 'https://www.monsenso.com',
+          img:
+            '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-monsenso.jpg',
+          branche: 'medtech',
+          adresse: 'dk-2100-kopenhagen',
+          kanton: '',
+          land: 'daenemark',
+          technologie: 'wordpress-divi'
         },
         {
           link: 'https://gstrainovic.github.io/gost.pw',
@@ -139,27 +169,6 @@ export default {
           kanton: 'kanton-st-gallen',
           land: 'schweiz',
           technologie: 'vue-and-nuxt-argon-and-bootstrap'
-        },
-        {
-          link: 'https://www.monsenso.com',
-          img:
-            '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-monsenso.jpg',
-          branche: 'medtech',
-          adresse: 'dk-2100-kopenhagen',
-          kanton: '',
-          land: 'daenemark',
-          technologie: 'wordpress-divi'
-        },
-        {
-          link: '',
-          img:
-            '/img/portfolio-responsive-webdesign/ResponsiveWebDesign-mpf.jpg',
-          project: 'webshop-fuer-lieferservice',
-          branche: 'persisches-restaurant',
-          adresse: 'de-65931-sindlingen',
-          kanton: 'frankfurt-am-main',
-          land: 'deutschland',
-          technologie: 'wordpress'
         }
       ]
     }

@@ -43,7 +43,8 @@ export default {
         { hid: 'robots', name: 'robots', content: 'noindex' }
       ]
     }
-  },
+  }
+}
 </script>
 
 <style>

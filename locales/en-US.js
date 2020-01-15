@@ -75,6 +75,9 @@ export default {
     'komplexe-webanwendungen-webapplikationen-portale-programmierenund-designen-wir-im-frontend-mit-html-css-3-bootstrap-und-react-oder-vue-und-im-backend-mit-z-b-headless-cms-node-php-python-und-als-datenbanken-z-b-sql-wie-mysql-mariadb-oder-nosql-wie-z-b-mongodb': 'We program and design complex web applications, web applications, portals in the frontend with HTML, CSS3, Bootstrap and React or Vue, and in the backend with e.g. Headless CMS, Node, PHP, Python and as databases e.g. SQL like MySQL, MariaDB or NoSQL like e.g. MongoDB. ',
 
     // "###########Webdesign": "###########",
+    'hundesalon': 'Dog salon',
+    'ch-8953-dietikon-zh': 'CH 8953 Dietikon ZH',
+    'kanton-zuerich': 'Canton Zurich',
     'de-65931-sindlingen': 'DE 65931 Sindlingen',
     'frankfurt-am-main': 'Frankfurt on the Main',
     'ch-9323-steinach-sg': 'CH 9323 Steinach SG',
