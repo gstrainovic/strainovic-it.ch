@@ -83,6 +83,13 @@
 import Header from '@/components/Header'
 
 export default {
+  head () {
+    return {
+      meta: [
+        { hid: 'robots', name: 'robots', content: 'noindex' }
+      ]
+    }
+  },
   components: {
     Header
   }

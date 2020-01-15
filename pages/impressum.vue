@@ -37,10 +37,13 @@
 import Header from '@/components/Header'
 
 export default {
-  components: {
-    Header
-  }
-}
+  head () {
+    return {
+      meta: [
+        { hid: 'robots', name: 'robots', content: 'noindex' }
+      ]
+    }
+  },
 </script>
 
 <style>
