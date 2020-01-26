@@ -69,6 +69,8 @@ module.exports = {
         [
             'nuxt-i18n',
             {
+                baseUrl: 'https://www.strainovic-it.ch',
+                seo: true,
                 locales: [{
                         name: 'Deutsch',
                         code: 'de',
