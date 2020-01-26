@@ -56,7 +56,13 @@ export default {
       required: false,
       default: false
     }
-  }
+  },
+    head() {
+      return {
+        title: this.bold
+      }
+    }
+
 }
 </script>
 <style></style>

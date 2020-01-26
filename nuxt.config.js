@@ -7,7 +7,6 @@ module.exports = {
      ** Headers of the page
      */
     head: {
-        title: 'Strainovic-IT.ch',
         meta: [
             { charset: 'utf-8' },
             { name: 'X-UA-Compatible', content: 'IE=edge' },
