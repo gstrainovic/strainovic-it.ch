@@ -18,7 +18,8 @@
                   <i v-if="error" class="fa fa-exclamation-triangle"></i>
 
                   {{ bold }}
-                  <span v-if="normal" class="mt-2">{{ normal }}</span>
+                  <h2 v-if="normal" class="mt-2 text-white">{{ normal }}</h2>
+                  <h2 v-else class="span text-white">{{ normal }}</h2>
                   <br />
                   <n-link
                     v-if="error"
