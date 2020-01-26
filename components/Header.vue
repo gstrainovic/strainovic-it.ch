@@ -14,7 +14,7 @@
           <div class="col px-0">
             <div class="row">
               <div class="col-lg-7">
-                <bold class="display-3 text-white">
+                <h1 class="bold display-3 text-white">
                   <i v-if="error" class="fa fa-exclamation-triangle"></i>
 
                   {{ bold }}
@@ -29,7 +29,7 @@
                     {{ $t('header.zurueck-zur-startseite') }}
                     <i class="ni ni-shop"></i>
                   </n-link>
-                </bold>
+                </h1>
               </div>
             </div>
           </div>

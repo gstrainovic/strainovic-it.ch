@@ -35,6 +35,7 @@
               }}
             </p>
           </div>
+          
           <div class="col-lg-6">
             <h2 class="display-3">
               {{ $t('installation-and-konfiguration') }}
@@ -99,7 +100,7 @@ export default {
       title: this.title,
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        { hid: 'description', nname='yandex-verification', content='98638c2b1baeef81' }
+        { hid: 'description', name:'yandex-verification', content:'98638c2b1baeef81' }
       ]
     }
   }
