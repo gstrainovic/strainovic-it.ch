@@ -59,7 +59,7 @@ export default {
   },
     head() {
       return {
-        title: this.bold
+        title: "⭐⭐⭐⭐⭐ " + this.normal + " 🚀 "+ this.bold
       }
     }
 

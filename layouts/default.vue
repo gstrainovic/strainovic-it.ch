@@ -99,9 +99,9 @@
                 <div class="container">
                   <div class="">
                     <div class="">
-                      <h2 class="display-4">
+                      <div class="display-4">
                         {{ $t('wir-freuen-uns-auf-ihre-nachricht') }}
-                      </h2>
+                      </div>
                       <div class="">
                         <!-- <div class="col-md-5 lead"> -->
                         <SitAdresse></SitAdresse>

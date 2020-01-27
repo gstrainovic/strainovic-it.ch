@@ -5,7 +5,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8">
-            <!-- <h2 class="display-3">Adresse</h2> -->
+           <h2 class="display-3">Adresse</h2> 
             <p class="lead">
               Strainovic IT<br />
               Strainovic Goran<br />
@@ -43,6 +43,9 @@ export default {
         { hid: 'robots', name: 'robots', content: 'noindex' }
       ]
     }
+  },
+  components: {
+  Header
   }
 }
 </script>
@@ -51,5 +54,15 @@ export default {
 .section-shaped .shape.shape-skew + .shape-container {
   padding-top: 14rem;
   padding-bottom: 15rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  /* padding-top: 50px; */
+  /* padding-bottom: 50px; */
 }
 </style>
