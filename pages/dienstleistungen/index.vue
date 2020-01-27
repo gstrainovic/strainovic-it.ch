@@ -18,8 +18,9 @@ export default {
     Marketing,
     SoftwareUndApps,
     WebdesignUndProgrammierung
-  }
+  },
 }
 </script>
+
 
 <style></style>
