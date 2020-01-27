@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 export default {
+    kontaktauf: 'Jetzt Kontakt aufnehmen und eine kostenlose und unverbindliche Beratung erhalten',
      datenschutzerklaerung: 'Datenschutzerklärung',
     'datenschutzerklaerung-der-strainovic-it': 'Datenschutzerklärung der STRAINOVIC IT',
     'version-vom-10-01-2020-v01-01a': 'Version vom 11.01.2020 - V01.01a',

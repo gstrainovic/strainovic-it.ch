@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 export default {
     //Datenschutzerklärung
+    kontaktauf: 'Contact us now and receive a free and non-binding consultation',
     'datenschutzerklaerung': 'Privacy policy',
     'datenschutzerklaerung-der-strainovic-it': 'Data Protection Statement of Strainovic IT',
     'version-vom-10-01-2020-v01-01a': 'Version 11.01.2020 - V01.01a',
