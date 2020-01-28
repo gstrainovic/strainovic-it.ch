@@ -15,7 +15,15 @@ export default {
     Header,
     StrainovicIT,
     GoranStrainovic
-  }
+  },
+        head () {
+        return {
+          meta: [
+            { hid: 'description', name: 'description', content: this.$t('ueber_meta_description') }
+          ]
+        }
+      }
+
 }
 </script>
 

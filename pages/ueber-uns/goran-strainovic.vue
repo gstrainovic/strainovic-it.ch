@@ -13,7 +13,14 @@ export default {
   components: {
     Header,
     GoranStrainovic
-  }
+  },
+    head () {
+      return {
+        meta: [
+          { hid: 'description', name: 'description', content: this.$t('ueber_goran_meta_description') }
+        ]
+      }
+    }
 }
 </script>
 

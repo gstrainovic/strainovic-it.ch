@@ -19,6 +19,14 @@ export default {
     SoftwareUndApps,
     WebdesignUndProgrammierung
   },
+        head () {
+        return {
+          meta: [
+            { hid: 'description', name: 'description', content: this.$t('dienstleistungen_meta_description') }
+          ]
+        }
+      }
+
 }
 </script>
 

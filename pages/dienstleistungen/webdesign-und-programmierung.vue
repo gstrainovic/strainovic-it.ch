@@ -17,7 +17,15 @@ export default {
   components: {
     Header,
     WebdesignUndProgrammierung
-  }
+  },
+        head () {
+        return {
+          meta: [
+            { hid: 'description', name: 'description', content: this.$t('dienst_webdesignundpro_meta_description') }
+          ]
+        }
+      }
+
 }
 </script>
 

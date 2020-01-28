@@ -15,7 +15,14 @@ export default {
   components: {
     Header,
     Webdesign
-  }
+  },
+      head () {
+        return {
+          meta: [
+            { hid: 'description', name: 'description', content: this.$t('ref_webdesign_meta_description') }
+          ]
+        }
+      }
 }
 </script>
 

@@ -18,7 +18,15 @@ export default {
   components: {
     Header,
     SoftwareUndApps
-  }
+  },
+      head () {
+        return {
+          meta: [
+            { hid: 'description', name: 'description', content: this.$t('dienst_software_meta_description') }
+          ]
+        }
+      }
+
 }
 </script>
 

@@ -1,5 +1,19 @@
 /* eslint-disable prettier/prettier */
 export default {
+    meta_desc: '✪ Homepage und Webseite erstellen lassen ✓ Webdesign ✓ Programmierung ✓ Marketing',
+    index_meta_description: '✪ IT Web Freelance Agentur ✈ Erstellt für ♥ Private ♥ Startup ♥ KMU ✓ Webseiten ✓ Apps. ✓ Beratung ✓ Installation ✓ Design ✓ Programmierung ✓ Automation ✓ Schulung ✓Marketing',
+    ueber_strainovic_it_meta_description: '✪ Informationen über Strainovic IT. Schreiben Sie, falls Sie mehr erfahren möchten. Lesen Sie auch unsere ★★★★★ Bewertungen in Google Business und Facebook.',
+    ueber_meta_description: '✪ Informationen über Strainovic IT und Goran Strainovic. Schreiben Sie, falls Sie mehr erfahren möchten. Lesen Sie auch unsere ★★★★★ Bewertungen in Google Business und Facebook.',
+    ueber_goran_meta_description: '✪ Ich bin Gründer, Designer, Projektmanager und Programmierer. IT & Web ist meine ♥ Leidenschaft. Gerne verwirkliche Ihre ✈ Ziele entweder alleine oder im ☀ Team',
+    referenzen_meta_description: '✪ Sehen Sie sich unsere ♥ Kundenreferenzen im ☀ Portfolio an',
+    ref_projekte_meta_description: '✪ Wir sind ✓vielseitig und ✓flexibel. Hier sehen Sie ein kleiner Auszug von ♥ Kundenprojekten mit Ziele und eingesetzten Technologien.',
+    ref_videomarketing_meta_description: '✪ Wir erstellen ✓ professionelle ✓ Marketingvideos ✓ Erklärvideos für ► Youtube  ► Facebook Ads ► Homepages ► Webseiten ► Produkte ► Anleitungen',
+    ref_webdesign_meta_description: '✪ Schauen Sie sich die Webseiten von unseren ♥ zufriedenen Kunden aus der Schweiz & Europa an. Erstellt mit ♥ WordPress ♥ CMS ♥ Divi',
+    dienstleistungen_meta_description: '✪ Wir ✓ beraten ✓ designen ✓ programmieren ✓ optimieren ✓ automatisieren den ✓ digitalen Workflow von ✓ Software ✓ App ✓ Webseiten ✓ Portale, Hompages  ✓ Social & SEO Marketing.',
+    dienst_webdesignundpro_meta_description: '✪ Professionelle ✓ Homepages ✓ Webseiten ✓ Portale ✓ Webshops erstellen lassen durch ✈ schweizer Freelance Webagentur mit z.B. ✓ WordPress ✓ CMS ✓ schnell ✓ günstig ✓ einfach',
+    dienst_software_meta_description: '✪ Ihre ✓ Software ✓ App ✓ Shop ✓ Plugin ✓ ERP ✓ CRM ✓ Server ✓ Datenbank ✓ Modul ✓ Script ✓ Erweiterung ✓ programmieren ✓ optimieren ✓ automatisieren wir ✓ individuell',
+    dienst_marketing_meta_description: '✪ Agentur für Online und Offline Marketing von Produkte, Dienstleistungen mit ✓ SEO ✓ Google Ads ✓ Facebook ✓ Instagram ✓ SMM ✓ Social Media Marketing ✓ Grafiken',
+
     kontaktauf: 'Jetzt Kontakt aufnehmen und eine kostenlose und unverbindliche Beratung erhalten',
      datenschutzerklaerung: 'Datenschutzerklärung',
     'datenschutzerklaerung-der-strainovic-it': 'Datenschutzerklärung der STRAINOVIC IT',

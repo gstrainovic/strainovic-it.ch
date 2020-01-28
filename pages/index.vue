@@ -97,10 +97,8 @@ export default {
   VueLazyload,
   head () {
     return {
-      title: this.title,
       meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        { hid: 'description', name:'yandex-verification', content:'98638c2b1baeef81' }
+        { hid: 'description', name: 'description', content: this.$t('index_meta_description') }
       ]
     }
   }

@@ -18,7 +18,15 @@ export default {
     Webdesign,
     Marketingvideos,
     Projekte
-  }
+  },
+        head () {
+        return {
+          meta: [
+            { hid: 'description', name: 'description', content: this.$t('referenzen_meta_description') }
+          ]
+        }
+      }
+
 }
 </script>
 

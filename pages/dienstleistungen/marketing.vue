@@ -13,7 +13,15 @@ export default {
   components: {
     Header,
     Marketing
-  }
+  },
+        head () {
+        return {
+          meta: [
+            { hid: 'description', name: 'description', content: this.$t('dienst_marketing_meta_description') }
+          ]
+        }
+      }
+
 }
 </script>
 

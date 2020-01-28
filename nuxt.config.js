@@ -14,12 +14,12 @@ module.exports = {
                 name: 'viewport',
                 content: 'width=device-width, initial-scale=1.0, maximum-scale=6, user-scalable=6, shrink-to-fit=no'
             },
-            // {
-            //   hid: 'description',
-            //   name: 'description',
-            //   content:
-            //     'Webdesign, Programmierung & Marketing - Software, Homepage & Webseite erstellen und vermarkten lassen'
-            // },
+            {
+               hid: 'description',
+               name: 'description',
+               content:
+                 '✪ Homepage und Webseite erstellen lassen ✓ Webdesign ✓ Programmierung ✓ Marketing'
+             },
             { name: 'author', content: 'Strainovic IT, Goran Strainovic' }
         ],
         link: [

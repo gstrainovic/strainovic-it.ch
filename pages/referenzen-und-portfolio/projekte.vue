@@ -15,7 +15,15 @@ export default {
   components: {
     Header,
     Projekte
-  }
+  },
+        head () {
+        return {
+          meta: [
+            { hid: 'description', name: 'description', content: this.$t('ref_projekte_meta_description') }
+          ]
+        }
+      }
+
 }
 </script>
 

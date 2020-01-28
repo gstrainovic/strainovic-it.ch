@@ -1,6 +1,20 @@
 /* eslint-disable prettier/prettier */
 export default {
     //Datenschutzerklärung
+    meta_desc: '✪ Let us create your homepage and website ✓ Web design ✓ Programming ✓ Marketing',
+    index_meta_description: '✪ IT Web Freelance Agency ✈ Made for ♥ Private ♥ Startup ♥ SMEs ✓ Websites ✓ Apps. ✓ Consulting ✓ Installation ✓ Design ✓ Programming ✓ Automation ✓ Training ✓Marketing',
+    ueber_strainovic_it_meta_description: '✪ Information about Strainovic IT. Write if you want to know more. Also read our ★★★★★ reviews in Google Business and Facebook',
+    ueber_meta_description: '✪ Information about Strainovic IT and Goran Strainovic. Write if you want to know more. Also read our ★★★★★ reviews in Google Business and Facebook.',
+    ueber_goran_meta_description: '✪ I am a founder, designer, project manager and programmer. IT & Web is my ♥ passion. You are welcome to realize your ✈ goals.',
+    referenzen_meta_description: '✪ Take a look at our ♥ customer references in the ☀ portfolio',
+    ref_projekte_meta_description: '✪ We are ✓ versatile and ✓ flexible. Here you can see a small excerpt of ♥ customer projects with goals and technologies used.',
+    ref_videomarketing_meta_description: '✪ We create ✓ professional ✓ marketing videos ✓ explanatory videos for ► Youtube ► Facebook Ads ► Homepages ► Websites ► Products ► Instructions',
+    ref_webdesign_meta_description: '✪ Take a look at the websites of our ♥ satisfied customers from Switzerland & Europe. Created with ♥ WordPress ♥ CMS ♥ Divi',
+    dienstleistungen_meta_description: '✪ We ✓ consult ✓ design ✓ program ✓ optimize ✓ automate the ✓ digital workflow of ✓ software ✓ app ✓ websites ✓ portals, homepages ✓ social & SEO marketing.',
+    dienst_webdesignundpro_meta_description: '✪ Professional ✓ Homepages ✓ Websites ✓ Portals ✓ Webshops created by ✈ Swiss freelance web agency with e.g. ✓ WordPress ✓ CMS ✓ fast ✓ cheap ✓ simple',
+    dienst_software_meta_description: '✪ Your ✓ software ✓ app ✓ shop ✓ plugin ✓ ERP ✓ CRM ✓ server ✓ database ✓ module ✓ script ✓ extension ✓ code ✓ optimize ✓ automate ✓ individual coding',
+    dienst_marketing_meta_description: '✪ Agency for online and offline marketing of products, services with ✓ SEO ✓ Google Ads ✓ Facebook ✓ Instagram ✓ SMM ✓ Social Media Marketing ✓ Graphics',
+
     kontaktauf: 'Contact us now and receive a free and non-binding consultation',
     'datenschutzerklaerung': 'Privacy policy',
     'datenschutzerklaerung-der-strainovic-it': 'Data Protection Statement of Strainovic IT',
