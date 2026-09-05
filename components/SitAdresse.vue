@@ -21,11 +21,6 @@
     >
 
     <p>
-      <a href="tel:+41794117177">
-        <i class="ni ni-mobile-button"></i> +41 79 411 71 77<br />
-      </a>
-    </p>
-    <p>
       <a href="mailto:info@strainovic-it.ch">
         <i class="ni ni-email-83"></i> info@strainovic-it.ch</a
       >
