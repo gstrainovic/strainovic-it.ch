@@ -1,0 +1,192 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+/* ---------------------------------------------------------------
+   Farben. Kuehles Papier, dunkelblaue Tinte, ein Blaupausenblau.
+   `light-dark()` waehlt anhand von `color-scheme` aus, deshalb steht
+   jede Farbe genau einmal da. Der Schalter setzt nur `color-scheme`
+   ueber das Attribut `data-thema` um.
+   --------------------------------------------------------------- */
+:root {
+  color-scheme: light dark;
+
+  --c-papier: light-dark(#f2f5f7, #0f141a);
+  --c-flaeche: light-dark(#ffffff, #151d26);
+  --c-tinte: light-dark(#16202b, #e4ebf1);
+  --c-gedaempft: light-dark(#5c6a78, #8e9dac);
+  --c-linie: light-dark(#d5dde4, #263039);
+  --c-linie-stark: light-dark(#b3bfc9, #3a4854);
+  --c-akzent: light-dark(#12489e, #7cb0ff);
+}
+
+:root[data-thema='hell'] {
+  color-scheme: light;
+}
+
+:root[data-thema='dunkel'] {
+  color-scheme: dark;
+}
+
+@theme {
+  --font-sans: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --color-papier: var(--c-papier);
+  --color-flaeche: var(--c-flaeche);
+  --color-tinte: var(--c-tinte);
+  --color-gedaempft: var(--c-gedaempft);
+  --color-linie: var(--c-linie);
+  --color-linie-stark: var(--c-linie-stark);
+  --color-akzent: var(--c-akzent);
+}
+
+:root {
+  /* Grundschrift waechst mit der Fensterbreite: 16px auf dem Telefon,
+     18px ab etwa 1200px. Alle rem-Masse skalieren mit. */
+  font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem);
+}
+
+body {
+  background-color: var(--c-papier);
+  color: var(--c-tinte);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Deutsche Komposita sprengen auf schmalen Schirmen jede Spalte.
+   Silbentrennung greift nur, wo der Browser Trennmuster mitbringt,
+   deshalb bricht `overflow-wrap` im Zweifel hart um. */
+h1,
+h2,
+h3,
+.prose {
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+/* Zahlen im Datenblatt stehen untereinander. */
+.zahlen {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Sichtbarer Fokus, auch bei eigener Farbgebung. */
+:where(a, button):focus-visible {
+  outline: 2px solid var(--c-akzent);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ---------------------------------------------------------------
+   Schalter fuer hell und dunkel. Die Stellung haengt am Attribut
+   `data-thema`, nicht am JavaScript-Zustand, damit der Knopf schon
+   beim ersten Zeichnen richtig sitzt.
+   --------------------------------------------------------------- */
+.schalter {
+  display: flex;
+  align-items: center;
+  width: 2.9rem;
+  padding: 0.16rem;
+  border: 1px solid var(--c-linie-stark);
+  border-radius: 999px;
+  background-color: var(--c-papier);
+  cursor: pointer;
+}
+
+.schalter-knopf {
+  display: grid;
+  place-items: center;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 999px;
+  background-color: var(--c-flaeche);
+  border: 1px solid var(--c-linie-stark);
+  transition: transform 170ms ease;
+}
+
+:root[data-thema='dunkel'] .schalter-knopf {
+  transform: translateX(1.24rem);
+  background-color: var(--c-akzent);
+  border-color: var(--c-akzent);
+}
+
+.schalter-sonne,
+.schalter-mond {
+  grid-area: 1 / 1;
+  width: 0.8rem;
+  height: 0.8rem;
+}
+
+.schalter-sonne {
+  fill: var(--c-gedaempft);
+  stroke: var(--c-gedaempft);
+}
+
+.schalter-mond {
+  fill: var(--c-papier);
+  stroke: none;
+  display: none;
+}
+
+:root[data-thema='dunkel'] .schalter-sonne {
+  display: none;
+}
+
+:root[data-thema='dunkel'] .schalter-mond {
+  display: block;
+}
+
+/* ---------------------------------------------------------------
+   Merkmalzeile: links das Feld, rechts der Wert. Die Grundform
+   des Datenblatts, auf schmalen Schirmen gestapelt.
+   --------------------------------------------------------------- */
+.feld {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.15rem 1.5rem;
+  padding-block: 0.7rem;
+  border-top: 1px solid var(--c-linie);
+}
+
+.feld > dt {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--c-gedaempft);
+  padding-top: 0.15rem;
+}
+
+@media (min-width: 40rem) {
+  .feld {
+    grid-template-columns: 8.5rem 1fr;
+  }
+}
+
+/* Fliesstext im Markdown an die Datenblatt-Farben binden. */
+.prose {
+  --tw-prose-body: var(--c-tinte);
+  --tw-prose-headings: var(--c-tinte);
+  --tw-prose-bold: var(--c-tinte);
+  --tw-prose-links: var(--c-akzent);
+  --tw-prose-bullets: var(--c-linie-stark);
+  --tw-prose-hr: var(--c-linie);
+  --tw-prose-quotes: var(--c-tinte);
+}
+
+.prose :where(h1) {
+  font-size: clamp(1.75rem, 1.4rem + 1.5vw, 2.25rem);
+  letter-spacing: -0.015em;
+}
+
+.prose :where(h2) {
+  font-size: 1.25rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--c-linie);
+}

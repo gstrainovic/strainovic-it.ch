@@ -1,0 +1,10 @@
+# Alle Besucherprogramme duerfen die Seite lesen, auch die von
+# KI-Diensten. Impressum und Datenschutz tragen ein noindex im Dokument
+# selbst und stehen deshalb hier bewusst nicht auf einer Sperrliste:
+# ein gesperrter Pfad wird gar nicht erst gelesen, das noindex im
+# Dokument bliebe dann unbemerkt.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.strainovic-it.ch/sitemap.xml

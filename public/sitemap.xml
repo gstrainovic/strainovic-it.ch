@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Von Hand gepflegt. Impressum und Datenschutz fehlen absichtlich, sie
+  tragen ein noindex. Kommt eine Seite dazu, gehoert sie hier hinein.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.strainovic-it.ch/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/profil</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/referenzen</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/kontakt</loc>
+    <priority>0.6</priority>
+  </url>
+</urlset>

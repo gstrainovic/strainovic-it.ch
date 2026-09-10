@@ -1,0 +1,24 @@
+# Strainovic IT — Goran Strainovic
+
+> Fullstack-Entwickler in Steinach, Kanton St. Gallen, Schweiz.
+> Schwerpunkt API- und ERP-Integration. Seit 2016 rund vierzig
+> Kundenprojekte in der Schweiz, Deutschland und Österreich.
+
+Arbeitsgebiete: Anbindung von Systemen aneinander, etwa Warenwirtschaft an
+CRM, Rechnungseingang an die Buchhaltung, Shop an das ERP und Belege an das
+Dokumentenmanagement. Dazu Webanwendungen mit Vue, Nuxt und Node.js sowie
+Dienste in Go, betrieben in Containern auf Kubernetes.
+
+Kontakt: info@strainovic-it.ch
+
+## Seiten
+
+- [Start](https://www.strainovic-it.ch/): Kenndaten und die drei Schwerpunkte
+- [Profil](https://www.strainovic-it.ch/profil): Werdegang seit 2016 und eingesetzte Technologien
+- [Referenzen](https://www.strainovic-it.ch/referenzen): 26 Entwicklungsprojekte mit Ziel, Stack und Branche
+- [Kontakt](https://www.strainovic-it.ch/kontakt): Anschrift und E-Mail
+
+## Rechtliches
+
+- [Impressum](https://www.strainovic-it.ch/impressum)
+- [Datenschutz](https://www.strainovic-it.ch/datenschutz)

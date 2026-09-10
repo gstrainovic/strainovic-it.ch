@@ -1,0 +1,11 @@
+{
+  "name": "Strainovic IT — Goran Strainovic",
+  "short_name": "Strainovic IT",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" }
+  ],
+  "theme_color": "#12489e",
+  "background_color": "#f2f5f7",
+  "display": "browser",
+  "start_url": "/"
+}
