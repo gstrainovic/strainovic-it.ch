@@ -1,0 +1,14 @@
+# Publish-Ordner ausdruecklich auf .output/public.
+#
+# Nicht auf `dist`: das ist bei Nuxt 4 nur ein Symlink auf .output/public.
+# Netlify stellt vor jedem Build seinen Ausgabe-Cache wieder her; liegt dort
+# ein echter `dist`-Ordner aus einem frueheren Build, kann Nuxt den Symlink
+# nicht anlegen und Netlify veroeffentlicht den alten Inhalt. Genau das ist
+# am 12.09.2026 passiert: zwei Deploys standen auf `ready` und lieferten
+# trotzdem den Stand davor aus.
+#
+# Die Node-Version steht in .nvmrc und wird hier bewusst nicht wiederholt.
+
+[build]
+  command = "npm run generate"
+  publish = ".output/public"
