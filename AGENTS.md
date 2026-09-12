@@ -89,6 +89,10 @@ Wer am DNS arbeitet, prüft MX und SPF zuerst. Die E-Mail ist die einzige
 Kontaktmöglichkeit der Seite; fällt sie aus, merkt man es nicht, weil
 Anfragen still verschwinden.
 
+Der TXT-Eintrag `google-site-verification` muss bleiben. Darüber hängt die
+Search-Console-Property `https://www.strainovic-it.ch/` auf dem Konto
+`g.strainovic@gmail.com`. Wird er entfernt, verfällt die Bestätigung.
+
 ## Cloudflare ist vorbereitet, aber nicht aktiv
 
 `wrangler.jsonc` liegt im Repo, das Nitro-Preset ist auf `static`

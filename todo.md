@@ -4,16 +4,9 @@ Die Seite ist live auf Netlify. Rahmen und Regeln stehen in `AGENTS.md`.
 
 ## Offen
 
-- [ ] Impressum und Datenschutz einmal selbst durchlesen und je Satz prüfen,
-      ob er für diese Seite stimmt. Ein Anwalt ist unverhältnismässig,
-      solange die Seite nur Text ausliefert: kein Formular, keine Cookies,
-      keine Analyse, kein Newsletter. Genau diese Prüfung hat der frühere
-      Generatortext nicht überlebt, er beschrieb Gruppengesellschaften und
-      Videoüberwachung. Kommt später ein Formular oder Zugriffsstatistik
-      dazu, entstehen echte Pflichten und der Punkt wird ernster.
-- [ ] In der Search Console die neue `sitemap.xml` einreichen und danach
-      einmal nachsehen, ob die Weiterleitungen der alten Adressen
-      verarbeitet werden.
+- [ ] In einigen Tagen in der Search Console nachsehen, ob die
+      Weiterleitungen der alten Adressen verarbeitet werden und die vier
+      Seiten indexiert sind. Die Sitemap ist eingereicht und gelesen.
 - [ ] Renovate einrichten, dazu eine CI, die den Build und die internen
       Links prüft.
 - [ ] In `~/projects/find-jobs/TODO.md` den Punkt „strainovic-it.ch neu
