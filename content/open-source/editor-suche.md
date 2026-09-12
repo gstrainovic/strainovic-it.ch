@@ -1,6 +1,6 @@
 ---
 title: Sieben Monate auf der Suche nach einem Editor
-description: Von VS Code über Terminal-Editoren und gpui zu Zig. Zehn Anläufe mit zehn Oberflächen-Bibliotheken, und warum Werkzeuggrenzen für einen KI-Agenten in den Code gehören.
+description: Von VS Code über Terminal-Editoren und gpui zu Zig. Dreizehn Anläufe mit neun Oberflächen-Bibliotheken, und warum Werkzeuggrenzen für einen KI-Agenten in den Code gehören.
 ---
 
 # Sieben Monate auf der Suche nach einem Editor
@@ -36,8 +36,10 @@ dasselbe mit dem Editor Fresh, nur enger: Fresh läuft als Bibliothek im selben
 Prozess, egui liefert das Fenster, `egui_ratatui` übersetzt dazwischen, und
 mupdf zeichnet PDF und Bilder in schwebende Fenster daneben.
 
-Der nächste Anlauf, `editor-framework`, ist kein Wrapper mehr, sondern ein
-Gerüst auf gpui mit Lua-Plugins, die sich ohne Neubau nachladen lassen.
+Die nächsten Anläufe, `flexed` und `editor-framework`, sind keine Wrapper
+mehr, sondern Gerüste auf gpui, in denen nichts Kern ist und alles Plugin.
+Bei `editor-framework` sind die Plugins in Lua und lassen sich ohne Neubau
+nachladen.
 
 ## Warum Rust wegfiel
 
@@ -47,22 +49,25 @@ Gesucht war eine andere schnelle Sprache, mit der sich Zed Konkurrenz machen
 lässt. Go wirkte verstaubt, V zu wenig bekannt, und Zig stand gerade im
 Durchbruch als Konkurrent zu Rust. Also Zig.
 
-## Zehn Anläufe, zehn Oberflächen
+## Dreizehn Anläufe, neun Oberflächen
 
 Jede Zeile ist ein eigenes Repo, in der Reihenfolge, in der sie entstanden
-sind.
+sind. Manche haben einen Tag gelebt, manche eine Woche.
 
 | Anlauf | Sprache | Oberfläche |
 |---|---|---|
 | neoview | Rust | gpui |
 | freshview | Rust | egui, egui_ratatui |
+| flexed | Rust | gpui |
 | editor-framework | Rust | gpui, mlua |
 | slint-rust-editor | Rust | Slint |
 | mojo-nuklear-editor | Mojo, C-Brücke | Nuklear |
 | slint-editor | Mojo | Slint über Python |
 | v-gui-editor | V | GUI-Framework von V |
+| sokol-zig-editor | Zig | sokol, Dear ImGui |
 | zed-clone | Zig | dvui |
 | sokol-nanovg-zig-editor | Zig | sokol, NanoVG |
+| qt-ziged | Zig | Qt 6 über libqt6zig |
 | zed-killer | Zig | gooey |
 
 ## Was daraus wurde
