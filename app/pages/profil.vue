@@ -2,7 +2,7 @@
 useSeoMeta({
   title: 'Profil — Goran Strainovic',
   description:
-    'Werdegang und Technologien: seit 2016 selbstständig mit 27 Entwicklungsprojekten, aktuell in der WebGIS-Entwicklung bei Wälli AG Ingenieure.'
+    'Werdegang und Technologien: seit 2016 selbstständig mit 45 Kundenprojekten, aktuell in der WebGIS-Entwicklung bei Wälli AG Ingenieure.'
 })
 
 const stationen = [
@@ -44,7 +44,7 @@ const stationen = [
     firma: 'Strainovic IT, Steinach',
     rolle: 'Selbstständig, nebenberuflich',
     punkte: [
-      '27 Entwicklungsprojekte für Auftraggeber in der Schweiz, Deutschland und Österreich, von der Anforderungsaufnahme bis zur Übergabe',
+      '45 Kundenprojekte in der Schweiz, Deutschland und Österreich, von der Anforderungsaufnahme bis zur Übergabe',
       'Schwerpunkt Integration: Warenwirtschaft an CRM, Rechnungseingang an die Buchhaltung, Shop an das ERP, Belege an das Dokumentenmanagement',
       'Vier Projekte innerhalb eines Jahres mit serverlosen Diensten auf Azure für einen deutschen ERP-Hersteller, darunter ein mandantenfähiger',
       'Migration eines TypeScript-Monolithen auf Microservices in Go, betrieben auf Kubernetes',

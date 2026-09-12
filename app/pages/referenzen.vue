@@ -111,7 +111,7 @@ const weitere = [
     <header class="border-b-2 border-akzent pb-6">
       <h1 class="text-[clamp(1.9rem,1.4rem+2vw,2.75rem)] font-semibold tracking-[-0.02em]">Referenzen</h1>
       <p class="mt-3 max-w-prose text-gedaempft">
-        Ausgewählt aus rund vierzig Kundenprojekten seit 2016. Kundennamen nenne
+        Ausgewählt aus 45 Kundenprojekten seit 2016. Kundennamen nenne
         ich nur mit Freigabe, deshalb steht hier die Branche. Bildschirmfotos
         gibt es keine, die meisten Anwendungen laufen intern.
       </p>

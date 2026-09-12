@@ -52,7 +52,7 @@ useHead({
 const kenndaten = [
   { feld: 'Tätigkeit', wert: 'Fullstack-Entwicklung, Schwerpunkt API- und ERP-Integration' },
   { feld: 'Standort', wert: 'Steinach, Kanton St. Gallen, Schweiz' },
-  { feld: 'Erfahrung', wert: 'Seit 2016, 27 Entwicklungsprojekte in der Schweiz, Deutschland und Österreich' },
+  { feld: 'Erfahrung', wert: 'Seit 2016, 45 Kundenprojekte in der Schweiz, Deutschland und Österreich' },
   { feld: 'Sprachen', wert: 'Deutsch als Muttersprache, Englisch in Wort und Schrift' }
 ]
 

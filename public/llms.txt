@@ -1,8 +1,8 @@
 # Strainovic IT — Goran Strainovic
 
 > Fullstack-Entwickler in Steinach, Kanton St. Gallen, Schweiz.
-> Schwerpunkt API- und ERP-Integration. Seit 2016 rund vierzig
-> Kundenprojekte in der Schweiz, Deutschland und Österreich.
+> Schwerpunkt API- und ERP-Integration. Seit 2016 45 Kundenprojekte in der
+> Schweiz, Deutschland und Österreich.
 
 Arbeitsgebiete: Anbindung von Systemen aneinander, etwa Warenwirtschaft an
 CRM, Rechnungseingang an die Buchhaltung, Shop an das ERP und Belege an das
