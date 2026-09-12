@@ -19,7 +19,7 @@ const eigene = [
   {
     name: 'zid',
     sprache: 'Zig',
-    was: 'Code-Editor mit eigener Oberfläche: wgpu über das Vulkan-Backend, Clay für das Layout, eigener Glyphen-Atlas und GPU-Text-Renderer über FreeType. Textpuffer und Syntaxhervorhebung kommen von flow-core, das Terminal von Ghostty, PDF von mupdf. Dazu ein eingebauter Agent gegen ein lokales Sprachmodell.'
+    was: 'Eigener Code-Editor mit eigener Oberfläche: wgpu, im Renderer auf das Vulkan-Backend festgelegt, Clay für das Layout, eigener Glyphen-Atlas und GPU-Text-Renderer über FreeType. Die Textspeicherung kommt von flow-core, die Syntaxhervorhebung von flow-syntax, das Terminal von Ghostty, PDF von mupdf. Dazu ein eingebauter Agent gegen ein lokales Sprachmodell.'
   },
   {
     name: 'freshview',

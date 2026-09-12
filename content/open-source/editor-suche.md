@@ -71,19 +71,20 @@ Projektdatei.
 ## Was daraus wurde
 
 Der Editor heisst `zid` und ist in Zig geschrieben. Er zeichnet über wgpu,
-gebaut mit dem Vulkan-Backend. Das Layout macht Clay. Die Textdarstellung ist
+im Renderer auf das Vulkan-Backend festgelegt. Das Layout macht Clay. Die Textdarstellung ist
 eigen: Glyphen-Atlas und GPU-Renderer über FreeType.
 
-Was nicht eigen ist, ist der interessantere Teil. Der Textpuffer und die
-Ansicht kommen als `flow-core` aus dem Editor Flow Control, die
-Syntaxhervorhebung aus demselben Haus über tree-sitter. Das Terminal ist die
-Emulation von Ghostty, Markdown rendert zigdown, PDF zeichnet mupdf.
+Der Editor selbst ist eigen: Eingabe, Cursor, Bearbeitungsbefehle, Suche,
+Zeilenumbruch, Zeilennummern, Tastenbelegung. Darunter liegt Fremdes, und
+zwar bewusst. Die Textspeicherung übernimmt `flow-core`, die Kernbibliothek
+des Editors Flow Control, mit Puffer, Cursor- und Auswahltypen. Die
+Syntaxhervorhebung kommt aus demselben Haus über tree-sitter. Das Terminal
+ist die Emulation von Ghostty, Markdown rendert zigdown, PDF zeichnet mupdf.
 
-Damit hat sich am Vorgehen nie etwas geändert. `neoview` und `freshview`
-setzen einen fremden Editor in eine eigene Hülle, und `zid` macht genau
-dasselbe. Gewechselt haben die Sprache und die Tiefe, in der die Hülle selbst
-gebaut ist: von einer Brücke zwischen zwei Bibliotheken bis hinunter zum
-eigenen Glyphen-Atlas.
+Das ist ein anderer Schnitt als bei `neoview` und `freshview`. Dort war der
+ganze Editor fremd und nur die Hülle eigen. Bei `zid` ist es umgekehrt: der
+Editor ist eigen, fremd sind die Bausteine darunter, die nichts mit dem
+Editieren zu tun haben.
 
 ## Regeln gehören in den Code, nicht in den Prompt
 
