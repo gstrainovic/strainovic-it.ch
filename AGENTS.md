@@ -109,6 +109,36 @@ Vorsorglich wechseln lohnt nicht: Workers nehmen eine eigene Domain nur in
 einer Cloudflare-Zone an, der Wechsel kostet also einen Nameserverwechsel
 von Infomaniak zu Cloudflare und damit den Umzug von MX und SPF.
 
+## Was die alte Seite in der Suche eingebracht hat
+
+Gemessen über 16 Monate in der Search Console, Domain-Property
+`strainovic-it.ch`:
+
+| Kennzahl | Wert |
+|---|---|
+| Klicks | 71 |
+| Impressionen | 3'353 |
+| Klickrate | 2,1 % |
+| Durchschnittliche Position | 33,7 |
+
+Von den zehn häufigsten Suchanfragen brachten nur zwei überhaupt Klicks:
+der Name „strainovic" drei, „webdesign st gallen" einen. Begriffe wie
+„webdesign ausserrhoden" und „webdesign kanton st. gallen" hatten 258 und
+226 Impressionen und null Klicks, weil die Seite auf Position 30 und
+schlechter stand.
+
+Daraus folgt die inhaltliche Linie: die Webdesign-Begriffe haben nie
+getragen, ihr Wegfall kostet nichts. Getragen hat der Name. Die Seite ist
+deshalb darauf ausgelegt, eine Namenssuche zu überzeugen, nicht darauf,
+Suchbegriffe einzusammeln. Wer das wieder ändern will, bräuchte eigene
+Inhaltsseiten und müsste 30 Positionen aufholen.
+
+**Zwei Properties, das ist Absicht.** Leistungsdaten hängen an der
+Property-Art. Die Domain-Property `strainovic-it.ch` trägt die Historie
+und umfasst jedes Protokoll und jede Subdomain; die URL-Präfix-Property
+`https://www.strainovic-it.ch/` dient der URL-Prüfung und den
+Indexierungsanträgen. Beide sind über den TXT-Eintrag der Zone bestätigt.
+
 ## Wartung läuft lokal, nicht über Bots
 
 `scripts/wochencheck.mjs` prüft die Live-Seite, vergleicht den
