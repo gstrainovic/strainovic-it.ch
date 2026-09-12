@@ -105,5 +105,12 @@ const schwerpunkte = [
         </div>
       </div>
     </section>
+
+    <section class="mt-16">
+      <h2 class="font-mono text-xs text-gedaempft">Wie eine Anbindung aussieht</h2>
+      <div class="mt-5">
+        <IntegrationsSchema />
+      </div>
+    </section>
   </article>
 </template>
