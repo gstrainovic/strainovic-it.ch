@@ -109,6 +109,33 @@ Vorsorglich wechseln lohnt nicht: Workers nehmen eine eigene Domain nur in
 einer Cloudflare-Zone an, der Wechsel kostet also einen Nameserverwechsel
 von Infomaniak zu Cloudflare und damit den Umzug von MX und SPF.
 
+## Wartung läuft lokal, nicht über Bots
+
+`scripts/wochencheck.mjs` prüft die Live-Seite, vergleicht den
+ausgelieferten Stand mit dem gepushten Commit und sieht die
+Abhängigkeiten durch. Ausgelöst wird er einmal pro Woche vom täglichen
+Lauf in `~/projects/find-jobs`.
+
+Kein Renovate, kein Dependabot, keine CI mit Statuszeichen. Das Repo ist
+öffentlich und Teil der Bewerbung; offene Update-Pull-Requests und ein
+rotes Statuszeichen stellen dort Wartungsrückstand aus und sagen damit das
+Gegenteil von dem, was die Seite belegen soll. Den Build prüft ohnehin
+Netlify bei jedem Push.
+
+Der Check spielt Aktualisierungen innerhalb der Versionsbereiche selbst
+ein, aber nur nach grünem Build. Hauptversionen wechselt er nie selbst.
+
+`npm audit` steht im Skript hinten und mit Einordnung. Die Seite liefert
+nur Dateien aus, ohne Server und ohne Eingabefelder; ein Fund in einem
+Build-Werkzeug erreicht keinen Besucher.
+
+## Kein Porträt
+
+Das vorhandene Bild ist ein hochskalierter Urlaubsausschnitt mit
+Weichzeichner und unruhigem Hintergrund. Auf einer Seite, die Sorgfalt
+belegen soll, arbeitet es gegen den Zweck. Erst wieder aufnehmen, wenn ein
+brauchbares Foto existiert; bis dahin trägt die Typografie die Seite.
+
 ## Repo ist öffentlich
 
 `gstrainovic/strainovic-it.ch` ist auf GitHub öffentlich und Teil der
