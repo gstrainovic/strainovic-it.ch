@@ -1,5 +1,6 @@
-# Weiterleitungen fuer Cloudflare Pages. Reihenfolge zaehlt: die erste
-# passende Regel gewinnt, deshalb stehen genaue Pfade vor den Platzhaltern.
+# Weiterleitungen der alten Adressen. Cloudflare wertet diese Datei aus,
+# sie wird selbst nicht ausgeliefert. Feste Pfade stehen vor den
+# Platzhaltern, so empfiehlt es Cloudflare.
 
 # Die englische Fassung entfaellt, die Seite ist einsprachig deutsch.
 /en                            /             301
@@ -8,17 +9,19 @@
 /en/privacy-policy             /datenschutz  301
 /en/imprint                    /impressum    301
 /services                      /profil       301
-/services/*                    /profil       301
 /portfolio                     /referenzen   301
-/portfolio/*                   /referenzen   301
-/en/*                          /             301
 
 # Dienstleistungen und Ueber uns sind im Profil aufgegangen.
 /dienstleistungen              /profil       301
-/dienstleistungen/*            /profil       301
 /ueber-uns                     /profil       301
-/ueber-uns/*                   /profil       301
 
 # Portfolio heisst jetzt Referenzen.
 /referenzen-und-portfolio      /referenzen   301
+
+# Unterseiten der aufgeloesten Bereiche.
+/en/*                          /             301
+/services/*                    /profil       301
+/portfolio/*                   /referenzen   301
+/dienstleistungen/*            /profil       301
+/ueber-uns/*                   /profil       301
 /referenzen-und-portfolio/*    /referenzen   301

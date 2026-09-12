@@ -23,6 +23,7 @@
     "vue": "^3.5.42"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.20"
+    "@tailwindcss/typography": "^0.5.20",
+    "wrangler": "^4.131.1"
   }
 }

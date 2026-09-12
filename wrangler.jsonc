@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "strainovic-it-ch",
+  "compatibility_date": "2026-09-12",
+  "assets": {
+    // Ausgabe von `npm run generate`.
+    "directory": "./.output/public",
+    // Bei unbekannten Pfaden die erzeugte 404.html ausliefern.
+    "not_found_handling": "404-page",
+    // Ohne Schrägstrich am Ende: so stehen die Adressen in der Navigation
+    // und in der sitemap.xml, damit gibt es nur eine kanonische Form.
+    "html_handling": "drop-trailing-slash"
+  }
+}

@@ -3,17 +3,6 @@
 Gearbeitet wird auf dem Branch `neubau`. Rahmen und Regeln stehen in
 `AGENTS.md`.
 
-## Vor dem Umschalten der Domain
-
-- [ ] Impressum und Datenschutz juristisch gegenlesen lassen. Beide Texte
-      sind neu geschrieben und beschreiben, was die Seite tatsächlich tut.
-- [ ] Entscheiden, ob die UID `CHE-311.771.818` im Impressum bleibt. Der
-      Handelsregistereintrag ist gelöscht, die UID stammt aus einem anderen
-      Register und ist davon unabhängig.
-- [ ] In der Search Console prüfen, ob auf `/en`, `/en/about`, `/en/contact`
-      und `/en/privacy-policy` Traffic ankommt. Die Weiterleitungen stehen,
-      die Zahl entscheidet nur, wie sorgfältig das beobachtet werden muss.
-
 ## Cloudflare Pages
 
 - [ ] Projekt anlegen und mit `gstrainovic/strainovic-it.ch` verbinden.
@@ -24,7 +13,11 @@ Gearbeitet wird auf dem Branch `neubau`. Rahmen und Regeln stehen in
 - [ ] `www.strainovic-it.ch` und die nackte Domain auf Cloudflare umhängen.
 - [ ] Netlify-Site für die Hauptdomain abschalten. Die CV-Site auf Netlify
       bleibt bestehen.
-- [ ] In der Search Console die neue Sitemap einreichen.
+- [ ] In der Search Console die neue Sitemap einreichen und danach einmal
+      nachsehen, ob die Weiterleitungen der alten Adressen verarbeitet
+      werden. Eine Abfrage per API wäre möglich, lohnt sich aber nicht:
+      Cloud-Projekt, aktivierte API und OAuth für eine Frage, die in der
+      Weboberfläche eine halbe Minute dauert.
 
 ## Danach
 
