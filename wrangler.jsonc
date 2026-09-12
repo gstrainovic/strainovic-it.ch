@@ -7,8 +7,9 @@
     "directory": "./.output/public",
     // Bei unbekannten Pfaden die erzeugte 404.html ausliefern.
     "not_found_handling": "404-page",
-    // Ohne Schrägstrich am Ende: so stehen die Adressen in der Navigation
-    // und in der sitemap.xml, damit gibt es nur eine kanonische Form.
-    "html_handling": "drop-trailing-slash"
+    // Mit Schrägstrich am Ende, so wie Netlify die Seiten ausliefert und
+    // wie sie in Links und sitemap.xml stehen. Bei einem Hosterwechsel
+    // bleiben die Adressen damit gleich.
+    "html_handling": "force-trailing-slash"
   }
 }

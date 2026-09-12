@@ -1,4 +1,17 @@
+import { execFileSync } from 'node:child_process'
 import tailwindcss from '@tailwindcss/vite'
+
+// Commit des Builds. Netlify liefert COMMIT_REF, lokal fragt git.
+// Daran erkennt der Wochencheck, ob die Live-Seite dem Repo entspricht.
+const commit =
+  process.env.COMMIT_REF ??
+  (() => {
+    try {
+      return execFileSync('git', ['rev-parse', 'HEAD'], { encoding: 'utf8' }).trim()
+    } catch {
+      return 'unbekannt'
+    }
+  })()
 
 export default defineNuxtConfig({
   compatibilityDate: '2026-09-10',
@@ -16,6 +29,16 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
+  // Adressen enden auf einen Schrägstrich. Netlify liefert die Seiten so
+  // aus und leitet die Fassung ohne Schrägstrich per 301 dorthin. Damit
+  // Links, Sitemap und Auslieferung dieselbe Form nennen, erzeugt auch
+  // NuxtLink sie mit Schrägstrich.
+  experimental: {
+    defaults: {
+      nuxtLink: { trailingSlash: 'append' }
+    }
+  },
+
   vite: {
     plugins: [tailwindcss()]
   },
@@ -25,7 +48,8 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'de-CH' },
       meta: [
         { charset: 'utf-8' },
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'build-commit', content: commit }
       ],
       link: [{ rel: 'icon', href: '/favicon.ico' }],
       script: [
