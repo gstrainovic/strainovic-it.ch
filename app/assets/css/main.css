@@ -190,3 +190,38 @@ h3,
   padding-top: 1.4rem;
   border-top: 1px solid var(--c-linie);
 }
+
+/* Nuxt Content liefert Codefarben fuer beide Themes mit, schaltet aber
+   ueber `html.dark`. Diese Seite schaltet ueber `data-thema`. */
+:root[data-thema='dunkel'] .shiki,
+:root[data-thema='dunkel'] .shiki span {
+  color: var(--shiki-dark);
+  background: var(--shiki-dark-bg);
+  font-style: var(--shiki-dark-font-style);
+  font-weight: var(--shiki-dark-font-weight);
+  text-decoration: var(--shiki-dark-text-decoration);
+}
+
+/* Codeblock als eigene Flaeche, im Rahmen des Datenblatts. */
+.prose :where(pre) {
+  border: 1px solid var(--c-linie);
+  border-radius: 0;
+  background-color: var(--c-papier);
+  font-size: 0.8125rem;
+}
+
+/* Code im Fliesstext: gleiche Tinte wie der Text, nur in Mono und
+   abgesetzt. Ohne diese Angabe erbt er die Farbe des hellen Themes. */
+.prose :where(code):not(:where(pre code)) {
+  color: var(--c-tinte);
+  background-color: var(--c-papier);
+  border: 1px solid var(--c-linie);
+  padding: 0.1em 0.35em;
+  font-weight: 400;
+  font-size: 0.875em;
+}
+
+.prose :where(code):not(:where(pre code))::before,
+.prose :where(code):not(:where(pre code))::after {
+  content: none;
+}

@@ -3,6 +3,7 @@ const seiten = [
   { pfad: '/', name: 'Start' },
   { pfad: '/profil', name: 'Profil' },
   { pfad: '/referenzen', name: 'Referenzen' },
+  { pfad: '/open-source', name: 'Open Source' },
   { pfad: '/kontakt', name: 'Kontakt' }
 ]
 </script>

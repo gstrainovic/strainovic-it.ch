@@ -18,6 +18,14 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.strainovic-it.ch/open-source/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/open-source/editor-suche/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.strainovic-it.ch/kontakt/</loc>
     <priority>0.6</priority>
   </url>

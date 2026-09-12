@@ -139,6 +139,23 @@ und umfasst jedes Protokoll und jede Subdomain; die URL-Präfix-Property
 `https://www.strainovic-it.ch/` dient der URL-Prüfung und den
 Indexierungsanträgen. Beide sind über den TXT-Eintrag der Zone bestätigt.
 
+## Open Source ist der überprüfbare Teil
+
+`/open-source/` listet öffentliche eigene Projekte und Beiträge an fremden,
+jeweils mit Link. Das ist der einzige Bereich der Seite, den ein Fremder in
+Sekunden nachprüfen kann; die Referenzen sind aus gutem Grund anonymisiert
+und damit unbelegbar.
+
+Dort stehen nur Arbeiten ohne Kundenbezug. Was zu einem Kunden gehört, bleibt
+auf der Referenzseite und in ihrer Form: Branche und Land statt Name.
+Welche Repos wozu gehören, steht in
+`~/projects/find-jobs/repos/ohne-kundenbezug.md`.
+
+Artikel kommen als Markdown unter `content/open-source/`. Sie sind die
+Ausnahme von der Regel, dass die Seite eine Visitenkarte bleibt: einer, der
+etwas erklärt, trägt mehr als zehn kurze. Ein Erklärtext zu einem Thema, das
+Sicherheitsfirmen besser abdecken, gehört nicht dazu.
+
 ## Wartung läuft lokal, nicht über Bots
 
 `scripts/wochencheck.mjs` prüft die Live-Seite, vergleicht den
