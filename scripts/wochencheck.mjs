@@ -16,6 +16,7 @@
 // Hauptversionen werden nie automatisch gewechselt, nur gemeldet.
 
 import { execFileSync } from 'node:child_process'
+import { readFile } from 'node:fs/promises'
 
 const BASIS = 'https://www.strainovic-it.ch'
 const nurPruefen = process.argv.includes('--nur-pruefen')
@@ -140,6 +141,18 @@ if (summe === 0) melde('ok', 'Keine Meldungen in Laufzeit-Abhängigkeiten')
 else melde('hinweis', `${summe} Meldungen, im Einzelnen: ${JSON.stringify(anzahl)}`)
 console.log('  Die Seite liefert nur Dateien aus, ohne Server und ohne Eingaben.')
 console.log('  Funde in Build-Werkzeugen erreichen keinen Besucher.')
+
+// ---------------------------------------------------------------- Offene Punkte
+// Sonst liest die todo.md niemand.
+const offen = (await readFile('todo.md', 'utf8').catch(() => ''))
+  .split('\n')
+  .filter(z => z.trimStart().startsWith('- [ ]'))
+if (offen.length > 0) {
+  console.log('\n== Offene Punkte aus todo.md ==')
+  for (const z of offen) console.log('·' + z.replace(/^\s*- \[ \]/, ''))
+} else {
+  console.log('\n== todo.md ==\nKeine offenen Punkte. Nach Gorans Regel gehört die Datei dann gelöscht.')
+}
 
 // ---------------------------------------------------------------- Fazit
 const fehler = befunde.filter(b => b.stufe === 'fehler')
