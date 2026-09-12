@@ -41,6 +41,12 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    // Rein statisch, festgeschrieben. Ohne diese Angabe erkennt Nitro im
+    // Cloudflare-Build die Umgebung und waehlt `cloudflare-module`. Das
+    // erwartet eine Server-Einstiegsdatei, die bei `generate` nicht
+    // entsteht, ueberschreibt die `assets` aus wrangler.jsonc und bringt
+    // Nuxt Content dazu, auf eine D1-Datenbank umzuschalten.
+    preset: 'static',
     prerender: {
       crawlLinks: true,
       routes: ['/']
