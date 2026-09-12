@@ -2,7 +2,7 @@
 useSeoMeta({
   title: 'Open Source — Goran Strainovic',
   description:
-    'Öffentliche eigene Projekte und Beiträge an fremden: ein Editor in Zig mit Vulkan, Werkzeuge rund um KI-Modelle, und Änderungen an einem Prüfwerkzeug für Lieferkettenangriffe.'
+    'Öffentliche eigene Projekte und Beiträge an fremden: ein Editor in Zig, Werkzeuge rund um KI-Modelle, und Änderungen an einem Prüfwerkzeug für Lieferkettenangriffe.'
 })
 
 const gh = 'https://github.com/gstrainovic/'
@@ -77,9 +77,9 @@ const eigene = [
         </NuxtLink>
       </h3>
       <p class="mt-2 max-w-prose leading-relaxed">
-        Von VS Code über Terminal-Editoren und gpui zu Zig und Vulkan. Warum
-        fertige Oberflächen-Frameworks bei einem Editor an Grenzen stossen, und
-        was dabei über Werkzeuggrenzen für KI-Agenten herauskam.
+        Von VS Code über Terminal-Editoren und gpui zu Zig. Zehn Anläufe mit
+        zehn Oberflächen-Bibliotheken, und warum Werkzeuggrenzen für einen
+        KI-Agenten in den Code gehören.
       </p>
     </div>
 
