@@ -9,7 +9,7 @@ const ausfuehrlich = [
   {
     zeit: '2025',
     titel: 'Beiträge an einem Prüfwerkzeug für Lieferkettenangriffe',
-    ziel: 'Sechs übernommene Änderungen an shai-hulud-detect, einem Werkzeug, das Projekte auf Spuren der npm-Lieferkettenangriffe prüft: Lauffähigkeit unter Git Bash und WSL, Behandlung von Windows-Zeilenenden, dazu zwei Korrekturen an der Erkennung von Datenabfluss, wo Kommentare im Quelltext zu falschen Ergebnissen führten. Ein Prüfwerkzeug, das nur auf dem Rechner seines Autors läuft, wird nicht ausgeführt.',
+    ziel: 'Sechs übernommene Änderungen an shai-hulud-detect, einem Werkzeug, das Projekte auf Spuren der npm-Lieferkettenangriffe prüft: Lauffähigkeit unter Git Bash und WSL, Behandlung von Windows-Zeilenenden, dazu zwei Korrekturen an der Erkennung von Datenabfluss, wo Kommentare zu falschen Ergebnissen führten. Ein Prüfwerkzeug, das nur auf dem Rechner seines Autors läuft, wird nicht ausgeführt.',
     stack: 'Bash',
     kunde: 'Offenes Projekt, Beiträge öffentlich nachvollziehbar',
     beleg: 'https://github.com/Cobenian/shai-hulud-detect/commits?author=gstrainovic'
@@ -26,12 +26,12 @@ const ausfuehrlich = [
     titel: 'Plattform für Bestattungen',
     ziel: 'Zuerst ein MVP mit Appsmith und FastAPI, danach das Frontend nach Figma-Vorlage und ein eigenes Backend. Besucher suchen über die Postleitzahl nach Anbietern in ihrer Nähe, schliessen eine Mitgliedschaft ab und werden im CRM angelegt.',
     stack: 'Gatsby, React, Tailwind, Python, Strawberry, FastAPI, Mollie, HubSpot',
-    kunde: 'Deutscher Anbieter für naturnahe Bestattungen'
+    kunde: 'Deutscher Anbieter für natürliche Beerdigungen'
   },
   {
     zeit: '2021',
     titel: 'Eingangsrechnungen automatisch verbuchen',
-    ziel: 'Ein ERP streamt Rechnungs-PDFs an einen Azure-Dienst, der sie ausliest und strukturiert als JSON zurückgibt. Die Anwender lernen dem System eigene Rechnungsbilder an.',
+    ziel: 'Ein ERP streamt Rechnungs-PDFs an einen Azure-Dienst, der sie ausliest und strukturiert als JSON zurückgibt. Die Anwender können dem System relevante Rechnungen anlernen.',
     stack: 'TypeScript, Node.js, Express, Prisma, Azure',
     kunde: 'Deutscher ERP-Hersteller über eine Automatisierungs-Agentur'
   },

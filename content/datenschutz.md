@@ -22,7 +22,7 @@ zusätzlich.
 
 ## Server-Protokolle
 
-Die Website wird über Cloudflare ausgeliefert. Beim Abruf einer Seite fallen
+Die Website wird über Netlify ausgeliefert. Beim Abruf einer Seite fallen
 technische Verbindungsdaten an, die für die Zustellung und die Abwehr von
 Angriffen nötig sind:
 
@@ -36,10 +36,9 @@ Diese Daten werden nicht mit anderen Quellen zusammengeführt und nicht zur
 Wiedererkennung einzelner Personen ausgewertet. Rechtsgrundlage ist das
 berechtigte Interesse am sicheren und störungsfreien Betrieb der Website.
 
-Cloudflare betreibt Server weltweit, unter anderem in den Vereinigten Staaten.
-Als Auftragsbearbeiter ist Cloudflare vertraglich zur Einhaltung der
-Datenschutzvorgaben verpflichtet, unter anderem über die
-Standardvertragsklauseln der Europäischen Kommission.
+Netlify hat seinen Sitz in den Vereinigten Staaten und liefert die Seite über
+ein weltweit verteiltes Netz aus. Die Verbindungsdaten verarbeitet Netlify
+dabei als Auftragsbearbeiter in meinem Auftrag.
 
 ## Kontaktaufnahme per E-Mail
 

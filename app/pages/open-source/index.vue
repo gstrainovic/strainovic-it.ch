@@ -39,7 +39,7 @@ const eigene = [
   {
     name: 'v-gui-editor',
     sprache: 'V',
-    was: 'Derselbe Editor-Entwurf im GUI-Framework der Sprache V.'
+    was: 'Editor-Prototyp im GUI-Framework der Sprache V, mit Explorer, Tableiste und Statusleiste.'
   },
   {
     name: 'shai-hulud-detect-rust',

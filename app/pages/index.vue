@@ -64,7 +64,7 @@ const schwerpunkte = [
   },
   {
     titel: 'Web-Anwendungen',
-    text: 'Fachanwendungen vom Formular über die Kartenansicht bis zum Bericht. Aktuell WebGIS für Siedlungsentwässerung und Wasserversorgung.',
+    text: 'Fachanwendungen vom Formular über die Kartenansicht bis zum Bericht. Aktuell WebGIS für die generelle Entwässerungsplanung und die Wasserversorgung.',
     technik: 'Vue, Nuxt, Quasar, Node.js, TypeScript'
   },
   {

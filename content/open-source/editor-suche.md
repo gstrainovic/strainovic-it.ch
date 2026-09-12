@@ -1,6 +1,6 @@
 ---
 title: Sieben Monate auf der Suche nach einem Editor
-description: Von VS Code über Terminal-Editoren und gpui zu Zig. Zehn Anläufe, was dabei über fertige Oberflächen-Frameworks herauskam, und warum Werkzeuggrenzen für KI-Agenten in den Code gehören.
+description: Von VS Code über Terminal-Editoren und gpui zu Zig. Zehn Anläufe mit zehn Oberflächen-Bibliotheken, und warum Werkzeuggrenzen für einen KI-Agenten in den Code gehören.
 ---
 
 # Sieben Monate auf der Suche nach einem Editor
@@ -10,8 +10,7 @@ frisst er Prozessor und Arbeitsspeicher in einem Ausmass, das zum Tippen von
 Text nicht im Verhältnis steht. Also habe ich angefangen zu suchen.
 
 Meine Anforderungen waren überschaubar: Vorschau für PDF und Bilder, ein
-Terminal, und Git im Editor. Diese drei Punkte haben die nächsten sieben
-Monate bestimmt.
+Terminal, und Git im Editor.
 
 ## Terminal-Editoren sind schnell, aber blind
 
@@ -37,8 +36,8 @@ selben Prozess, egui liefert das Fenster, `egui_ratatui` übersetzt dazwischen,
 und mupdf zeichnet PDF und Bilder in schwebende Fenster daneben. Kein zweiter
 Prozess, keine Netzwerkverbindung, kein Daemon.
 
-Das funktionierte. Aus dem Wrapper wurde der Wunsch nach mehr Kontrolle, und
-aus `editor-framework` ein Gerüst auf gpui mit Lua für Plugins.
+Der nächste Anlauf, `editor-framework`, ist kein Wrapper mehr, sondern ein
+Gerüst für einen eigenen Editor auf gpui, mit Lua für Plugins.
 
 ## Warum Rust wegfiel
 
@@ -53,8 +52,8 @@ ernstzunehmender Gegenentwurf zu Rust. Also Zig.
 
 ## Zehn Anläufe, zehn Oberflächen
 
-Danach habe ich durchprobiert. Jede Zeile ist ein eigenes Repo, die Bibliothek
-steht so in der jeweiligen Projektdatei.
+Jede Zeile ist ein eigenes Repo. Die Bibliothek steht so in der jeweiligen
+Projektdatei.
 
 | Anlauf | Sprache | Oberfläche |
 |---|---|---|
@@ -69,11 +68,6 @@ steht so in der jeweiligen Projektdatei.
 | zed-clone | Zig | dvui |
 | zed-killer | Zig | gooey |
 
-Fertige Frameworks nehmen einem Arbeit ab und geben dafür Kontrolle aus der
-Hand. Bei einem Editor merkt man das an drei Stellen: Textdarstellung,
-Bildlauf über grosse Dateien, und wie viel zwischen Tastendruck und Zeichen
-auf dem Schirm passiert.
-
 ## Was daraus wurde
 
 Der Editor heisst `zid` und ist in Zig geschrieben. Er zeichnet über wgpu,
@@ -87,19 +81,16 @@ Emulation von Ghostty, Markdown rendert zigdown, PDF zeichnet mupdf.
 
 Damit hat sich am Vorgehen nie etwas geändert. `neoview` und `freshview`
 setzen einen fremden Editor in eine eigene Hülle, und `zid` macht genau
-dasselbe. Gewechselt haben nur die Sprache und die Tiefe, in der die Hülle
-selbst gebaut ist. Von einer Brücke zwischen zwei Bibliotheken bis hinunter
-zum eigenen Glyphen-Atlas.
+dasselbe. Gewechselt haben die Sprache und die Tiefe, in der die Hülle selbst
+gebaut ist: von einer Brücke zwischen zwei Bibliotheken bis hinunter zum
+eigenen Glyphen-Atlas.
 
-## Die Lektion: Regeln gehören in den Code
+## Regeln gehören in den Code, nicht in den Prompt
 
 `zid` hat einen eingebauten Agenten, der gegen ein lokales Sprachmodell
-arbeitet, llama-server mit Qwen3-4B. Das ist der Teil, der mich am meisten
-gelehrt hat.
-
-Ein Agent im Editor braucht Werkzeuge, und Werkzeuge brauchen Grenzen. Der
-naheliegende Weg ist, die Grenzen in den Systemprompt zu schreiben. Genau das
-funktioniert nicht.
+arbeitet, llama-server mit Qwen3-4B. Ein Agent im Editor braucht Werkzeuge,
+und Werkzeuge brauchen Grenzen. Der naheliegende Weg ist, die Grenzen in den
+Systemprompt zu schreiben. Mit diesem Modell hält das nicht.
 
 Ein Beispiel. Die Regel lautete: frag nach, bevor du eine bestehende Datei
 überschreibst. Das Modell hat sie umgangen. Statt `write_file` schickte es ein
@@ -121,19 +112,17 @@ Dasselbe gilt für Pfade. Statt dem Modell zu sagen, es solle im Projekt
 bleiben, löst eine Funktion den Pfad auf und gibt nichts zurück, wenn er
 ausserhalb liegt. Ein `..` kann dann gar keine Dateioperation erzeugen.
 
-Der Gewinn ist nicht nur Sicherheit. Solche Regeln sind reine Funktionen, und
-reine Funktionen kann man testen. Eine Prompt-Zeile kann man nur hoffen.
+Solche Regeln sind reine Funktionen, und reine Funktionen kann man testen.
+Eine Prompt-Zeile kann man nur hoffen.
 
 Umgekehrt gilt dasselbe für Fähigkeiten. Die Werkzeugliste des Agenten wird
 aus der Kommando-Aufzählung des Editors erzeugt. Jedes Menü und jedes
 Tastenkürzel ist damit automatisch ein Werkzeug, ohne dass irgendwo eine
 zweite Liste gepflegt werden müsste.
 
-Ein kleines Modell mit vier Milliarden Parametern hält lange Regelwerke im
-Prompt nicht zuverlässig ein. Das klingt nach einer Einschränkung, hat mich
-aber zur besseren Bauform gezwungen. Dieselbe Einsicht kennt man aus der
-Eingabeprüfung: man bittet den Aufrufer nicht um Wohlverhalten, man prüft an
-der Grenze.
+Der Systemprompt nennt danach nur noch die Rolle und eine Konvention, dass
+Pfade relativ zum Projekt gemeint sind. Alles andere steht im Code, wo es
+geprüft wird, statt im Prompt, wo es erbeten wird.
 
 ## Was offen bleibt
 
@@ -141,7 +130,3 @@ Es gibt Grenzen, die bewusst stehenbleiben. Der Editor lädt genau eine
 Schriftschnitte, deshalb zeigt die Markdown-Ansicht fett und kursiv über
 Farben statt über echte Schnitte. Solche Punkte stehen als Entscheidung in der
 Projektdokumentation, nicht als offene Aufgabe.
-
-Ob zehn Anläufe nötig waren, um einen Editor zu haben, der PDF anzeigen kann?
-Nein. Aber ich weiss jetzt, was die Stapel unter der Oberfläche kosten, und
-das war vorher nur eine Vermutung.

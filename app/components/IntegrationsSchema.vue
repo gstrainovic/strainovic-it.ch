@@ -43,13 +43,13 @@
       <div class="schema-kasten schema-kasten-eigen">
         <p class="schema-rolle">selbst gebaut</p>
         <p class="schema-name">Dienst auf Azure</p>
-        <p class="schema-detail">Liest den Beleg aus, ordnet Positionen zu und gibt sie strukturiert zurück.</p>
+        <p class="schema-detail">Liest den Beleg aus und gibt ihn strukturiert als JSON zurück.</p>
       </div>
     </div>
 
     <figcaption class="mt-4 max-w-prose text-sm leading-relaxed text-gedaempft">
       Damit verbucht das ERP Eingangsrechnungen selbst, statt sie abtippen zu
-      lassen. Die Anwender lernen dem Dienst ihre eigenen Rechnungsbilder an.
+      lassen. Die Anwender können dem Dienst relevante Rechnungen anlernen.
       Gebaut mit TypeScript, Node.js und Prisma.
     </figcaption>
   </figure>

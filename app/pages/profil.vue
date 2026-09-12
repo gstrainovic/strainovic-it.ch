@@ -46,7 +46,7 @@ const stationen = [
     punkte: [
       '27 Entwicklungsprojekte für Auftraggeber in der Schweiz, Deutschland und Österreich, von der Anforderungsaufnahme bis zur Übergabe',
       'Schwerpunkt Integration: Warenwirtschaft an CRM, Rechnungseingang an die Buchhaltung, Shop an das ERP, Belege an das Dokumentenmanagement',
-      'Über mehrere Jahre serverlose Dienste auf Azure für einen deutschen ERP-Hersteller, mandantenfähig und im Produktivbetrieb',
+      'Vier Projekte innerhalb eines Jahres mit serverlosen Diensten auf Azure für einen deutschen ERP-Hersteller, darunter ein mandantenfähiger',
       'Migration eines TypeScript-Monolithen auf Microservices in Go, betrieben auf Kubernetes',
       'Eigenständige Anwendungen in Rust, Python und Go, dazu Shop- und Portalentwicklung'
     ],
