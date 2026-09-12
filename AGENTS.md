@@ -67,13 +67,43 @@ Netlify-Build. Der ausgelieferte Stand ist älter als der letzte Commit.
 
 ## Hosting
 
-Cloudflare Pages, Custom Domain `www.strainovic-it.ch`. Gründe: die kostenlose
-Stufe erlaubt kommerzielle Nutzung, hat kein Bandbreitenlimit und 500 Builds
-pro Monat. Vercel Hobby ist laut Fair-Use-Regeln auf private Nutzung
-beschränkt, GitHub Pages untersagt den Betrieb des eigenen Geschäfts, und
-Netlifys neues Guthabenmodell pausiert die Seite beim Überschreiten.
+Netlify, Site auf `www.strainovic-it.ch`, Build aus `master`. Build-Befehl
+`npm run generate`, Ausgabe `.output/public`, Node-Version aus `.nvmrc`. Die
+Weiterleitungen der alten Adressen liegen in `public/_redirects`, Netlify
+wertet die Datei aus.
 
-`cv.strainovic-it.ch` bleibt davon unberührt auf Netlify.
+`cv.strainovic-it.ch` liegt als eigene Netlify-Site daneben, beschrieben in
+`~/projects/find-jobs/AGENTS.md`.
+
+Nicht in Frage kommen Vercel und GitHub Pages: Vercel Hobby ist laut
+Fair-Use-Regeln auf private Nutzung beschränkt, GitHub Pages untersagt den
+Betrieb des eigenen Geschäfts.
+
+## DNS liegt bei Infomaniak
+
+Nicht beim Hoster. An der Zone hängen MX und SPF für
+`info@strainovic-it.ch`, die Google-Verifikation als TXT, der CNAME der
+CV-Seite und ein CNAME für `autodiscover`.
+
+Wer am DNS arbeitet, prüft MX und SPF zuerst. Die E-Mail ist die einzige
+Kontaktmöglichkeit der Seite; fällt sie aus, merkt man es nicht, weil
+Anfragen still verschwinden.
+
+## Cloudflare ist vorbereitet, aber nicht aktiv
+
+`wrangler.jsonc` liegt im Repo, das Nitro-Preset ist auf `static`
+festgeschrieben, und ein Worker `strainovic-it-ch` existiert im
+Cloudflare-Konto. Umgestellt wird erst, wenn Netlify nicht mehr taugt.
+
+Auslöser ist die Umstellung der Altkonten auf Netlifys Guthabenmodell.
+Konten von vor dem 04.09.2025 behalten den alten Tarif, dieses fällt
+darunter. Im neuen Modell kostet ein Produktions-Deploy 15 von 300
+Monats-Credits und ein Gigabyte Traffic 20; beim Überschreiten pausiert
+Netlify alle Sites des Kontos, also auch die CV-Seite.
+
+Vorsorglich wechseln lohnt nicht: Workers nehmen eine eigene Domain nur in
+einer Cloudflare-Zone an, der Wechsel kostet also einen Nameserverwechsel
+von Infomaniak zu Cloudflare und damit den Umzug von MX und SPF.
 
 ## Repo ist öffentlich
 
