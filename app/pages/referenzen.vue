@@ -7,6 +7,14 @@ useSeoMeta({
 
 const ausfuehrlich = [
   {
+    zeit: '2025',
+    titel: 'Beiträge an einem Prüfwerkzeug für Lieferkettenangriffe',
+    ziel: 'Sechs übernommene Änderungen an shai-hulud-detect, einem Werkzeug, das Projekte auf Spuren der npm-Lieferkettenangriffe prüft: Lauffähigkeit unter Git Bash und WSL, Behandlung von Windows-Zeilenenden, dazu zwei Korrekturen an der Erkennung von Datenabfluss, wo Kommentare im Quelltext zu falschen Ergebnissen führten. Ein Prüfwerkzeug, das nur auf dem Rechner seines Autors läuft, wird nicht ausgeführt.',
+    stack: 'Bash',
+    kunde: 'Offenes Projekt, Beiträge öffentlich nachvollziehbar',
+    beleg: 'https://github.com/Cobenian/shai-hulud-detect/commits?author=gstrainovic'
+  },
+  {
     zeit: '2022 – 2023',
     titel: 'Monolith in Microservices zerlegt',
     ziel: 'Eine TypeScript-Anwendung wurde in einzeln betreibbare Dienste in Go überführt. Sie läuft seither in jeder Cloud und ebenso auf dem Server beim Kunden.',
@@ -121,6 +129,13 @@ const weitere = [
           <p class="mt-2 max-w-prose leading-relaxed">{{ p.ziel }}</p>
           <p class="mt-3 font-mono text-xs leading-relaxed text-gedaempft">{{ p.stack }}</p>
           <p class="mt-1 text-sm text-gedaempft">{{ p.kunde }}</p>
+          <p v-if="p.beleg" class="mt-2 text-sm">
+            <a
+              :href="p.beleg"
+              class="text-akzent underline underline-offset-4"
+              rel="noopener"
+            >Beitragsverlauf ansehen</a>
+          </p>
         </div>
       </li>
     </ol>
