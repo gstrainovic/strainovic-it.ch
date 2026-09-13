@@ -77,8 +77,8 @@ const eigene = [
         </NuxtLink>
       </h3>
       <p class="mt-2 max-w-prose leading-relaxed">
-        Von VS Code über Terminal-Editoren und gpui zu Zig. Dreizehn Anläufe mit
-        neun Oberflächen-Bibliotheken, und warum Werkzeuggrenzen für einen
+        Von VS Code über Terminal-Editoren und gpui zu Zig. Elf Anläufe mit
+        acht Oberflächen-Bibliotheken, und warum Werkzeuggrenzen für einen
         KI-Agenten in den Code gehören.
       </p>
     </div>

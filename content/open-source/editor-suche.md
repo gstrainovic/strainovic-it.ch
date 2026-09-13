@@ -1,6 +1,6 @@
 ---
 title: Sieben Monate auf der Suche nach einem Editor
-description: Von VS Code über Terminal-Editoren und gpui zu Zig. Dreizehn Anläufe und warum Werkzeuggrenzen für einen KI-Agenten in den Code gehören.
+description: Von VS Code über Terminal-Editoren und gpui zu Zig. Elf Anläufe und warum Werkzeuggrenzen für einen KI-Agenten in den Code gehören.
 ---
 
 # Sieben Monate auf der Suche nach einem Editor
@@ -50,7 +50,7 @@ Gesucht war eine andere schnelle Sprache, mit der sich Zed Konkurrenz machen
 lässt. Go wirkte verstaubt, V zu wenig bekannt, und Zig stand gerade im
 Durchbruch als Konkurrent zu Rust. Also Zig.
 
-## Dreizehn Anläufe, neun Oberflächen
+## Elf Anläufe, acht Oberflächen
 
 Jede Zeile ist ein eigenes Repo, in der Reihenfolge, in der sie entstanden
 sind. Manche haben einen Tag gelebt, manche eine Woche.
@@ -62,14 +62,12 @@ sind. Manche haben einen Tag gelebt, manche eine Woche.
 | flexed | Rust | gpui | Buildzeiten |
 | editor-framework | Rust | gpui, mlua | Buildzeiten |
 | slint-rust-editor | Rust | Slint | Buildzeiten |
-| mojo-nuklear-editor | Mojo, C-Brücke | Nuklear | Blieb Machbarkeitsnachweis, Text zu klein, Tabs kamen nicht zustande |
-| slint-editor | Mojo | Slint über Python | Slint nur über Python erreichbar, Scrollen und Ausrichtung haperten |
+| mojo-nuklear-editor | Mojo, C-Brücke | Nuklear | Mojo ungeignet um Editoren damit zu schreiben |
+| slint-editor | Mojo | Slint über Python | Slint nur über Python erreichbar |
 | v-gui-editor | V | GUI-Framework von V | Scrollen brach nach Einbau von Explorer und Tabs |
-| sokol-zig-editor | Zig | sokol, Dear ImGui | Nach einem Tag neu aufgesetzt als sokol-nanovg-zig-editor |
 | zed-clone | Zig | dvui | Absturz beim Scrollen, grosse Dateien langsam |
 | sokol-nanovg-zig-editor | Zig | sokol, NanoVG | Schrift nach Umbau auf Vulkan weg, Game-Loop von sokol kostete CPU |
 | qt-ziged | Zig | Qt 6 über libqt6zig | Blieb technische Demonstration |
-| zed-killer | Zig | gooey | Am selben Tag durch zid abgelöst |
 
 ## Was daraus wurde
 
