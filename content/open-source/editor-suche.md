@@ -19,9 +19,9 @@ Problem. Die Vorschau schon: kein Bild, kein PDF, kein gerendertes Markdown.
 
 Also habe ich versucht, es nachzurüsten. Bei Fresh sind die Plugins dafür zu
 eingeschränkt. Bei LazyVim funktioniert es, aber nicht überall. Nicht jedes
-Terminal spielt mit, stabil genug war es auch nicht, und über allem stand die
-Ahnung, dass ich irgendwann doch an eine Decke stosse, die im Terminal
-eingebaut ist.
+Terminal spielt mit, und stabil war es auch nicht: bei Bildvorschauen im
+Explorer stürzte LazyVim ab. Über allem stand die Ahnung, dass ich irgendwann
+doch an eine Decke stosse, die im Terminal eingebaut ist.
 
 ## Die Hülle tauschen statt das Plugin flicken
 
@@ -42,32 +42,42 @@ Bei `editor-framework` sind die Plugins in Lua und lassen sich ohne Neubau
 nachladen.
 
 ## Warum Rust wegfiel
-Zed ist ein guter Editor, jedoch hat es nicht PDF Vorschau, es ist in Rust geschrieben.
 
-Rust war mir zu langsam im Bauen. Und gpui ist Rust, also fiel es mit.
+Zed ist ein guter Editor, aber ohne PDF-Vorschau. Und Zed ist in Rust
+geschrieben.
+
+Rust war mir zu langsam im Bauen. `neoview` und `freshview` hatten ihre
+Schwierigkeiten, träge Darstellung hier, ein Absturz beim Schliessen der
+PDF-Vorschau dort. Das hätte man vielleicht in den Griff bekommen, vielleicht
+auch nicht. Entschieden hat etwas anderes: mit diesen Übersetzungszeiten kam
+ich nicht schnell genug voran. Und gpui ist Rust, also fiel es mit.
 
 Gesucht war eine andere schnelle Sprache, mit der sich Zed Konkurrenz machen
 lässt. Go wirkte verstaubt, V zu wenig bekannt, und Zig stand gerade im
-Durchbruch als Konkurrent zu Rust. Also Zig.
+Durchbruch als Konkurrent zu Rust. Also Zig, und dort baut es sich für mich
+angenehm schneller.
 
 ## Elf Anläufe, acht Oberflächen
 
 Jede Zeile ist ein eigenes Repo, in der Reihenfolge, in der sie entstanden
-sind. Manche haben einen Tag gelebt, manche eine Woche.
+sind. Manche haben einen Tag gelebt, manche eine Woche. Alle elf liegen in
+fünf Wochen zwischen Anfang März und Anfang April 2026.
 
-| Anlauf | Sprache | Oberfläche | Abbruchgrund |
-|---|---|---|---|
-| neoview | Rust | gpui | Buildzeiten |
-| freshview | Rust | egui, egui_ratatui | Buildzeiten |
-| flexed | Rust | gpui | Buildzeiten |
-| editor-framework | Rust | gpui, mlua | Buildzeiten |
-| slint-rust-editor | Rust | Slint | Buildzeiten |
-| mojo-nuklear-editor | Mojo, C-Brücke | Nuklear | Mojo ungeignet um Editoren damit zu schreiben |
-| slint-editor | Mojo | Slint über Python | Slint nur über Python erreichbar |
-| v-gui-editor | V | GUI-Framework von V | Scrollen brach nach Einbau von Explorer und Tabs |
-| zed-clone | Zig | dvui | Absturz beim Scrollen, grosse Dateien langsam |
-| sokol-nanovg-zig-editor | Zig | sokol, NanoVG | Schrift nach Umbau auf Vulkan weg, Game-Loop von sokol kostete CPU |
-| qt-ziged | Zig | Qt 6 über libqt6zig | Blieb technische Demonstration |
+| Begonnen | Anlauf | Sprache | Oberfläche | Abbruchgrund |
+|---|---|---|---|---|
+| 2. März | neoview | Rust | gpui | Buildzeiten |
+| 2. März | freshview | Rust | egui, egui_ratatui | Buildzeiten |
+| 8. März | flexed | Rust | gpui | Buildzeiten |
+| 9. März | editor-framework | Rust | gpui, mlua | Buildzeiten |
+| 14. März | slint-rust-editor | Rust | Slint | Buildzeiten |
+| 15. März | mojo-nuklear-editor | Mojo, C-Brücke | Nuklear | Mojo ungeeignet, um Editoren damit zu schreiben |
+| 17. März | slint-editor | Mojo | Slint über Python | Slint nur über Python erreichbar |
+| 22. März | v-gui-editor | V | GUI-Framework von V | Scrollen brach nach Einbau von Explorer und Tabs |
+| 25. März | zed-clone | Zig | dvui | Absturz beim Scrollen, grosse Dateien langsam |
+| 26. März | sokol-nanovg-zig-editor | Zig | sokol, NanoVG | Schrift nach Umbau auf Vulkan weg, Game-Loop von sokol kostete CPU |
+| 2. April | qt-ziged | Zig | Qt 6 über libqt6zig | Blieb technische Demonstration |
+
+Am 3. April begann `zid`. Seither gab es keinen neuen Anlauf mehr.
 
 ## Was daraus wurde
 
@@ -120,7 +130,11 @@ ausserhalb liegt. Ein Pfad, der über `..` oder absolut aus dem Projekt
 hinausführt, kann dann gar keine Dateioperation erzeugen.
 
 Solche Regeln sind reine Funktionen, und reine Funktionen kann man testen.
-Eine Prompt-Zeile kann man nur hoffen.
+Beide haben Unit-Tests. Dazu kommt ein End-to-End-Skript, das den Editor
+headless gegen das echte Modell fährt und den Ablehnungsweg prüft: Überschreiben
+verlangen, Dialog abwarten, ablehnen, Datei unverändert, und ein Pfad
+ausserhalb des Projekts wird abgewiesen. Eine Prompt-Zeile kann man nur
+hoffen.
 
 Umgekehrt gilt dasselbe für Fähigkeiten. Das Werkzeug `command` bekommt
 seine Auswahl aus der Kommando-Aufzählung des Editors erzeugt. Jedes Menü und
@@ -141,3 +155,17 @@ Es gibt Grenzen, die bewusst stehenbleiben. Der Editor lädt genau einen
 Schriftschnitt, deshalb zeigt die Markdown-Ansicht fett und kursiv über
 Farben statt über echte Schnitte. Solche Punkte stehen als Entscheidung in der
 Projektdokumentation, nicht als offene Aufgabe.
+
+## Wo es heute steht
+
+Von den drei Anforderungen aus der Einleitung sind zwei erfüllt: PDF und
+Bilder öffnen sich im Tab, das Terminal ist eingebaut. Git ist erst zur
+Hälfte da. Der Explorer zeigt den Status jeder Datei, Diff und Blame fehlen
+noch. Dazu gekommen sind Dinge, die nicht auf der Liste standen:
+Markdown-Vorschau, Folien aus Markdown mit Export nach PDF, Sprung zur
+Definition über einen Sprachserver, Schnellöffner und Befehlspalette, und der
+Agent. Gebaut wird für Linux und Windows.
+
+Der Quelltext liegt offen: [github.com/gstrainovic/zid](https://github.com/gstrainovic/zid).
+Die elf Anläufe davor sind ebenfalls öffentlich, jeder unter seinem Namen aus
+der Tabelle.
