@@ -1,6 +1,6 @@
 ---
 title: Sieben Monate auf der Suche nach einem Editor
-description: Von VS Code über Terminal-Editoren und gpui zu Zig. Dreizehn Anläufe mit neun Oberflächen-Bibliotheken, und warum Werkzeuggrenzen für einen KI-Agenten in den Code gehören.
+description: Von VS Code über Terminal-Editoren und gpui zu Zig. Dreizehn Anläufe und warum Werkzeuggrenzen für einen KI-Agenten in den Code gehören.
 ---
 
 # Sieben Monate auf der Suche nach einem Editor
@@ -42,6 +42,7 @@ Bei `editor-framework` sind die Plugins in Lua und lassen sich ohne Neubau
 nachladen.
 
 ## Warum Rust wegfiel
+Zed ist ein guter Editor, jedoch hat es nicht PDF Vorschau, es ist in Rust geschrieben.
 
 Rust war mir zu langsam im Bauen. Und gpui ist Rust, also fiel es mit.
 
@@ -54,21 +55,21 @@ Durchbruch als Konkurrent zu Rust. Also Zig.
 Jede Zeile ist ein eigenes Repo, in der Reihenfolge, in der sie entstanden
 sind. Manche haben einen Tag gelebt, manche eine Woche.
 
-| Anlauf | Sprache | Oberfläche |
-|---|---|---|
-| neoview | Rust | gpui |
-| freshview | Rust | egui, egui_ratatui |
-| flexed | Rust | gpui |
-| editor-framework | Rust | gpui, mlua |
-| slint-rust-editor | Rust | Slint |
-| mojo-nuklear-editor | Mojo, C-Brücke | Nuklear |
-| slint-editor | Mojo | Slint über Python |
-| v-gui-editor | V | GUI-Framework von V |
-| sokol-zig-editor | Zig | sokol, Dear ImGui |
-| zed-clone | Zig | dvui |
-| sokol-nanovg-zig-editor | Zig | sokol, NanoVG |
-| qt-ziged | Zig | Qt 6 über libqt6zig |
-| zed-killer | Zig | gooey |
+| Anlauf | Sprache | Oberfläche | Abbruchgrund |
+|---|---|---|---|
+| neoview | Rust | gpui | Buildzeiten |
+| freshview | Rust | egui, egui_ratatui | Buildzeiten |
+| flexed | Rust | gpui | Buildzeiten |
+| editor-framework | Rust | gpui, mlua | Buildzeiten |
+| slint-rust-editor | Rust | Slint | Buildzeiten |
+| mojo-nuklear-editor | Mojo, C-Brücke | Nuklear | Blieb Machbarkeitsnachweis, Text zu klein, Tabs kamen nicht zustande |
+| slint-editor | Mojo | Slint über Python | Slint nur über Python erreichbar, Scrollen und Ausrichtung haperten |
+| v-gui-editor | V | GUI-Framework von V | Scrollen brach nach Einbau von Explorer und Tabs |
+| sokol-zig-editor | Zig | sokol, Dear ImGui | Nach einem Tag neu aufgesetzt als sokol-nanovg-zig-editor |
+| zed-clone | Zig | dvui | Absturz beim Scrollen, grosse Dateien langsam |
+| sokol-nanovg-zig-editor | Zig | sokol, NanoVG | Schrift nach Umbau auf Vulkan weg, Game-Loop von sokol kostete CPU |
+| qt-ziged | Zig | Qt 6 über libqt6zig | Blieb technische Demonstration |
+| zed-killer | Zig | gooey | Am selben Tag durch zid abgelöst |
 
 ## Was daraus wurde
 
