@@ -20,6 +20,16 @@ export default defineNuxtConfig({
   modules: ['@nuxt/content', '@nuxt/fonts', '@nuxt/image'],
 
   content: {
+    build: {
+      markdown: {
+        highlight: {
+          // Shiki buendelt nur die hier genannten Sprachen. Die Vorgabe kennt
+          // weder Zig noch Python, deren Bloecke blieben ungefaerbt.
+          langs: ['zig', 'python', 'bash', 'json', 'ts', 'vue', 'css', 'html', 'md', 'yaml']
+        }
+      }
+    },
+
     renderer: {
       // Rechtstexte brauchen keine Sprungmarken; die Anker wuerden die
       // Ueberschriften als Links unterstreichen.
