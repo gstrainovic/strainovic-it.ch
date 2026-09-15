@@ -82,6 +82,17 @@ const eigene = [
         KI-Agenten in den Code gehören.
       </p>
     </div>
+    <div class="border-t border-linie py-7">
+      <h3 class="font-semibold">
+        <NuxtLink to="/open-source/ki-testet-ohne-fenster/" class="text-akzent underline underline-offset-4">
+          Ein KI-Agent testet meinen Editor ohne Fenster
+        </NuxtLink>
+      </h3>
+      <p class="mt-2 max-w-prose leading-relaxed">
+        Testgetriebene Entwicklung an einer nativen Desktop-App: Headless-Modus,
+        JSON-RPC als Fernbedienung und Screenshots, die der Agent selbst ansieht.
+      </p>
+    </div>
 
     <h2 class="mt-16 font-mono text-xs text-gedaempft">Beiträge an fremden Projekten</h2>
     <ol class="mt-5">

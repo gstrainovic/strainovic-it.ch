@@ -169,3 +169,6 @@ Agent. Gebaut wird für Linux und Windows.
 Der Quelltext liegt offen: [github.com/gstrainovic/zid](https://github.com/gstrainovic/zid).
 Die elf Anläufe davor sind ebenfalls öffentlich, jeder unter seinem Namen aus
 der Tabelle.
+
+Wie der Agent den Editor ohne Fenster bedient und prüft, steht im nächsten
+Artikel: [Ein KI-Agent testet meinen Editor ohne Fenster](/open-source/ki-testet-ohne-fenster/).
