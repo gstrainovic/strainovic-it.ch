@@ -17,8 +17,3 @@ Kontakt: info@strainovic-it.ch
 - [Profil](https://www.strainovic-it.ch/profil): Werdegang seit 2016 und eingesetzte Technologien
 - [Referenzen](https://www.strainovic-it.ch/referenzen): 26 Entwicklungsprojekte mit Ziel, Stack und Branche
 - [Kontakt](https://www.strainovic-it.ch/kontakt): Anschrift und E-Mail
-
-## Rechtliches
-
-- [Impressum](https://www.strainovic-it.ch/impressum)
-- [Datenschutz](https://www.strainovic-it.ch/datenschutz)
