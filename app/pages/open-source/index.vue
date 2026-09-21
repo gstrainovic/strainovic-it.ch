@@ -52,6 +52,11 @@ const eigene = [
     was: 'Sitzungsverwalter für Claude Code im Terminal.'
   },
   {
+    name: 'wartungsheft',
+    sprache: 'TypeScript',
+    was: 'Serviceheft für Autos als PWA mit Vue 3 und selbst gehostetem InstantDB. Werkstattrechnungen, Fahrzeugausweise und Servicehefte werden fotografiert und über Mistral ausgelesen.'
+  },
+  {
     name: 'ai-proxy',
     sprache: 'TypeScript',
     was: 'Hält einen Modellschlüssel serverseitig, zählt Nutzung und setzt Tarifgrenzen durch.'
@@ -91,6 +96,18 @@ const eigene = [
       <p class="mt-2 max-w-prose leading-relaxed">
         Testgetriebene Entwicklung an einer nativen Desktop-App: Headless-Modus,
         JSON-RPC als Fernbedienung und Screenshots, die der Agent selbst ansieht.
+      </p>
+    </div>
+    <div class="border-t border-linie py-7">
+      <h3 class="font-semibold">
+        <NuxtLink to="/open-source/rechnung-fotografieren/" class="text-akzent underline underline-offset-4">
+          Rechnung fotografieren, Daten prüfen
+        </NuxtLink>
+      </h3>
+      <p class="mt-2 max-w-prose leading-relaxed">
+        Werkstattrechnungen mit Mistral auslesen: OCR und Schema in zwei Stufen,
+        Nachkontrolle im Code und ein Wächter gegen Erfolgsmeldungen ohne
+        Tool-Aufruf.
       </p>
     </div>
 
