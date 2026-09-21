@@ -11,8 +11,11 @@ const seiten = [
 <template>
   <div class="flex min-h-dvh flex-col">
     <header class="border-b border-linie-stark bg-flaeche">
-      <div class="mx-auto flex max-w-4xl flex-wrap items-baseline gap-x-8 gap-y-2 px-6 py-4">
-        <NuxtLink to="/" class="font-mono text-sm tracking-tight">Strainovic&nbsp;IT</NuxtLink>
+      <div class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-8 gap-y-2 px-6 py-4">
+        <NuxtLink to="/" class="flex items-center gap-2.5 font-mono text-sm tracking-tight">
+          <img src="/logo.svg" alt="" width="24" height="24" class="size-6">
+          Strainovic&nbsp;IT
+        </NuxtLink>
         <nav class="flex gap-6 text-sm">
           <NuxtLink
             v-for="s in seiten"

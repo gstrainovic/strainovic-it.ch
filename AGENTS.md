@@ -183,6 +183,14 @@ Weichzeichner und unruhigem Hintergrund. Auf einer Seite, die Sorgfalt
 belegen soll, arbeitet es gegen den Zweck. Erst wieder aufnehmen, wenn ein
 brauchbares Foto existiert; bis dahin trägt die Typografie die Seite.
 
+## Logo
+
+`public/logo.svg` ist die einzige Quelle: ein «S» mit Terminal-Cursor in
+IBM Plex Mono SemiBold, weiss auf dem Akzent `#12489e`. Die Schrift ist in
+Pfade umgewandelt, das SVG braucht keinen Webfont. Favicons, App-Icons und
+`favicon.ico` erzeugt `scripts/icons.sh` (braucht `resvg` und `magick`).
+Nach jeder Änderung am Logo das Skript laufen lassen und die PNG mitcommitten.
+
 ## Repo ist öffentlich
 
 `gstrainovic/strainovic-it.ch` ist auf GitHub öffentlich und Teil der

@@ -61,7 +61,13 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'build-commit', content: commit }
       ],
-      link: [{ rel: 'icon', href: '/favicon.ico' }],
+      // Quelle ist public/logo.svg, die PNG und das ICO erzeugt scripts/icons.sh.
+      link: [
+        { rel: 'icon', href: '/favicon.ico', sizes: '48x48' },
+        { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' },
+        { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
+        { rel: 'manifest', href: '/site.webmanifest' }
+      ],
       script: [
         {
           // Laeuft vor dem ersten Zeichnen, damit bei gewaehltem Thema
