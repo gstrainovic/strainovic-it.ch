@@ -34,10 +34,11 @@ davor, der heute von Hand passiert oder gar nicht.
 
 ## Vorbestellen
 
-Ich baue die Pro-Version, sobald 10 Shops vorbestellt haben. Sie zahlen erst bei
-Lieferung; Liefertermin ist vier Wochen nach der zehnten Vorbestellung. Schreiben
-Sie mir, welchen Shop Sie betreiben und was im Checkout heute fehlt:
+Ich baue ab der ersten Bestellung. Lieferung vier Wochen nach Ihrer Bestellung, Sie
+zahlen erst bei Lieferung. Schreiben Sie mir, welchen Shop Sie betreiben und was im
+Checkout heute fehlt:
 
 [Vorbestellen per E-Mail](mailto:info@strainovic-it.ch?subject=Vorbestellung%20Zefix%2FUID-Check&body=Shop-URL%3A%20%0AFormular-Plugin%20oder%20WooCommerce%3A%20%0AWas%20soll%20das%20Plugin%20bei%20uns%20l%C3%B6sen%3F%20)
 
 Strainovic IT, Steinach SG, seit 2016 Entwicklung für Schweizer Shops und Agenturen.
+Zweites Plugin in Vorbestellung: [bexio-Formular-Connector](/bexio-formular-connector/), Website-Anfragen direkt in bexio.

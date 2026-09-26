@@ -37,10 +37,11 @@ Kein Abo. bexio-Kunden zahlen schon ein Abo, ich hänge keines dran.
 
 ## Vorbestellen
 
-Gebaut wird, sobald 10 Betriebe vorbestellt haben. Zahlung erst bei Lieferung,
-Liefertermin vier Wochen nach der zehnten Vorbestellung. Schreiben Sie mir, welches
-Formular-Plugin Sie nutzen und was aus einer Anfrage in bexio werden soll:
+Ich baue ab der ersten Bestellung. Lieferung vier Wochen nach Ihrer Bestellung,
+Zahlung erst bei Lieferung. Schreiben Sie mir, welches Formular-Plugin Sie nutzen
+und was aus einer Anfrage in bexio werden soll:
 
 [Vorbestellen per E-Mail](mailto:info@strainovic-it.ch?subject=Vorbestellung%20bexio-Formular-Connector&body=Website%3A%20%0AFormular-Plugin%3A%20%0AWas%20soll%20aus%20der%20Anfrage%20in%20bexio%20werden%3F%20)
 
 Strainovic IT, Steinach SG, seit 2016 Entwicklung für Schweizer KMU und Agenturen.
+Zweites Plugin in Vorbestellung: [Zefix/UID-Check](/zefix-uid-check/), Firmenkunden im WooCommerce-Checkout prüfen.
