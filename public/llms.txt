@@ -17,3 +17,8 @@ Kontakt: info@strainovic-it.ch
 - [Profil](https://www.strainovic-it.ch/profil): Werdegang seit 2016 und eingesetzte Technologien
 - [Referenzen](https://www.strainovic-it.ch/referenzen): 26 Entwicklungsprojekte mit Ziel, Stack und Branche
 - [Kontakt](https://www.strainovic-it.ch/kontakt): Anschrift und E-Mail
+
+## Produkte in Vorbestellung
+
+- [Zefix/UID-Check](https://www.strainovic-it.ch/zefix-uid-check/): WordPress-Plugin, prüft die Schweizer UID im WooCommerce-Checkout und in Formularen, füllt Firmendaten aus Zefix
+- [bexio-Formular-Connector](https://www.strainovic-it.ch/bexio-formular-connector/): WordPress-Plugin, legt Website-Anfragen als Kontakt und Offerte in bexio an

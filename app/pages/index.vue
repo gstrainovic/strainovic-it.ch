@@ -56,6 +56,11 @@ const kenndaten = [
   { feld: 'Sprachen', wert: 'Deutsch als Muttersprache, Englisch in Wort und Schrift' }
 ]
 
+const produkte = [
+  { titel: 'Zefix/UID-Check', pfad: '/zefix-uid-check/', text: 'WordPress-Plugin: prüft die Schweizer UID im WooCommerce-Checkout und in Formularen, füllt Firmenname und Adresse aus Zefix. Vorbestellen, Zahlung erst bei Lieferung.' },
+  { titel: 'bexio-Formular-Connector', pfad: '/bexio-formular-connector/', text: 'WordPress-Plugin: Website-Anfragen werden zu Kontakt und Offerte in bexio, ohne Abtippen. Einmalpreis, kein Abo.' },
+]
+
 const schwerpunkte = [
   {
     titel: 'API- und ERP-Integration',
@@ -102,6 +107,18 @@ const schwerpunkte = [
           <h3 class="font-semibold">{{ s.titel }}</h3>
           <p class="mt-2 text-sm leading-relaxed text-gedaempft">{{ s.text }}</p>
           <p class="mt-4 font-mono text-xs leading-relaxed text-gedaempft">{{ s.technik }}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-16">
+      <h2 class="font-mono text-xs text-gedaempft">Produkte in Vorbestellung</h2>
+      <div class="mt-5 grid gap-px overflow-hidden border border-linie bg-linie sm:grid-cols-2">
+        <div v-for="p in produkte" :key="p.titel" class="bg-flaeche p-5">
+          <h3 class="font-semibold">
+            <NuxtLink :to="p.pfad" class="underline underline-offset-4">{{ p.titel }}</NuxtLink>
+          </h3>
+          <p class="mt-2 text-sm leading-relaxed text-gedaempft">{{ p.text }}</p>
         </div>
       </div>
     </section>
