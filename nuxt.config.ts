@@ -89,7 +89,7 @@ export default defineNuxtConfig({
     preset: 'static',
     prerender: {
       crawlLinks: true,
-      routes: ['/']
+      routes: ['/', '/zefix-uid-check', '/bexio-formular-connector']
     }
   }
 })
