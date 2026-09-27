@@ -9,6 +9,8 @@ description: WordPress-Plugin, das die Schweizer UID im Checkout und in Formular
 prüft sie beim Bund, holt Firmenname und Adresse aus Zefix und füllt das Formular
 aus. Falsche oder gelöschte Firmen kommen gar nicht erst zum Rechnungskauf.
 
+![WooCommerce-Checkout mit UID-Feld: die eingegebene UID ist nicht im UID-Register eingetragen, die Bestellung wird abgelehnt](/img/uid-check-checkout-fehler.png)
+
 ## Was es tut
 
 - UID-Feld im WooCommerce-Checkout und in Kontakt-, Offert- und

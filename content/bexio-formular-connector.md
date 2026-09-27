@@ -9,6 +9,8 @@ description: WordPress-Plugin, das Anfragen aus Contact Form 7, WPForms, Gravity
 als Kontakt in bexio, auf Wunsch gleich mit Offerte. Sie antworten aus bexio heraus,
 mit allen Daten, ohne Copy-Paste.
 
+![Einstellungsseite im WordPress-Backend: Verbindung mit bexio hergestellt, Protokoll mit neuem Kontakt und Notiz an bestehenden Kontakt](/img/bexio-connector-einstellungen.png)
+
 ## Was es tut
 
 - Funktioniert mit Contact Form 7, WPForms, Gravity Forms und Elementor Forms
