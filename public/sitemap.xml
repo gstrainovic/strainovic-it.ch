@@ -46,6 +46,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.strainovic-it.ch/rappenrundung/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.strainovic-it.ch/kontakt/</loc>
     <priority>0.6</priority>
   </url>
