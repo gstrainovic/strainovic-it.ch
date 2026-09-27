@@ -1,25 +1,26 @@
 <script setup lang="ts">
+import texte from '~/texte/kontakt'
+
+const { t } = useSprache(texte)
+
 useSeoMeta({
-  title: 'Kontakt — Goran Strainovic',
-  description: 'Strainovic IT, Steinach. Kontakt per E-Mail an info@strainovic-it.ch.'
+  title: () => t.value.titel,
+  description: () => t.value.beschreibung
 })
 
-const angaben = [
-  { feld: 'E-Mail', wert: 'info@strainovic-it.ch', href: 'mailto:info@strainovic-it.ch' },
-  { feld: 'Firma', wert: 'Strainovic IT, Goran Strainovic' },
-  { feld: 'Adresse', wert: 'Bahnstrasse 9b, 9323 Steinach, Schweiz' },
-  { feld: 'Sprache', wert: 'Deutsch, Englisch' }
-]
+const angaben = computed(() => [
+  { feld: t.value.felder.email, wert: 'info@strainovic-it.ch', href: 'mailto:info@strainovic-it.ch' },
+  { feld: t.value.felder.firma, wert: 'Strainovic IT, Goran Strainovic' },
+  { feld: t.value.felder.adresse, wert: t.value.adresse },
+  { feld: t.value.felder.sprache, wert: t.value.sprachen }
+])
 </script>
 
 <template>
   <article>
     <header class="border-b-2 border-akzent pb-6">
-      <h1 class="text-[clamp(1.9rem,1.4rem+2vw,2.75rem)] font-semibold tracking-[-0.02em]">Kontakt</h1>
-      <p class="mt-3 max-w-prose text-gedaempft">
-        Schreiben Sie mir, am besten mit ein paar Sätzen zum Vorhaben und zum
-        eingesetzten Stack.
-      </p>
+      <h1 class="text-[clamp(1.9rem,1.4rem+2vw,2.75rem)] font-semibold tracking-[-0.02em]">{{ t.ueberschrift }}</h1>
+      <p class="mt-3 max-w-prose text-gedaempft">{{ t.einleitung }}</p>
     </header>
 
     <dl class="mt-2">

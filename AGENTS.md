@@ -26,8 +26,24 @@ LinkedIn-Profil in `~/projects/find-jobs/AGENTS.md`:
 
 ## Zielgruppe und Sprache
 
-Deutschschweiz zuerst, dann Deutschland und Österreich. Die Seite ist
-einsprachig deutsch. Es gibt keine englische Fassung und keine i18n-Schicht.
+Deutschschweiz zuerst, dann Deutschland und Österreich, für die Produkte
+auch Romandie und Tessin. Deutsch ist die Hauptfassung ohne Präfix,
+Französisch, Italienisch und Englisch liegen unter `/fr/`, `/it/` und `/en/`
+mit denselben Pfaden.
+
+- Jede Änderung an einem deutschen Text geht im selben Commit in alle drei
+  Übersetzungen. `npm run generate && npm test` prüft, dass jede Seite in
+  jeder Sprache existiert, gleich aufgebaut ist, `lang`, canonical und
+  `hreflang` trägt, intern in ihrer Sprache verlinkt und in der Sitemap steht.
+- Texte der Vue-Seiten liegen in `app/texte/<seite>.ts`, je Sprache ein
+  Objekt mit derselben Form; Markdown unter `content/<sprache>/`.
+- Korrespondenz nur auf Deutsch und Englisch. Die Übersetzungen behaupten
+  keine weiteren Sprachkenntnisse.
+- Rechtstexte tragen in der Übersetzung den Satz, dass die deutsche Fassung
+  massgebend ist.
+- Plugin-Oberflächen, die es nur auf Deutsch gibt, zeigen die fremdsprachigen
+  Seiten mit deutschem Screenshot und dem Hinweis darauf. Neue Screenshots je
+  Sprache heissen `<name>-<fr|it|en>.png`.
 
 ## Inhaltliche Linie
 
@@ -60,7 +76,10 @@ Die Seite wird von Nuxt 2 auf Nuxt 4 neu gebaut. Der alte Stand lässt sich
 nicht mehr bauen: Webpack 4, node-sass und ein auf Node 12 gepinnter
 Netlify-Build. Der ausgelieferte Stand ist älter als der letzte Commit.
 
-- Nuxt 4 mit Vue 3, kein i18n-Modul.
+- Nuxt 4 mit Vue 3, kein i18n-Modul: der Hook `pages:extend` in
+  `nuxt.config.ts` legt jede Seite zusätzlich unter `/fr/`, `/it/` und `/en/`
+  an, `useSprache()` liest die Sprache aus dem Pfad, `app.vue` setzt `lang`,
+  canonical und `hreflang`.
 - Fliesstext als Markdown über Nuxt Content, Layoutseiten als Vue-Komponenten.
 - Node LTS in `.nvmrc` und in der Build-Konfiguration gepinnt.
 - Abhängigkeiten so wenige wie möglich, Renovate hält sie aktuell.

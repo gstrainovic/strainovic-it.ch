@@ -11,6 +11,10 @@ Dienste in Go, betrieben in Containern auf Kubernetes.
 
 Kontakt: info@strainovic-it.ch
 
+Die Seite gibt es auf Deutsch (Hauptfassung) und übersetzt auf Französisch,
+Italienisch und Englisch, unter denselben Pfaden mit Präfix /fr/, /it/ und
+/en/, zum Beispiel https://www.strainovic-it.ch/en/profil/.
+
 ## Seiten
 
 - [Start](https://www.strainovic-it.ch/): Kenndaten und die drei Schwerpunkte

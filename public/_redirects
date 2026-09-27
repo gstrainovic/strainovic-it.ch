@@ -2,12 +2,14 @@
 # sie wird selbst nicht ausgeliefert. Feste Pfade stehen vor den
 # Platzhaltern, so empfiehlt es Cloudflare.
 
-# Die englische Fassung entfaellt, die Seite ist einsprachig deutsch.
-/en                            /             301
-/en/about                      /profil/       301
-/en/contact                    /kontakt/      301
-/en/privacy-policy             /datenschutz/  301
-/en/imprint                    /impressum/    301
+# Adressen der alten englischen Fassung. Die neue liegt unter /en/ mit
+# denselben Pfaden wie die deutsche.
+/en/about                      /en/profil/       301
+/en/contact                    /en/kontakt/      301
+/en/privacy-policy             /en/datenschutz/  301
+/en/imprint                    /en/impressum/    301
+/en/services                   /en/profil/       301
+/en/portfolio                  /en/referenzen/   301
 /services                      /profil/       301
 /portfolio                     /referenzen/   301
 
@@ -19,7 +21,8 @@
 /referenzen-und-portfolio      /referenzen/   301
 
 # Unterseiten der aufgeloesten Bereiche.
-/en/*                          /             301
+/en/services/*                 /en/profil/       301
+/en/portfolio/*                /en/referenzen/   301
 /services/*                    /profil/       301
 /portfolio/*                   /referenzen/   301
 /dienstleistungen/*            /profil/       301

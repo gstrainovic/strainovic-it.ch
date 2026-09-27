@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Von Hand gepflegt. Impressum und Datenschutz fehlen absichtlich, sie
-  tragen ein noindex. Kommt eine Seite dazu, gehoert sie hier hinein.
+  tragen ein noindex. Kommt eine Seite dazu, gehoert sie hier hinein,
+  in allen vier Sprachen. npm test prueft das gegen die gebaute Seite.
   Die Adressen enden auf einen Schraegstrich, so liefert der Hoster sie aus.
+  Die Zuordnung der Sprachfassungen steht per hreflang in jeder Seite.
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
@@ -55,6 +57,162 @@
   </url>
   <url>
     <loc>https://www.strainovic-it.ch/kontakt/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/fr/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/fr/profil/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/fr/referenzen/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/fr/open-source/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/fr/open-source/editor-suche/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/fr/open-source/ki-testet-ohne-fenster/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/fr/open-source/rechnung-fotografieren/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/fr/zefix-uid-check/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/fr/bexio-formular-connector/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/fr/klara-shop-connector/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/fr/abaninja-shop-connector/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/fr/rappenrundung/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/fr/kontakt/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/it/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/it/profil/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/it/referenzen/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/it/open-source/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/it/open-source/editor-suche/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/it/open-source/ki-testet-ohne-fenster/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/it/open-source/rechnung-fotografieren/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/it/zefix-uid-check/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/it/bexio-formular-connector/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/it/klara-shop-connector/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/it/abaninja-shop-connector/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/it/rappenrundung/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/it/kontakt/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/en/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/en/profil/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/en/referenzen/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/en/open-source/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/en/open-source/editor-suche/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/en/open-source/ki-testet-ohne-fenster/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/en/open-source/rechnung-fotografieren/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/en/zefix-uid-check/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/en/bexio-formular-connector/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/en/klara-shop-connector/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/en/abaninja-shop-connector/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/en/rappenrundung/</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/en/kontakt/</loc>
     <priority>0.6</priority>
   </url>
 </urlset>

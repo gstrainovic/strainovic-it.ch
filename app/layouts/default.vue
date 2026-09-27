@@ -13,12 +13,13 @@ const fassungen = computed(() =>
 <template>
   <div class="flex min-h-dvh flex-col">
     <header class="border-b border-linie-stark bg-flaeche">
-      <div class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-8 gap-y-2 px-6 py-4">
+      <div class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-4 gap-y-2 px-6 py-4 sm:gap-x-8">
         <NuxtLink :to="pfad('/')" class="flex items-center gap-2.5 font-mono text-sm tracking-tight">
           <img src="/logo.svg" alt="" width="24" height="24" class="size-6">
           Strainovic&nbsp;IT
         </NuxtLink>
-        <nav class="flex flex-wrap gap-x-6 gap-y-1 text-sm">
+        <!-- Auf schmalen Schirmen unter Logo und Sprachwahl, sonst dazwischen. -->
+        <nav class="order-last flex w-full flex-wrap gap-x-6 gap-y-1 text-sm sm:order-none sm:w-auto">
           <NuxtLink
             v-for="s in t.seiten"
             :key="s.pfad"
@@ -29,7 +30,7 @@ const fassungen = computed(() =>
             {{ s.name }}
           </NuxtLink>
         </nav>
-        <div class="ms-auto flex items-center gap-5">
+        <div class="ms-auto flex items-center gap-4">
           <nav :aria-label="t.sprachwahl" class="flex gap-2.5 font-mono text-xs uppercase">
             <NuxtLink
               v-for="f in fassungen"
