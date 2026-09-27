@@ -10,10 +10,11 @@ export const eigene = [
   { name: 'shai-hulud-detect-rust', sprache: 'Rust' },
   { name: 'agent-session-manager', sprache: 'Rust' },
   { name: 'wartungsheft', sprache: 'TypeScript' },
-  { name: 'ai-proxy', sprache: 'TypeScript' }
+  { name: 'ai-proxy', sprache: 'TypeScript' },
+  { name: 'dms', sprache: 'TypeScript' }
 ]
 
-export const artikel = ['/open-source/editor-suche/', '/open-source/ki-testet-ohne-fenster/', '/open-source/rechnung-fotografieren/']
+export const artikel = ['/open-source/editor-suche/', '/open-source/ki-testet-ohne-fenster/', '/open-source/rechnung-fotografieren/', '/open-source/dms-selbst-gebaut/']
 
 const de = {
   titel: 'Open Source — Goran Strainovic',
@@ -35,6 +36,10 @@ const de = {
     {
       titel: 'Rechnung fotografieren, Daten prüfen',
       text: 'Werkstattrechnungen mit Mistral auslesen: OCR und Schema in zwei Stufen, Nachkontrolle im Code und ein Wächter gegen Erfolgsmeldungen ohne Tool-Aufruf.'
+    },
+    {
+      titel: 'Drei Programme oder ein eigenes',
+      text: 'Warum ich meine Dokumentenablage mit OCR, Tags und Chat selbst gebaut habe, statt drei Programme zu verbinden, und wann Paperless-ngx heute die bessere Wahl ist.'
     }
   ],
   beitraegeTitel: 'Beiträge an fremden Projekten',
@@ -51,7 +56,8 @@ const de = {
     'Eigene Rust-Fassung des Prüfwerkzeugs, dessen Bash-Original ich mitgepflegt habe.',
     'Sitzungsverwalter für Claude Code im Terminal.',
     'Serviceheft für Autos als PWA mit Vue 3 und selbst gehostetem InstantDB. Werkstattrechnungen, Fahrzeugausweise und Servicehefte werden fotografiert und über Mistral ausgelesen.',
-    'Hält einen Modellschlüssel serverseitig, zählt Nutzung und setzt Tarifgrenzen durch.'
+    'Hält einen Modellschlüssel serverseitig, zählt Nutzung und setzt Tarifgrenzen durch.',
+    'Dokumentenablage mit Vue 3 und Supabase: Mistral OCR, Tags und Felder per Sprachmodell, hybride Suche mit pgvector und ein Chat mit Quellenangabe über alle Dokumente.'
   ]
 }
 
@@ -77,6 +83,10 @@ export default {
       {
         titel: 'Photographier une facture, vérifier les données',
         text: 'Lire des factures de garage avec Mistral : OCR et schéma en deux étapes, contrôle dans le code et un garde-fou contre les messages de réussite sans appel d’outil.'
+      },
+      {
+        titel: 'Trois programmes ou un programme maison',
+        text: 'Pourquoi j’ai construit moi-même mon archivage de documents avec OCR, tags et chat, plutôt que de relier trois programmes, et quand Paperless-ngx est aujourd’hui le meilleur choix.'
       }
     ],
     beitraegeTitel: 'Contributions à des projets tiers',
@@ -93,7 +103,8 @@ export default {
       'Version Rust de l’outil de détection dont j’ai co-maintenu l’original en Bash.',
       'Gestionnaire de sessions pour Claude Code dans le terminal.',
       'Carnet d’entretien pour voitures en PWA avec Vue 3 et InstantDB auto-hébergé. Les factures de garage, permis de circulation et carnets d’entretien sont photographiés et lus via Mistral.',
-      'Garde une clé de modèle côté serveur, compte l’utilisation et applique les limites des forfaits.'
+      'Garde une clé de modèle côté serveur, compte l’utilisation et applique les limites des forfaits.',
+      'Archivage de documents avec Vue 3 et Supabase : Mistral OCR, tags et champs par modèle de langage, recherche hybride avec pgvector et un chat citant ses sources sur tous les documents.'
     ]
   },
   it: {
@@ -116,6 +127,10 @@ export default {
       {
         titel: 'Fotografare una fattura, verificare i dati',
         text: 'Leggere fatture d’officina con Mistral: OCR e schema in due fasi, controllo nel codice e una guardia contro messaggi di successo senza chiamata allo strumento.'
+      },
+      {
+        titel: 'Tre programmi o uno proprio',
+        text: 'Perché ho costruito da me il mio archivio di documenti con OCR, tag e chat, invece di collegare tre programmi, e quando oggi Paperless-ngx è la scelta migliore.'
       }
     ],
     beitraegeTitel: 'Contributi a progetti altrui',
@@ -132,7 +147,8 @@ export default {
       'Versione Rust dello strumento di verifica di cui ho contribuito a mantenere l’originale in Bash.',
       'Gestore di sessioni per Claude Code nel terminale.',
       'Libretto di manutenzione per auto come PWA con Vue 3 e InstantDB in self-hosting. Fatture d’officina, licenze di circolazione e libretti di manutenzione vengono fotografati e letti con Mistral.',
-      'Tiene lato server la chiave di un modello, conta l’utilizzo e applica i limiti delle tariffe.'
+      'Tiene lato server la chiave di un modello, conta l’utilizzo e applica i limiti delle tariffe.',
+      'Archivio di documenti con Vue 3 e Supabase: Mistral OCR, tag e campi tramite modello linguistico, ricerca ibrida con pgvector e una chat con fonti su tutti i documenti.'
     ]
   },
   en: {
@@ -155,6 +171,10 @@ export default {
       {
         titel: 'Photograph the invoice, check the data',
         text: 'Reading garage invoices with Mistral: OCR and schema in two stages, checks in code and a guard against success messages without a tool call.'
+      },
+      {
+        titel: 'Three programs or one of my own',
+        text: 'Why I built my own document archive with OCR, tags and chat, instead of connecting three programs, and when Paperless-ngx is the better choice today.'
       }
     ],
     beitraegeTitel: 'Contributions to other projects',
@@ -171,7 +191,8 @@ export default {
       'My own Rust version of the scanner whose Bash original I helped maintain.',
       'Session manager for Claude Code in the terminal.',
       'Car service book as a PWA with Vue 3 and self-hosted InstantDB. Garage invoices, vehicle registrations and service books are photographed and read via Mistral.',
-      'Keeps a model key on the server side, counts usage and enforces plan limits.'
+      'Keeps a model key on the server side, counts usage and enforces plan limits.',
+      'Document archive with Vue 3 and Supabase: Mistral OCR, tags and fields via a language model, hybrid search with pgvector and a chat over all documents that cites its sources.'
     ]
   }
 } satisfies Record<Sprache, typeof de>

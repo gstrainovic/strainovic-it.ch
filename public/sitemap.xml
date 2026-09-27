@@ -36,6 +36,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.strainovic-it.ch/open-source/dms-selbst-gebaut/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.strainovic-it.ch/zefix-uid-check/</loc>
     <priority>0.7</priority>
   </url>
@@ -85,6 +89,10 @@
   </url>
   <url>
     <loc>https://www.strainovic-it.ch/fr/open-source/rechnung-fotografieren/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/fr/open-source/dms-selbst-gebaut/</loc>
     <priority>0.7</priority>
   </url>
   <url>
@@ -140,6 +148,10 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.strainovic-it.ch/it/open-source/dms-selbst-gebaut/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.strainovic-it.ch/it/zefix-uid-check/</loc>
     <priority>0.7</priority>
   </url>
@@ -189,6 +201,10 @@
   </url>
   <url>
     <loc>https://www.strainovic-it.ch/en/open-source/rechnung-fotografieren/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.strainovic-it.ch/en/open-source/dms-selbst-gebaut/</loc>
     <priority>0.7</priority>
   </url>
   <url>
