@@ -9,7 +9,7 @@ description: Gratis-Plugin, das das WooCommerce-Total auf 5 Rappen rundet. Die D
 darum landen Beträge wie CHF 29.91 in Bestellung, Rechnung und Buchhaltung. Das Plugin
 rundet auf 5 Rappen und zeigt die Differenz offen als eigene Zeile.
 
-![Checkout-Block von WooCommerce: Zwischensumme CHF 29.91, Rundungsdifferenz -CHF 0.01, Gesamtsumme CHF 29.90 inklusive CHF 2.24 MWST](/img/rappenrundung-checkout.png)
+![Checkout-Block von WooCommerce: Zwischensumme CHF 29.91, Rundung auf 5 Rappen -CHF 0.01, Gesamtsumme CHF 29.90 inklusive CHF 2.24 MWST](/img/rappenrundung-checkout.png)
 
 ## Was es tut
 
