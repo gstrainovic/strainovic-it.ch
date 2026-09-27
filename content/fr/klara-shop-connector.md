@@ -1,6 +1,6 @@
 ---
 title: Commandes WooCommerce et Shopware automatiquement dans KLARA
-description: Plugin pour WooCommerce et Shopware 6 qui crée chaque commande comme client et facture dans KLARA, avec la TVA suisse et l’arrondi à 5 centimes. Prix unique, pas d’abonnement.
+description: Plugin pour WooCommerce et Shopware 6 qui crée chaque commande comme client et facture dans KLARA, avec la TVA suisse et l’arrondi à 5 centimes. 149 CHF par boutique et par an, mise en place comprise.
 ---
 
 # Commandes WooCommerce automatiquement dans KLARA
@@ -41,12 +41,12 @@ une demande qui revient depuis des années dans la communauté KLARA. Shopify su
 
 ## Prix
 
-- **Base :** 149 CHF une fois par boutique, mise en place comprise
+- **Base :** 149 CHF par boutique et par an, mises à jour et support compris ; mise en place comprise la première année
 - **Pro (en cours de développement) :** envoi de la facture directement par e-mail,
   ePost ou eBill, statut de paiement renvoyé à la boutique, notes de crédit en cas de remboursement
-- **Agence :** 490 CHF pour jusqu’à 10 boutiques
+- **Agence :** 490 CHF par an pour jusqu’à 10 boutiques
 
-Pas d’abonnement. Paiement seulement quand cela fonctionne dans votre boutique.
+Résiliable chaque année. Vous ne payez la première année que lorsque tout fonctionne dans votre boutique.
 
 ## Commander
 

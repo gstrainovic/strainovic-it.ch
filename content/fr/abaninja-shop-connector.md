@@ -1,6 +1,6 @@
 ---
 title: Commandes WooCommerce automatiquement dans AbaNinja
-description: Plugin WordPress qui crée chaque commande WooCommerce comme adresse et facture dans AbaNinja, avec la TVA suisse et un total exact. Prix unique, pas d’abonnement.
+description: Plugin WordPress qui crée chaque commande WooCommerce comme adresse et facture dans AbaNinja, avec la TVA suisse et un total exact. 149 CHF par boutique et par an, mise en place comprise.
 ---
 
 # Commandes WooCommerce automatiquement dans AbaNinja
@@ -33,10 +33,10 @@ le plan gratuit Starter ne la propose pas.
 
 ## Prix
 
-- **Base :** 149 CHF une fois par boutique, mise en place comprise
-- **Fiduciaires et agences :** 490 CHF pour jusqu’à 10 boutiques
+- **Base :** 149 CHF par boutique et par an, mises à jour et support compris ; mise en place comprise la première année
+- **Fiduciaires et agences :** 490 CHF par an pour jusqu’à 10 boutiques
 
-Pas d’abonnement. Paiement seulement quand cela fonctionne dans votre boutique.
+Résiliable chaque année. Vous ne payez la première année que lorsque tout fonctionne dans votre boutique.
 
 ## Commander
 

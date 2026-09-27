@@ -1,6 +1,6 @@
 ---
 title: Ordini WooCommerce automaticamente in AbaNinja
-description: Plugin WordPress che crea ogni ordine WooCommerce come indirizzo e fattura in AbaNinja, con l’IVA svizzera e un totale esatto. Prezzo unico, nessun abbonamento.
+description: Plugin WordPress che crea ogni ordine WooCommerce come indirizzo e fattura in AbaNinja, con l’IVA svizzera e un totale esatto. 149 CHF per negozio all’anno, configurazione inclusa.
 ---
 
 # Ordini WooCommerce automaticamente in AbaNinja
@@ -33,10 +33,10 @@ non la offre.
 
 ## Prezzo
 
-- **Base:** 149 CHF una tantum per negozio, configurazione inclusa
-- **Fiduciarie e agenzie:** 490 CHF per un massimo di 10 negozi
+- **Base:** 149 CHF per negozio all’anno, aggiornamenti e supporto inclusi; configurazione inclusa il primo anno
+- **Fiduciarie e agenzie:** 490 CHF all’anno per un massimo di 10 negozi
 
-Nessun abbonamento. Pagamento solo quando funziona nel vostro negozio.
+Disdicibile ogni anno. Il primo anno si paga solo quando funziona nel vostro negozio.
 
 ## Ordinare
 

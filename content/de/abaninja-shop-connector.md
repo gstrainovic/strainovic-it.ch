@@ -1,6 +1,6 @@
 ---
 title: WooCommerce-Bestellungen automatisch in AbaNinja
-description: WordPress-Plugin, das jede WooCommerce-Bestellung als Adresse und Rechnung in AbaNinja anlegt, mit Schweizer MWST und exaktem Total. Einmalpreis, kein Abo.
+description: WordPress-Plugin, das jede WooCommerce-Bestellung als Adresse und Rechnung in AbaNinja anlegt, mit Schweizer MWST und exaktem Total. 149 CHF pro Shop und Jahr, Einrichtung inklusive.
 ---
 
 # WooCommerce-Bestellungen automatisch in AbaNinja
@@ -33,10 +33,10 @@ Starter-Plan gibt es sie nicht.
 
 ## Preis
 
-- **Basis:** 149 CHF einmalig pro Shop, Einrichtung inklusive
-- **Treuhänder und Agenturen:** 490 CHF für bis zu 10 Shops
+- **Basis:** 149 CHF pro Shop und Jahr, mit Updates und Support; Einrichtung im ersten Jahr inklusive
+- **Treuhänder und Agenturen:** 490 CHF pro Jahr für bis zu 10 Shops
 
-Kein Abo. Zahlung erst, wenn es in Ihrem Shop läuft.
+Jährlich kündbar. Die erste Jahresgebühr zahlen Sie erst, wenn es in Ihrem Shop läuft.
 
 ## Bestellen
 

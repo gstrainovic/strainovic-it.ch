@@ -1,6 +1,6 @@
 ---
 title: WooCommerce orders automatically in AbaNinja
-description: WordPress plugin that creates every WooCommerce order as an address and invoice in AbaNinja, with Swiss VAT and an exact total. One-time price, no subscription.
+description: WordPress plugin that creates every WooCommerce order as an address and invoice in AbaNinja, with Swiss VAT and an exact total. CHF 149 per shop and year, setup included.
 ---
 
 # WooCommerce orders automatically in AbaNinja
@@ -33,10 +33,10 @@ plan does not include it.
 
 ## Price
 
-- **Basic:** CHF 149 once per shop, setup included
-- **Fiduciaries and agencies:** CHF 490 for up to 10 shops
+- **Basic:** CHF 149 per shop and year, with updates and support; setup included in the first year
+- **Fiduciaries and agencies:** CHF 490 per year for up to 10 shops
 
-No subscription. You pay once it runs in your shop.
+Cancel any year. You pay the first year only once it runs in your shop.
 
 ## Order
 

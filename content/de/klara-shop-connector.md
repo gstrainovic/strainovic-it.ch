@@ -1,6 +1,6 @@
 ---
 title: WooCommerce- und Shopware-Bestellungen automatisch in KLARA
-description: Plugin für WooCommerce und Shopware 6, das jede Bestellung als Kunde und Rechnung in KLARA anlegt, mit Schweizer MWST und 5-Rappen-Rundung. Einmalpreis, kein Abo.
+description: Plugin für WooCommerce und Shopware 6, das jede Bestellung als Kunde und Rechnung in KLARA anlegt, mit Schweizer MWST und 5-Rappen-Rundung. 149 CHF pro Shop und Jahr, Einrichtung inklusive.
 ---
 
 # WooCommerce-Bestellungen automatisch in KLARA
@@ -41,12 +41,12 @@ KLARA-Community. Shopify folgt.
 
 ## Preis
 
-- **Basis:** 149 CHF einmalig pro Shop, Einrichtung inklusive
+- **Basis:** 149 CHF pro Shop und Jahr, mit Updates und Support; Einrichtung im ersten Jahr inklusive
 - **Pro (in Arbeit):** Rechnung direkt per E-Mail, ePost oder eBill versenden,
   Zahlungsstatus zurück in den Shop, Gutschriften bei Rückerstattung
-- **Agentur:** 490 CHF für bis zu 10 Shops
+- **Agentur:** 490 CHF pro Jahr für bis zu 10 Shops
 
-Kein Abo. Zahlung erst, wenn es in Ihrem Shop läuft.
+Jährlich kündbar. Die erste Jahresgebühr zahlen Sie erst, wenn es in Ihrem Shop läuft.
 
 ## Bestellen
 

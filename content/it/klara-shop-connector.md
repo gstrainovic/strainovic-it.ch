@@ -1,6 +1,6 @@
 ---
 title: Ordini WooCommerce e Shopware automaticamente in KLARA
-description: Plugin per WooCommerce e Shopware 6 che crea ogni ordine come cliente e fattura in KLARA, con l’IVA svizzera e l’arrotondamento a 5 centesimi. Prezzo unico, nessun abbonamento.
+description: Plugin per WooCommerce e Shopware 6 che crea ogni ordine come cliente e fattura in KLARA, con l’IVA svizzera e l’arrotondamento a 5 centesimi. 149 CHF per negozio all’anno, configurazione inclusa.
 ---
 
 # Ordini WooCommerce automaticamente in KLARA
@@ -41,12 +41,12 @@ nella community di KLARA. Seguirà Shopify.
 
 ## Prezzo
 
-- **Base:** 149 CHF una tantum per negozio, configurazione inclusa
+- **Base:** 149 CHF per negozio all’anno, aggiornamenti e supporto inclusi; configurazione inclusa il primo anno
 - **Pro (in sviluppo):** invio della fattura direttamente via e-mail, ePost o eBill,
   stato del pagamento di ritorno nel negozio, note di credito in caso di rimborso
-- **Agenzia:** 490 CHF per un massimo di 10 negozi
+- **Agenzia:** 490 CHF all’anno per un massimo di 10 negozi
 
-Nessun abbonamento. Pagamento solo quando funziona nel vostro negozio.
+Disdicibile ogni anno. Il primo anno si paga solo quando funziona nel vostro negozio.
 
 ## Ordinare
 
