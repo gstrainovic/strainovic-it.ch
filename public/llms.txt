@@ -23,4 +23,5 @@ Kontakt: info@strainovic-it.ch
 - [Zefix/UID-Check](https://www.strainovic-it.ch/zefix-uid-check/): WordPress-Plugin, prüft die Schweizer UID im WooCommerce-Checkout und in Formularen, füllt Firmendaten aus Zefix
 - [bexio-Formular-Connector](https://www.strainovic-it.ch/bexio-formular-connector/): WordPress-Plugin, legt Website-Anfragen als Kontakt und Offerte in bexio an
 - [KLARA-Shop-Connector](https://www.strainovic-it.ch/klara-shop-connector/): WordPress-Plugin, legt WooCommerce- und Shopware-Bestellungen als Kunde und Rechnung in KLARA an
+- [AbaNinja-Shop-Connector](https://www.strainovic-it.ch/abaninja-shop-connector/): WordPress-Plugin, legt WooCommerce-Bestellungen als Adresse und Rechnung in AbaNinja an
 - [Rappenrundung für WooCommerce](https://www.strainovic-it.ch/rappenrundung/): Gratis-Plugin, rundet das Total auf 5 Rappen, Differenz als eigene Position ohne MWST

@@ -60,6 +60,7 @@ const produkte = [
   { titel: 'Zefix/UID-Check', pfad: '/zefix-uid-check/', text: 'WordPress-Plugin: prüft die Schweizer UID im WooCommerce-Checkout und in Formularen, füllt Firmenname und Adresse aus Zefix. Vorbestellen, Zahlung erst bei Lieferung.' },
   { titel: 'bexio-Formular-Connector', pfad: '/bexio-formular-connector/', text: 'WordPress-Plugin: Website-Anfragen werden zu Kontakt und Offerte in bexio, ohne Abtippen. Einmalpreis, kein Abo.' },
   { titel: 'KLARA-Shop-Connector', pfad: '/klara-shop-connector/', text: 'Plugin für WooCommerce und Shopware: jede Bestellung als Kunde und Rechnung in KLARA, mit Schweizer MWST. Einmalpreis, kein Abo.' },
+  { titel: 'AbaNinja-Shop-Connector', pfad: '/abaninja-shop-connector/', text: 'WordPress-Plugin: jede WooCommerce-Bestellung als Adresse und Rechnung in AbaNinja, Total auf den Rappen genau. Einmalpreis, kein Abo.' },
   { titel: 'Rappenrundung für WooCommerce', pfad: '/rappenrundung/', text: 'Gratis-Plugin: Total auf 5 Rappen gerundet, Differenz als eigene Position ohne MWST.' },
 ]
 
