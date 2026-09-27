@@ -1,8 +1,10 @@
 <script setup lang="ts">
 const route = useRoute()
+const { sprache } = useSprache()
 
 const { data: seite } = await useAsyncData(`seite-${route.path}`, () =>
-  queryCollection('seiten').path(route.path).first()
+  // Nuxt Content führt die Pfade ohne Schrägstrich am Ende.
+  queryCollection(`seiten_${sprache.value}`).path(ohneSprache(route.path).replace(/(.)\/$/, '$1')).first()
 )
 
 if (!seite.value) {

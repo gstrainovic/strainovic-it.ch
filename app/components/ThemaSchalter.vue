@@ -1,4 +1,6 @@
 <script setup lang="ts">
+defineProps<{ label: string }>()
+
 const dunkel = ref(false)
 
 function umschalten() {
@@ -22,7 +24,7 @@ onMounted(() => {
     type="button"
     role="switch"
     :aria-checked="dunkel"
-    aria-label="Dunkles Farbschema"
+    :aria-label="label"
     class="schalter"
     @click="umschalten"
   >

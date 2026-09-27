@@ -1,33 +1,51 @@
 <script setup lang="ts">
-const seiten = [
-  { pfad: '/', name: 'Start' },
-  { pfad: '/profil', name: 'Profil' },
-  { pfad: '/referenzen', name: 'Referenzen' },
-  { pfad: '/open-source', name: 'Open Source' },
-  { pfad: '/kontakt', name: 'Kontakt' }
-]
+import texte from '~/texte/layout'
+
+const route = useRoute()
+const { sprache, pfad, t } = useSprache(texte)
+
+// Dieselbe Seite in jeder Sprache, für die Sprachwahl.
+const fassungen = computed(() =>
+  SPRACHEN.map(s => ({ ...s, pfad: mitSprache(s.code, ohneSprache(route.path)) }))
+)
 </script>
 
 <template>
   <div class="flex min-h-dvh flex-col">
     <header class="border-b border-linie-stark bg-flaeche">
       <div class="mx-auto flex max-w-4xl flex-wrap items-center gap-x-8 gap-y-2 px-6 py-4">
-        <NuxtLink to="/" class="flex items-center gap-2.5 font-mono text-sm tracking-tight">
+        <NuxtLink :to="pfad('/')" class="flex items-center gap-2.5 font-mono text-sm tracking-tight">
           <img src="/logo.svg" alt="" width="24" height="24" class="size-6">
           Strainovic&nbsp;IT
         </NuxtLink>
-        <nav class="flex gap-6 text-sm">
+        <nav class="flex flex-wrap gap-x-6 gap-y-1 text-sm">
           <NuxtLink
-            v-for="s in seiten"
+            v-for="s in t.seiten"
             :key="s.pfad"
-            :to="s.pfad"
+            :to="pfad(s.pfad)"
             class="text-gedaempft hover:text-tinte"
             active-class="!text-akzent"
           >
             {{ s.name }}
           </NuxtLink>
         </nav>
-        <ThemaSchalter class="ms-auto" />
+        <div class="ms-auto flex items-center gap-5">
+          <nav :aria-label="t.sprachwahl" class="flex gap-2.5 font-mono text-xs uppercase">
+            <NuxtLink
+              v-for="f in fassungen"
+              :key="f.code"
+              :to="f.pfad"
+              :hreflang="f.tag"
+              :lang="f.tag"
+              :title="f.name"
+              :aria-current="f.code === sprache ? 'true' : undefined"
+              :class="f.code === sprache ? 'text-akzent' : 'text-gedaempft hover:text-tinte'"
+            >
+              {{ f.code }}
+            </NuxtLink>
+          </nav>
+          <ThemaSchalter :label="t.dunkel" />
+        </div>
       </div>
     </header>
 
@@ -39,10 +57,10 @@ const seiten = [
       <div
         class="mx-auto flex max-w-4xl flex-wrap justify-between gap-4 px-6 py-6 font-mono text-xs text-gedaempft"
       >
-        <p>Strainovic IT, 9323 Steinach, Schweiz</p>
+        <p>{{ t.ort }}</p>
         <p class="flex gap-5">
-          <NuxtLink to="/impressum" class="hover:text-tinte">Impressum</NuxtLink>
-          <NuxtLink to="/datenschutz" class="hover:text-tinte">Datenschutz</NuxtLink>
+          <NuxtLink :to="pfad('/impressum/')" class="hover:text-tinte">{{ t.impressum }}</NuxtLink>
+          <NuxtLink :to="pfad('/datenschutz/')" class="hover:text-tinte">{{ t.datenschutz }}</NuxtLink>
         </p>
       </div>
     </footer>

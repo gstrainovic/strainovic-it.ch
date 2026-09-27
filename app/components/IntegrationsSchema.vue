@@ -2,20 +2,23 @@
 // Ein echter Ablauf aus den Referenzen, nicht als Zierde. Gezeigt wird das,
 // was Text schlecht zeigt: Richtung und Rueckweg. Der Kasten rechts ist das
 // selbst gebaute Stueck, deshalb traegt nur er die Akzentfarbe.
+import texte from '~/texte/schema'
+
+const { t } = useSprache(texte)
 </script>
 
 <template>
   <figure class="m-0">
     <div class="schema">
       <div class="schema-kasten">
-        <p class="schema-rolle">Bestandssystem</p>
-        <p class="schema-name">ERP beim Kunden</p>
-        <p class="schema-detail">Rechnungen liegen als PDF vor und müssen von Hand erfasst werden.</p>
+        <p class="schema-rolle">{{ t.bestandRolle }}</p>
+        <p class="schema-name">{{ t.bestandName }}</p>
+        <p class="schema-detail">{{ t.bestandDetail }}</p>
       </div>
 
       <div class="schema-mitte">
         <div class="schema-pfeil">
-          <span class="schema-marke">Rechnungs-PDF</span>
+          <span class="schema-marke">{{ t.hin }}</span>
           <!-- quer, ab 52rem -->
           <svg class="schema-quer" viewBox="0 0 100 12" aria-hidden="true">
             <path d="M0 6h92" />
@@ -36,22 +39,18 @@
             <path d="M6 8v32" />
             <path d="M2 14l4-6 4 6z" class="schema-spitze" />
           </svg>
-          <span class="schema-marke">strukturiertes JSON</span>
+          <span class="schema-marke">{{ t.zurueck }}</span>
         </div>
       </div>
 
       <div class="schema-kasten schema-kasten-eigen">
-        <p class="schema-rolle">selbst gebaut</p>
-        <p class="schema-name">Dienst auf Azure</p>
-        <p class="schema-detail">Liest den Beleg aus und gibt ihn strukturiert als JSON zurück.</p>
+        <p class="schema-rolle">{{ t.eigenRolle }}</p>
+        <p class="schema-name">{{ t.eigenName }}</p>
+        <p class="schema-detail">{{ t.eigenDetail }}</p>
       </div>
     </div>
 
-    <figcaption class="mt-4 max-w-prose text-sm leading-relaxed text-gedaempft">
-      Damit verbucht das ERP Eingangsrechnungen selbst, statt sie abtippen zu
-      lassen. Die Anwender können dem Dienst relevante Rechnungen anlernen.
-      Gebaut mit TypeScript, Node.js und Prisma.
-    </figcaption>
+    <figcaption class="mt-4 max-w-prose text-sm leading-relaxed text-gedaempft">{{ t.legende }}</figcaption>
   </figure>
 </template>
 

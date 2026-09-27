@@ -1,8 +1,11 @@
 <script setup lang="ts">
+import texte from '~/texte/start'
+
+const { pfad, t } = useSprache(texte)
+
 useSeoMeta({
-  title: 'Goran Strainovic — Fullstack-Entwickler',
-  description:
-    'Fullstack-Entwickler aus Steinach. Schwerpunkt API- und ERP-Integration, Vue und Node im Web, Go und Kubernetes im Betrieb.'
+  title: () => t.value.titel,
+  description: () => t.value.beschreibung
 })
 
 // Strukturierte Daten: klassische Suchmaschinen wie auch KI-Dienste lesen
@@ -11,7 +14,7 @@ useHead({
   script: [
     {
       type: 'application/ld+json',
-      innerHTML: JSON.stringify({
+      innerHTML: () => JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'ProfessionalService',
         name: 'Strainovic IT',
@@ -29,7 +32,7 @@ useHead({
         founder: {
           '@type': 'Person',
           name: 'Goran Strainovic',
-          jobTitle: 'Fullstack-Entwickler',
+          jobTitle: t.value.beruf,
           knowsLanguage: ['de', 'en'],
           knowsAbout: [
             'API-Integration',
@@ -48,39 +51,6 @@ useHead({
     }
   ]
 })
-
-const kenndaten = [
-  { feld: 'Tätigkeit', wert: 'Fullstack-Entwicklung, Schwerpunkt API- und ERP-Integration' },
-  { feld: 'Standort', wert: 'Steinach, Kanton St. Gallen, Schweiz' },
-  { feld: 'Erfahrung', wert: 'Seit 2016, 45 Kundenprojekte in der Schweiz, Deutschland und Österreich' },
-  { feld: 'Sprachen', wert: 'Deutsch als Muttersprache, Englisch in Wort und Schrift' }
-]
-
-const produkte = [
-  { titel: 'Zefix/UID-Check', pfad: '/zefix-uid-check/', text: 'WordPress-Plugin: prüft die Schweizer UID im WooCommerce-Checkout und in Formularen, füllt Firmenname und Adresse aus Zefix. Vorbestellen, Zahlung erst bei Lieferung.' },
-  { titel: 'bexio-Formular-Connector', pfad: '/bexio-formular-connector/', text: 'WordPress-Plugin: Website-Anfragen werden zu Kontakt und Offerte in bexio, ohne Abtippen. Einmalpreis, kein Abo.' },
-  { titel: 'KLARA-Shop-Connector', pfad: '/klara-shop-connector/', text: 'Plugin für WooCommerce und Shopware: jede Bestellung als Kunde und Rechnung in KLARA, mit Schweizer MWST. Einmalpreis, kein Abo.' },
-  { titel: 'AbaNinja-Shop-Connector', pfad: '/abaninja-shop-connector/', text: 'WordPress-Plugin: jede WooCommerce-Bestellung als Adresse und Rechnung in AbaNinja, Total auf den Rappen genau. Einmalpreis, kein Abo.' },
-  { titel: 'Rappenrundung für WooCommerce', pfad: '/rappenrundung/', text: 'Gratis-Plugin: Total auf 5 Rappen gerundet, Differenz als eigene Position ohne MWST.' },
-]
-
-const schwerpunkte = [
-  {
-    titel: 'API- und ERP-Integration',
-    text: 'Systeme, die vorher nichts voneinander wussten, tauschen Daten aus. Warenwirtschaft an CRM, Rechnungseingang an die Buchhaltung, Shop an das ERP.',
-    technik: 'Azure Functions, REST, GraphQL, gRPC, Prisma'
-  },
-  {
-    titel: 'Web-Anwendungen',
-    text: 'Fachanwendungen vom Formular über die Kartenansicht bis zum Bericht. Aktuell WebGIS für die generelle Entwässerungsplanung und die Wasserversorgung.',
-    technik: 'Vue, Nuxt, Quasar, Node.js, TypeScript'
-  },
-  {
-    titel: 'Dienste und Betrieb',
-    text: 'Gewachsene Monolithen in einzeln betreibbare Teile zerlegen und diese in Containern betreiben, in der Cloud wie beim Kunden.',
-    technik: 'Go, Kubernetes, Docker, PostgreSQL'
-  }
-]
 </script>
 
 <template>
@@ -90,23 +60,20 @@ const schwerpunkte = [
       <h1 class="text-[clamp(2rem,1.4rem+2.6vw,3.25rem)] leading-[1.05] font-semibold tracking-[-0.02em]">
         Goran Strainovic
       </h1>
-      <p class="mt-3 max-w-prose text-lg text-gedaempft">
-        Ich baue Software, die im Betrieb steht: Webanwendungen, Schnittstellen
-        zwischen Systemen und die Dienste dahinter.
-      </p>
+      <p class="mt-3 max-w-prose text-lg text-gedaempft">{{ t.einleitung }}</p>
     </header>
 
     <dl class="mt-2">
-      <div v-for="k in kenndaten" :key="k.feld" class="feld">
+      <div v-for="k in t.kenndaten" :key="k.feld" class="feld">
         <dt>{{ k.feld }}</dt>
         <dd class="max-w-prose">{{ k.wert }}</dd>
       </div>
     </dl>
 
     <section class="mt-12">
-      <h2 class="font-mono text-xs text-gedaempft">Schwerpunkte</h2>
+      <h2 class="font-mono text-xs text-gedaempft">{{ t.schwerpunkteTitel }}</h2>
       <div class="mt-5 grid gap-px overflow-hidden border border-linie bg-linie sm:grid-cols-3">
-        <div v-for="s in schwerpunkte" :key="s.titel" class="bg-flaeche p-5">
+        <div v-for="s in t.schwerpunkte" :key="s.titel" class="bg-flaeche p-5">
           <h3 class="font-semibold">{{ s.titel }}</h3>
           <p class="mt-2 text-sm leading-relaxed text-gedaempft">{{ s.text }}</p>
           <p class="mt-4 font-mono text-xs leading-relaxed text-gedaempft">{{ s.technik }}</p>
@@ -115,11 +82,11 @@ const schwerpunkte = [
     </section>
 
     <section class="mt-16">
-      <h2 class="font-mono text-xs text-gedaempft">Produkte in Vorbestellung</h2>
+      <h2 class="font-mono text-xs text-gedaempft">{{ t.produkteTitel }}</h2>
       <div class="mt-5 grid gap-px overflow-hidden border border-linie bg-linie sm:grid-cols-2">
-        <div v-for="p in produkte" :key="p.titel" class="bg-flaeche p-5">
+        <div v-for="p in t.produkte" :key="p.titel" class="bg-flaeche p-5">
           <h3 class="font-semibold">
-            <NuxtLink :to="p.pfad" class="underline underline-offset-4">{{ p.titel }}</NuxtLink>
+            <NuxtLink :to="pfad(p.pfad)" class="underline underline-offset-4">{{ p.titel }}</NuxtLink>
           </h3>
           <p class="mt-2 text-sm leading-relaxed text-gedaempft">{{ p.text }}</p>
         </div>
@@ -127,7 +94,7 @@ const schwerpunkte = [
     </section>
 
     <section class="mt-16">
-      <h2 class="font-mono text-xs text-gedaempft">Wie eine Anbindung aussieht</h2>
+      <h2 class="font-mono text-xs text-gedaempft">{{ t.schemaTitel }}</h2>
       <div class="mt-5">
         <IntegrationsSchema />
       </div>

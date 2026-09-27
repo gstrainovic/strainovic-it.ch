@@ -37,6 +37,22 @@ export default defineNuxtConfig({
     }
   },
 
+  // Jede Seite zusätzlich unter /fr/, /it/ und /en/. Welche Sprache gilt,
+  // liest useSprache() aus dem Pfad; ein i18n-Modul braucht es dafür nicht.
+  hooks: {
+    'pages:extend'(seiten) {
+      for (const seite of [...seiten]) {
+        for (const sprache of ['fr', 'it', 'en']) {
+          seiten.push({
+            ...seite,
+            name: `${String(seite.name)}-${sprache}`,
+            path: seite.path === '/' ? `/${sprache}` : `/${sprache}${seite.path}`
+          })
+        }
+      }
+    }
+  },
+
   css: ['~/assets/css/main.css'],
 
   // Adressen enden auf einen Schrägstrich. Netlify liefert die Seiten so
@@ -55,7 +71,6 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      htmlAttrs: { lang: 'de-CH' },
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -89,7 +104,11 @@ export default defineNuxtConfig({
     preset: 'static',
     prerender: {
       crawlLinks: true,
-      routes: ['/', '/zefix-uid-check/', '/bexio-formular-connector/', '/klara-shop-connector/', '/abaninja-shop-connector/', '/rappenrundung/']
+      routes: ['', '/fr', '/it', '/en'].flatMap(sprache =>
+        ['/', '/zefix-uid-check/', '/bexio-formular-connector/', '/klara-shop-connector/', '/abaninja-shop-connector/', '/rappenrundung/'].map(
+          pfad => sprache + pfad
+        )
+      )
     }
   }
 })
