@@ -15,10 +15,6 @@ Schweiz
 
 E-Mail: [info@strainovic-it.ch](mailto:info@strainovic-it.ch)
 
-## Rechtsform
-
-Einzelunternehmen von Goran Strainovic, nicht im Handelsregister eingetragen.
-
 ## Haftung für Inhalte
 
 Die Inhalte dieser Website werden mit Sorgfalt erstellt. Für Richtigkeit,
