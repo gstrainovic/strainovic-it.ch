@@ -82,7 +82,8 @@ Netlify-Build. Der ausgelieferte Stand ist älter als der letzte Commit.
   canonical und `hreflang`.
 - Fliesstext als Markdown über Nuxt Content, Layoutseiten als Vue-Komponenten.
 - Node LTS in `.nvmrc` und in der Build-Konfiguration gepinnt.
-- Abhängigkeiten so wenige wie möglich, Renovate hält sie aktuell.
+- Abhängigkeiten so wenige wie möglich, aktuell hält sie der Wochencheck
+  (siehe «Wartung läuft lokal, nicht über Bots»).
 
 ## Hosting
 
