@@ -69,7 +69,8 @@ for (const pfad of seiten) {
       const links = [...html.matchAll(/<a [^>]*href="(\/[^"]*)"/g)].map(m => m[1])
       // Die Sprachwahl darf auf die anderen Fassungen zeigen, alles andere nicht.
       const sprachwahl = new Set(Object.keys(SPRACHEN).map(s => mitSprache(s, pfad)))
-      const falsch = links.filter(l => !sprachwahl.has(l) && !l.startsWith(`/${sprache}/`))
+      // Dateien unter /downloads/ gibt es nur einmal für alle Sprachen.
+      const falsch = links.filter(l => !sprachwahl.has(l) && !l.startsWith(`/${sprache}/`) && !l.startsWith('/downloads/'))
       assert.deepEqual(falsch, [])
     })
   }
@@ -79,6 +80,20 @@ test('Rappenrundung zeigt den Checkout in der jeweiligen Sprache', () => {
   for (const sprache of FREMD) {
     assert.match(lies(`/${sprache}/rappenrundung/`), new RegExp(`/img/rappenrundung-checkout-${sprache}\\.png`))
     assert.ok(existsSync(join(AUSGABE, 'img', `rappenrundung-checkout-${sprache}.png`)))
+  }
+})
+
+test('Rappenrundung: direkter Download und Hinweis auf die anderen Plugins, in jeder Sprache', () => {
+  for (const sprache of Object.keys(SPRACHEN)) {
+    const html = lies(mitSprache(sprache, '/rappenrundung/'))
+    // Volle Adresse: an relative Links hängt NuxtLink einen Schrägstrich an (…zip/), der Download liefe ins Leere.
+    const zip = html.match(/href="https:\/\/www\.strainovic-it\.ch\/downloads\/(rappenrundung-[\d.]+\.zip)"/)
+    assert.ok(zip, `${sprache}: kein Download-Link`)
+    assert.ok(existsSync(join(AUSGABE, 'downloads', zip[1])), `${zip[1]} fehlt`)
+    assert.doesNotMatch(html, /mailto:[^"]*body=Shop/, `${sprache}: noch die Mail-Anfrage statt Download`)
+    for (const seite of ['klara-shop-connector', 'abaninja-shop-connector', 'bexio-formular-connector', 'zefix-uid-check']) {
+      assert.match(html, new RegExp(`href="${mitSprache(sprache, `/${seite}/`)}"`), `${sprache}: Link auf ${seite} fehlt`)
+    }
   }
 })
 

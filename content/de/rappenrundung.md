@@ -25,11 +25,28 @@ rundet auf 5 Rappen und zeigt die Differenz offen als eigene Zeile.
 
 ## Preis
 
-Gratis. Das Plugin erscheint im WordPress-Verzeichnis, bis dahin schicke ich es Ihnen
-auf Anfrage:
+Gratis, ohne Anmeldung:
 
-[Plugin anfragen per E-Mail](mailto:info@strainovic-it.ch?subject=Rappenrundung%20f%C3%BCr%20WooCommerce&body=Shop%3A%20)
+[Plugin herunterladen (ZIP, Version 0.3.0)](https://www.strainovic-it.ch/downloads/rappenrundung-0.3.0.zip)
+
+Installation in WordPress unter Plugins → Installieren → Plugin hochladen. Das Plugin
+erscheint im WordPress-Verzeichnis, danach kommen Updates automatisch. Bis dahin
+informiere ich Sie gern über neue Versionen:
+[Updates per E-Mail erhalten](mailto:info@strainovic-it.ch?subject=Updates%20Rappenrundung).
+
+## Weitere Plugins für Schweizer Shops
+
+- **[KLARA-Shop-Connector](/klara-shop-connector/):** Schluss mit dem Abtippen von
+  Bestellungen. Jede bezahlte Bestellung aus WooCommerce oder Shopware landet als Kunde
+  und Rechnung in KLARA, mit MWST und demselben gerundeten Total wie im Shop.
+- **[AbaNinja-Shop-Connector](/abaninja-shop-connector/):** dasselbe für AbaNinja.
+  Adresse und Rechnung entstehen automatisch, Bestandskunden werden an der E-Mail-Adresse
+  erkannt.
+- **[bexio-Formular-Connector](/bexio-formular-connector/):** Anfragen aus Kontakt- und
+  Offertformularen (Contact Form 7, WPForms, Gravity Forms, Elementor) landen als Kontakt
+  in bexio, auf Wunsch gleich mit Offerte.
+- **[Zefix/UID-Check](/zefix-uid-check/):** prüft die UID von Firmenkunden im Checkout
+  beim Bund und füllt Firmenname und Adresse aus Zefix aus. Gelöschte oder erfundene
+  Firmen kommen nicht zum Rechnungskauf.
 
 Strainovic IT, Steinach SG, seit 2016 Entwicklung für Schweizer KMU und Agenturen.
-Passend dazu: [KLARA-Shop-Connector](/klara-shop-connector/) für Bestellungen als
-Rechnung in KLARA, [Zefix/UID-Check](/zefix-uid-check/) für Firmenkunden im Checkout.

@@ -25,11 +25,28 @@ to 5 centimes and shows the difference openly as a separate line.
 
 ## Price
 
-Free. The plugin will be listed in the WordPress directory; until then I will send it
-to you on request:
+Free, no sign-up:
 
-[Request the plugin by email](mailto:info@strainovic-it.ch?subject=5-centime%20rounding%20for%20WooCommerce&body=Shop%3A%20)
+[Download the plugin (ZIP, version 0.3.0)](https://www.strainovic-it.ch/downloads/rappenrundung-0.3.0.zip)
+
+Install it in WordPress under Plugins → Add New → Upload Plugin. The plugin will be listed
+in the WordPress directory, after that updates arrive automatically. Until then I am happy
+to let you know about new versions:
+[Get updates by email](mailto:info@strainovic-it.ch?subject=Updates%205-centime%20rounding).
+
+## More plugins for Swiss shops
+
+- **[KLARA shop connector](/en/klara-shop-connector/):** no more retyping orders. Every
+  paid order from WooCommerce or Shopware arrives in KLARA as customer and invoice, with
+  VAT and the same rounded total as in the shop.
+- **[AbaNinja shop connector](/en/abaninja-shop-connector/):** the same for AbaNinja.
+  Address and invoice are created automatically, existing customers are recognised by
+  their email address.
+- **[bexio form connector](/en/bexio-formular-connector/):** enquiries from contact and
+  quote forms (Contact Form 7, WPForms, Gravity Forms, Elementor) arrive in bexio as a
+  contact, optionally with a quote.
+- **[Zefix/UID check](/en/zefix-uid-check/):** checks the UID of business customers at
+  checkout against the federal register and fills in company name and address from Zefix.
+  Deleted or made-up companies do not get to pay by invoice.
 
 Strainovic IT, Steinach SG, developing for Swiss SMEs and agencies since 2016.
-Goes well with: [KLARA shop connector](/en/klara-shop-connector/) for orders as
-invoices in KLARA, [Zefix/UID check](/en/zefix-uid-check/) for business customers at checkout.

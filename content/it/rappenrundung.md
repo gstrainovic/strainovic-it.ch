@@ -25,11 +25,28 @@ arrotonda a 5 centesimi e mostra la differenza apertamente su una riga separata.
 
 ## Prezzo
 
-Gratuito. Il plugin sarà pubblicato nella directory di WordPress; fino ad allora ve lo
-invio su richiesta:
+Gratuito, senza registrazione:
 
-[Richiedere il plugin via e-mail](mailto:info@strainovic-it.ch?subject=Arrotondamento%20a%205%20centesimi%20per%20WooCommerce&body=Negozio%3A%20)
+[Scaricare il plugin (ZIP, versione 0.3.0)](https://www.strainovic-it.ch/downloads/rappenrundung-0.3.0.zip)
+
+Installazione in WordPress da Plugin → Aggiungi nuovo → Carica plugin. Il plugin sarà
+pubblicato nella directory di WordPress, poi gli aggiornamenti arriveranno automaticamente.
+Fino ad allora vi informo volentieri sulle nuove versioni:
+[Ricevere gli aggiornamenti via e-mail](mailto:info@strainovic-it.ch?subject=Aggiornamenti%20arrotondamento%205%20centesimi).
+
+## Altri plugin per negozi svizzeri
+
+- **[Connettore negozio KLARA](/it/klara-shop-connector/):** basta ricopiare gli ordini.
+  Ogni ordine pagato in WooCommerce o Shopware arriva in KLARA come cliente e fattura,
+  con l’IVA e lo stesso totale arrotondato del negozio.
+- **[Connettore negozio AbaNinja](/it/abaninja-shop-connector/):** lo stesso per AbaNinja.
+  Indirizzo e fattura vengono creati automaticamente, i clienti esistenti sono riconosciuti
+  dall’indirizzo e-mail.
+- **[Connettore moduli bexio](/it/bexio-formular-connector/):** le richieste dai moduli di
+  contatto e di offerta (Contact Form 7, WPForms, Gravity Forms, Elementor) arrivano in
+  bexio come contatto, su richiesta già con un’offerta.
+- **[Zefix/controllo IDI](/it/zefix-uid-check/):** verifica l’IDI dei clienti aziendali nel
+  checkout presso la Confederazione e compila ragione sociale e indirizzo da Zefix. Le
+  ditte cancellate o inventate non arrivano all’acquisto su fattura.
 
 Strainovic IT, Steinach SG, sviluppo per PMI e agenzie svizzere dal 2016.
-In abbinamento: [connettore negozio KLARA](/it/klara-shop-connector/) per gli ordini
-come fatture in KLARA, [Zefix/controllo IDI](/it/zefix-uid-check/) per i clienti aziendali nel checkout.

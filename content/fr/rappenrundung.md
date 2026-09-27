@@ -25,11 +25,28 @@ Le plugin arrondit à 5 centimes et affiche la différence ouvertement sur une l
 
 ## Prix
 
-Gratuit. Le plugin sera publié dans le répertoire WordPress ; d’ici là, je vous
-l’envoie sur demande :
+Gratuit, sans inscription :
 
-[Demander le plugin par e-mail](mailto:info@strainovic-it.ch?subject=Arrondi%20%C3%A0%205%20centimes%20pour%20WooCommerce&body=Boutique%3A%20)
+[Télécharger le plugin (ZIP, version 0.3.0)](https://www.strainovic-it.ch/downloads/rappenrundung-0.3.0.zip)
+
+Installation dans WordPress sous Extensions → Ajouter → Téléverser une extension. Le plugin
+sera publié dans le répertoire WordPress, les mises à jour arriveront alors automatiquement.
+D’ici là, je vous informe volontiers des nouvelles versions :
+[Recevoir les mises à jour par e-mail](mailto:info@strainovic-it.ch?subject=Mises%20%C3%A0%20jour%20arrondi%205%20centimes).
+
+## Autres plugins pour les boutiques suisses
+
+- **[Connecteur de boutique KLARA](/fr/klara-shop-connector/) :** fini la ressaisie des
+  commandes. Chaque commande payée dans WooCommerce ou Shopware arrive dans KLARA comme
+  client et facture, avec la TVA et le même total arrondi que dans la boutique.
+- **[Connecteur de boutique AbaNinja](/fr/abaninja-shop-connector/) :** la même chose pour
+  AbaNinja. Adresse et facture sont créées automatiquement, les clients existants sont
+  reconnus par leur adresse e-mail.
+- **[Connecteur de formulaires bexio](/fr/bexio-formular-connector/) :** les demandes des
+  formulaires de contact et de devis (Contact Form 7, WPForms, Gravity Forms, Elementor)
+  arrivent comme contact dans bexio, sur demande avec une offre.
+- **[Zefix/contrôle IDE](/fr/zefix-uid-check/) :** vérifie l’IDE des clients entreprises
+  au checkout auprès de la Confédération et remplit la raison sociale et l’adresse depuis
+  Zefix. Les entreprises radiées ou inventées n’accèdent pas à l’achat sur facture.
 
 Strainovic IT, Steinach SG, développement pour les PME et agences suisses depuis 2016.
-Complément idéal : [connecteur de boutique KLARA](/fr/klara-shop-connector/) pour les commandes
-comme factures dans KLARA, [Zefix/contrôle IDE](/fr/zefix-uid-check/) pour les clients entreprises au checkout.
