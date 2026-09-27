@@ -9,7 +9,7 @@ description: Plugin pour WooCommerce et Shopware 6 qui crée chaque commande com
 le client et la facture dans KLARA, avec toutes les positions, les frais de port,
 les frais et le bon taux de TVA.
 
-![Page de réglages dans l’administration WordPress (interface en allemand) : clé API, déclencheur, brouillon ou comptabilisation, IBAN, journal des commandes transmises](/img/klara-connector-einstellungen.png)
+![Page de réglages dans l’administration WordPress : clé API, déclencheur, brouillon ou comptabilisation, IBAN, journal des commandes transmises](/img/klara-connector-einstellungen-fr.png)
 
 ## Ce qu’il fait
 
@@ -23,7 +23,7 @@ les frais et le bon taux de TVA.
 - Inscrit le numéro de facture KLARA dans la commande, chaque commande une seule fois ;
   en cas d’erreur, la raison figure dans la commande et un clic la retransmet
 
-![Note de commande dans WooCommerce (en allemand) : facture KLARA 2026003 créée, nouveau client](/img/klara-connector-bestellnotiz.png)
+![Notes de commande dans WooCommerce : facture KLARA créée, nouveau client](/img/klara-connector-bestellnotiz-fr.png)
 
 ## Aussi pour Shopware 6
 
@@ -31,9 +31,7 @@ La même chose comme plugin Shopware (6.6 et 6.7) : la facture est créée dès 
 paiement est réglé ou la commande terminée. Le numéro de facture et le résultat
 figurent dans les champs personnalisés de la commande.
 
-![Administration Shopware (en allemand), commande avec les champs personnalisés numéro de facture KLARA, transmission et ID de facture](/img/klara-connector-shopware.png)
-
-L’interface du plugin est pour l’instant en allemand.
+![Administration Shopware, commande avec les champs personnalisés numéro de facture KLARA, transfert et ID de facture](/img/klara-connector-shopware-fr.png)
 
 ## Pour qui
 

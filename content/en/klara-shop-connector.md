@@ -9,7 +9,7 @@ description: Plugin for WooCommerce and Shopware 6 that creates every order as a
 customer and the invoice in KLARA, with all line items, shipping, fees and the
 correct VAT rate.
 
-![Settings page in the WordPress admin (German interface): API key, trigger, draft or booking, IBAN, log of transferred orders](/img/klara-connector-einstellungen.png)
+![Settings page in the WordPress admin: API key, trigger, draft or booking, IBAN, log of transferred orders](/img/klara-connector-einstellungen-en.png)
 
 ## What it does
 
@@ -23,7 +23,7 @@ correct VAT rate.
 - Writes the KLARA invoice number into the order, each order only once;
   on an error the reason is shown in the order and one click sends it again
 
-![Order note in WooCommerce (in German): KLARA invoice 2026003 created, new customer](/img/klara-connector-bestellnotiz.png)
+![Order notes in WooCommerce: KLARA invoice created, new customer](/img/klara-connector-bestellnotiz-en.png)
 
 ## Also for Shopware 6
 
@@ -31,9 +31,7 @@ The same as a Shopware plugin (6.6 and 6.7): the invoice is created as soon as t
 payment is paid or the order is completed. Invoice number and result appear in the
 custom fields of the order.
 
-![Shopware administration (in German), order with the custom fields KLARA invoice number, transfer and invoice ID](/img/klara-connector-shopware.png)
-
-The plugin interface is currently in German.
+![Shopware administration, order with the custom fields KLARA invoice number, transfer and invoice ID](/img/klara-connector-shopware-en.png)
 
 ## Who it is for
 

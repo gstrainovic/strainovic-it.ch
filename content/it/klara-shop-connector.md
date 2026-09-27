@@ -9,7 +9,7 @@ description: Plugin per WooCommerce e Shopware 6 che crea ogni ordine come clien
 e la fattura in KLARA, con tutte le posizioni, le spese di spedizione, le commissioni
 e l’aliquota IVA corretta.
 
-![Pagina delle impostazioni nel backend di WordPress (interfaccia in tedesco): chiave API, attivazione, bozza o registrazione, IBAN, registro degli ordini trasmessi](/img/klara-connector-einstellungen.png)
+![Pagina delle impostazioni nel backend di WordPress: chiave API, attivazione, bozza o registrazione, IBAN, registro degli ordini trasmessi](/img/klara-connector-einstellungen-it.png)
 
 ## Cosa fa
 
@@ -23,7 +23,7 @@ e l’aliquota IVA corretta.
 - Scrive il numero di fattura KLARA nell’ordine, ogni ordine una sola volta;
   in caso di errore il motivo è indicato nell’ordine e un clic lo ritrasmette
 
-![Nota dell’ordine in WooCommerce (in tedesco): fattura KLARA 2026003 creata, nuovo cliente](/img/klara-connector-bestellnotiz.png)
+![Note dell’ordine in WooCommerce: fattura KLARA creata, nuovo cliente](/img/klara-connector-bestellnotiz-it.png)
 
 ## Anche per Shopware 6
 
@@ -31,9 +31,7 @@ Lo stesso come plugin Shopware (6.6 e 6.7): la fattura viene creata appena il pa
 è saldato o l’ordine completato. Numero di fattura e risultato compaiono nei campi
 personalizzati dell’ordine.
 
-![Amministrazione Shopware (in tedesco), ordine con i campi personalizzati numero di fattura KLARA, trasmissione e ID fattura](/img/klara-connector-shopware.png)
-
-L’interfaccia del plugin per ora è in tedesco.
+![Amministrazione Shopware, ordine con i campi personalizzati numero di fattura KLARA, trasmissione e ID fattura](/img/klara-connector-shopware-it.png)
 
 ## Per chi
 
