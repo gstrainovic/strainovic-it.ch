@@ -9,7 +9,7 @@ description: Plugin WordPress che crea ogni ordine WooCommerce come indirizzo e 
 e la fattura in AbaNinja, con tutte le posizioni, le spese di spedizione, le commissioni
 e l’aliquota IVA corretta.
 
-![Pagina delle impostazioni nel backend di WordPress (interfaccia in tedesco): token API, attivazione, termine di pagamento, registro degli ordini trasmessi](/img/abaninja-connector-einstellungen.png)
+![Pagina delle impostazioni nel backend di WordPress: token API, attivazione, termine di pagamento, registro degli ordini trasmessi](/img/abaninja-connector-einstellungen-it.png)
 
 ## Cosa fa
 
@@ -23,9 +23,7 @@ e l’aliquota IVA corretta.
   in caso di errore il motivo è indicato nell’ordine e un clic lo ritrasmette
 - Non chiede mai Signor o Signora: i clienti vengono creati senza appellativo indovinato
 
-![Nota dell’ordine in WooCommerce (in tedesco): fattura AbaNinja RE-0001 creata](/img/abaninja-connector-bestellnotiz.png)
-
-L’interfaccia del plugin per ora è in tedesco.
+![Note dell’ordine in WooCommerce: fattura AbaNinja RE-0001 creata, ordine già presente in AbaNinja](/img/abaninja-connector-bestellnotiz-it.png)
 
 ## Per chi
 

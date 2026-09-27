@@ -10,7 +10,7 @@ numéro IDE, le plugin le vérifie auprès de la Confédération, récupère la 
 et l’adresse dans Zefix et remplit le formulaire. Les entreprises inexistantes ou
 radiées n’arrivent même pas jusqu’à l’achat sur facture.
 
-![Checkout WooCommerce avec champ IDE (en allemand) : le numéro saisi n’est pas inscrit au registre IDE, la commande est refusée](/img/uid-check-checkout-fehler.png)
+![Checkout WooCommerce avec champ IDE : le numéro saisi n’est pas inscrit au registre IDE, la commande est refusée](/img/uid-check-checkout-fehler-fr.png)
 
 ## Ce qu’il fait
 
@@ -22,8 +22,6 @@ radiées n’arrivent même pas jusqu’à l’achat sur facture.
 - Assujettissement à la TVA visible, numéro IDE enregistré dans la commande et le compte client
 - Achat sur facture réservé aux entreprises valides
 - Alerte de mutation : client radié ou déménagé, vous êtes le premier informé
-
-L’interface du plugin est pour l’instant en allemand.
 
 ## Pour qui
 

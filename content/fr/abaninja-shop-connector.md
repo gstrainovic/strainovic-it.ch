@@ -9,7 +9,7 @@ description: Plugin WordPress qui crée chaque commande WooCommerce comme adress
 l’adresse et la facture dans AbaNinja, avec toutes les positions, les frais de port,
 les frais et le bon taux de TVA.
 
-![Page de réglages dans l’administration WordPress (interface en allemand) : jeton API, déclencheur, délai de paiement, journal des commandes transmises](/img/abaninja-connector-einstellungen.png)
+![Page de réglages dans l’administration WordPress : jeton API, déclencheur, délai de paiement, journal des commandes transmises](/img/abaninja-connector-einstellungen-fr.png)
 
 ## Ce qu’il fait
 
@@ -23,9 +23,7 @@ les frais et le bon taux de TVA.
   en cas d’erreur, la raison figure dans la commande et un clic la retransmet
 - Ne demande jamais Monsieur ou Madame : les clients sont créés sans formule d’appel devinée
 
-![Note de commande dans WooCommerce (en allemand) : facture AbaNinja RE-0001 créée](/img/abaninja-connector-bestellnotiz.png)
-
-L’interface du plugin est pour l’instant en allemand.
+![Notes de commande dans WooCommerce : facture AbaNinja RE-0001 créée, commande déjà présente dans AbaNinja](/img/abaninja-connector-bestellnotiz-fr.png)
 
 ## Pour qui
 

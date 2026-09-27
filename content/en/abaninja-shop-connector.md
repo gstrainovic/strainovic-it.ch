@@ -9,7 +9,7 @@ description: WordPress plugin that creates every WooCommerce order as an address
 address and the invoice in AbaNinja, with all line items, shipping, fees and the
 correct VAT rate.
 
-![Settings page in the WordPress admin (German interface): API token, trigger, payment terms, log of transferred orders](/img/abaninja-connector-einstellungen.png)
+![Settings page in the WordPress admin: API token, trigger, payment terms, log of transferred orders](/img/abaninja-connector-einstellungen-en.png)
 
 ## What it does
 
@@ -23,9 +23,7 @@ correct VAT rate.
   on an error the reason is shown in the order and one click sends it again
 - Never asks for Mr or Ms: customers are created without a guessed salutation
 
-![Order note in WooCommerce (in German): AbaNinja invoice RE-0001 created](/img/abaninja-connector-bestellnotiz.png)
-
-The plugin interface is currently in German.
+![Order notes in WooCommerce: AbaNinja invoice RE-0001 created, order already in AbaNinja](/img/abaninja-connector-bestellnotiz-en.png)
 
 ## Who it is for
 

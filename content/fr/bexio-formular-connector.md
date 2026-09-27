@@ -9,7 +9,7 @@ description: Plugin WordPress qui crée les demandes issues de Contact Form 7, W
 devis arrive comme contact dans bexio, et si vous le souhaitez directement avec une
 offre. Vous répondez depuis bexio, avec toutes les données, sans copier-coller.
 
-![Page de réglages dans l’administration WordPress (interface en allemand) : connexion à bexio établie, journal avec nouveau contact et note ajoutée à un contact existant](/img/bexio-connector-einstellungen.png)
+![Page de réglages dans l’administration WordPress : connexion à bexio établie, journal avec nouveau contact et note ajoutée à un contact existant](/img/bexio-connector-einstellungen-fr.png)
 
 ## Ce qu’il fait
 
@@ -21,8 +21,6 @@ offre. Vous répondez depuis bexio, avec toutes les données, sans copier-coller
   contact à un collaborateur et crée une tâche de relance
 - Journal dans l’administration WordPress : ce qui a été transmis et quand, avec le
   message d’erreur si bexio n’était pas joignable
-
-L’interface du plugin est pour l’instant en allemand.
 
 ## Pour qui
 

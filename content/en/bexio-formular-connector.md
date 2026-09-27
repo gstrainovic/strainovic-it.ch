@@ -9,7 +9,7 @@ description: WordPress plugin that creates enquiries from Contact Form 7, WPForm
 a contact, with a quote straight away if you like. You reply from within bexio, with all
 the data, no copy and paste.
 
-![Settings page in the WordPress admin (German interface): connection to bexio established, log with a new contact and a note on an existing contact](/img/bexio-connector-einstellungen.png)
+![Settings page in the WordPress admin: connection to bexio established, log with a new contact and a note on an existing contact](/img/bexio-connector-einstellungen-en.png)
 
 ## What it does
 
@@ -21,8 +21,6 @@ the data, no copy and paste.
   employee and creates a follow-up task
 - Log in the WordPress admin: what was transferred and when, with the error message
   if bexio could not be reached
-
-The plugin interface is currently in German.
 
 ## Who it is for
 

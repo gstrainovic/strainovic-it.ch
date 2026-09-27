@@ -10,7 +10,7 @@ company identification number. The plugin checks it with the federal register, f
 company name and address from Zefix and fills in the form. Wrong or deleted companies
 never get as far as buying on invoice.
 
-![WooCommerce checkout with UID field (in German): the UID entered is not in the UID register, the order is rejected](/img/uid-check-checkout-fehler.png)
+![WooCommerce checkout with UID field: the UID entered is not in the UID register, the order is rejected](/img/uid-check-checkout-fehler-en.png)
 
 ## What it does
 
@@ -22,8 +22,6 @@ never get as far as buying on invoice.
 - VAT registration visible, UID stored in the order and the customer account
 - Buying on invoice only for valid companies
 - Change alert: customer deleted or moved, you are the first to know
-
-The plugin interface is currently in German.
 
 ## Who it is for
 

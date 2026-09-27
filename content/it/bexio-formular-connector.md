@@ -9,7 +9,7 @@ description: Plugin WordPress che crea le richieste da Contact Form 7, WPForms, 
 come contatto in bexio, se lo desiderate già con un’offerta. Rispondete da bexio, con
 tutti i dati, senza copia e incolla.
 
-![Pagina delle impostazioni nel backend di WordPress (interfaccia in tedesco): connessione con bexio stabilita, registro con nuovo contatto e nota su un contatto esistente](/img/bexio-connector-einstellungen.png)
+![Pagina delle impostazioni nel backend di WordPress: connessione con bexio stabilita, registro con nuovo contatto e nota su un contatto esistente](/img/bexio-connector-einstellungen-it.png)
 
 ## Cosa fa
 
@@ -21,8 +21,6 @@ tutti i dati, senza copia e incolla.
   collaboratore e crea un’attività di follow-up
 - Registro nel backend di WordPress: cosa è stato trasmesso e quando, con il messaggio
   d’errore se bexio non era raggiungibile
-
-L’interfaccia del plugin per ora è in tedesco.
 
 ## Per chi
 

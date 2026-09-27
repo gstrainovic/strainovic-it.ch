@@ -10,7 +10,7 @@ IDI, il plugin lo verifica presso la Confederazione, recupera ragione sociale e 
 da Zefix e compila il modulo. Ditte inesistenti o cancellate non arrivano nemmeno
 all’acquisto su fattura.
 
-![Checkout WooCommerce con campo IDI (in tedesco): il numero inserito non è iscritto nel registro IDI, l’ordine viene rifiutato](/img/uid-check-checkout-fehler.png)
+![Checkout WooCommerce con campo IDI: il numero inserito non è iscritto nel registro IDI, l’ordine viene rifiutato](/img/uid-check-checkout-fehler-it.png)
 
 ## Cosa fa
 
@@ -22,8 +22,6 @@ all’acquisto su fattura.
 - Iscrizione IVA visibile, numero IDI salvato nell’ordine e nel conto cliente
 - Acquisto su fattura solo per ditte valide
 - Avviso di mutazione: cliente cancellato o trasferito, lo sapete per primi
-
-L’interfaccia del plugin per ora è in tedesco.
 
 ## Per chi
 
