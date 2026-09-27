@@ -1,6 +1,6 @@
 ---
-title: WooCommerce-Bestellungen automatisch in KLARA
-description: WordPress-Plugin, das jede WooCommerce-Bestellung als Kunde und Rechnung in KLARA anlegt, mit Schweizer MWST und 5-Rappen-Rundung. Einmalpreis, kein Abo.
+title: WooCommerce- und Shopware-Bestellungen automatisch in KLARA
+description: Plugin für WooCommerce und Shopware 6, das jede Bestellung als Kunde und Rechnung in KLARA anlegt, mit Schweizer MWST und 5-Rappen-Rundung. Einmalpreis, kein Abo.
 ---
 
 # WooCommerce-Bestellungen automatisch in KLARA
@@ -25,11 +25,19 @@ Gebühren und dem richtigen MWST-Satz.
 
 ![Bestellnotiz in WooCommerce: KLARA-Rechnung 2026003 angelegt, neuer Kunde](/img/klara-connector-bestellnotiz.png)
 
+## Auch für Shopware 6
+
+Dasselbe als Shopware-Plugin (6.6 und 6.7): Die Rechnung entsteht, sobald die Zahlung
+bezahlt oder die Bestellung abgeschlossen ist. Rechnungsnummer und Ergebnis stehen in
+den Zusatzfeldern der Bestellung.
+
+![Shopware-Administration, Bestellung mit den Zusatzfeldern KLARA-Rechnungsnummer, Übertragung und Rechnungs-ID](/img/klara-connector-shopware.png)
+
 ## Für wen
 
-Schweizer Onlineshops auf WooCommerce, die ihre Buchhaltung in KLARA führen. KLARA
-selbst bietet keine WooCommerce-Anbindung an, seit Jahren gewünscht in der
-KLARA-Community. Shopware und Shopify folgen.
+Schweizer Onlineshops auf WooCommerce oder Shopware, die ihre Buchhaltung in KLARA
+führen. KLARA selbst bietet keine Shop-Anbindung an, seit Jahren gewünscht in der
+KLARA-Community. Shopify folgt.
 
 ## Preis
 
