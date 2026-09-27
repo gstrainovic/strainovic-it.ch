@@ -8,17 +8,16 @@ robots: noindex
 
 ## Verantwortlich für den Inhalt
 
-Strainovic IT\
-Goran Strainovic\
+Goran Strainovic, Strainovic IT\
 Bahnstrasse 9b\
 9323 Steinach\
 Schweiz
 
 E-Mail: [info@strainovic-it.ch](mailto:info@strainovic-it.ch)
 
-## Unternehmens-Identifikationsnummer
+## Rechtsform
 
-CHE-311.771.818
+Einzelunternehmen von Goran Strainovic, nicht im Handelsregister eingetragen.
 
 ## Haftung für Inhalte
 
