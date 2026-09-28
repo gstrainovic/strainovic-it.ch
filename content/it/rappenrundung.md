@@ -45,8 +45,8 @@ Fino ad allora vi informo volentieri sulle nuove versioni:
 - **[Connettore moduli bexio](/it/bexio-formular-connector/):** le richieste dai moduli di
   contatto e di offerta (Contact Form 7, WPForms, Gravity Forms, Elementor) arrivano in
   bexio come contatto, su richiesta già con un’offerta.
-- **[Zefix/controllo IDI](/it/zefix-uid-check/):** verifica l’IDI dei clienti aziendali nel
-  checkout presso la Confederazione e compila ragione sociale e indirizzo da Zefix. Le
-  ditte cancellate o inventate non arrivano all’acquisto su fattura.
+- **[Controllo IDI](/it/zefix-uid-check/):** verifica l’IDI dei clienti aziendali nel
+  checkout presso il registro IDI della Confederazione, con una versione bexio per la
+  prova in bexio. Le ditte cancellate o inventate non arrivano all’acquisto su fattura.
 
 Strainovic IT, Steinach SG, sviluppo per PMI e agenzie svizzere dal 2016.

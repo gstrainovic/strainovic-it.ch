@@ -46,4 +46,4 @@ I set up the first shops personally and check the first invoices in AbaNinja wit
 
 Strainovic IT, Steinach SG, developing for Swiss SMEs and agencies since 2016.
 More plugins: [KLARA shop connector](/en/klara-shop-connector/),
-[5-centime rounding for WooCommerce](/en/rappenrundung/), [Zefix/UID check](/en/zefix-uid-check/).
+[5-centime rounding for WooCommerce](/en/rappenrundung/), [UID check](/en/zefix-uid-check/).

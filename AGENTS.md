@@ -44,6 +44,10 @@ mit denselben Pfaden.
 - Plugin-Oberflächen, die es nur auf Deutsch gibt, zeigen die fremdsprachigen
   Seiten mit deutschem Screenshot und dem Hinweis darauf. Neue Screenshots je
   Sprache heissen `<name>-<fr|it|en>.png`.
+- Produktvideos liegen je Sprache im Repo unter `public/video/<name>-<de|fr|it|en>.mp4`
+  mit `<name>-<sprache>-poster.jpg`, eingebunden per `<video controls preload="metadata">`,
+  kein YouTube. Jede Datei unter 10 MB, der Grenze, die Netlify je Datei empfiehlt.
+  Quelle und Aufnahme des UID-Check-Videos liegen in `~/projects/zefix-uid-check/video/`.
 
 ## Inhaltliche Linie
 

@@ -59,7 +59,7 @@ for (const pfad of seiten) {
     test(`${ziel}: gleicher Aufbau wie die deutsche Fassung`, () => {
       // Fehlt eine Übersetzung in einer Liste, fehlt ein Eintrag.
       const zaehle = (html, tag) => (html.match(new RegExp(`<${tag}[ >]`, 'g')) ?? []).length
-      for (const tag of ['li', 'h2', 'h3', 'img', 'table', 'pre']) {
+      for (const tag of ['li', 'h2', 'h3', 'img', 'table', 'pre', 'video']) {
         assert.equal(zaehle(lies(ziel), tag), zaehle(lies(pfad), tag), `Anzahl <${tag}>`)
       }
     })
@@ -94,6 +94,47 @@ test('Rappenrundung: direkter Download und Hinweis auf die anderen Plugins, in j
     for (const seite of ['klara-shop-connector', 'abaninja-shop-connector', 'bexio-formular-connector', 'zefix-uid-check']) {
       assert.match(html, new RegExp(`href="${mitSprache(sprache, `/${seite}/`)}"`), `${sprache}: Link auf ${seite} fehlt`)
     }
+  }
+})
+
+test('UID-Check: Video in der Sprache der Seite, lokal ausgeliefert, ohne Hinweis auf deutsche Fassung', () => {
+  for (const sprache of Object.keys(SPRACHEN)) {
+    const html = lies(mitSprache(sprache, '/zefix-uid-check/'))
+    const video = html.match(/<video[^>]*>[\s\S]*?<\/video>/)
+    assert.ok(video, `${sprache}: kein <video>`)
+    const poster = new RegExp(`poster="/video/uid-check-bexio-${sprache}-poster\\.jpg"`)
+    for (const attribut of [/ controls[ >=]/, /preload="metadata"/, poster, /width="1920"/, /height="1080"/]) {
+      assert.match(video[0], attribut, `${sprache}: ${attribut} fehlt am <video>`)
+    }
+    assert.match(video[0], new RegExp(`<source[^>]*src="/video/uid-check-bexio-${sprache}\\.mp4"[^>]*type="video/mp4"`))
+    assert.doesNotMatch(html, /youtube|youtu\.be/i, `${sprache}: kein YouTube`)
+    assert.doesNotMatch(html, /Video auf Deutsch|Video in German|Vidéo en allemand|Video in tedesco/i, `${sprache}: Hinweis auf deutsches Video`)
+    assert.ok(existsSync(join(AUSGABE, 'video', `uid-check-bexio-${sprache}.mp4`)), `${sprache}: Video fehlt`)
+    assert.ok(existsSync(join(AUSGABE, 'video', `uid-check-bexio-${sprache}-poster.jpg`)), `${sprache}: Poster fehlt`)
+  }
+})
+
+test('UID-Check: ein Preisblock, ein Aufruf, nichts Ungebautes als verfügbar', () => {
+  const nichtGebaut = /Mutationsalarm|alerte de mutation|allarme mutazioni|change alert|WPForms|Gravity Forms|Elementor/i
+  for (const sprache of Object.keys(SPRACHEN)) {
+    const html = lies(mitSprache(sprache, '/zefix-uid-check/'))
+    const zaehle = re => (html.match(re) ?? []).length
+    assert.equal(zaehle(/href="mailto:/g), 1, `${sprache}: genau ein Mail-Aufruf`)
+    assert.match(html, /href="mailto:info@strainovic-it\.ch\?subject=[^"]*bexio/i, `${sprache}: Bestell-Mail fehlt`)
+    assert.equal(zaehle(/(?<!1)79 CHF|CHF 79\b/g), 1, `${sprache}: 79 CHF genau einmal`)
+    assert.equal(zaehle(/199 CHF|CHF 199/g), 1, `${sprache}: Agenturpreis genau einmal`)
+    assert.doesNotMatch(html, /Strainovic UID[ -]Check (für|for|pour|per) bexio/i, `${sprache}: Produktname ohne Strainovic`)
+    assert.doesNotMatch(html, /Vorbestell|Précommande|précommander|Preordin|Pre-order|zahlen erst bei Lieferung/i, `${sprache}: Vorbestellung`)
+    assert.doesNotMatch(html, /\bPro\b[^<]{0,20}(79|199) CHF|>Pro:?</, `${sprache}: Pro-Stufe mit Preis`)
+    assert.doesNotMatch(html, nichtGebaut, `${sprache}: Ungebautes`)
+    assert.doesNotMatch(html, /In Arbeit|ohne Aufpreis|In progress|at no extra cost|En préparation|sans supplément|In preparazione|senza sovrapprezzo|Premium/i, `${sprache}: Zusage für Ungebautes`)
+  }
+  assert.match(lies('/zefix-uid-check/'), /Bald im WordPress-Plugin-Verzeichnis/)
+  const start = readFileSync(new URL('../app/texte/start.ts', import.meta.url), 'utf8')
+  const eintraege = start.split('\n').filter(z => z.includes("pfad: '/zefix-uid-check/'"))
+  assert.equal(eintraege.length, 4)
+  for (const z of eintraege) {
+    assert.doesNotMatch(z, /Vorbestell|Précommande|Preordine|Pre-order|Zefix\.|depuis Zefix|da Zefix|from Zefix|aus Zefix/i, z)
   }
 })
 

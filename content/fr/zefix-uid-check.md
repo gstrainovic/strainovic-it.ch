@@ -1,27 +1,25 @@
 ---
-title: Zefix/contrôle IDE pour WooCommerce et les formulaires WordPress
-description: Plugin WordPress qui vérifie le numéro IDE suisse au checkout et dans les formulaires, et remplit la raison sociale et l’adresse depuis Zefix. Précommande, paiement à la livraison.
+title: Contrôle IDE pour WooCommerce et bexio
+description: Plugin WordPress qui vérifie le numéro IDE suisse au checkout WooCommerce et dans Contact Form 7 auprès du registre IDE de la Confédération. Avec une version bexio qui transmet le résultat à bexio comme contact et note.
 ---
 
-# Zefix/contrôle IDE pour WooCommerce et les formulaires WordPress
+# Contrôle IDE pour WooCommerce et bexio
 
-**Les clients entreprises vérifiés en quelques secondes.** Le client saisit son
-numéro IDE, le plugin le vérifie auprès de la Confédération, récupère la raison sociale
-et l’adresse dans Zefix et remplit le formulaire. Les entreprises inexistantes ou
-radiées n’arrivent même pas jusqu’à l’achat sur facture.
+**Les clients entreprises vérifiés au checkout.** Le client saisit son numéro IDE, le
+plugin le vérifie auprès du registre IDE de la Confédération. Les entreprises
+inexistantes ou radiées n’arrivent même pas jusqu’à l’achat sur facture.
 
 ![Checkout WooCommerce avec champ IDE : le numéro saisi n’est pas inscrit au registre IDE, la commande est refusée](/img/uid-check-checkout-fehler-fr.png)
 
 ## Ce qu’il fait
 
-- Champ IDE dans le checkout WooCommerce et dans les formulaires de contact, de devis
-  et d’inscription (Contact Form 7, WPForms, Gravity Forms, Elementor Forms)
-- Chiffre de contrôle et format immédiatement, statut « actif » ou « radié » via le
+- Champ IDE dans le checkout WooCommerce (classique et bloc de checkout) et
+  vérification dans Contact Form 7
+- Format et chiffre de contrôle immédiatement, statut « actif » ou « radié » via le
   service web IDE de la Confédération
-- Raison sociale, forme juridique, siège et adresse depuis Zefix, automatiquement dans le formulaire
-- Assujettissement à la TVA visible, numéro IDE enregistré dans la commande et le compte client
-- Achat sur facture réservé aux entreprises valides
-- Alerte de mutation : client radié ou déménagé, vous êtes le premier informé
+- Numéro IDE enregistré dans la commande, toujours dans la même écriture
+- Si le registre IDE est injoignable, le plugin ne bloque aucune commande dont le
+  chiffre de contrôle est correct
 
 ## Pour qui
 
@@ -30,19 +28,42 @@ achat sur facture, les agences qui ont beaucoup de clients WooCommerce. Pas un
 substitut à une vérification de solvabilité, mais l’étape qui la précède et qui se
 fait aujourd’hui à la main, ou pas du tout.
 
+## Contrôle IDE pour bexio
+
+Pour les boutiques qui gèrent leurs clients dans bexio : chaque commande d’entreprise
+arrive dans bexio avec un numéro IDE vérifié et une preuve.
+
+<video controls preload="metadata" poster="/video/uid-check-bexio-fr-poster.jpg" width="1920" height="1080" style="width: 100%; height: auto;">
+  <source src="/video/uid-check-bexio-fr.mp4" type="video/mp4">
+  Votre navigateur ne peut pas lire cette vidéo.
+</video>
+
+- Consulte à nouveau le registre IDE à chaque commande et enregistre le résultat avec
+  l’heure dans la commande
+- Recherche le client dans bexio par son adresse e-mail ou le crée comme entreprise
+  avec les données du registre IDE
+- Complète le contact par une note avec le résultat de la vérification et l’heure de
+  la requête, comme preuve pour la commande
+- Transmet en arrière-plan, une erreur ne bloque jamais le checkout, la transmission
+  est répétée automatiquement
+- Mise en service d’un clic sur « Se connecter à bexio », sans application bexio propre
+- Les données des clients et des commandes vont directement de la boutique à bexio,
+  mon service de connexion se charge uniquement de la connexion à bexio
+
 ## Prix
 
-- **Base :** gratuit dans le répertoire des plugins WordPress (chiffre de contrôle, statut actif/radié)
-- **Pro :** 79 CHF par an et par site, 199 CHF par an pour les agences avec jusqu’à 10 sites
-  (remplissage depuis Zefix, statut TVA, autorisation de l’achat sur facture, alerte de mutation)
+- **Contrôle IDE Suisse, gratuit :** chiffre de contrôle et statut actif/radié au
+  checkout. Bientôt dans le répertoire des plugins WordPress.
+- **Contrôle IDE pour bexio :** 30 jours d’essai gratuit, ensuite 79 CHF par an et
+  par boutique (agences : 199 CHF par an pour jusqu’à 10 boutiques). Tout ce que
+  contient la version gratuite, plus le résultat horodaté dans chaque commande et la
+  transmission à bexio comme contact avec une note.
+- **Besoin de plus ?** Par exemple remplir automatiquement la raison sociale et
+  l’adresse, afficher le statut TVA, réserver l’achat sur facture aux entreprises
+  valides, avertir lorsqu’un client est radié. Écrivez-moi ce dont votre boutique a
+  besoin.
 
-## Précommander
-
-Je développe dès la première commande. Livraison quatre semaines après votre
-commande, vous ne payez qu’à la livraison. Dites-moi quelle boutique vous exploitez
-et ce qui manque aujourd’hui dans votre checkout :
-
-[Précommander par e-mail](mailto:info@strainovic-it.ch?subject=Pr%C3%A9commande%20Zefix%2Fcontr%C3%B4le%20IDE&body=URL%20de%20la%20boutique%3A%20%0APlugin%20de%20formulaire%20ou%20WooCommerce%3A%20%0AQue%20doit%20r%C3%A9soudre%20le%20plugin%20chez%20vous%3F%20)
+[Essai gratuit – envoyez-moi l’adresse de votre boutique](mailto:info@strainovic-it.ch?subject=Essai%20Contr%C3%B4le%20IDE%20pour%20bexio&body=URL%20de%20la%20boutique%3A%20)
 
 Strainovic IT, Steinach SG, développement pour les boutiques et agences suisses depuis 2016.
-Deuxième plugin en précommande : [connecteur de formulaires bexio](/fr/bexio-formular-connector/), les demandes du site directement dans bexio.
+Autre plugin : [connecteur de formulaires bexio](/fr/bexio-formular-connector/), les demandes du site directement dans bexio.
