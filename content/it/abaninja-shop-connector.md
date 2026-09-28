@@ -46,4 +46,4 @@ I primi negozi li configuro personalmente e controllo con voi le prime fatture i
 
 Strainovic IT, Steinach SG, sviluppo per PMI e agenzie svizzere dal 2016.
 Altri plugin: [connettore negozio KLARA](/it/klara-shop-connector/),
-[arrotondamento a 5 centesimi per WooCommerce](/it/rappenrundung/), [Zefix/controllo IDI](/it/zefix-uid-check/).
+[arrotondamento a 5 centesimi per WooCommerce](/it/rappenrundung/), [Controllo IDI](/it/zefix-uid-check/).

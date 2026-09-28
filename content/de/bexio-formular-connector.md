@@ -46,4 +46,4 @@ und was aus einer Anfrage in bexio werden soll:
 [Vorbestellen per E-Mail](mailto:info@strainovic-it.ch?subject=Vorbestellung%20bexio-Formular-Connector&body=Website%3A%20%0AFormular-Plugin%3A%20%0AWas%20soll%20aus%20der%20Anfrage%20in%20bexio%20werden%3F%20)
 
 Strainovic IT, Steinach SG, seit 2016 Entwicklung für Schweizer KMU und Agenturen.
-Zweites Plugin in Vorbestellung: [Zefix/UID-Check](/zefix-uid-check/), Firmenkunden im WooCommerce-Checkout prüfen.
+Weiteres Plugin: [UID-Check](/zefix-uid-check/), Firmenkunden im WooCommerce-Checkout prüfen und den Nachweis an bexio übergeben.

@@ -45,8 +45,8 @@ informiere ich Sie gern über neue Versionen:
 - **[bexio-Formular-Connector](/bexio-formular-connector/):** Anfragen aus Kontakt- und
   Offertformularen (Contact Form 7, WPForms, Gravity Forms, Elementor) landen als Kontakt
   in bexio, auf Wunsch gleich mit Offerte.
-- **[Zefix/UID-Check](/zefix-uid-check/):** prüft die UID von Firmenkunden im Checkout
-  beim Bund und füllt Firmenname und Adresse aus Zefix aus. Gelöschte oder erfundene
-  Firmen kommen nicht zum Rechnungskauf.
+- **[UID-Check](/zefix-uid-check/):** prüft die UID von Firmenkunden im Checkout
+  beim UID-Register des Bundes, mit bexio-Version für den Nachweis in bexio. Gelöschte
+  oder erfundene Firmen kommen nicht zum Rechnungskauf.
 
 Strainovic IT, Steinach SG, seit 2016 Entwicklung für Schweizer KMU und Agenturen.

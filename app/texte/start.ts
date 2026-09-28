@@ -31,9 +31,9 @@ const de = {
       technik: 'Go, Kubernetes, Docker, PostgreSQL'
     }
   ],
-  produkteTitel: 'Produkte in Vorbestellung',
+  produkteTitel: 'Produkte',
   produkte: [
-    { titel: 'Zefix/UID-Check', pfad: '/zefix-uid-check/', text: 'WordPress-Plugin: prüft die Schweizer UID im WooCommerce-Checkout und in Formularen, füllt Firmenname und Adresse aus Zefix. Vorbestellen, Zahlung erst bei Lieferung.' },
+    { titel: 'UID-Check', pfad: '/zefix-uid-check/', text: 'WordPress-Plugin: prüft die Schweizer UID im WooCommerce-Checkout beim UID-Register des Bundes. Version für bexio: Kontakt und Prüfnotiz in bexio, 30 Tage gratis, danach 79 CHF pro Jahr und Shop.' },
     { titel: 'bexio-Formular-Connector', pfad: '/bexio-formular-connector/', text: 'WordPress-Plugin: Website-Anfragen werden zu Kontakt und Offerte in bexio, ohne Abtippen. Einmalpreis, kein Abo.' },
     { titel: 'KLARA-Shop-Connector', pfad: '/klara-shop-connector/', text: 'Plugin für WooCommerce und Shopware: jede Bestellung als Kunde und Rechnung in KLARA, mit Schweizer MWST. 149 CHF pro Shop und Jahr.' },
     { titel: 'AbaNinja-Shop-Connector', pfad: '/abaninja-shop-connector/', text: 'WordPress-Plugin: jede WooCommerce-Bestellung als Adresse und Rechnung in AbaNinja, Total auf den Rappen genau. 149 CHF pro Shop und Jahr.' },
@@ -75,9 +75,9 @@ export default {
         technik: 'Go, Kubernetes, Docker, PostgreSQL'
       }
     ],
-    produkteTitel: 'Produits en précommande',
+    produkteTitel: 'Produits',
     produkte: [
-      { titel: 'Zefix/Contrôle IDE', pfad: '/zefix-uid-check/', text: 'Plugin WordPress : vérifie le numéro IDE suisse dans le checkout WooCommerce et dans les formulaires, remplit la raison sociale et l’adresse depuis Zefix. Précommande, paiement à la livraison.' },
+      { titel: 'Contrôle IDE', pfad: '/zefix-uid-check/', text: 'Plugin WordPress : vérifie le numéro IDE suisse dans le checkout WooCommerce auprès du registre IDE de la Confédération. Version pour bexio : contact et note de vérification dans bexio, 30 jours gratuits, ensuite 79 CHF par an et par boutique.' },
       { titel: 'Connecteur de formulaires bexio', pfad: '/bexio-formular-connector/', text: 'Plugin WordPress : les demandes du site deviennent contact et offre dans bexio, sans ressaisie. Prix unique, pas d’abonnement.' },
       { titel: 'Connecteur de boutique KLARA', pfad: '/klara-shop-connector/', text: 'Plugin pour WooCommerce et Shopware : chaque commande devient client et facture dans KLARA, avec la TVA suisse. 149 CHF par boutique et par an.' },
       { titel: 'Connecteur de boutique AbaNinja', pfad: '/abaninja-shop-connector/', text: 'Plugin WordPress : chaque commande WooCommerce devient adresse et facture dans AbaNinja, total exact au centime. 149 CHF par boutique et par an.' },
@@ -116,9 +116,9 @@ export default {
         technik: 'Go, Kubernetes, Docker, PostgreSQL'
       }
     ],
-    produkteTitel: 'Prodotti in preordine',
+    produkteTitel: 'Prodotti',
     produkte: [
-      { titel: 'Zefix/Controllo IDI', pfad: '/zefix-uid-check/', text: 'Plugin WordPress: verifica il numero IDI svizzero nel checkout WooCommerce e nei moduli, compila ragione sociale e indirizzo da Zefix. Preordine, pagamento alla consegna.' },
+      { titel: 'Controllo IDI', pfad: '/zefix-uid-check/', text: 'Plugin WordPress: verifica il numero IDI svizzero nel checkout WooCommerce presso il registro IDI della Confederazione. Versione per bexio: contatto e nota di verifica in bexio, 30 giorni gratis, poi 79 CHF all’anno per negozio.' },
       { titel: 'Connettore moduli bexio', pfad: '/bexio-formular-connector/', text: 'Plugin WordPress: le richieste dal sito diventano contatto e offerta in bexio, senza ribattere nulla. Prezzo unico, nessun abbonamento.' },
       { titel: 'Connettore negozio KLARA', pfad: '/klara-shop-connector/', text: 'Plugin per WooCommerce e Shopware: ogni ordine diventa cliente e fattura in KLARA, con l’IVA svizzera. 149 CHF per negozio all’anno.' },
       { titel: 'Connettore negozio AbaNinja', pfad: '/abaninja-shop-connector/', text: 'Plugin WordPress: ogni ordine WooCommerce diventa indirizzo e fattura in AbaNinja, totale esatto al centesimo. 149 CHF per negozio all’anno.' },
@@ -157,9 +157,9 @@ export default {
         technik: 'Go, Kubernetes, Docker, PostgreSQL'
       }
     ],
-    produkteTitel: 'Products available for pre-order',
+    produkteTitel: 'Products',
     produkte: [
-      { titel: 'Zefix/UID check', pfad: '/zefix-uid-check/', text: 'WordPress plugin: validates the Swiss UID (company ID) in the WooCommerce checkout and in forms, fills in company name and address from Zefix. Pre-order, pay on delivery.' },
+      { titel: 'UID check', pfad: '/zefix-uid-check/', text: 'WordPress plugin: validates the Swiss UID (company ID) in the WooCommerce checkout against the federal UID register. Version for bexio: contact and check note in bexio, free for 30 days, then CHF 79 per year and shop.' },
       { titel: 'bexio form connector', pfad: '/bexio-formular-connector/', text: 'WordPress plugin: website enquiries become contact and quote in bexio, no retyping. One-time price, no subscription.' },
       { titel: 'KLARA shop connector', pfad: '/klara-shop-connector/', text: 'Plugin for WooCommerce and Shopware: every order becomes customer and invoice in KLARA, with Swiss VAT. CHF 149 per shop and year.' },
       { titel: 'AbaNinja shop connector', pfad: '/abaninja-shop-connector/', text: 'WordPress plugin: every WooCommerce order becomes address and invoice in AbaNinja, total exact to the centime. CHF 149 per shop and year.' },

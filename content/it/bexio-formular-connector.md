@@ -46,4 +46,4 @@ diventare una richiesta in bexio:
 [Preordinare via e-mail](mailto:info@strainovic-it.ch?subject=Preordine%20connettore%20moduli%20bexio&body=Sito%3A%20%0APlugin%20per%20moduli%3A%20%0ACosa%20deve%20diventare%20la%20richiesta%20in%20bexio%3F%20)
 
 Strainovic IT, Steinach SG, sviluppo per PMI e agenzie svizzere dal 2016.
-Secondo plugin in preordine: [Zefix/controllo IDI](/it/zefix-uid-check/), verificare i clienti aziendali nel checkout WooCommerce.
+Altro plugin: [Controllo IDI](/it/zefix-uid-check/), verificare i clienti aziendali nel checkout WooCommerce e trasmettere la prova a bexio.

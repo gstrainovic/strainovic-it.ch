@@ -46,4 +46,4 @@ vous utilisez et ce qu’une demande doit devenir dans bexio :
 [Précommander par e-mail](mailto:info@strainovic-it.ch?subject=Pr%C3%A9commande%20connecteur%20de%20formulaires%20bexio&body=Site%3A%20%0APlugin%20de%20formulaire%3A%20%0AQue%20doit%20devenir%20la%20demande%20dans%20bexio%3F%20)
 
 Strainovic IT, Steinach SG, développement pour les PME et agences suisses depuis 2016.
-Deuxième plugin en précommande : [Zefix/contrôle IDE](/fr/zefix-uid-check/), vérifier les clients entreprises dans le checkout WooCommerce.
+Autre plugin : [Contrôle IDE](/fr/zefix-uid-check/), vérifier les clients entreprises dans le checkout WooCommerce et transmettre la preuve à bexio.

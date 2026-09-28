@@ -56,5 +56,5 @@ and check the first invoices in KLARA with you:
 [Order by email](mailto:info@strainovic-it.ch?subject=Order%20KLARA%20shop%20connector&body=Shop%3A%20%0AOrders%20per%20month%2C%20roughly%3A%20%0ADraft%20or%20book%20directly%3F%20)
 
 Strainovic IT, Steinach SG, developing for Swiss SMEs and agencies since 2016.
-More plugins: [Zefix/UID check](/en/zefix-uid-check/) for business customers at checkout,
+More plugins: [UID check](/en/zefix-uid-check/) for business customers at checkout,
 [bexio form connector](/en/bexio-formular-connector/) for website enquiries in bexio.

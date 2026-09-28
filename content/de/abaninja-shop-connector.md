@@ -47,4 +47,4 @@ in AbaNinja:
 
 Strainovic IT, Steinach SG, seit 2016 Entwicklung für Schweizer KMU und Agenturen.
 Weitere Plugins: [KLARA-Shop-Connector](/klara-shop-connector/),
-[Rappenrundung für WooCommerce](/rappenrundung/), [Zefix/UID-Check](/zefix-uid-check/).
+[Rappenrundung für WooCommerce](/rappenrundung/), [UID-Check](/zefix-uid-check/).
