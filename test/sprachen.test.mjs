@@ -59,7 +59,7 @@ for (const pfad of seiten) {
     test(`${ziel}: gleicher Aufbau wie die deutsche Fassung`, () => {
       // Fehlt eine Übersetzung in einer Liste, fehlt ein Eintrag.
       const zaehle = (html, tag) => (html.match(new RegExp(`<${tag}[ >]`, 'g')) ?? []).length
-      for (const tag of ['li', 'h2', 'h3', 'img', 'table', 'pre']) {
+      for (const tag of ['li', 'h2', 'h3', 'img', 'table', 'pre', 'video']) {
         assert.equal(zaehle(lies(ziel), tag), zaehle(lies(pfad), tag), `Anzahl <${tag}>`)
       }
     })
@@ -95,6 +95,23 @@ test('Rappenrundung: direkter Download und Hinweis auf die anderen Plugins, in j
       assert.match(html, new RegExp(`href="${mitSprache(sprache, `/${seite}/`)}"`), `${sprache}: Link auf ${seite} fehlt`)
     }
   }
+})
+
+test('UID-Check: Abschnitt zum bexio-Plugin mit lokalem Video, Preis und Bestell-Mail, in jeder Sprache', () => {
+  for (const sprache of Object.keys(SPRACHEN)) {
+    const html = lies(mitSprache(sprache, '/zefix-uid-check/'))
+    const video = html.match(/<video[^>]*>[\s\S]*?<\/video>/)
+    assert.ok(video, `${sprache}: kein <video>`)
+    for (const attribut of [/ controls[ >=]/, /preload="metadata"/, /poster="\/video\/uid-check-bexio-poster\.jpg"/, /width="1920"/, /height="1080"/]) {
+      assert.match(video[0], attribut, `${sprache}: ${attribut} fehlt am <video>`)
+    }
+    assert.match(video[0], /<source[^>]*src="\/video\/uid-check-bexio\.mp4"[^>]*type="video\/mp4"|<source[^>]*type="video\/mp4"[^>]*src="\/video\/uid-check-bexio\.mp4"/)
+    assert.doesNotMatch(html, /youtube|youtu\.be/i, `${sprache}: kein YouTube`)
+    assert.match(html, /79 CHF|CHF 79/, `${sprache}: Preis fehlt`)
+    assert.match(html, /href="mailto:info@strainovic-it\.ch\?subject=[^"]*bexio/i, `${sprache}: Bestell-Mail fehlt`)
+  }
+  assert.ok(existsSync(join(AUSGABE, 'video', 'uid-check-bexio.mp4')), 'Video fehlt')
+  assert.ok(existsSync(join(AUSGABE, 'video', 'uid-check-bexio-poster.jpg')), 'Poster fehlt')
 })
 
 test('sitemap.xml nennt jede Seite in jeder Sprache, und nur vorhandene', () => {

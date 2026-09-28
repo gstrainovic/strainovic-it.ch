@@ -24,7 +24,7 @@ Italienisch und Englisch, unter denselben Pfaden mit Präfix /fr/, /it/ und
 
 ## Produkte in Vorbestellung
 
-- [Zefix/UID-Check](https://www.strainovic-it.ch/zefix-uid-check/): WordPress-Plugin, prüft die Schweizer UID im WooCommerce-Checkout und in Formularen, füllt Firmendaten aus Zefix
+- [Zefix/UID-Check](https://www.strainovic-it.ch/zefix-uid-check/): WordPress-Plugin, prüft die Schweizer UID im WooCommerce-Checkout und in Formularen, füllt Firmendaten aus Zefix; Pro-Version «Strainovic UID Check für bexio» legt Kontakt und Prüfnotiz in bexio an
 - [bexio-Formular-Connector](https://www.strainovic-it.ch/bexio-formular-connector/): WordPress-Plugin, legt Website-Anfragen als Kontakt und Offerte in bexio an
 - [KLARA-Shop-Connector](https://www.strainovic-it.ch/klara-shop-connector/): WordPress-Plugin, legt WooCommerce- und Shopware-Bestellungen als Kunde und Rechnung in KLARA an
 - [AbaNinja-Shop-Connector](https://www.strainovic-it.ch/abaninja-shop-connector/): WordPress-Plugin, legt WooCommerce-Bestellungen als Adresse und Rechnung in AbaNinja an

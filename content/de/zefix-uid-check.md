@@ -28,8 +28,36 @@ Schweizer Onlineshops mit Firmenkunden, B2B-Shops mit Rechnungskauf, Agenturen m
 vielen WooCommerce-Kunden. Kein Ersatz für eine Bonitätsprüfung, aber der Schritt
 davor, der heute von Hand passiert oder gar nicht.
 
+## Strainovic UID Check für bexio
+
+Die erste Pro-Version ist fertig: ein WooCommerce-Plugin für Shops, die ihre Kunden
+in bexio führen. Jede Firmenbestellung kommt mit geprüfter UID und Nachweis in bexio an.
+
+<video controls preload="metadata" poster="/video/uid-check-bexio-poster.jpg" width="1920" height="1080" style="width: 100%; height: auto;">
+  <source src="/video/uid-check-bexio.mp4" type="video/mp4">
+  Ihr Browser kann das Video nicht abspielen.
+</video>
+
+- Prüft die UID im Checkout gegen das UID-Register des Bundes, gelöschte oder
+  falsche UIDs lehnt der Checkout ab
+- Sucht den Kunden in bexio über die E-Mail-Adresse oder legt ihn als Firma mit den
+  Daten aus dem UID-Register an
+- Ergänzt den Kontakt um eine Notiz mit Prüfergebnis und Zeitpunkt der Abfrage, als
+  Nachweis zur Bestellung
+- Übergibt im Hintergrund, ein Fehler blockiert den Checkout nie, die Übergabe wird
+  automatisch wiederholt
+- Einrichtung mit einem Klick auf «Mit bexio verbinden», ohne eigene bexio-App
+- Kunden- und Bestelldaten gehen direkt vom Shop zu bexio, mein Verbindungsdienst
+  übernimmt nur die Anmeldung bei bexio
+
+**30 Tage gratis testen, danach 79 CHF pro Jahr und Shop.** Schreiben Sie mir die
+Adresse Ihres Shops:
+
+[Gratis testen per E-Mail](mailto:info@strainovic-it.ch?subject=Strainovic%20UID%20Check%20f%C3%BCr%20bexio%20testen&body=Shop-URL%3A%20)
+
 ## Preis
 
+- **UID Check für bexio:** 30 Tage gratis testen, danach 79 CHF pro Jahr und Shop
 - **Basis:** gratis im WordPress-Plugin-Verzeichnis (Prüfziffer, Status aktiv/gelöscht)
 - **Pro:** 79 CHF pro Jahr und Site, 199 CHF pro Jahr für Agenturen mit bis zu 10 Sites
   (Autofill aus Zefix, MWST-Status, Rechnungskauf-Freigabe, Mutationsalarm)

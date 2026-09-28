@@ -30,8 +30,37 @@ achat sur facture, les agences qui ont beaucoup de clients WooCommerce. Pas un
 substitut à une vérification de solvabilité, mais l’étape qui la précède et qui se
 fait aujourd’hui à la main, ou pas du tout.
 
+## Strainovic UID Check pour bexio
+
+La première version Pro est prête : un plugin WooCommerce pour les boutiques qui
+gèrent leurs clients dans bexio. Chaque commande d’entreprise arrive dans bexio avec
+un numéro IDE vérifié et une preuve.
+
+<video controls preload="metadata" poster="/video/uid-check-bexio-poster.jpg" width="1920" height="1080" style="width: 100%; height: auto;">
+  <source src="/video/uid-check-bexio.mp4" type="video/mp4">
+  Votre navigateur ne peut pas lire cette vidéo.
+</video>
+
+- Vérifie le numéro IDE au checkout auprès du registre IDE de la Confédération, les
+  numéros radiés ou erronés sont refusés au checkout
+- Recherche le client dans bexio par son adresse e-mail ou le crée comme entreprise
+  avec les données du registre IDE
+- Complète le contact par une note avec le résultat de la vérification et l’heure de
+  la requête, comme preuve pour la commande
+- Transmet en arrière-plan, une erreur ne bloque jamais le checkout, la transmission
+  est répétée automatiquement
+- Mise en service d’un clic sur « Se connecter à bexio », sans application bexio propre
+- Les données des clients et des commandes vont directement de la boutique à bexio,
+  mon service de connexion se charge uniquement de la connexion à bexio
+
+**30 jours d’essai gratuit, ensuite 79 CHF par an et par boutique.** Envoyez-moi
+l’adresse de votre boutique :
+
+[Essayer gratuitement par e-mail](mailto:info@strainovic-it.ch?subject=Essai%20Strainovic%20UID%20Check%20pour%20bexio&body=URL%20de%20la%20boutique%3A%20)
+
 ## Prix
 
+- **UID Check pour bexio :** 30 jours d’essai gratuit, ensuite 79 CHF par an et par boutique
 - **Base :** gratuit dans le répertoire des plugins WordPress (chiffre de contrôle, statut actif/radié)
 - **Pro :** 79 CHF par an et par site, 199 CHF par an pour les agences avec jusqu’à 10 sites
   (remplissage depuis Zefix, statut TVA, autorisation de l’achat sur facture, alerte de mutation)

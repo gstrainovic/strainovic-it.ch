@@ -29,8 +29,37 @@ Negozi online svizzeri con clienti aziendali, negozi B2B con acquisto su fattura
 agenzie con molti clienti WooCommerce. Non sostituisce una verifica della solvibilità,
 ma è il passo che la precede e che oggi si fa a mano, o non si fa affatto.
 
+## Strainovic UID Check per bexio
+
+La prima versione Pro è pronta: un plugin WooCommerce per i negozi che gestiscono i
+loro clienti in bexio. Ogni ordine aziendale arriva in bexio con numero IDI verificato
+e prova.
+
+<video controls preload="metadata" poster="/video/uid-check-bexio-poster.jpg" width="1920" height="1080" style="width: 100%; height: auto;">
+  <source src="/video/uid-check-bexio.mp4" type="video/mp4">
+  Il vostro browser non può riprodurre questo video.
+</video>
+
+- Verifica il numero IDI nel checkout presso il registro IDI della Confederazione, i
+  numeri cancellati o errati vengono rifiutati nel checkout
+- Cerca il cliente in bexio tramite l’indirizzo e-mail o lo crea come impresa con i
+  dati del registro IDI
+- Completa il contatto con una nota con l’esito della verifica e l’ora della
+  richiesta, come prova per l’ordine
+- Trasmette in background, un errore non blocca mai il checkout, la trasmissione
+  viene ripetuta automaticamente
+- Configurazione con un clic su «Connetti a bexio», senza un’app bexio propria
+- I dati dei clienti e degli ordini vanno direttamente dal negozio a bexio, il mio
+  servizio di connessione si occupa solo dell’accesso a bexio
+
+**30 giorni di prova gratuita, poi 79 CHF all’anno per negozio.** Scrivetemi
+l’indirizzo del vostro negozio:
+
+[Provare gratis via e-mail](mailto:info@strainovic-it.ch?subject=Prova%20Strainovic%20UID%20Check%20per%20bexio&body=URL%20del%20negozio%3A%20)
+
 ## Prezzo
 
+- **UID Check per bexio:** 30 giorni di prova gratuita, poi 79 CHF all’anno per negozio
 - **Base:** gratuito nella directory dei plugin di WordPress (cifra di controllo, stato attivo/cancellato)
 - **Pro:** 79 CHF all’anno per sito, 199 CHF all’anno per agenzie con un massimo di 10 siti
   (compilazione da Zefix, stato IVA, abilitazione dell’acquisto su fattura, avviso di mutazione)
