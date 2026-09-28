@@ -40,6 +40,8 @@ e prova.
   Il vostro browser non può riprodurre questo video.
 </video>
 
+*Video in tedesco, con il negozio di prova e il plugin in versione tedesca.*
+
 - Verifica il numero IDI nel checkout presso il registro IDI della Confederazione, i
   numeri cancellati o errati vengono rifiutati nel checkout
 - Cerca il cliente in bexio tramite l’indirizzo e-mail o lo crea come impresa con i

@@ -41,6 +41,8 @@ un numéro IDE vérifié et une preuve.
   Votre navigateur ne peut pas lire cette vidéo.
 </video>
 
+*Vidéo en allemand, avec la boutique de test et le plugin en version allemande.*
+
 - Vérifie le numéro IDE au checkout auprès du registre IDE de la Confédération, les
   numéros radiés ou erronés sont refusés au checkout
 - Recherche le client dans bexio par son adresse e-mail ou le crée comme entreprise

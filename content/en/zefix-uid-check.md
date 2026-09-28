@@ -39,6 +39,8 @@ customers in bexio. Every business order arrives in bexio with a checked UID and
   Your browser cannot play this video.
 </video>
 
+*Video in German, showing the test shop and the plugin in their German version.*
+
 - Checks the UID at checkout against the federal UID register, deleted or wrong
   UIDs are rejected at checkout
 - Finds the customer in bexio by email address or creates them as a company with the
