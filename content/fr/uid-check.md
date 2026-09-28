@@ -58,7 +58,8 @@ arrive dans bexio avec un numéro IDE vérifié et une preuve.
   par boutique (agences : 199 CHF par an pour jusqu’à 10 boutiques). Tout ce que
   contient la version gratuite, plus le résultat horodaté dans chaque commande et la
   transmission à bexio comme contact avec une note.
-- **Besoin de plus ?** Par exemple remplir automatiquement la raison sociale et
+- **Besoin de plus ?** Par exemple des données du registre du commerce (Zefix) comme
+  le but ou les personnes autorisées à signer, remplir automatiquement la raison sociale et
   l’adresse, afficher le statut TVA, réserver l’achat sur facture aux entreprises
   valides, avertir lorsqu’un client est radié. Écrivez-moi ce dont votre boutique a
   besoin.

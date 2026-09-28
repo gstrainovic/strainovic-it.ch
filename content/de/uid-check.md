@@ -57,7 +57,8 @@ UID und Nachweis in bexio an.
   (Agenturen: 199 CHF pro Jahr für bis zu 10 Shops). Alles aus der Gratis-Version,
   dazu das Prüfergebnis mit Zeitstempel an jeder Bestellung und die Übergabe als
   Kontakt mit Notiz an bexio.
-- **Mehr gewünscht?** Zum Beispiel Firmenname und Adresse automatisch ausfüllen,
+- **Mehr gewünscht?** Zum Beispiel Angaben aus dem Handelsregister (Zefix) wie Zweck
+  oder Zeichnungsberechtigte, Firmenname und Adresse automatisch ausfüllen,
   MWST-Status anzeigen, Rechnungskauf nur für gültige Firmen, Warnung bei gelöschten
   Kunden. Schreiben Sie mir, was Ihr Shop braucht.
 

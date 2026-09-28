@@ -57,7 +57,8 @@ bexio con numero IDI verificato e prova.
   negozio (agenzie: 199 CHF all’anno per un massimo di 10 negozi). Tutto quello che
   offre la versione gratuita, più l’esito con data e ora in ogni ordine e la
   trasmissione a bexio come contatto con nota.
-- **Serve di più?** Ad esempio compilazione automatica di ragione sociale e
+- **Serve di più?** Ad esempio dati del registro di commercio (Zefix) come scopo o
+  persone con diritto di firma, compilazione automatica di ragione sociale e
   indirizzo, stato IVA, acquisto su fattura solo per ditte valide, avviso quando un
   cliente viene cancellato. Scrivetemi di cosa ha bisogno il vostro negozio.
 

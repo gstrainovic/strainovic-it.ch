@@ -56,5 +56,5 @@ persönlich ein und prüfe die ersten Rechnungen mit Ihnen in KLARA:
 [Bestellen per E-Mail](mailto:info@strainovic-it.ch?subject=Bestellung%20KLARA-Shop-Connector&body=Shop%3A%20%0AEtwa%20Bestellungen%20pro%20Monat%3A%20%0AEntwurf%20oder%20direkt%20buchen%3F%20)
 
 Strainovic IT, Steinach SG, seit 2016 Entwicklung für Schweizer KMU und Agenturen.
-Weitere Plugins: [UID-Check](/zefix-uid-check/) für Firmenkunden im Checkout,
+Weitere Plugins: [UID-Check](/uid-check/) für Firmenkunden im Checkout,
 [bexio-Formular-Connector](/bexio-formular-connector/) für Website-Anfragen in bexio.

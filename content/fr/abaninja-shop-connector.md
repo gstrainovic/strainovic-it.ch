@@ -47,4 +47,4 @@ factures dans AbaNinja :
 
 Strainovic IT, Steinach SG, développement pour les PME et agences suisses depuis 2016.
 Autres plugins : [connecteur de boutique KLARA](/fr/klara-shop-connector/),
-[arrondi à 5 centimes pour WooCommerce](/fr/rappenrundung/), [Contrôle IDE](/fr/zefix-uid-check/).
+[arrondi à 5 centimes pour WooCommerce](/fr/rappenrundung/), [Contrôle IDE](/fr/uid-check/).

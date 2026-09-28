@@ -91,7 +91,7 @@ test('Rappenrundung: direkter Download und Hinweis auf die anderen Plugins, in j
     assert.ok(zip, `${sprache}: kein Download-Link`)
     assert.ok(existsSync(join(AUSGABE, 'downloads', zip[1])), `${zip[1]} fehlt`)
     assert.doesNotMatch(html, /mailto:[^"]*body=Shop/, `${sprache}: noch die Mail-Anfrage statt Download`)
-    for (const seite of ['klara-shop-connector', 'abaninja-shop-connector', 'bexio-formular-connector', 'zefix-uid-check']) {
+    for (const seite of ['klara-shop-connector', 'abaninja-shop-connector', 'bexio-formular-connector', 'uid-check']) {
       assert.match(html, new RegExp(`href="${mitSprache(sprache, `/${seite}/`)}"`), `${sprache}: Link auf ${seite} fehlt`)
     }
   }
@@ -99,7 +99,7 @@ test('Rappenrundung: direkter Download und Hinweis auf die anderen Plugins, in j
 
 test('UID-Check: Video in der Sprache der Seite, lokal ausgeliefert, ohne Hinweis auf deutsche Fassung', () => {
   for (const sprache of Object.keys(SPRACHEN)) {
-    const html = lies(mitSprache(sprache, '/zefix-uid-check/'))
+    const html = lies(mitSprache(sprache, '/uid-check/'))
     const video = html.match(/<video[^>]*>[\s\S]*?<\/video>/)
     assert.ok(video, `${sprache}: kein <video>`)
     const poster = new RegExp(`poster="/video/uid-check-bexio-${sprache}-poster\\.jpg"`)
@@ -117,7 +117,7 @@ test('UID-Check: Video in der Sprache der Seite, lokal ausgeliefert, ohne Hinwei
 test('UID-Check: ein Preisblock, ein Aufruf, nichts Ungebautes als verfügbar', () => {
   const nichtGebaut = /Mutationsalarm|alerte de mutation|allarme mutazioni|change alert|WPForms|Gravity Forms|Elementor/i
   for (const sprache of Object.keys(SPRACHEN)) {
-    const html = lies(mitSprache(sprache, '/zefix-uid-check/'))
+    const html = lies(mitSprache(sprache, '/uid-check/'))
     const zaehle = re => (html.match(re) ?? []).length
     assert.equal(zaehle(/href="mailto:/g), 1, `${sprache}: genau ein Mail-Aufruf`)
     assert.match(html, /href="mailto:info@strainovic-it\.ch\?subject=[^"]*bexio/i, `${sprache}: Bestell-Mail fehlt`)
@@ -128,10 +128,16 @@ test('UID-Check: ein Preisblock, ein Aufruf, nichts Ungebautes als verfügbar', 
     assert.doesNotMatch(html, /\bPro\b[^<]{0,20}(79|199) CHF|>Pro:?</, `${sprache}: Pro-Stufe mit Preis`)
     assert.doesNotMatch(html, nichtGebaut, `${sprache}: Ungebautes`)
     assert.doesNotMatch(html, /In Arbeit|ohne Aufpreis|In progress|at no extra cost|En préparation|sans supplément|In preparazione|senza sovrapprezzo|Premium/i, `${sprache}: Zusage für Ungebautes`)
+    // Zefix nutzt das Plugin nicht; erwähnt wird es nur als Frage im Block «Mehr gewünscht?».
+    const sichtbar = html.replace(/<script[\s\S]*?<\/script>/g, '')
+    const frage = (sichtbar.match(/<li[^>]*>[\s\S]*?<\/li>/g) ?? []).find(li => /Mehr gewünscht\?|Need more\?|Besoin de plus|Serve di più\?/.test(li))
+    assert.ok(frage, `${sprache}: Block «Mehr gewünscht?» fehlt`)
+    assert.match(frage, /\(Zefix\)/, `${sprache}: Frage nach Zefix fehlt`)
+    assert.doesNotMatch(sichtbar.replace(frage, ''), /Zefix/i, `${sprache}: Zefix ausserhalb des Frageblocks`)
   }
-  assert.match(lies('/zefix-uid-check/'), /Bald im WordPress-Plugin-Verzeichnis/)
+  assert.match(lies('/uid-check/'), /Bald im WordPress-Plugin-Verzeichnis/)
   const start = readFileSync(new URL('../app/texte/start.ts', import.meta.url), 'utf8')
-  const eintraege = start.split('\n').filter(z => z.includes("pfad: '/zefix-uid-check/'"))
+  const eintraege = start.split('\n').filter(z => z.includes("pfad: '/uid-check/'"))
   assert.equal(eintraege.length, 4)
   for (const z of eintraege) {
     assert.doesNotMatch(z, /Vorbestell|Précommande|Preordine|Pre-order|Zefix\.|depuis Zefix|da Zefix|from Zefix|aus Zefix/i, z)
@@ -144,6 +150,36 @@ test('sitemap.xml nennt jede Seite in jeder Sprache, und nur vorhandene', () => 
   const indexierbar = seiten.filter(p => !lies(p).includes('content="noindex"'))
   const erwartet = indexierbar.flatMap(p => Object.keys(SPRACHEN).map(s => mitSprache(s, p)))
   assert.deepEqual([...eintraege].sort(), [...erwartet].sort())
+})
+
+test('UID-Check liegt unter /uid-check/, die alte Adresse /zefix-uid-check/ leitet per 301 dorthin', () => {
+  const regeln = readFileSync(join(AUSGABE, '_redirects'), 'utf8')
+    .split('\n')
+    .filter(z => z.trim() && !z.startsWith('#'))
+    .map(z => z.trim().split(/\s+/))
+  for (const sprache of Object.keys(SPRACHEN)) {
+    const neu = mitSprache(sprache, '/uid-check/')
+    assert.ok(existsSync(join(AUSGABE, neu, 'index.html')), `${neu} fehlt`)
+    for (const alt of [mitSprache(sprache, '/zefix-uid-check/'), mitSprache(sprache, '/zefix-uid-check')]) {
+      assert.ok(regeln.some(([von, nach, code]) => von === alt && nach === neu && code === '301'), `${alt} → ${neu} 301 fehlt`)
+      assert.ok(!existsSync(join(AUSGABE, alt, 'index.html')), `${alt} wird noch als Seite gebaut`)
+    }
+  }
+})
+
+test('keine Seite, kein interner Link und kein Eintrag in Sitemap oder llms.txt zeigt auf zefix-uid-check', () => {
+  const html = (ordner = AUSGABE) =>
+    readdirSync(ordner).flatMap(name => {
+      const pfad = join(ordner, name)
+      if (statSync(pfad).isDirectory()) return name.startsWith('_') ? [] : html(pfad)
+      return name.endsWith('.html') ? [pfad] : []
+    })
+  for (const datei of html()) {
+    assert.doesNotMatch(readFileSync(datei, 'utf8'), /href="[^"]*zefix-uid-check/, datei)
+  }
+  for (const datei of ['sitemap.xml', 'llms.txt']) {
+    assert.doesNotMatch(readFileSync(join(AUSGABE, datei), 'utf8'), /zefix-uid-check/, datei)
+  }
 })
 
 test('_redirects leitet /en nicht mehr auf die deutsche Seite', () => {

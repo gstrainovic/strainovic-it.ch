@@ -46,4 +46,4 @@ in bexio:
 [Pre-order by email](mailto:info@strainovic-it.ch?subject=Pre-order%20bexio%20form%20connector&body=Website%3A%20%0AForm%20plugin%3A%20%0AWhat%20should%20the%20enquiry%20become%20in%20bexio%3F%20)
 
 Strainovic IT, Steinach SG, developing for Swiss SMEs and agencies since 2016.
-Another plugin: [UID check](/en/zefix-uid-check/), checking business customers in the WooCommerce checkout and sending the proof to bexio.
+Another plugin: [UID check](/en/uid-check/), checking business customers in the WooCommerce checkout and sending the proof to bexio.

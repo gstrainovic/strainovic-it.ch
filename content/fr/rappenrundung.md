@@ -45,7 +45,7 @@ D’ici là, je vous informe volontiers des nouvelles versions :
 - **[Connecteur de formulaires bexio](/fr/bexio-formular-connector/) :** les demandes des
   formulaires de contact et de devis (Contact Form 7, WPForms, Gravity Forms, Elementor)
   arrivent comme contact dans bexio, sur demande avec une offre.
-- **[Contrôle IDE](/fr/zefix-uid-check/) :** vérifie l’IDE des clients entreprises
+- **[Contrôle IDE](/fr/uid-check/) :** vérifie l’IDE des clients entreprises
   au checkout auprès du registre IDE de la Confédération, avec une version bexio pour la
   preuve dans bexio. Les entreprises radiées ou inventées n’accèdent pas à l’achat sur facture.
 

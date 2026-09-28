@@ -56,5 +56,5 @@ premières boutiques et je vérifie avec vous les premières factures dans KLARA
 [Commander par e-mail](mailto:info@strainovic-it.ch?subject=Commande%20connecteur%20KLARA&body=Boutique%3A%20%0ACommandes%20par%20mois%20environ%3A%20%0ABrouillon%20ou%20comptabilisation%20directe%3F%20)
 
 Strainovic IT, Steinach SG, développement pour les PME et agences suisses depuis 2016.
-Autres plugins : [Contrôle IDE](/fr/zefix-uid-check/) pour les clients entreprises au checkout,
+Autres plugins : [Contrôle IDE](/fr/uid-check/) pour les clients entreprises au checkout,
 [connecteur de formulaires bexio](/fr/bexio-formular-connector/) pour les demandes du site dans bexio.

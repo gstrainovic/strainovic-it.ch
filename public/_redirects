@@ -13,6 +13,16 @@
 /services                      /profil/       301
 /portfolio                     /referenzen/   301
 
+# Der UID-Check nutzt Zefix nicht, nur das UID-Register des BFS.
+/zefix-uid-check/              /uid-check/       301
+/zefix-uid-check               /uid-check/       301
+/en/zefix-uid-check/           /en/uid-check/    301
+/en/zefix-uid-check            /en/uid-check/    301
+/fr/zefix-uid-check/           /fr/uid-check/    301
+/fr/zefix-uid-check            /fr/uid-check/    301
+/it/zefix-uid-check/           /it/uid-check/    301
+/it/zefix-uid-check            /it/uid-check/    301
+
 # Dienstleistungen und Ueber uns sind im Profil aufgegangen.
 /dienstleistungen              /profil/       301
 /ueber-uns                     /profil/       301

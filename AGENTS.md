@@ -96,6 +96,10 @@ Netlify, Site auf `www.strainovic-it.ch`, Build aus `master`. Build-Befehl
 Weiterleitungen der alten Adressen liegen in `public/_redirects`, Netlify
 wertet die Datei aus.
 
+Die lokale Netlify-Verknüpfung (`.netlify/state.json`) zeigt auf eine fremde
+Site (`prismatic-fudge-609d1e`); Entwurfsvorschauen deshalb immer mit
+`netlify deploy --site cfa5376d-5025-4966-a6c1-50dd58a163e9` (Site `sit`).
+
 `cv.strainovic-it.ch` liegt als eigene Netlify-Site daneben, beschrieben in
 `~/projects/find-jobs/AGENTS.md`.
 

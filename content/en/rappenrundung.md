@@ -45,7 +45,7 @@ to let you know about new versions:
 - **[bexio form connector](/en/bexio-formular-connector/):** enquiries from contact and
   quote forms (Contact Form 7, WPForms, Gravity Forms, Elementor) arrive in bexio as a
   contact, optionally with a quote.
-- **[UID check](/en/zefix-uid-check/):** checks the UID of business customers at
+- **[UID check](/en/uid-check/):** checks the UID of business customers at
   checkout against the federal UID register, with a bexio version for proof in bexio.
   Deleted or made-up companies do not get to pay by invoice.
 

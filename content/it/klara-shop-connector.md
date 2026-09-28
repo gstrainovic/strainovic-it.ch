@@ -56,5 +56,5 @@ personalmente e controllo con voi le prime fatture in KLARA:
 [Ordinare via e-mail](mailto:info@strainovic-it.ch?subject=Ordine%20connettore%20KLARA&body=Negozio%3A%20%0AOrdini%20al%20mese%20circa%3A%20%0ABozza%20o%20registrazione%20diretta%3F%20)
 
 Strainovic IT, Steinach SG, sviluppo per PMI e agenzie svizzere dal 2016.
-Altri plugin: [Controllo IDI](/it/zefix-uid-check/) per i clienti aziendali nel checkout,
+Altri plugin: [Controllo IDI](/it/uid-check/) per i clienti aziendali nel checkout,
 [connettore moduli bexio](/it/bexio-formular-connector/) per le richieste dal sito in bexio.

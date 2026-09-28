@@ -57,7 +57,8 @@ with a checked UID and proof.
   CHF 199 per year for up to 10 shops). Everything in the free version, plus the check
   result with timestamp on every order and the transfer to bexio as a contact with a
   note.
-- **Need more?** For example filling in company name and address automatically,
+- **Need more?** For example commercial register (Zefix) data such as purpose or
+  authorised signatories, filling in company name and address automatically,
   showing the VAT status, invoice purchase only for valid companies, a warning when a
   customer company is deleted. Tell me what your shop needs.
 

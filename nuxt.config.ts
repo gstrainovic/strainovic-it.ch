@@ -107,7 +107,7 @@ export default defineNuxtConfig({
       // Dateien zum Herunterladen liegen fertig in public/downloads/, keine Seiten.
       ignore: ['/downloads/'],
       routes: ['', '/fr', '/it', '/en'].flatMap(sprache =>
-        ['/', '/zefix-uid-check/', '/bexio-formular-connector/', '/klara-shop-connector/', '/abaninja-shop-connector/', '/rappenrundung/'].map(
+        ['/', '/uid-check/', '/bexio-formular-connector/', '/klara-shop-connector/', '/abaninja-shop-connector/', '/rappenrundung/'].map(
           pfad => sprache + pfad
         )
       )
