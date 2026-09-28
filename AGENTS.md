@@ -113,6 +113,10 @@ Der TXT-Eintrag `google-site-verification` muss bleiben. Darüber hängt die
 Search-Console-Property `https://www.strainovic-it.ch/` auf dem Konto
 `g.strainovic@gmail.com`. Wird er entfernt, verfällt die Bestätigung.
 
+Ebenso bleibt der TXT-Eintrag `wordpressorg-gstrainovic-verification`: Er
+weist gegenüber wordpress.org nach, dass das Konto `gstrainovic` die Plugins
+von Strainovic IT besitzt.
+
 ## Cloudflare ist vorbereitet, aber nicht aktiv
 
 `wrangler.jsonc` liegt im Repo, das Nitro-Preset ist auf `static`
