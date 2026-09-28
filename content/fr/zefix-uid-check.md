@@ -58,9 +58,10 @@ arrive dans bexio avec un numéro IDE vérifié et une preuve.
   par boutique (agences : 199 CHF par an pour jusqu’à 10 boutiques). Tout ce que
   contient la version gratuite, plus le résultat horodaté dans chaque commande et la
   transmission à bexio comme contact avec une note.
-- **En préparation, dans le même abonnement sans supplément :** remplir
-  automatiquement la raison sociale et l’adresse, statut TVA, achat sur facture
-  réservé aux entreprises valides, avertissement lorsqu’un client est radié.
+- **Besoin de plus ?** Par exemple remplir automatiquement la raison sociale et
+  l’adresse, afficher le statut TVA, réserver l’achat sur facture aux entreprises
+  valides, avertir lorsqu’un client est radié. Écrivez-moi ce dont votre boutique a
+  besoin.
 
 [Essai gratuit – envoyez-moi l’adresse de votre boutique](mailto:info@strainovic-it.ch?subject=Essai%20Contr%C3%B4le%20IDE%20pour%20bexio&body=URL%20de%20la%20boutique%3A%20)
 

@@ -57,9 +57,9 @@ with a checked UID and proof.
   CHF 199 per year for up to 10 shops). Everything in the free version, plus the check
   result with timestamp on every order and the transfer to bexio as a contact with a
   note.
-- **In progress, included in the same subscription at no extra cost:** fill in company
-  name and address automatically, VAT status, invoice purchase only for valid
-  companies, warning when a customer company is deleted.
+- **Need more?** For example filling in company name and address automatically,
+  showing the VAT status, invoice purchase only for valid companies, a warning when a
+  customer company is deleted. Tell me what your shop needs.
 
 [Try it free – send me the address of your shop](mailto:info@strainovic-it.ch?subject=Try%20UID%20Check%20for%20bexio&body=Shop%20URL%3A%20)
 

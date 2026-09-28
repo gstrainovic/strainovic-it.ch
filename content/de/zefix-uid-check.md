@@ -57,9 +57,9 @@ UID und Nachweis in bexio an.
   (Agenturen: 199 CHF pro Jahr für bis zu 10 Shops). Alles aus der Gratis-Version,
   dazu das Prüfergebnis mit Zeitstempel an jeder Bestellung und die Übergabe als
   Kontakt mit Notiz an bexio.
-- **In Arbeit, im selben Abo ohne Aufpreis:** Firmenname und Adresse automatisch
-  ausfüllen, MWST-Status, Rechnungskauf nur für gültige Firmen, Warnung bei
-  gelöschten Kunden.
+- **Mehr gewünscht?** Zum Beispiel Firmenname und Adresse automatisch ausfüllen,
+  MWST-Status anzeigen, Rechnungskauf nur für gültige Firmen, Warnung bei gelöschten
+  Kunden. Schreiben Sie mir, was Ihr Shop braucht.
 
 [Gratis testen – schreiben Sie mir die Adresse Ihres Shops](mailto:info@strainovic-it.ch?subject=UID-Check%20f%C3%BCr%20bexio%20testen&body=Shop-URL%3A%20)
 

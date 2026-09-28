@@ -127,6 +127,7 @@ test('UID-Check: ein Preisblock, ein Aufruf, nichts Ungebautes als verfügbar', 
     assert.doesNotMatch(html, /Vorbestell|Précommande|précommander|Preordin|Pre-order|zahlen erst bei Lieferung/i, `${sprache}: Vorbestellung`)
     assert.doesNotMatch(html, /\bPro\b[^<]{0,20}(79|199) CHF|>Pro:?</, `${sprache}: Pro-Stufe mit Preis`)
     assert.doesNotMatch(html, nichtGebaut, `${sprache}: Ungebautes`)
+    assert.doesNotMatch(html, /In Arbeit|ohne Aufpreis|In progress|at no extra cost|En préparation|sans supplément|In preparazione|senza sovrapprezzo|Premium/i, `${sprache}: Zusage für Ungebautes`)
   }
   assert.match(lies('/zefix-uid-check/'), /Bald im WordPress-Plugin-Verzeichnis/)
   const start = readFileSync(new URL('../app/texte/start.ts', import.meta.url), 'utf8')
