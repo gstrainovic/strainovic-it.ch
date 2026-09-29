@@ -27,7 +27,7 @@ arrotonda a 5 centesimi e mostra la differenza apertamente su una riga separata.
 
 Gratuito, senza registrazione:
 
-[Scaricare il plugin (ZIP, versione 0.4.0)](https://www.strainovic-it.ch/downloads/strainovic-it-rappenrundung-0.4.0.zip)
+[Scaricare il plugin (ZIP, versione 0.4.1)](https://www.strainovic-it.ch/downloads/strainovic-it-rappenrundung-0.4.1.zip)
 
 Installazione in WordPress da Plugin → Aggiungi nuovo → Carica plugin. Il plugin sarà
 pubblicato nella directory di WordPress, poi gli aggiornamenti arriveranno automaticamente.

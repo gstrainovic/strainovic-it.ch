@@ -4,10 +4,11 @@
 
 # Ältere Plugin-Versionen führen zur aktuellen ZIP-Datei, damit Links in
 # verschickten Mails weiter funktionieren.
-/downloads/rappenrundung-0.1.0.zip   /downloads/strainovic-it-rappenrundung-0.4.0.zip   301
-/downloads/rappenrundung-0.2.0.zip   /downloads/strainovic-it-rappenrundung-0.4.0.zip   301
-/downloads/rappenrundung-0.3.0.zip   /downloads/strainovic-it-rappenrundung-0.4.0.zip   301
-/downloads/rappenrundung-0.3.1.zip   /downloads/strainovic-it-rappenrundung-0.4.0.zip   301
+/downloads/rappenrundung-0.1.0.zip   /downloads/strainovic-it-rappenrundung-0.4.1.zip   301
+/downloads/rappenrundung-0.2.0.zip   /downloads/strainovic-it-rappenrundung-0.4.1.zip   301
+/downloads/rappenrundung-0.3.0.zip   /downloads/strainovic-it-rappenrundung-0.4.1.zip   301
+/downloads/rappenrundung-0.3.1.zip   /downloads/strainovic-it-rappenrundung-0.4.1.zip   301
+/downloads/strainovic-it-rappenrundung-0.4.0.zip   /downloads/strainovic-it-rappenrundung-0.4.1.zip   301
 
 # Adressen der alten englischen Fassung. Die neue liegt unter /en/ mit
 # denselben Pfaden wie die deutsche.
