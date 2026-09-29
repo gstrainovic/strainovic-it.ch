@@ -87,7 +87,7 @@ test('Rappenrundung: direkter Download und Hinweis auf die anderen Plugins, in j
   for (const sprache of Object.keys(SPRACHEN)) {
     const html = lies(mitSprache(sprache, '/rappenrundung/'))
     // Volle Adresse: an relative Links hängt NuxtLink einen Schrägstrich an (…zip/), der Download liefe ins Leere.
-    const zip = html.match(/href="https:\/\/www\.strainovic-it\.ch\/downloads\/(rappenrundung-[\d.]+\.zip)"/)
+    const zip = html.match(/href="https:\/\/www\.strainovic-it\.ch\/downloads\/(strainovic-it-rappenrundung-[\d.]+\.zip)"/)
     assert.ok(zip, `${sprache}: kein Download-Link`)
     assert.ok(existsSync(join(AUSGABE, 'downloads', zip[1])), `${zip[1]} fehlt`)
     assert.doesNotMatch(html, /mailto:[^"]*body=Shop/, `${sprache}: noch die Mail-Anfrage statt Download`)

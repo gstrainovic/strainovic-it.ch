@@ -27,7 +27,7 @@ to 5 centimes and shows the difference openly as a separate line.
 
 Free, no sign-up:
 
-[Download the plugin (ZIP, version 0.3.1)](https://www.strainovic-it.ch/downloads/rappenrundung-0.3.1.zip)
+[Download the plugin (ZIP, version 0.4.0)](https://www.strainovic-it.ch/downloads/strainovic-it-rappenrundung-0.4.0.zip)
 
 Install it in WordPress under Plugins → Add New → Upload Plugin. The plugin will be listed
 in the WordPress directory, after that updates arrive automatically. Until then I am happy

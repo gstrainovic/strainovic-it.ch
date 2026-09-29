@@ -27,7 +27,7 @@ Le plugin arrondit à 5 centimes et affiche la différence ouvertement sur une l
 
 Gratuit, sans inscription :
 
-[Télécharger le plugin (ZIP, version 0.3.1)](https://www.strainovic-it.ch/downloads/rappenrundung-0.3.1.zip)
+[Télécharger le plugin (ZIP, version 0.4.0)](https://www.strainovic-it.ch/downloads/strainovic-it-rappenrundung-0.4.0.zip)
 
 Installation dans WordPress sous Extensions → Ajouter → Téléverser une extension. Le plugin
 sera publié dans le répertoire WordPress, les mises à jour arriveront alors automatiquement.
