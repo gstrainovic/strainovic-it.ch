@@ -60,6 +60,7 @@ const fassungen = computed(() =>
       >
         <p>{{ t.ort }}</p>
         <p class="flex gap-5">
+          <NuxtLink :to="pfad('/open-source/')" class="hover:text-tinte">{{ t.openSource }}</NuxtLink>
           <NuxtLink :to="pfad('/impressum/')" class="hover:text-tinte">{{ t.impressum }}</NuxtLink>
           <NuxtLink :to="pfad('/datenschutz/')" class="hover:text-tinte">{{ t.datenschutz }}</NuxtLink>
         </p>

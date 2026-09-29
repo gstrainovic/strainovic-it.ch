@@ -33,6 +33,43 @@ test('die deutschen Seiten werden gefunden', () => {
   assert.ok(seiten.includes('/'))
   assert.ok(seiten.includes('/rappenrundung/'))
   assert.ok(seiten.includes('/open-source/editor-suche/'))
+  assert.ok(seiten.includes('/plugins/'))
+})
+
+const PLUGINS = ['uid-check', 'bexio-formular-connector', 'klara-shop-connector', 'abaninja-shop-connector', 'rappenrundung']
+const kopf = html => html.match(/<header[^>]*>[\s\S]*?<\/header>/)[0]
+const fuss = html => html.match(/<footer[^>]*>[\s\S]*?<\/footer>/)[0]
+const ziele = html => [...html.matchAll(/<a [^>]*href="([^"]*)"/g)].map(m => m[1])
+
+test('Header: Plugins, Referenzen, Profil, Kontakt; Open Source steht im Footer', () => {
+  for (const sprache of Object.keys(SPRACHEN)) {
+    const html = lies(mitSprache(sprache, '/profil/'))
+    const nav = kopf(html).match(/<nav(?![^>]*aria-label)[^>]*>[\s\S]*?<\/nav>/)[0]
+    assert.deepEqual(
+      ziele(nav),
+      ['/plugins/', '/referenzen/', '/profil/', '/kontakt/'].map(p => mitSprache(sprache, p)),
+      `${sprache}: Hauptnavigation`
+    )
+    assert.ok(ziele(fuss(html)).includes(mitSprache(sprache, '/open-source/')), `${sprache}: Open Source fehlt im Footer`)
+  }
+})
+
+test('Plugins-Seite verlinkt alle fünf Plugins, in jeder Sprache', () => {
+  for (const sprache of Object.keys(SPRACHEN)) {
+    const html = lies(mitSprache(sprache, '/plugins/'))
+    assert.match(html, /<h1[^>]*>\s*Plugin/, `${sprache}: Überschrift`)
+    const main = html.match(/<main[^>]*>[\s\S]*?<\/main>/)[0]
+    for (const p of PLUGINS) {
+      assert.ok(ziele(main).includes(mitSprache(sprache, `/${p}/`)), `${sprache}: Link auf ${p} fehlt`)
+    }
+  }
+})
+
+test('Profil verweist auf Open Source, in jeder Sprache', () => {
+  for (const sprache of Object.keys(SPRACHEN)) {
+    const main = lies(mitSprache(sprache, '/profil/')).match(/<main[^>]*>[\s\S]*?<\/main>/)[0]
+    assert.ok(ziele(main).includes(mitSprache(sprache, '/open-source/')), `${sprache}: Link fehlt`)
+  }
 })
 
 for (const pfad of seiten) {
@@ -136,8 +173,8 @@ test('UID-Check: ein Preisblock, ein Aufruf, nichts Ungebautes als verfügbar', 
     assert.doesNotMatch(sichtbar.replace(frage, ''), /Zefix/i, `${sprache}: Zefix ausserhalb des Frageblocks`)
   }
   assert.match(lies('/uid-check/'), /Bald im WordPress-Plugin-Verzeichnis/)
-  const start = readFileSync(new URL('../app/texte/start.ts', import.meta.url), 'utf8')
-  const eintraege = start.split('\n').filter(z => z.includes("pfad: '/uid-check/'"))
+  const plugins = readFileSync(new URL('../app/texte/plugins.ts', import.meta.url), 'utf8')
+  const eintraege = plugins.split('\n').filter(z => z.includes("pfad: '/uid-check/'"))
   assert.equal(eintraege.length, 4)
   for (const z of eintraege) {
     assert.doesNotMatch(z, /Vorbestell|Précommande|Preordine|Pre-order|Zefix\.|depuis Zefix|da Zefix|from Zefix|aus Zefix/i, z)

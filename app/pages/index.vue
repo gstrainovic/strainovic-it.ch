@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import texte from '~/texte/start'
+import pluginTexte from '~/texte/plugins'
 
 const { pfad, t } = useSprache(texte)
+const { t: plugins } = useSprache(pluginTexte)
 
 useSeoMeta({
   title: () => t.value.titel,
@@ -82,15 +84,18 @@ useHead({
     </section>
 
     <section class="mt-16">
-      <h2 class="font-mono text-xs text-gedaempft">{{ t.produkteTitel }}</h2>
+      <h2 class="font-mono text-xs text-gedaempft">{{ t.pluginsTitel }}</h2>
       <div class="mt-5 grid gap-px overflow-hidden border border-linie bg-linie sm:grid-cols-2">
-        <div v-for="p in t.produkte" :key="p.titel" class="bg-flaeche p-5">
+        <div v-for="p in plugins.liste" :key="p.titel" class="bg-flaeche p-5">
           <h3 class="font-semibold">
             <NuxtLink :to="pfad(p.pfad)" class="underline underline-offset-4">{{ p.titel }}</NuxtLink>
           </h3>
           <p class="mt-2 text-sm leading-relaxed text-gedaempft">{{ p.text }}</p>
         </div>
       </div>
+      <p class="mt-4 text-sm">
+        <NuxtLink :to="pfad('/plugins/')" class="text-akzent underline underline-offset-4">{{ t.allePlugins }}</NuxtLink>
+      </p>
     </section>
 
     <section class="mt-16">

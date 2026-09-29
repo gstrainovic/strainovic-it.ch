@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import texte from '~/texte/profil'
 
-const { t } = useSprache(texte)
+const { pfad, t } = useSprache(texte)
 
 useSeoMeta({
   title: () => t.value.titel,
@@ -45,5 +45,11 @@ useSeoMeta({
         <dd class="max-w-prose">{{ g.werte }}</dd>
       </div>
     </dl>
+
+    <h2 class="mt-16 font-mono text-xs text-gedaempft">{{ t.openSourceTitel }}</h2>
+    <p class="mt-5 max-w-prose leading-relaxed">
+      {{ t.openSourceText }}
+      <NuxtLink :to="pfad('/open-source/')" class="text-akzent underline underline-offset-4">{{ t.openSourceLink }}</NuxtLink>
+    </p>
   </article>
 </template>

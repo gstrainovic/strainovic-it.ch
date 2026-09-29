@@ -60,7 +60,10 @@ const de = {
     { gruppe: 'Daten', werte: 'PostgreSQL, MS SQL, MySQL, MariaDB, CockroachDB, SQLite' },
     { gruppe: 'Betrieb', werte: 'Kubernetes, Docker, Azure, AWS, Google Cloud, Hetzner, Linux' },
     { gruppe: 'Integration', werte: 'ERP-Anbindungen, JTL-Wawi, Odoo, HubSpot, Shopware, Stripe, Mollie' }
-  ]
+  ],
+  openSourceTitel: 'Open Source',
+  openSourceText: 'Was ich nebenbei baue und veröffentliche, mit Quelltext zum Nachprüfen:',
+  openSourceLink: 'Projekte und Artikel'
 }
 
 export default {
@@ -125,7 +128,10 @@ export default {
       { gruppe: 'Données', werte: 'PostgreSQL, MS SQL, MySQL, MariaDB, CockroachDB, SQLite' },
       { gruppe: 'Exploitation', werte: 'Kubernetes, Docker, Azure, AWS, Google Cloud, Hetzner, Linux' },
       { gruppe: 'Intégration', werte: 'Connexions ERP, JTL-Wawi, Odoo, HubSpot, Shopware, Stripe, Mollie' }
-    ]
+    ],
+    openSourceTitel: 'Open source',
+    openSourceText: 'Ce que je développe et publie à côté, avec le code source à vérifier :',
+    openSourceLink: 'Projets et articles'
   },
   it: {
     titel: 'Profilo — Goran Strainovic',
@@ -187,7 +193,10 @@ export default {
       { gruppe: 'Dati', werte: 'PostgreSQL, MS SQL, MySQL, MariaDB, CockroachDB, SQLite' },
       { gruppe: 'Esercizio', werte: 'Kubernetes, Docker, Azure, AWS, Google Cloud, Hetzner, Linux' },
       { gruppe: 'Integrazione', werte: 'Connessioni ERP, JTL-Wawi, Odoo, HubSpot, Shopware, Stripe, Mollie' }
-    ]
+    ],
+    openSourceTitel: 'Open source',
+    openSourceText: 'Ciò che sviluppo e pubblico a margine, con il codice sorgente da verificare:',
+    openSourceLink: 'Progetti e articoli'
   },
   en: {
     titel: 'Profile — Goran Strainovic',
@@ -249,6 +258,9 @@ export default {
       { gruppe: 'Data', werte: 'PostgreSQL, MS SQL, MySQL, MariaDB, CockroachDB, SQLite' },
       { gruppe: 'Operations', werte: 'Kubernetes, Docker, Azure, AWS, Google Cloud, Hetzner, Linux' },
       { gruppe: 'Integration', werte: 'ERP connections, JTL-Wawi, Odoo, HubSpot, Shopware, Stripe, Mollie' }
-    ]
+    ],
+    openSourceTitel: 'Open source',
+    openSourceText: 'What I build and publish on the side, with source code you can check:',
+    openSourceLink: 'Projects and articles'
   }
 } satisfies Record<Sprache, typeof de>

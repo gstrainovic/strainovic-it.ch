@@ -21,7 +21,7 @@ import { readFile } from 'node:fs/promises'
 const BASIS = 'https://www.strainovic-it.ch'
 const nurPruefen = process.argv.includes('--nur-pruefen')
 
-const seiten = ['/', '/profil/', '/referenzen/', '/kontakt/', '/impressum/', '/datenschutz/', '/fr/', '/it/', '/en/']
+const seiten = ['/', '/plugins/', '/profil/', '/referenzen/', '/kontakt/', '/impressum/', '/datenschutz/', '/fr/', '/it/', '/en/']
 const dateien = ['/robots.txt', '/sitemap.xml', '/llms.txt', '/google3be5299c276d6b3d.html']
 const weiterleitungen = {
   '/dienstleistungen': '/profil/',

@@ -18,11 +18,13 @@ Italienisch und Englisch, unter denselben Pfaden mit Präfix /fr/, /it/ und
 ## Seiten
 
 - [Start](https://www.strainovic-it.ch/): Kenndaten und die drei Schwerpunkte
-- [Profil](https://www.strainovic-it.ch/profil): Werdegang seit 2016 und eingesetzte Technologien
-- [Referenzen](https://www.strainovic-it.ch/referenzen): 26 Entwicklungsprojekte mit Ziel, Stack und Branche
-- [Kontakt](https://www.strainovic-it.ch/kontakt): Anschrift und E-Mail
+- [Plugins](https://www.strainovic-it.ch/plugins/): Übersicht aller Plugins mit Preis und Plattform
+- [Referenzen](https://www.strainovic-it.ch/referenzen/): 26 Entwicklungsprojekte mit Ziel, Stack und Branche
+- [Profil](https://www.strainovic-it.ch/profil/): Werdegang seit 2016 und eingesetzte Technologien
+- [Open Source](https://www.strainovic-it.ch/open-source/): öffentliche eigene Projekte, Beiträge und Artikel
+- [Kontakt](https://www.strainovic-it.ch/kontakt/): Anschrift und E-Mail
 
-## Produkte
+## Plugins
 
 - [UID-Check](https://www.strainovic-it.ch/uid-check/): WordPress-Plugin, prüft die Schweizer UID im WooCommerce-Checkout und in Contact Form 7 beim UID-Register des Bundes; Version «UID-Check für bexio» speichert das Prüfergebnis mit Zeitstempel an der Bestellung und legt Kontakt und Prüfnotiz in bexio an (30 Tage gratis, danach 79 CHF pro Jahr und Shop)
 - [bexio-Formular-Connector](https://www.strainovic-it.ch/bexio-formular-connector/): WordPress-Plugin, legt Website-Anfragen als Kontakt und Offerte in bexio an

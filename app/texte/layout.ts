@@ -1,14 +1,15 @@
 import type { Sprache } from '~/utils/sprache'
 
+// Die Startseite erreicht man über das Logo, Open Source über den Footer.
 const de = {
   seiten: [
-    { pfad: '/', name: 'Start' },
-    { pfad: '/profil/', name: 'Profil' },
+    { pfad: '/plugins/', name: 'Plugins' },
     { pfad: '/referenzen/', name: 'Referenzen' },
-    { pfad: '/open-source/', name: 'Open Source' },
+    { pfad: '/profil/', name: 'Profil' },
     { pfad: '/kontakt/', name: 'Kontakt' }
   ],
   ort: 'Strainovic IT, 9323 Steinach, Schweiz',
+  openSource: 'Open Source',
   impressum: 'Impressum',
   datenschutz: 'Datenschutz',
   sprachwahl: 'Sprache',
@@ -19,13 +20,13 @@ export default {
   de,
   fr: {
     seiten: [
-      { pfad: '/', name: 'Accueil' },
-      { pfad: '/profil/', name: 'Profil' },
+      { pfad: '/plugins/', name: 'Plugins' },
       { pfad: '/referenzen/', name: 'Références' },
-      { pfad: '/open-source/', name: 'Open source' },
+      { pfad: '/profil/', name: 'Profil' },
       { pfad: '/kontakt/', name: 'Contact' }
     ],
     ort: 'Strainovic IT, 9323 Steinach, Suisse',
+    openSource: 'Open source',
     impressum: 'Mentions légales',
     datenschutz: 'Protection des données',
     sprachwahl: 'Langue',
@@ -33,13 +34,13 @@ export default {
   },
   it: {
     seiten: [
-      { pfad: '/', name: 'Home' },
-      { pfad: '/profil/', name: 'Profilo' },
+      { pfad: '/plugins/', name: 'Plugin' },
       { pfad: '/referenzen/', name: 'Referenze' },
-      { pfad: '/open-source/', name: 'Open source' },
+      { pfad: '/profil/', name: 'Profilo' },
       { pfad: '/kontakt/', name: 'Contatto' }
     ],
     ort: 'Strainovic IT, 9323 Steinach, Svizzera',
+    openSource: 'Open source',
     impressum: 'Note legali',
     datenschutz: 'Protezione dei dati',
     sprachwahl: 'Lingua',
@@ -47,13 +48,13 @@ export default {
   },
   en: {
     seiten: [
-      { pfad: '/', name: 'Home' },
-      { pfad: '/profil/', name: 'Profile' },
+      { pfad: '/plugins/', name: 'Plugins' },
       { pfad: '/referenzen/', name: 'References' },
-      { pfad: '/open-source/', name: 'Open source' },
+      { pfad: '/profil/', name: 'Profile' },
       { pfad: '/kontakt/', name: 'Contact' }
     ],
     ort: 'Strainovic IT, 9323 Steinach, Switzerland',
+    openSource: 'Open source',
     impressum: 'Legal notice',
     datenschutz: 'Privacy',
     sprachwahl: 'Language',
