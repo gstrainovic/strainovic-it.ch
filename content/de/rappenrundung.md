@@ -27,7 +27,7 @@ rundet auf 5 Rappen und zeigt die Differenz offen als eigene Zeile.
 
 Gratis, ohne Anmeldung:
 
-[Plugin herunterladen (ZIP, Version 0.3.0)](https://www.strainovic-it.ch/downloads/rappenrundung-0.3.0.zip)
+[Plugin herunterladen (ZIP, Version 0.3.1)](https://www.strainovic-it.ch/downloads/rappenrundung-0.3.1.zip)
 
 Installation in WordPress unter Plugins → Installieren → Plugin hochladen. Das Plugin
 erscheint im WordPress-Verzeichnis, danach kommen Updates automatisch. Bis dahin
