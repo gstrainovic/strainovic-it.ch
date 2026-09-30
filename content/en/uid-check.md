@@ -20,6 +20,8 @@ Wrong or deleted companies never get as far as buying on invoice.
 - UID stored in the order, always in the same notation
 - If the UID register cannot be reached, the plugin does not block any order with a
   correct check digit
+- Tested with Germanized for WooCommerce (free version 4.1.4): UID field, validation
+  and order work as without it. Not yet tested with Germanized Pro.
 
 ## Who it is for
 

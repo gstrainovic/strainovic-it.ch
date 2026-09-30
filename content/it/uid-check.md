@@ -20,6 +20,8 @@ cancellate non arrivano nemmeno all’acquisto su fattura.
 - Numero IDI salvato nell’ordine, sempre nella stessa grafia
 - Se il registro IDI non è raggiungibile, il plugin non blocca nessun ordine con cifra
   di controllo corretta
+- Testato con Germanized for WooCommerce (versione gratuita 4.1.4): campo IDI, verifica
+  e ordine funzionano come senza. Non ancora testato con Germanized Pro.
 
 ## Per chi
 

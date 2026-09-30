@@ -20,6 +20,8 @@ zum Rechnungskauf.
 - UID in einheitlicher Schreibweise an der Bestellung gespeichert
 - Ist das UID-Register nicht erreichbar, blockiert das Plugin keine Bestellung mit
   korrekter Prüfziffer
+- Getestet mit Germanized für WooCommerce (Gratisversion 4.1.4): UID-Feld, Prüfung und
+  Bestellung laufen wie ohne. Mit Germanized Pro noch nicht getestet.
 
 ## Für wen
 

@@ -20,6 +20,8 @@ inexistantes ou radiées n’arrivent même pas jusqu’à l’achat sur facture
 - Numéro IDE enregistré dans la commande, toujours dans la même écriture
 - Si le registre IDE est injoignable, le plugin ne bloque aucune commande dont le
   chiffre de contrôle est correct
+- Testé avec Germanized for WooCommerce (version gratuite 4.1.4) : champ IDE,
+  vérification et commande fonctionnent comme sans. Pas encore testé avec Germanized Pro.
 
 ## Pour qui
 
