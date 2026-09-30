@@ -25,11 +25,15 @@ bill = QRBill(
 puffer = io.StringIO()
 bill.as_svg(puffer)
 seite = (GROESSE + 2 * RAND) * MM
+x0, y0 = (X - RAND) * MM, (Y - RAND) * MM
 svg = re.sub(r'height="[^"]*" version="1.1" viewBox="[^"]*" width="[^"]*"',
              f'height="{GROESSE + 2 * RAND}mm" version="1.1" '
-             f'viewBox="{(X - RAND) * MM:.3f} {(Y - RAND) * MM:.3f} {seite:.3f} {seite:.3f}" '
+             f'viewBox="{x0:.3f} {y0:.3f} {seite:.3f} {seite:.3f}" '
              f'width="{GROESSE + 2 * RAND}mm"', puffer.getvalue(), count=1)
-# Der weisse Hintergrund deckt die ganze Rechnung ab; im Ausschnitt reicht er, solange er bei 0/0 beginnt.
+# qrbill legt den weissen Grund mit 100 % ab 0/0 an; das deckt den verschobenen Ausschnitt nicht, und im
+# Dunkelmodus stünden die schwarzen Module auf dunklem Grund. Darum den Grund genau auf den Ausschnitt legen.
+svg = svg.replace('<rect fill="white" height="100%" width="100%" x="0" y="0" />',
+                  f'<rect fill="white" height="{seite:.3f}" width="{seite:.3f}" x="{x0:.3f}" y="{y0:.3f}" />', 1)
 ziel = Path(__file__).resolve().parents[1] / "public" / "img" / "spenden-qr.svg"
 ziel.write_text(svg, encoding="utf-8")
 print(ziel)

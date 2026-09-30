@@ -138,6 +138,12 @@ test('Spenden: QR-Rechnung und Kontoangaben in jeder Sprache, nicht indexiert, v
   assert.ok(existsSync(join(AUSGABE, 'img', 'spenden-qr.svg')), 'QR-Code fehlt')
   const svg = readFileSync(join(AUSGABE, 'img', 'spenden-qr.svg'), 'utf8')
   assert.match(svg, /id="swiss-cross"/, 'Schweizerkreuz fehlt im QR-Code')
+  // Weisser Grund genau über dem Ausschnitt, sonst stehen die schwarzen Module im Dunkelmodus auf dunklem Grund.
+  const [vx, vy, vb, vh] = svg.match(/viewBox="([^"]+)"/)[1].split(/\s+/).map(Number)
+  const grund = [...svg.matchAll(/<rect ([^>]*)\/>/g)].map(m => m[1]).find(a => /fill="white"/.test(a))
+  const wert = name => Number(grund.match(new RegExp(`\\b${name}="([^"]+)"`))[1])
+  assert.ok(wert('x') <= vx && wert('y') <= vy, 'weisser Grund beginnt nicht am Ausschnitt')
+  assert.ok(wert('x') + wert('width') >= vx + vb && wert('y') + wert('height') >= vy + vh, 'weisser Grund deckt den Ausschnitt nicht')
   for (const sprache of Object.keys(SPRACHEN)) {
     const html = lies(mitSprache(sprache, '/spenden/'))
     assert.match(html, /<meta[^>]*name="robots"[^>]*content="noindex"/, `${sprache}: noindex fehlt`)
