@@ -171,7 +171,7 @@ test('Alte ZIP-Adressen der Rappenrundung führen per 301 ins Plugin-Verzeichnis
 })
 
 test('UID-Check: Video in der Sprache der Seite, lokal ausgeliefert, YouTube nur verlinkt, ohne Hinweis auf deutsche Fassung', () => {
-  const YOUTUBE = { de: 'oeaOKNnkqvQ', fr: '9jqdnAuxh9k', it: '5BYJ_6dhAxA', en: '7KYTbrFYgag' }
+  const YOUTUBE = { de: 'cvFN-lZ_cEQ', fr: '9jqdnAuxh9k', it: '5BYJ_6dhAxA', en: 'UV4C8TazUts' }
   for (const sprache of Object.keys(SPRACHEN)) {
     const html = lies(mitSprache(sprache, '/uid-check/'))
     const video = html.match(/<video[^>]*>[\s\S]*?<\/video>/)

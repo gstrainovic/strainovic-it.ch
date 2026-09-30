@@ -39,7 +39,7 @@ with a checked UID and proof.
   Your browser cannot play this video.
 </video>
 
-[Watch the video on YouTube](https://www.youtube.com/watch?v=7KYTbrFYgag)
+[Watch the video on YouTube](https://www.youtube.com/watch?v=UV4C8TazUts)
 
 - Queries the UID register again with every order and stores the result with its time
   in the order
