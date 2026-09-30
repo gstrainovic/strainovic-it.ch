@@ -25,14 +25,12 @@ arrotonda a 5 centesimi e mostra la differenza apertamente su una riga separata.
 
 ## Prezzo
 
-Gratuito, senza registrazione:
+Gratuito, nella directory dei plugin di WordPress:
 
-[Scaricare il plugin (ZIP, versione 0.4.1)](https://www.strainovic-it.ch/downloads/strainovic-it-rappenrundung-0.4.1.zip)
+[Strainovic IT Rappenrundung su wordpress.org](https://wordpress.org/plugins/strainovic-it-rappenrundung/)
 
-Installazione in WordPress da Plugin → Aggiungi nuovo → Carica plugin. Il plugin sarà
-pubblicato nella directory di WordPress, poi gli aggiornamenti arriveranno automaticamente.
-Fino ad allora vi informo volentieri sulle nuove versioni:
-[Ricevere gli aggiornamenti via e-mail](mailto:info@strainovic-it.ch?subject=Aggiornamenti%20arrotondamento%205%20centesimi).
+Installazione in WordPress da Plugin → Aggiungi nuovo, cercare «Strainovic IT Rappenrundung»,
+installare e attivare. Gli aggiornamenti arrivano automaticamente tramite WordPress.
 
 Se il plugin vi è utile, una [donazione](/it/spenden/) mi fa piacere.
 

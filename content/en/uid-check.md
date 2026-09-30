@@ -52,7 +52,7 @@ with a checked UID and proof.
 ## Price
 
 - **UID Check Switzerland, free:** check digit and status active/deleted at checkout.
-  Coming soon to the WordPress plugin directory. If it helps you: [donate](/en/spenden/).
+  In the [WordPress plugin directory](https://wordpress.org/plugins/strainovic-uid-check-schweiz/). If it helps you: [donate](/en/spenden/).
 - **UID Check for bexio:** free for 30 days, then CHF 79 per year and shop (agencies:
   CHF 199 per year for up to 10 shops). Everything in the free version, plus the check
   result with timestamp on every order and the transfer to bexio as a contact with a

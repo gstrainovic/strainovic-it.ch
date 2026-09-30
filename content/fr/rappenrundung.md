@@ -25,14 +25,12 @@ Le plugin arrondit à 5 centimes et affiche la différence ouvertement sur une l
 
 ## Prix
 
-Gratuit, sans inscription :
+Gratuit, dans le répertoire des plugins WordPress :
 
-[Télécharger le plugin (ZIP, version 0.4.1)](https://www.strainovic-it.ch/downloads/strainovic-it-rappenrundung-0.4.1.zip)
+[Strainovic IT Rappenrundung sur wordpress.org](https://wordpress.org/plugins/strainovic-it-rappenrundung/)
 
-Installation dans WordPress sous Extensions → Ajouter → Téléverser une extension. Le plugin
-sera publié dans le répertoire WordPress, les mises à jour arriveront alors automatiquement.
-D’ici là, je vous informe volontiers des nouvelles versions :
-[Recevoir les mises à jour par e-mail](mailto:info@strainovic-it.ch?subject=Mises%20%C3%A0%20jour%20arrondi%205%20centimes).
+Installation dans WordPress sous Extensions → Ajouter, rechercher « Strainovic IT Rappenrundung »,
+installer et activer. Les mises à jour arrivent automatiquement par WordPress.
 
 Si le plugin vous est utile, un [don](/fr/spenden/) me fait plaisir.
 

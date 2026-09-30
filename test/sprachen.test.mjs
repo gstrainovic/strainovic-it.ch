@@ -120,13 +120,14 @@ test('Rappenrundung zeigt den Checkout in der jeweiligen Sprache', () => {
   }
 })
 
-test('Rappenrundung: direkter Download und Hinweis auf die anderen Plugins, in jeder Sprache', () => {
+const VERZEICHNIS = 'https://wordpress.org/plugins/strainovic-it-rappenrundung/'
+
+test('Rappenrundung: Link ins Plugin-Verzeichnis statt ZIP und Hinweis auf die anderen Plugins, in jeder Sprache', () => {
   for (const sprache of Object.keys(SPRACHEN)) {
     const html = lies(mitSprache(sprache, '/rappenrundung/'))
-    // Volle Adresse: an relative Links hängt NuxtLink einen Schrägstrich an (…zip/), der Download liefe ins Leere.
-    const zip = html.match(/href="https:\/\/www\.strainovic-it\.ch\/downloads\/(strainovic-it-rappenrundung-[\d.]+\.zip)"/)
-    assert.ok(zip, `${sprache}: kein Download-Link`)
-    assert.ok(existsSync(join(AUSGABE, 'downloads', zip[1])), `${zip[1]} fehlt`)
+    assert.match(html, new RegExp(`href="${VERZEICHNIS}"`), `${sprache}: Link ins Plugin-Verzeichnis fehlt`)
+    assert.doesNotMatch(html, /\.zip"/, `${sprache}: noch ein ZIP-Download`)
+    assert.doesNotMatch(html, /mailto:[^"]*Updates|mailto:[^"]*Mises|mailto:[^"]*Aggiornamenti/, `${sprache}: Updates kommen jetzt über WordPress`)
     assert.doesNotMatch(html, /mailto:[^"]*body=Shop/, `${sprache}: noch die Mail-Anfrage statt Download`)
     for (const seite of ['klara-shop-connector', 'abaninja-shop-connector', 'bexio-formular-connector', 'uid-check']) {
       assert.match(html, new RegExp(`href="${mitSprache(sprache, `/${seite}/`)}"`), `${sprache}: Link auf ${seite} fehlt`)
@@ -157,6 +158,14 @@ test('Spenden: QR-Rechnung und Kontoangaben in jeder Sprache, nicht indexiert, v
       assert.match(lies(mitSprache(sprache, `/${plugin}/`)), new RegExp(`href="${mitSprache(sprache, '/spenden/')}"`), `${sprache}: ${plugin} verlinkt nicht auf Spenden`)
     }
   }
+})
+
+test('Alte ZIP-Adressen der Rappenrundung führen per 301 ins Plugin-Verzeichnis', () => {
+  const regeln = readFileSync(join(AUSGABE, '_redirects'), 'utf8').split('\n').filter(z => z.trim() && !z.startsWith('#')).map(z => z.trim().split(/\s+/))
+  for (const alt of ['rappenrundung-0.1.0', 'rappenrundung-0.3.1', 'strainovic-it-rappenrundung-0.4.0', 'strainovic-it-rappenrundung-0.4.1']) {
+    assert.ok(regeln.some(([von, nach, code]) => von === `/downloads/${alt}.zip` && nach === VERZEICHNIS && code === '301'), `${alt}.zip`)
+  }
+  assert.ok(!existsSync(join(AUSGABE, 'downloads', 'strainovic-it-rappenrundung-0.4.1.zip')), 'ZIP wird noch ausgeliefert')
 })
 
 test('UID-Check: Video in der Sprache der Seite, lokal ausgeliefert, ohne Hinweis auf deutsche Fassung', () => {
@@ -197,7 +206,11 @@ test('UID-Check: ein Preisblock, ein Aufruf, nichts Ungebautes als verfügbar', 
     assert.match(frage, /\(Zefix\)/, `${sprache}: Frage nach Zefix fehlt`)
     assert.doesNotMatch(sichtbar.replace(frage, ''), /Zefix/i, `${sprache}: Zefix ausserhalb des Frageblocks`)
   }
-  assert.match(lies('/uid-check/'), /Bald im WordPress-Plugin-Verzeichnis/)
+  for (const sprache of Object.keys(SPRACHEN)) {
+    const html = lies(mitSprache(sprache, '/uid-check/'))
+    assert.match(html, /href="https:\/\/wordpress\.org\/plugins\/strainovic-uid-check-schweiz\/"/, `${sprache}: Link ins Plugin-Verzeichnis fehlt`)
+    assert.doesNotMatch(html, /Bald im WordPress|Bientôt dans le répertoire|Presto nella directory|Coming soon to the WordPress/, `${sprache}: noch «bald»`)
+  }
   const plugins = readFileSync(new URL('../app/texte/plugins.ts', import.meta.url), 'utf8')
   const eintraege = plugins.split('\n').filter(z => z.includes("pfad: '/uid-check/'"))
   assert.equal(eintraege.length, 4)

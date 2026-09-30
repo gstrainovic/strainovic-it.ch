@@ -25,14 +25,12 @@ to 5 centimes and shows the difference openly as a separate line.
 
 ## Price
 
-Free, no sign-up:
+Free, in the WordPress plugin directory:
 
-[Download the plugin (ZIP, version 0.4.1)](https://www.strainovic-it.ch/downloads/strainovic-it-rappenrundung-0.4.1.zip)
+[Strainovic IT Rappenrundung on wordpress.org](https://wordpress.org/plugins/strainovic-it-rappenrundung/)
 
-Install it in WordPress under Plugins → Add New → Upload Plugin. The plugin will be listed
-in the WordPress directory, after that updates arrive automatically. Until then I am happy
-to let you know about new versions:
-[Get updates by email](mailto:info@strainovic-it.ch?subject=Updates%205-centime%20rounding).
+Install it in WordPress under Plugins → Add New, search for “Strainovic IT Rappenrundung”,
+install and activate. Updates arrive automatically through WordPress.
 
 If the plugin helps you, I appreciate a [donation](/en/spenden/).
 

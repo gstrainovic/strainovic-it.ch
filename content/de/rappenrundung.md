@@ -25,14 +25,12 @@ rundet auf 5 Rappen und zeigt die Differenz offen als eigene Zeile.
 
 ## Preis
 
-Gratis, ohne Anmeldung:
+Gratis, im WordPress-Plugin-Verzeichnis:
 
-[Plugin herunterladen (ZIP, Version 0.4.1)](https://www.strainovic-it.ch/downloads/strainovic-it-rappenrundung-0.4.1.zip)
+[Strainovic IT Rappenrundung auf wordpress.org](https://wordpress.org/plugins/strainovic-it-rappenrundung/)
 
-Installation in WordPress unter Plugins → Installieren → Plugin hochladen. Das Plugin
-erscheint im WordPress-Verzeichnis, danach kommen Updates automatisch. Bis dahin
-informiere ich Sie gern über neue Versionen:
-[Updates per E-Mail erhalten](mailto:info@strainovic-it.ch?subject=Updates%20Rappenrundung).
+Installation in WordPress unter Plugins → Installieren, nach «Strainovic IT Rappenrundung»
+suchen, installieren und aktivieren. Updates kommen automatisch über WordPress.
 
 Hilft Ihnen das Plugin, freue ich mich über eine [Spende](/spenden/).
 
