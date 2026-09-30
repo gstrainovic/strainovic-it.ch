@@ -39,6 +39,8 @@ with a checked UID and proof.
   Your browser cannot play this video.
 </video>
 
+[Watch the video on YouTube](https://www.youtube.com/watch?v=c3miaugId28)
+
 - Queries the UID register again with every order and stores the result with its time
   in the order
 - Finds the customer in bexio by email address or creates them as a company with the

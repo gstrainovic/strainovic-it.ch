@@ -39,6 +39,8 @@ UID und Nachweis in bexio an.
   Ihr Browser kann das Video nicht abspielen.
 </video>
 
+[Video auf YouTube ansehen](https://www.youtube.com/watch?v=A-6uZaViTn4)
+
 - Fragt das UID-Register bei jeder Bestellung neu ab und speichert das Ergebnis mit
   Zeitpunkt an der Bestellung
 - Sucht den Kunden in bexio über die E-Mail-Adresse oder legt ihn als Firma mit den

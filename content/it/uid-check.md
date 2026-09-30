@@ -39,6 +39,8 @@ bexio con numero IDI verificato e prova.
   Il vostro browser non può riprodurre questo video.
 </video>
 
+[Guarda il video su YouTube](https://www.youtube.com/watch?v=dmg2YbQTmBw)
+
 - Interroga di nuovo il registro IDI a ogni ordine e salva l’esito con l’ora
   nell’ordine
 - Cerca il cliente in bexio tramite l’indirizzo e-mail o lo crea come impresa con i

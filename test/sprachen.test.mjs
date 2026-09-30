@@ -8,8 +8,10 @@ import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs'
 import { join } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
-const AUSGABE = new URL('../.output/public/', import.meta.url).pathname
+// fileURLToPath statt .pathname, sonst wird unter Windows «/C:/…» zu «C:\C:\…»
+const AUSGABE = fileURLToPath(new URL('../.output/public/', import.meta.url))
 const BASIS = 'https://www.strainovic-it.ch'
 const SPRACHEN = { de: 'de-CH', fr: 'fr-CH', it: 'it-CH', en: 'en' }
 const FREMD = ['fr', 'it', 'en']
@@ -168,7 +170,8 @@ test('Alte ZIP-Adressen der Rappenrundung führen per 301 ins Plugin-Verzeichnis
   assert.ok(!existsSync(join(AUSGABE, 'downloads', 'strainovic-it-rappenrundung-0.4.1.zip')), 'ZIP wird noch ausgeliefert')
 })
 
-test('UID-Check: Video in der Sprache der Seite, lokal ausgeliefert, ohne Hinweis auf deutsche Fassung', () => {
+test('UID-Check: Video in der Sprache der Seite, lokal ausgeliefert, YouTube nur verlinkt, ohne Hinweis auf deutsche Fassung', () => {
+  const YOUTUBE = { de: 'A-6uZaViTn4', fr: 'dOBMshp2Nrs', it: 'dmg2YbQTmBw', en: 'c3miaugId28' }
   for (const sprache of Object.keys(SPRACHEN)) {
     const html = lies(mitSprache(sprache, '/uid-check/'))
     const video = html.match(/<video[^>]*>[\s\S]*?<\/video>/)
@@ -178,7 +181,9 @@ test('UID-Check: Video in der Sprache der Seite, lokal ausgeliefert, ohne Hinwei
       assert.match(video[0], attribut, `${sprache}: ${attribut} fehlt am <video>`)
     }
     assert.match(video[0], new RegExp(`<source[^>]*src="/video/uid-check-bexio-${sprache}\\.mp4"[^>]*type="video/mp4"`))
-    assert.doesNotMatch(html, /youtube|youtu\.be/i, `${sprache}: kein YouTube`)
+    // YouTube nur als Link: kein Player, kein Skript, keine Anfrage an Google beim Laden der Seite
+    assert.match(html, new RegExp(`href="https://www\\.youtube\\.com/watch\\?v=${YOUTUBE[sprache]}"`), `${sprache}: YouTube-Link fehlt`)
+    assert.doesNotMatch(html, /<(iframe|script|img|link)[^>]*(youtube|youtu\.be|ytimg|youtube-nocookie)/i, `${sprache}: YouTube eingebettet`)
     assert.doesNotMatch(html, /Video auf Deutsch|Video in German|Vidéo en allemand|Video in tedesco/i, `${sprache}: Hinweis auf deutsches Video`)
     assert.ok(existsSync(join(AUSGABE, 'video', `uid-check-bexio-${sprache}.mp4`)), `${sprache}: Video fehlt`)
     assert.ok(existsSync(join(AUSGABE, 'video', `uid-check-bexio-${sprache}-poster.jpg`)), `${sprache}: Poster fehlt`)

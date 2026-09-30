@@ -40,6 +40,8 @@ arrive dans bexio avec un numéro IDE vérifié et une preuve.
   Votre navigateur ne peut pas lire cette vidéo.
 </video>
 
+[Voir la vidéo sur YouTube](https://www.youtube.com/watch?v=dOBMshp2Nrs)
+
 - Consulte à nouveau le registre IDE à chaque commande et enregistre le résultat avec
   l’heure dans la commande
 - Recherche le client dans bexio par son adresse e-mail ou le crée comme entreprise

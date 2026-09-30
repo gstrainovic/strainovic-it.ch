@@ -48,8 +48,11 @@ mit denselben Pfaden.
   Seiten mit deutschem Screenshot und dem Hinweis darauf. Neue Screenshots je
   Sprache heissen `<name>-<fr|it|en>.png`.
 - Produktvideos liegen je Sprache im Repo unter `public/video/<name>-<de|fr|it|en>.mp4`
-  mit `<name>-<sprache>-poster.jpg`, eingebunden per `<video controls preload="metadata">`,
-  kein YouTube. Jede Datei unter 10 MB, der Grenze, die Netlify je Datei empfiehlt.
+  mit `<name>-<sprache>-poster.jpg`, eingebunden per `<video controls preload="metadata">`.
+  Dieselben Videos liegen öffentlich auf dem YouTube-Kanal strainovic-it und stehen unter dem
+  Video nur als Link («Video auf YouTube ansehen»), nie eingebettet: ein Player lädt Google-Inhalte
+  und brächte einen YouTube-Abschnitt in die Datenschutzerklärung. Jede Datei unter 10 MB, der
+  Grenze, die Netlify je Datei empfiehlt.
   Quelle und Aufnahme des UID-Check-Videos liegen in `~/projects/zefix-uid-check/video/`.
 
 ## Inhaltliche Linie
