@@ -23,6 +23,9 @@ LinkedIn-Profil in `~/projects/find-jobs/AGENTS.md`:
 - Keine Zeugnis-Scans und keine Referenzschreiben im Volltext.
 - Kein Geburtsdatum und keine Wohnadresse. Die Geschäftsadresse im Impressum
   ist Pflicht und bleibt.
+- `/spenden/` zeigt IBAN und QR-Rechnung ohne Betrag für die Gratis-Plugins, mit
+  `noindex`. Der QR-Code entsteht mit `scripts/spenden-qr.py`; ändert sich das
+  Konto, Skript und die vier Seiten im selben Commit anpassen.
 
 ## Zielgruppe und Sprache
 

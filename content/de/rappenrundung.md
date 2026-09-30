@@ -34,6 +34,8 @@ erscheint im WordPress-Verzeichnis, danach kommen Updates automatisch. Bis dahin
 informiere ich Sie gern über neue Versionen:
 [Updates per E-Mail erhalten](mailto:info@strainovic-it.ch?subject=Updates%20Rappenrundung).
 
+Hilft Ihnen das Plugin, freue ich mich über eine [Spende](/spenden/).
+
 ## Weitere Plugins für Schweizer Shops
 
 - **[KLARA-Shop-Connector](/klara-shop-connector/):** Schluss mit dem Abtippen von

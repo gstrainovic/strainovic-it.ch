@@ -34,6 +34,8 @@ sera publié dans le répertoire WordPress, les mises à jour arriveront alors a
 D’ici là, je vous informe volontiers des nouvelles versions :
 [Recevoir les mises à jour par e-mail](mailto:info@strainovic-it.ch?subject=Mises%20%C3%A0%20jour%20arrondi%205%20centimes).
 
+Si le plugin vous est utile, un [don](/fr/spenden/) me fait plaisir.
+
 ## Autres plugins pour les boutiques suisses
 
 - **[Connecteur de boutique KLARA](/fr/klara-shop-connector/) :** fini la ressaisie des

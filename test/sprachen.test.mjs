@@ -134,6 +134,25 @@ test('Rappenrundung: direkter Download und Hinweis auf die anderen Plugins, in j
   }
 })
 
+test('Spenden: QR-Rechnung und Kontoangaben in jeder Sprache, nicht indexiert, von den Gratis-Plugins verlinkt', () => {
+  assert.ok(existsSync(join(AUSGABE, 'img', 'spenden-qr.svg')), 'QR-Code fehlt')
+  const svg = readFileSync(join(AUSGABE, 'img', 'spenden-qr.svg'), 'utf8')
+  assert.match(svg, /id="swiss-cross"/, 'Schweizerkreuz fehlt im QR-Code')
+  for (const sprache of Object.keys(SPRACHEN)) {
+    const html = lies(mitSprache(sprache, '/spenden/'))
+    assert.match(html, /<meta[^>]*name="robots"[^>]*content="noindex"/, `${sprache}: noindex fehlt`)
+    // Nuxt Image liefert Bilder über /_ipx/ aus, die Datei muss dort auch gebaut sein.
+    const src = html.match(/<img[^>]*src="([^"]*\/img\/spenden-qr\.svg)"/)
+    assert.ok(src, `${sprache}: QR-Code nicht eingebunden`)
+    assert.ok(existsSync(join(AUSGABE, src[1])), `${src[1]} fehlt in der Ausgabe`)
+    assert.match(html, /CH06 0878 1000 2618 1360 0/, `${sprache}: IBAN fehlt`)
+    assert.match(html, /Goran Strainovic, Bahnstrasse 9b, 9323 Steinach/, `${sprache}: Empfänger fehlt`)
+    for (const plugin of ['rappenrundung', 'uid-check']) {
+      assert.match(lies(mitSprache(sprache, `/${plugin}/`)), new RegExp(`href="${mitSprache(sprache, '/spenden/')}"`), `${sprache}: ${plugin} verlinkt nicht auf Spenden`)
+    }
+  }
+})
+
 test('UID-Check: Video in der Sprache der Seite, lokal ausgeliefert, ohne Hinweis auf deutsche Fassung', () => {
   for (const sprache of Object.keys(SPRACHEN)) {
     const html = lies(mitSprache(sprache, '/uid-check/'))

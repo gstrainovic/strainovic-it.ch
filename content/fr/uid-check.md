@@ -53,7 +53,7 @@ arrive dans bexio avec un numéro IDE vérifié et une preuve.
 ## Prix
 
 - **Contrôle IDE Suisse, gratuit :** chiffre de contrôle et statut actif/radié au
-  checkout. Bientôt dans le répertoire des plugins WordPress.
+  checkout. Bientôt dans le répertoire des plugins WordPress. S’il vous est utile : [faire un don](/fr/spenden/).
 - **Contrôle IDE pour bexio :** 30 jours d’essai gratuit, ensuite 79 CHF par an et
   par boutique (agences : 199 CHF par an pour jusqu’à 10 boutiques). Tout ce que
   contient la version gratuite, plus le résultat horodaté dans chaque commande et la

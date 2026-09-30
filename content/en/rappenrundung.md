@@ -34,6 +34,8 @@ in the WordPress directory, after that updates arrive automatically. Until then 
 to let you know about new versions:
 [Get updates by email](mailto:info@strainovic-it.ch?subject=Updates%205-centime%20rounding).
 
+If the plugin helps you, I appreciate a [donation](/en/spenden/).
+
 ## More plugins for Swiss shops
 
 - **[KLARA shop connector](/en/klara-shop-connector/):** no more retyping orders. Every

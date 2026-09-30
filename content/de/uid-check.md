@@ -52,7 +52,7 @@ UID und Nachweis in bexio an.
 ## Preis
 
 - **UID-Check Schweiz, gratis:** Prüfziffer und Status aktiv/gelöscht im Checkout.
-  Bald im WordPress-Plugin-Verzeichnis.
+  Bald im WordPress-Plugin-Verzeichnis. Hilft es Ihnen: [Spenden](/spenden/).
 - **UID-Check für bexio:** 30 Tage gratis testen, danach 79 CHF pro Jahr und Shop
   (Agenturen: 199 CHF pro Jahr für bis zu 10 Shops). Alles aus der Gratis-Version,
   dazu das Prüfergebnis mit Zeitstempel an jeder Bestellung und die Übergabe als

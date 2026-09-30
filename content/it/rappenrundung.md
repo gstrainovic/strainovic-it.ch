@@ -34,6 +34,8 @@ pubblicato nella directory di WordPress, poi gli aggiornamenti arriveranno autom
 Fino ad allora vi informo volentieri sulle nuove versioni:
 [Ricevere gli aggiornamenti via e-mail](mailto:info@strainovic-it.ch?subject=Aggiornamenti%20arrotondamento%205%20centesimi).
 
+Se il plugin vi è utile, una [donazione](/it/spenden/) mi fa piacere.
+
 ## Altri plugin per negozi svizzeri
 
 - **[Connettore negozio KLARA](/it/klara-shop-connector/):** basta ricopiare gli ordini.

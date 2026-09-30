@@ -52,7 +52,7 @@ bexio con numero IDI verificato e prova.
 ## Prezzo
 
 - **Controllo IDI Svizzera, gratuito:** cifra di controllo e stato attivo/cancellato
-  nel checkout. Presto nella directory dei plugin di WordPress.
+  nel checkout. Presto nella directory dei plugin di WordPress. Se vi è utile: [donazioni](/it/spenden/).
 - **Controllo IDI per bexio:** 30 giorni di prova gratuita, poi 79 CHF all’anno per
   negozio (agenzie: 199 CHF all’anno per un massimo di 10 negozi). Tutto quello che
   offre la versione gratuita, più l’esito con data e ora in ogni ordine e la
