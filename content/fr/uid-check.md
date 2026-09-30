@@ -40,7 +40,7 @@ arrive dans bexio avec un numéro IDE vérifié et une preuve.
   Votre navigateur ne peut pas lire cette vidéo.
 </video>
 
-[Voir la vidéo sur YouTube](https://www.youtube.com/watch?v=dOBMshp2Nrs)
+[Voir la vidéo sur YouTube](https://www.youtube.com/watch?v=9jqdnAuxh9k)
 
 - Consulte à nouveau le registre IDE à chaque commande et enregistre le résultat avec
   l’heure dans la commande

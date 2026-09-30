@@ -39,7 +39,7 @@ bexio con numero IDI verificato e prova.
   Il vostro browser non può riprodurre questo video.
 </video>
 
-[Guarda il video su YouTube](https://www.youtube.com/watch?v=dmg2YbQTmBw)
+[Guarda il video su YouTube](https://www.youtube.com/watch?v=5BYJ_6dhAxA)
 
 - Interroga di nuovo il registro IDI a ogni ordine e salva l’esito con l’ora
   nell’ordine
